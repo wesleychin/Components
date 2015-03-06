@@ -1,0 +1,56 @@
+<div class='dashboard-widget' ng-class="{ 'dashboard-widget-active':tile.notification == 'none','dashboard-widget-dormant-hover':tile.notification != 'none'}" ng-click="goToAccounts(tile.accountNumber,tile.name);">
+
+    <div ng-switch on="tile.notification" class='widget-round-corner'>
+        <img ng-switch-when="warning" src='images/widget-corner-grey.png'>
+        <img ng-switch-when="critical" src='images/widget-corner-red.png'>
+        <img ng-switch-default src='images/widget-corner.png'>
+    </div>
+    <div class="dashboard-widget-content-wrapper" ng-class="{'small-widget-content-wrapper' : tile.isHero == false}">
+        <div class='dashboard-widget-heading'>
+            {{tile.authName}}
+        </div>
+        <div class="dashboard-widget-gradient"></div>
+        <div class='dashboard-widget-content'>
+            <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true ,'dashboard-widget-content-small':tile.isHero == false}" class="clearfix">
+                <div class="widget-sub-title" ng-if="tile.isHero == false" ng-class="{'widget-without-sub-title': tile.isSubtitle == false}">
+                    <div class="widget-sub-heading-text" ng-if="tile.isSubtitle == true">{{tile.getSubTitle}} {{tile.subTitleValue | date:'dd MMM yy'}}
+                    </div>
+                </div>
+                <div class="dashboard-widget-available-balance">
+                    <div class="widget-sub-heading-text">{{tile.getBalanceType}}</div>
+                    <div class="widget-balance-value">
+                        <span class="widget-balance-currency">{{tile.availableBalance.currency}}</span>
+                        <span class="widget-balance">{{tile.availableBalance.amount}}</span>
+                    </div>
+                </div>
+                <div class="widget-sub-heading-right" ng-if="tile.isHero == true && tile.isSubtitle == true">
+                    <div class="widget-sub-heading-text">{{tile.getSubTitle}} {{tile.subTitleValue |date:'dd MMM yy'}}
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-widget-table" ng-if="tile.isHero == true">
+                <table ng-if="tile.hasTable">
+                    <tr ng-repeat="value in tile.tableValues">
+                        <td>{{value.transactionDate | date:'dd MMM yy' }}</td>
+                        <td>{{value.narrative}}</td>
+                        <td class="table-number-color" table-color my-val='{{value.amount.amount}}'>{{value.amount.amount}}</td>
+                    </tr>
+                </table>
+                <div ng-if="!tile.hasTable" class="no-transactions">No Transactions</div>
+            </div>
+            <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true,'dashboard-widget-content-small':tile.isHero == false}">
+                <div class="dashboard-widget-account-number " ng-class="{ 'dashboard-hero-account-number':tile.isHero == true}">
+                    <span class="widget-sub-heading-text">Account number</span>
+                    <span class="widget-account-number-value">{{tile.accountNumber}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="widget-overlay large-widget-wrapper select-disable" ng-if="tile.notification!= 'none' ">
+        <div class="large-widget-normal-text">This account is </div>
+        <div class="large-widget-text">Dormant</div>
+        <div class="large-widget-normal-text">Please visit a branch or call the contact centre on</div>
+        <div class="large-widget-number">+234-1-2709676</div>
+        <span secondary-button button-value="Continue to my account"></span>
+    </div>
+</div>

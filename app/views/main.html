@@ -1,0 +1,13 @@
+<div>
+    <div class="body-wrapper" body-height height-offset='236' height-type='min-height'>
+        <div class="dashboard-grid">
+            <div class="row">
+                <div ng-repeat="tile in accountDetails |DashboardTiles:filterHeroTile" ng-include src="'views/tile.html'" class="columns dashboard-gutter large-6">
+                </div>
+
+                <div ng-repeat="tile in accountDetails |DashboardTiles:filterSmallTile" ng-include src="'views/tile.html'" class="columns dashboard-gutter large-3">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
