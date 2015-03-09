@@ -7,50 +7,45 @@
     </div>
     <div class="dashboard-widget-content-wrapper" ng-class="{'small-widget-content-wrapper' : tile.isHero == false}">
         <div class='dashboard-widget-heading'>
-            {{tile.authName}}
+             <span ng-if="tile.hasAccountTable">Account {{tile.accountNumber}}</span>
+             <span ng-if="tile.hasChart">{{tile.heading}}</span>
         </div>
         <div class="dashboard-widget-gradient"></div>
         <div class='dashboard-widget-content'>
-            <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true ,'dashboard-widget-content-small':tile.isHero == false}" class="clearfix">
-                <div class="widget-sub-title" ng-if="tile.isHero == false" ng-class="{'widget-without-sub-title': tile.isSubtitle == false}">
-                    <div class="widget-sub-heading-text" ng-if="tile.isSubtitle == true">{{tile.getSubTitle}} {{tile.subTitleValue | date:'dd MMM yy'}}
-                    </div>
-                </div>
-                <div class="dashboard-widget-available-balance">
-                    <div class="widget-sub-heading-text">{{tile.getBalanceType}}</div>
+            <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true ,'dashboard-widget-content-small':tile.isHero == false}" class="clearfix" ng-if="tile.hasAccountTable">
+                <div class="dashboard-widget-available-balance" ng-if="tile.hasAccountTable">
                     <div class="widget-balance-value">
-                        <span class="widget-balance-currency">{{tile.availableBalance.currency}}</span>
+                        <span>PORTFOLIO VALUE</span><br/>
+                        <span class="widget-balance">{{tile.availableBalance.currency}}</span>
                         <span class="widget-balance">{{tile.availableBalance.amount}}</span>
                     </div>
                 </div>
-                <div class="widget-sub-heading-right" ng-if="tile.isHero == true && tile.isSubtitle == true">
-                    <div class="widget-sub-heading-text">{{tile.getSubTitle}} {{tile.subTitleValue |date:'dd MMM yy'}}
-                    </div>
-                </div>
             </div>
-            <div class="dashboard-widget-table" ng-if="tile.isHero == true">
-                <table ng-if="tile.hasTable">
-                    <tr ng-repeat="value in tile.tableValues">
-                        <td>{{value.transactionDate | date:'dd MMM yy' }}</td>
-                        <td>{{value.narrative}}</td>
-                        <td class="table-number-color" table-color my-val='{{value.amount.amount}}'>{{value.amount.amount}}</td>
+            <div class="dashboard-widget-table" ng-if="tile.hasAccountTable">
+                <table>
+                    <tr ng-if="tile.accountTable.daily.amount || tile.accountTable.totalChange.amount">
+                        <td ng-if="tile.accountTable.daily.amount">{{tile.accountTable.daily.currency}}{{tile.accountTable.daily.amount}}</td>
+                        <td ng-if="tile.accountTable.totalChange.amount">{{tile.accountTable.totalChange.amount}} ({{tile.accountTable.totalChange.percent}}) ({{tile.accountTable.totalChange.isIncrease}})</td>
+                    </tr>
+                    <tr ng-if="tile.accountTable.daily || tile.accountTable.totalChange">
+                        <td ng-if="tile.accountTable.daily">Daily</td>
+                        <td ng-if="tile.accountTable.totalChange">Total Change</td>
+                    </tr>
+                    <tr ng-if="tile.accountTable.securities.amount || tile.accountTable.cash.amount">
+                        <td ng-if="tile.accountTable.securities.amount">{{tile.accountTable.securities.currency}}{{tile.accountTable.securities.amount}}</td>
+                        <td ng-if="tile.accountTable.cash.amount">{{tile.accountTable.cash.currency}}{{tile.accountTable.cash.amount}}</td>
+                    </tr>
+                    <tr ng-if="tile.accountTable.securities || tile.accountTable.cash">
+                        <td ng-if="tile.accountTable.securities">Securities</td>
+                        <td ng-if="tile.accountTable.cash">Cash</td>
                     </tr>
                 </table>
-                <div ng-if="!tile.hasTable" class="no-transactions">No Transactions</div>
             </div>
-            <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true,'dashboard-widget-content-small':tile.isHero == false}">
-                <div class="dashboard-widget-account-number " ng-class="{ 'dashboard-hero-account-number':tile.isHero == true}">
-                    <span class="widget-sub-heading-text">Account number</span>
-                    <span class="widget-account-number-value">{{tile.accountNumber}}</span>
+            <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true ,'dashboard-widget-content-small':tile.isHero == false}" class="clearfix">
+                <div ng-if="tile.hasChart == true">
+                    <highchart id="chart" style="width: 427px; height: 243px;" config="tile.chartData"></highchart>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="widget-overlay large-widget-wrapper select-disable" ng-if="tile.notification!= 'none' ">
-        <div class="large-widget-normal-text">This account is </div>
-        <div class="large-widget-text">Dormant</div>
-        <div class="large-widget-normal-text">Please visit a branch or call the contact centre on</div>
-        <div class="large-widget-number">+234-1-2709676</div>
-        <span secondary-button button-value="Continue to my account"></span>
     </div>
 </div>
