@@ -16,10 +16,6 @@
  		$scope.accountDetails = response;
  	});
 
- 	$http.get('/api/chartData.json').success(function(response) {
- 		$scope.chartData = response;
- 	});
-
  	$scope.limitData = function() {
  		$scope.accountDetails[1].chartData.series[0].data = [1000,
             2000,
