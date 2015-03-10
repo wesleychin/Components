@@ -1,4 +1,5 @@
 { "0" : { 
+    "notification" : "default",
 	  "subheading" : "PORTFOLIO VALUE",
 	  "accountNumber" : "3456789",
       "accountTable" : { "cash" : { "amount" : 18000001,
@@ -22,7 +23,9 @@
       "isHero" : true
     },
   "1" : { "chartData" : { "legend" : { "enabled" : false },
-          "series" : [ { "data" : [ 1000,
+          "series" : [ { 
+            "showInLegend" : false,
+            "data" : [ 1000,
                     2000,
                     4000,
                     6000,
@@ -62,7 +65,9 @@
       "heading" : "Price Graph",
       "isHero" : true
     },
-  "2" : { "accountNumber" : "4567890",
+  "2" : { 
+      "notification" : "default",
+      "accountNumber" : "4567890",
       "subheading" : "PORTFOLIO VALUE",
       "accountTable" : { "daily" : { "amount" : 8189,
               "currency" : "R"
@@ -91,6 +96,7 @@
       "isHero" : false
     },
   "4" : { 
+      "notification" : "default",
       "heading" : "Market overview",
       "hasVerticalTable" : true,
       "tableData" : [
@@ -101,6 +107,7 @@
       "isHero" : false
     },
   "5" : { 
+      "notification" : "default",
       "heading" : "ALSI market breadth",
       "hasVerticalTable" : true,
       "tableHeadings" : [
@@ -134,25 +141,23 @@
       "isHero" : false
     },
   "7" : { 
-      "heading" : "Market news",
-      "hasButton" : true,
-      "buttons" : [ "All news", "Related to my portfolio" ],
-      "hasNewsFeed" : true,
-      "tableData" : [ 
-      	 [{ "heading" : "Sens", 
-      	    "data" : [["13 Feb 15:00", "AGL - Anglo American - New financial instrument listing"], 
-					 ["13 Feb 16:00", "ASA - Interest rate reset"]]
-      	    }],
-      	    [{ "heading" : "Economic news", 
-      	    "data" : [["13 Feb 12:00", "xxx"], 
-					 ["13 Feb 14:00", "xx"]]
-      	    }], 
-      	    [{ "heading" : "Economic calendar", 
-      	    "data" : [["17 Feb 15:00", "Consumer Confidence (Jan)"], 
-					 ["18 Feb 13:30", "Import Price Index (YoY) (Dec)"],
-					 ["19 Feb 14:00", "Westpac Leading Index (MoM) (Dec)"]]
-      	    }]
-      ],
+      "heading" : "Orders",
+      "hasVerticalTable" : true,
+      "hasDropdown" : true,
+      "bindDropdown" : true,
+      "dropdownData" : [
+      	[{"id" : 1, "value" : "Completed"}, {"id" : 2, "value" : "Pending"}, {"id" : 3, "value" : "Failed"}]
+      	],
+      "tableData" : [
+      	[ "Sell 5000 PREFTX @ 327c", "22 Feb 2015 18:00", "Total cost 13.84"],
+      	[ "Sell 4000 AGL @ 456c", "22 Feb 2015 18:00", "Total cost 12.20"],
+      	[ "Buy 5000 SBK @ 227c", "21 Feb 2015 15:00", "Total cost 14.84"],
+      	[ "Sell 1000 CBS  @ 356c", "21 Feb 2015 16:00", "Total cost 9.84"],
+      	[ "Sell 2000 HHO @ 234c", "22 Feb 2015 12:00", "Total cost 10.74"],
+      	[ "Sell 4000 IGH @ 123c", "22 Feb 2015 13:00", "Total cost 13.00"],
+      	[ "Sell 1000 HHO @ 233c", "22 Feb 2015 12:00", "Total cost 10.74"],
+      	[ "Sell 3000 IGH @ 122c", "22 Feb 2015 13:00", "Total cost 13.00"]
+      	],
       "isHero" : true
     }
 }
