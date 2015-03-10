@@ -25,7 +25,7 @@
                 <table>
                     <tr ng-if="tile.accountTable.daily.amount || tile.accountTable.totalChange.amount">
                         <td ng-if="tile.accountTable.daily.amount">{{tile.accountTable.daily.currency}}{{tile.accountTable.daily.amount}}</td>
-                        <td ng-if="tile.accountTable.totalChange.amount" ng-class="{'text-green':tile.accountTable.totalChange.isIncrease == true, 'text-red':tile.accountTable.totalChange.isIncrease == false}">{{tile.accountTable.totalChange.amount}} ({{tile.accountTable.totalChange.percent}})</td>
+                        <td ng-if="tile.accountTable.totalChange.amount" ng-class="{'text-green':tile.accountTable.totalChange.isIncrease == true, 'text-red':tile.accountTable.totalChange.isIncrease == false}">{{tile.accountTable.totalChange.amount}} ({{tile.accountTable.totalChange.percent}}) <i ng-class="{'fi-arrow-up':tile.accountTable.totalChange.isIncrease == true, 'fi-arrow-down':tile.accountTable.totalChange.isIncrease == false}"></i></td>
                     </tr>
                     <tr ng-if="tile.accountTable.daily || tile.accountTable.totalChange">
                         <td ng-if="tile.accountTable.daily">Daily</td>
@@ -43,6 +43,8 @@
             </div>
             <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true ,'dashboard-widget-content-small':tile.isHero == false}" class="clearfix">
                 <div ng-if="tile.hasChart == true">
+                    <button type="button" class="button" ng-click="limitData()">Limit Data</button>
+                    <button type="button" class="button" ng-click="resetData()">Reset Data</button>
                     <highchart id="chart" style="width: 427px; height: 243px;" config="tile.chartData"></highchart>
                 </div>
             </div>
@@ -74,19 +76,8 @@
             <tr ng-repeat="data in tile.tableData">
                 <td ng-repeat="actualData in data">{{actualData}}</td>
             </tr>
-            <tr>
-                <td><span></span></td>
-            </tr>
         </table>
     </div>
-
-    <!-- <div class="dashboard-widget-table" ng-if="tile.hasNewsFeed">
-        <table>
-            <tr ng-repeat="row in tile.tableData">
-                <td ng-repeat="cell in row">{{cell | json}}</td>
-            </tr>
-        </table>
-    </div> -->
 </div>
 </div>
 </div>

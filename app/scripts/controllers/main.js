@@ -21,13 +21,13 @@
  	});
 
  	$scope.limitData = function() {
- 		$scope.chartData.series[0].data = [1000,
+ 		$scope.accountDetails[1].chartData.series[0].data = [1000,
             2000,
             4000,
             6000,
             3000];
 
-        $scope.chartData.xAxis.categories = [ "Jan",
+        $scope.accountDetails[1].chartData.xAxis.categories = [ "Jan",
           "Feb",
           "Mar",
           "Apr",
@@ -35,7 +35,7 @@
 	};
 
 	$scope.resetData = function() {
- 		$scope.chartData.series[0].data = [1000,
+ 		$scope.accountDetails[1].chartData.series[0].data = [1000,
             2000,
             4000,
             6000,
@@ -49,7 +49,7 @@
             31000
           ];
 
-        $scope.chartData.xAxis.categories = [ "Jan",
+        $scope.accountDetails[1].chartData.xAxis.categories = [ "Jan",
           "Feb",
           "Mar",
           "Apr",

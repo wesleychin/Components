@@ -4,7 +4,7 @@
   "dependencies": {
     "grunt-cli": "~0.1.13",
     "grunt": "~0.4.5",
-    "lodash": "~3.3.1"
+    "lodash": "~3.5.0"
   },
   "repository": {},
   "devDependencies": {
