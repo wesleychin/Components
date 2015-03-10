@@ -1,4 +1,5 @@
 { "0" : { 
+    "notification" : "default",
 	  "subheading" : "PORTFOLIO VALUE",
 	  "accountNumber" : "3456789",
       "accountTable" : { "cash" : { "amount" : 18000001,
@@ -22,7 +23,9 @@
       "isHero" : true
     },
   "1" : { "chartData" : { "legend" : { "enabled" : false },
-          "series" : [ { "data" : [ 1000,
+          "series" : [ { 
+            "showInLegend" : false,
+            "data" : [ 1000,
                     2000,
                     4000,
                     6000,
@@ -62,7 +65,9 @@
       "heading" : "Price Graph",
       "isHero" : true
     },
-  "2" : { "accountNumber" : "4567890",
+  "2" : { 
+      "notification" : "default",
+      "accountNumber" : "4567890",
       "subheading" : "PORTFOLIO VALUE",
       "accountTable" : { "daily" : { "amount" : 8189,
               "currency" : "R"
@@ -91,6 +96,7 @@
       "isHero" : false
     },
   "4" : { 
+      "notification" : "default",
       "heading" : "Market overview",
       "hasVerticalTable" : true,
       "tableData" : [
@@ -101,6 +107,7 @@
       "isHero" : false
     },
   "5" : { 
+      "notification" : "default",
       "heading" : "ALSI market breadth",
       "hasVerticalTable" : true,
       "tableHeadings" : [

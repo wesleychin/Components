@@ -8,6 +8,10 @@
                 <div ng-repeat="tile in accountDetails |DashboardTiles:filterSmallTile" ng-include src="'views/tile.html'" class="columns dashboard-gutter large-3">
                 </div>
             </div>
+            <div class="row dashboard-add-edit-wrapper ">
+                <span><img ng-src='images/add-dashboard.png'> Add tiles or widgets</span>
+                <span><img ng-src='images/edit-dashboard.png'> Edit dashboard</span>
+            </div>
         </div>
     </div>
 </div>

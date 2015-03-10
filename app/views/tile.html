@@ -5,7 +5,7 @@
     <div ng-switch on="tile.notification" class='widget-round-corner'>
         <img ng-switch-when="warning" src='images/widget-corner-grey.png'>
         <img ng-switch-when="critical" src='images/widget-corner-red.png'>
-        <img ng-switch-default src='images/widget-corner.png'>
+        <img ng-switch-when="default" src='images/widget-corner.png'>
     </div>
     <div class="dashboard-widget-content-wrapper" ng-class="{'small-widget-content-wrapper' : tile.isHero == false}">
         <div class='dashboard-widget-heading'>
