@@ -49,8 +49,11 @@
             </div>
             <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true ,'dashboard-widget-content-small':tile.isHero == false}" class="clearfix">
                 <div ng-if="tile.hasDropdown == true">
-                    <select id = "accountNumbersDropdown">
-                        <option ng-repeat="accountNumber in tile.accountNumbers" value="{{accountNumber.id}}">{{accountNumber.number}}</option>
+                    <div ng-if="tile.bindDropdown == true">
+                    <label>Male</label>
+                    </div>
+                    <select id = "dropdown" ng-repeat="dropDownData in tile.dropdownData">
+                        <option ng-repeat="dropdown in dropDownData" value="{{dropdown.id}}">{{dropdown.value}}</option>
                     </select>
                 </div>
             </div>
@@ -62,38 +65,26 @@
             </div>
         </div>
         <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true ,'dashboard-widget-content-small':tile.isHero == false}" class="clearfix">
-            <div ng-if="tile.hasDepositButton == true">
-              <button>Deposit</button>
-          </div>
-      </div>
-      <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true ,'dashboard-widget-content-small':tile.isHero == false}" class="clearfix">
-          <div ng-if="tile.hasWithdrawButton == true">
-             <button>Withdraw</button>
+          <div ng-if="tile.hasButton == true">
+             <button ng-repeat="button in tile.buttons">{{button}}</button>
          </div>
      </div>
 
-     <div class="dashboard-widget-table" ng-if="tile.hasMarketOverviewTable">
+     <div class="dashboard-widget-table" ng-if="tile.hasVerticalTable">
         <table>
+            <tr ng-if="tile.tableHeadings">
+                <td ng-repeat="heading in tile.tableHeadings"><b>{{heading}}</b></td>
+            </tr>
             <tr ng-repeat="data in tile.tableData">
-                <td >{{data.heading}}</td>
-                <td >{{data.amount}}</td>
-                <td >{{data.unit}}</td>
-                <td >{{data.percent}}</td>
+                <td ng-repeat="actualData in data">{{actualData}}</td>
             </tr>
         </table>
     </div>
 
-    <div class="dashboard-widget-table" ng-if="tile.hasALSIMarketBreadthTable">
+    <div class="dashboard-widget-table" ng-if="tile.hasNewsFeed">
         <table>
-            <tr>
-                <td ng-repeat="heading in tile.tableHeadings"><b>{{heading}}</b></td>
-            </tr>
-            <tr ng-repeat="data in tile.tableData">
-                <td >{{data.heading}}</td>
-                <td >{{data.up}}</td>
-                <td >{{data.down}}</td>
-                <td >{{data.same}}</td>
-                <td >{{data.total}}</td>
+            <tr ng-repeat="row in tile.tableData">
+                <td ng-repeat="cell in row">{{cell}} ({{$index}},{{$parent.$index}})</td>
             </tr>
         </table>
     </div>
