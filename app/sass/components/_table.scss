@@ -1,0 +1,130 @@
+// .table-wrapper{
+.normal{
+	table{
+		background-color: transparent;
+  		border-collapse: collapse;
+ 		border-spacing: 0;
+ 		max-width: 100%;
+  		margin-bottom: 20px;
+  		font-size: 12px;
+		
+			tr{
+				height: 30px;
+				border-bottom:$table-border-size solid $table-border-colour;
+				td{
+					padding-right:10px;
+					padding-left:5px;
+				}		
+				td:first-child{
+					padding-left: $table-padding-size;
+					width: 75px;
+					text-align: left;
+				}
+				td:nth-child(2){
+					width: 200px;
+					text-align: left;
+					color: $table-blue-colour;					
+				}
+				td:nth-child(3){
+					width: 90px;								
+				}
+				td:nth-child(4){
+					width: 140px;												
+				}
+				td:last-child{
+					padding-right:$table-padding-size;
+				}
+				td:nth-child(n+3){
+					text-align: right;
+				}
+			}
+			tr:first-child{
+			height: 40px;				
+			border-top:$table-heading-border-size solid $table-border-colour;
+			border-bottom:$table-heading-border-size solid $table-border-colour;
+			text-align: left;
+				th:first-child{
+					padding-left:$table-padding-size;					
+				}
+				th:nth-child(n+3){
+					text-align: right;
+				}
+				th:last-child{
+					padding-right:$table-padding-size;
+				}
+				th{
+					i{
+					vertical-align: top;
+					color: $table-blue-colour;
+					}
+				}
+
+			}
+		
+	}
+}
+
+.single-select{
+	table{
+		background-color: #f2f2f2;
+  		border-collapse: collapse;
+ 		border-spacing: 0;
+ 		max-width: 100%;
+  		margin-bottom: 20px;
+  		font-size: 12px;
+		
+			tr{
+				height: 30px;
+				border-bottom:$table-border-size solid $table-border-colour;
+				td{
+					padding-right:10px;
+					padding-left:5px;
+				}		
+				td:first-child{
+					padding-left: $table-padding-size;
+					width: 250px;
+					text-align: left;
+					color: $table-blue-colour;
+				}
+				td:nth-child(2){					
+					text-align: left;
+					width: 90px;			
+				}
+				td:nth-child(3){
+					width: 140px;								
+				}
+				td:nth-child(4){
+					width: 70px;												
+				}
+				td:last-child{
+					padding-right:$table-padding-size;
+				}
+				td:nth-child(n+3){
+					text-align: right;
+				}
+			}
+			tr:first-child{
+			height: 40px;				
+			border-top:$table-heading-border-size solid $table-border-colour;
+			border-bottom:$table-heading-border-size solid $table-border-colour;
+			text-align: left;
+				th:first-child{
+					padding-left:$table-padding-size;					
+				}
+				th:nth-child(n+3){
+					text-align: right;
+				}
+				th:last-child{
+					padding-right:$table-padding-size;
+				}
+				th{
+					i{
+					vertical-align: top;
+					color: $table-blue-colour;
+					}
+				}
+
+			}
+		
+	}
+}

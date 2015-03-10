@@ -1,0 +1,290 @@
+.angular-date-range-picker__panel {
+  padding: 8px;
+  float: right;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.angular-date-range-picker__next-month {
+  right: 4px;
+}
+
+.angular-date-range-picker__prev-month {
+  left: 4px;
+  top: 14px;
+}
+
+
+
+.angular-date-range-picker__prev-month,
+.angular-date-range-picker__next-month {
+  position: absolute;
+  font-size: 20px !important;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  color: #2570e0;
+  top: 10px;
+}
+
+.angular-date-range-picker__prev-month {
+  left: 16px;
+}
+
+.angular-date-range-picker__next-month {
+  right: 16px;
+}
+
+.angular-date-range-picker__apply {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.angular-date-range-picker__input {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.angular-date-range-picker__calendar {
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0;
+  margin: 0 5px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-top: 20px;
+}
+
+.angular-date-range-picker__timesheet {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.angular-date-range-picker__timesheet:before,
+.angular-date-range-picker__timesheet:after {
+  content: " ";
+  display: table;
+}
+
+.angular-date-range-picker__timesheet:after {
+  clear: both;
+}
+
+
+.angular-date-range-picker__calendar-day {
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  color: #2570e0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.angular-date-range-picker__calendar-day.angular-date-range-picker__calendar-day-disabled {
+  color: #d9e2f8;
+}
+
+
+.angular-date-range-picker__calendar-day-start {
+  color: #fff;
+  background: #2570e0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.angular-date-range-picker__month {
+  
+  float: left;
+  
+}
+
+
+.angular-date-range-picker__calendar-weekday {
+  font-size: 12px;
+  width: 30px;
+  font-family:'HelveticaNeue-Regular','HelveticaNeue','robotoregular',Arial,sans-serif;
+  font-weight: 400;
+  color: #30353b;
+
+}
+
+.angular-date-range-picker__picker {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  overflow: hidden;
+  background: #fff;
+  z-index: 1000;
+  border: 1px solid #2570e0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0px .6px 0px #26428b;
+}
+
+.angular-date-range-picker--ranged {
+  width: 484px;
+ 
+}
+
+/* .angular-date-range-picker__calendar-day:hover {
+  background: transparent;
+  color: #2570e0;
+  border: 2px solid #b2d1f0;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: table-caption;
+
+} */
+.angular-date-range-picker__calendar-day.angular-date-range-picker__calendar-day-selected {
+  
+  background: #b2d1f0;
+  border-radius: 0;
+ 
+}
+/* .angular-date-range-picker__calendar-day.angular-date-range-picker__calendar-day-selected:hover{
+  width: 30px;
+} */
+.angular-date-range-picker__month-name {
+  text-align: center;
+  font-family: 'HelveticaNeue-Bold','robotobold',Arial,sans-serif;
+  font-size: 14px;
+  color: #30353b;
+}
+.angular-date-range-picker__calendar-day.angular-date-range-picker__calendar-day-disabled:hover {
+  border: 0;
+  color: #b2d1f0;
+  width: 25px;
+  background: none;
+  border-radius: 100%;
+  display: table-cell;
+  height: 25px;
+}
+.angular-date-range-picker__calendar-day-start {
+  color: #fff;
+  background: #2570e0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.angular-date-range-picker__calendar-day-end {
+  color: #fff;
+  background: #2570e0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.angular-date-range-picker__apply {
+  color: #571e93;
+  border: 1px solid #571e93;
+  font-size: 12px;
+  padding: 0 12px;
+  height: 25px;
+  border-radius: 3px;
+  background: transparent;
+  vertical-align: middle;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: background 0.2s ease-out, border-color 0.2s ease-out, -webkit-box-shadow 0.1s ease-out;
+  transition: background 0.2s ease-out, border-color 0.2s ease-out, box-shadow 0.1s ease-out;
+}
+
+.angular-date-range-picker__cancel {
+  padding: 0 8px;
+  display: inline-block;
+  color: #000;
+  cursor: pointer;
+}
+
+.angular-date-range-picker--ranged .angular-date-range-picker__buttons {
+  position: absolute;
+  bottom: 10px;
+}
+
+.angular-date-range-picker__apply:hover {
+  background: #571e93;
+  color: #fff;
+}
+
+.angular-date-range-picker__cancel:hover {
+  text-decoration: underline;
+}
+
+.angular-date-range-picker__cancel {
+  text-decoration: none;
+}
+.picker-wrap{
+    width: 100%;
+    height: 43px;
+    border: 1px solid #2570e0;
+    position: absolute;
+    top: -12px;
+    left: 0px;
+    z-index: 2000;
+    border-bottom: 1px solid #fff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: 0px -0.2px 0px #26428b;
+}
+
+.date-to-month {
+  display: inline-block;
+  position: absolute;
+  right: 100px;
+  top: 6px;
+  font-family:'HelveticaNeue-Bold','robotobold',Arial,sans-serif;;
+  font-size: 14px;
+  color: #666;
+}
+.date-from-month {
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  left: 87px;
+  font-family:'HelveticaNeue-Bold','robotobold',Arial,sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+.Cross-mark{
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  color:#2570e0;
+  width: 10px;
+  z-index: 3000;
+}
+.date-selected{
+  font-size: 14px;
+  font-family:'HelveticaNeue-Regular','HelveticaNeue','robotoregular',Arial,sans-serif;
+  color: #666;
+}
+.angular-date-range-picker__panel{
+  display: none;
+}
+.angular-date-range-picker__buttons {
+  display: none;
+ }

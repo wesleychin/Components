@@ -1,0 +1,350 @@
+.fa{
+	font-size: 14px;
+}
+.pointer{
+	cursor: pointer;
+}
+.column, .columns{
+	padding: 0;
+}
+.row{    
+	max-width: 960px;
+}
+.reset-margin{
+	margin: 0 !important;
+}
+.reset-padding{
+	padding: 0 !important;
+}
+.reset-border{
+	border:none !important;
+}
+.table{
+	display: table;
+	vertical-align: middle;
+}
+.text-right{
+	text-align:right !important;
+}
+.text-left{
+	text-align:left !important;
+}
+.text-center{
+	text-align:center !important;
+}
+// table ,th,td{
+// 	vertical-align: middle !important;
+// }
+.table-row{
+	display: table-row;
+}
+.table-cell{
+	display: table-cell;
+}
+.inline-block{
+	display: inline-block;
+}
+.left{
+	float:left !important;
+}
+.right{
+	float:right !important;
+}
+.clearfix{
+	clear:both;
+}
+.display-none{
+	display:none !important;
+}
+.display-block{
+	display:block !important;
+}
+.display-inline-block{
+	display: inline-block !important;
+}
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+
+body{
+	line-height:1 ;
+}
+.select-disable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+/* Form Elements*/
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #666;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #666;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #666;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #666;
+}
+.Appcontainer{
+	height: 100%;
+}
+a{
+   text-decoration: none; 
+   color: inherit;       
+ }
+ input{
+ 	background: transparent;
+ }
+ .row .row {
+ 	margin: 0;
+ }
+.inner-page-popup{
+	max-width: 120em !important;
+	width: 100% !important;
+	height: 100% !important;
+	padding: 0 !important;
+	top: 4px !important;
+	border-radius: 0 !important;
+	border:none;
+	box-shadow: none !important;
+	background:transparent;
+	//position: static !important;
+	.ng-model{
+		padding-top: 0;
+	}
+	.ng-modal.large{
+		background: transparent;
+		border: none;
+		box-shadow: none;
+	}
+}
+.base-link-color{
+	color: $base-link-color !important;
+}
+.base-color-dark{
+	color: $base-color-dark !important;
+}
+.base-color-medium{
+	color: $base-color-medium !important;
+}
+.base-color-light{
+	color: $base-color-light !important;
+}
+
+.blur{
+-webkit-filter: blur(30px) !important;
+		  -moz-filter: blur(30px) !important;
+		  -o-filter: blur(30px) !important;
+		  -ms-filter: blur(30px) !important;
+		  filter: blur(30px) ;
+		  -ms-filter: alpha(opacity=0) ;
+		  filter: alpha(opacity=0) ; 
+		  filter: url(../assets/svg/blur.svg#blur);
+		  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='30');
+		  background: #e9eaed !important;
+		  pointer-events: none;
+}
+.inner-page-popup-wrapper{
+	.inner-page-popup-heading{
+		position: relative;
+		text-align: center;
+	}
+	.inner-page-popup-back{
+		position: absolute;
+		left: 70px;		
+		top: 10px;
+		width: 2%;
+		.fa{
+		font-size: 22px;
+		color: $base-link-color
+		}
+				
+	}
+
+	.inner-page-popup-txt{
+		font-size: 2*$base-font-size;
+		color: $base-color-dark;
+		font-family: $font-light;
+		text-align: center;
+	}
+	.inner-page-popup-close{
+		position: absolute;
+		right: 0;
+		top: 4px;
+		.fa{
+		font-size: 22px;
+		color: $base-link-color
+		}
+				
+	}
+
+	
+}
+.opacity-zero{
+	opacity: 0;
+}
+/*Form Validation classes*/
+.error{
+	.ng-invalid{
+	.form-elem-half-border{
+		border-color: $base-color-error;
+	}
+}
+
+}
+.control-label{
+	color: $base-color-error;
+	font-size: 11px;
+	font-family: $font-regular;
+	position: absolute;
+	top: 0;
+	left: 0;
+	.fa{
+		font-size: $base-font-size-secondary;
+		margin-right: 6px;
+	}
+}
+.drop-down,.input-box{
+	position: relative;
+}
+.drop-down{
+	.control-label{
+		top: 41px;
+		left: 0;
+	}
+}
+.input-box{
+	.control-label{
+		top: 31px;
+		left: 0;
+	}
+}
+.form-elem-half-border-nonempty{
+	border-color: #26428b !important;
+}
+
+.toast{
+	#toast-container > .toast-info {
+		background-image:none;
+		text-align: center;
+		height: 60px;
+		background:brown;
+		padding-top:25px;
+	}	
+}
+#toast-container > div{
+		height: 60px;
+		width: 350px;
+		margin: 0;
+		padding: 0;
+		background: #6db04f;
+		padding-top: 22px;
+		text-align: center;
+		box-shadow: 0 0;
+		padding-top:25px;
+		font-family: $font-regular;
+}
+
+#toast-container >:hover {
+	-moz-box-shadow: 0 0;
+	-webkit-box-shadow: 0 0 ;
+	box-shadow: 0 0 ;
+	opacity: 1;
+	//-ms-filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+	filter: alpha(opacity=100);
+	cursor: pointer;
+}
+.custom-toast {
+    bottom: 20%;
+    left: 37%;
+    width: 100%;
+}
+.custom-toast-small{
+		bottom: 20%;
+		left: 0%;
+		padding: 0 5%;
+		width: 100%;
+	}
+
+/* .form-error{
+	background: #000;
+}
+ */
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { 
+	
+	
+	#toast-container > div{	
+		width: initial !important;		
+	}
+
+	.inner-page-popup-wrapper .inner-page-popup-back{
+		left:0;
+	}
+
+	.inner-page-popup-wrapper{
+
+		.inner-page-popup-heading{
+			position: relative;
+			text-align: center;
+		}
+		.inner-page-popup-back{
+			position: absolute;
+			left: 70px;		
+			top: 10px;
+			width: 2%;
+			.fa{
+			font-size: 22px;
+			color: $base-link-color
+			}
+					
+		}
+		.inner-page-popup-txt{
+			font-size: 16px;
+			color: $base-color-dark;
+			font-family: $font-bold;
+			text-align: center;
+		}
+		.inner-page-popup-close{
+			position: absolute;
+			right: 0;
+			top: -4px;
+			.fa{
+			font-size: 22px;
+			color: $base-link-color
+		}
+	}
+
+	
+}
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+	.inner-page-popup-wrapper .inner-page-popup-back{
+	left:0;
+	}
+ } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (max-width: 40.063em) {
+	.fa {
+		font-size: 18px;
+	}
+ }

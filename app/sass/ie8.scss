@@ -1,0 +1,13 @@
+.dashboard-widget-dormant-hover:hover {
+	.dashboard-widget-content-wrapper{
+	-webkit-filter: blur(0px);
+		  -moz-filter: blur(0px);
+		  -o-filter: blur(0px);
+		  -ms-filter: blur(0px);
+		  filter: blur(0px);
+		}
+	.widget-overlay{
+	display:block;	
+	background:#fff; 
+	}	
+}

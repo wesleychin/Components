@@ -1,0 +1,64 @@
+button{
+	&:focus{
+		outline: none;	
+	}
+	
+}
+
+.primary-form-button{
+	
+	height: $form-button-height;
+	color: $primary-button-color;
+	font-size: $base-font-size;
+	cursor: pointer;	
+	border: $form-button-border-size solid $primary-button-border-color;
+	border-radius: $base-border-radius;
+	background: #4b8def;
+	background-image: -moz-linear-gradient( 90deg, rgb(37,112,224) 0%, rgb(86,149,243) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(37,112,224) 0%, rgb(86,149,243) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(37,112,224) 0%, rgb(86,149,243) 100%);	    
+    padding: 0 10px;
+	line-height: $form-button-line-height;	
+	.primary-form-button-txt{
+		margin-left: 5px;
+	}
+	&:hover{
+		background: #1d6edc;
+		background-image: -moz-linear-gradient( 90deg, rgb(0,102,204) 0%, rgb(37,112,224) 100%);
+	  	background-image: -webkit-linear-gradient( 90deg, rgb(0,102,204) 0%, rgb(37,112,224) 100%);
+	  	background-image: -ms-linear-gradient( 90deg, rgb(0,102,204) 0%, rgb(37,112,224) 100%);	  
+	}
+	&:active{
+		border: none;
+		padding: 1px 11px;
+		background: #1d6edc;
+		background-image: -moz-linear-gradient( 90deg, rgb(0,102,204) 0%, rgb(37,112,224) 100%);
+  		background-image: -webkit-linear-gradient( 90deg, rgb(0,102,204) 0%, rgb(37,112,224) 100%);
+  		background-image: -ms-linear-gradient( 90deg, rgb(0,102,204) 0%, rgb(37,112,224) 100%);
+		@include box-shadow-inset(1.5px,2.5px,3px,0px,rgba(0, 0, 0, 0.42));
+	}
+
+}
+
+.secondary-form-button{
+	height: $form-button-height;
+	background: $secondary-button-background;
+	border: $form-button-border-size solid $sec-button-border-txt-color;
+	border-radius: $base-border-radius;
+	font-size: $base-font-size;
+	padding: 0 12px;
+	line-height: $form-button-line-height;
+	color: $sec-button-border-txt-color;
+	cursor: pointer;
+
+	&:hover{
+		border-color: $sec-button-border-txt-color-hover;
+		color: $sec-button-border-txt-color-hover;
+	}
+
+	&:active{
+		border-color: $sec-button-border-txt-color-active;
+		color: $sec-button-border-txt-color-active;
+	}
+
+}

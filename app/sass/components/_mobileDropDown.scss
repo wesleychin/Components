@@ -1,0 +1,134 @@
+.mobile-drop-down {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 111;
+    top: 60%;
+    left: 0;
+    right: 0;
+    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+    &.large-dropdown-con {
+        top: 0;
+    }
+    li {
+        //background: #f0f2f4;
+        //border-top: 1px solid #999;
+        //border-bottom: 1px solid #999;
+        text-align: center;
+        cursor: pointer;
+        height: 50px;
+        div {
+            line-height: 46px;
+        }
+    }
+}
+.mobile-dropdown-inner-wrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .acctrans-searchbx-wrap.mobile-dropdown-search {
+        background: #fff;
+    }
+}
+.mobile-dropdown-list-con {
+    height: 100%;
+    overflow: scroll;
+    width: 94%;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px 5px 0px 0px;
+}
+.large-dropdown .mobile-dropdown-list-con {
+    width: 100%;
+}
+.mobile-dropdown-conditional-blocks-con {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    -webkit-animation: smallDropdown 300ms;
+    animation: smallDropdown 300ms;
+    &.large-dropdown {
+        height: 100%;
+        overflow: scroll;
+        top: 0;
+        -webkit-animation: largeDropdown 500ms;
+        animation: largeDropdown 500ms;
+    }
+}
+.mobile-dropdown-header-wrap {
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    .mobile-dropdown-header-arrow {
+        position: absolute;
+    }
+    .mobile-dropdown-header-text {}
+}
+.mobile-dropdown-wrapper {
+    width: 100%;
+    height: 100%;
+    .overlay {
+        background: #000;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0.5;
+        z-index: 111;
+        -webkit-animation: mobileBgAnimate 300ms;
+        animation: mobileBgAnimate 300ms;
+    }
+}
+@-webkit-keyframes mobileBgAnimate {
+    from {
+        background: transparent;
+        opacity: 1;
+    }
+    to {
+        background: #000;
+        opacity: 0.5;
+    }
+}
+@keyframes mobileBgAnimate {
+    from {
+        background: transparent;
+        opacity: 1;
+    }
+    to {
+        background: #000;
+        opacity: 0.5;
+    }
+}
+@-webkit-keyframes smallDropdown {
+    from {
+        bottom: -350px;
+    }
+    to {
+        bottom: 0;
+    }
+}
+@keyframes smallDropdown {
+    from {
+        bottom: -350px;
+    }
+    to {
+        bottom: 0;
+    }
+}
+@-webkit-keyframes largeDropdown {
+    from {
+        top: 1200px;
+    }
+    to {
+        top: 0;
+    }
+}
+@keyframes largeDropdown {
+    from {
+        top: 1200px;
+    }
+    to {
+        top: 0;
+    }
+}

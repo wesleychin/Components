@@ -1,0 +1,74 @@
+$half-border-border-radius : 3px;
+
+.form-elem-textbox{
+	position: relative;
+	width: 100%;
+	cursor: text;
+	.textbox-placeholder{
+		position: absolute;
+		left: 8px;
+		bottom: 0px;
+		font-size: 14px;
+		height: 100%;
+		width: 98%;
+		z-index: 1;
+		transition:0.2s ease all; 
+	  	-moz-transition:0.2s ease all; 
+	  	-webkit-transition:0.2s ease all;
+	  	color: #666;
+	  	 font-family: $font-regular;
+         @include safe-rem(font-size, 12);
+	}
+	.isError{
+		border: 1px solid $errror-text-color;
+		border-top: 0;
+	}
+	.textbox-txt-position-active{
+		bottom:19px;
+		font-size: 12px;
+		color: #26428b;
+	}
+	.input-type-textbox , .input-type-pwd{
+		width: 98%;
+		position: relative;
+		padding: 0 0 4px 2px;
+		display: block;
+		color: #000;
+		outline: none;
+		border: none;
+		font-family: $font-bold;
+        margin: 0 7px;
+        @include safe-rem(font-size, 14);
+        outline: none; 
+        border: none;
+        z-index: 10;
+        background: transparent;
+	}
+	.half-border-textbox-nonempty{
+		border-color:#26428b; 
+	}
+}
+
+.form-elem-half-border{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 17px;
+	width: 100%;
+	border: 1px solid #666;
+	border-top: none;
+	border-bottom-left-radius: $half-border-border-radius;
+	border-bottom-right-radius: $half-border-border-radius;
+}
+.form-elem-textbox .input-type-textbox:focus + .form-elem-half-border{
+	
+ 	border: 1px solid rgb(38, 66, 139);
+  	box-shadow: 0 5px 6px -7px #26428b;
+	border-top:0
+}
+.form-elem-textbox .input-type-pwd:focus + .form-elem-half-border{
+	
+ 	border: 1px solid rgb(38, 66, 139);
+  	box-shadow: 0 5px 6px -7px #26428b;
+	border-top:0
+}
