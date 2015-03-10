@@ -7,16 +7,15 @@
     </div>
     <div class="dashboard-widget-content-wrapper" ng-class="{'small-widget-content-wrapper' : tile.isHero == false}">
         <div class='dashboard-widget-heading'>
-            <span ng-if="tile.heading">{{tile.heading}}</span>
+            <span ng-if="tile.heading || tile.hasChart">{{tile.heading}}</span>
             <span ng-if="tile.hasAccountTable">Account {{tile.accountNumber}}</span>
-            <span ng-if="tile.hasChart">{{tile.heading}}</span>
         </div>
         <div class="dashboard-widget-gradient"></div>
         <div class='dashboard-widget-content'>
             <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true ,'dashboard-widget-content-small':tile.isHero == false}" class="clearfix" ng-if="tile.hasAccountTable">
                 <div class="dashboard-widget-available-balance" ng-if="tile.hasAccountTable">
                     <div class="widget-balance-value">
-                        <span>PORTFOLIO VALUE</span><br/>
+                        <span ng-if="tile.subheading">{{tile.subheading}}</span><br/>
                         <span class="widget-balance">{{tile.availableBalance.currency}}</span>
                         <span class="widget-balance">{{tile.availableBalance.amount}}</span>
                     </div>
@@ -49,9 +48,6 @@
             </div>
             <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true ,'dashboard-widget-content-small':tile.isHero == false}" class="clearfix">
                 <div ng-if="tile.hasDropdown == true">
-                    <div ng-if="tile.bindDropdown == true">
-                    <label>Male</label>
-                    </div>
                     <select id = "dropdown" ng-repeat="dropDownData in tile.dropdownData">
                         <option ng-repeat="dropdown in dropDownData" value="{{dropdown.id}}">{{dropdown.value}}</option>
                     </select>
@@ -78,16 +74,19 @@
             <tr ng-repeat="data in tile.tableData">
                 <td ng-repeat="actualData in data">{{actualData}}</td>
             </tr>
-        </table>
-    </div>
-
-    <div class="dashboard-widget-table" ng-if="tile.hasNewsFeed">
-        <table>
-            <tr ng-repeat="row in tile.tableData">
-                <td ng-repeat="cell in row">{{cell}} ({{$index}},{{$parent.$index}})</td>
+            <tr>
+                <td><span></span></td>
             </tr>
         </table>
     </div>
+
+    <!-- <div class="dashboard-widget-table" ng-if="tile.hasNewsFeed">
+        <table>
+            <tr ng-repeat="row in tile.tableData">
+                <td ng-repeat="cell in row">{{cell | json}}</td>
+            </tr>
+        </table>
+    </div> -->
 </div>
 </div>
 </div>
