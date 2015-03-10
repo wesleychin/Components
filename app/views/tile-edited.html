@@ -1,0 +1,24 @@
+<div class='dashboard-widget'>
+  <div ng-switch on="tile.notification" class='widget-round-corner'>
+        <img ng-switch-when="warning" src='images/widget-corner-grey.png'>
+        <img ng-switch-when="critical" src='images/widget-corner-red.png'>
+        <img ng-switch-default src='images/widget-corner.png'>
+    </div>
+    <div class="dashboard-widget-content-wrapper">
+        <div class='dashboard-widget-heading'>
+           Account 34354353
+      </div>
+        <div class="dashboard-widget-gradient"></div>
+        <div class='dashboard-widget-content'>
+            <div class="dashboard-widget-table">
+                <div>
+                  <p>No Transactions</p>
+                </div>
+            </div>
+      
+      </div>
+    </div>
+    <div class="widget-overlay large-widget-wrapper select-disable">
+        <span secondary-button button-value="Continue to my account"></span>
+    </div>
+</div>
