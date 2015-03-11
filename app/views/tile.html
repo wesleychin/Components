@@ -74,7 +74,13 @@
                 <td ng-repeat="heading in tile.tableHeadings"><b>{{heading}}</b></td>
             </tr>
             <tr ng-repeat="data in tile.tableData">
-                <td ng-repeat="actualData in data">{{actualData}}</td>
+                <td ng-repeat="actualData in data[0].data">{{actualData}}</td>
+                <td ng-if="data[0].increaseData" ng-repeat="increaseArrow in data[0].increaseData">
+                    <i ng-class="{'fi-arrow-up':increaseArrow.isIncrease == true, 'fi-arrow-down':increaseArrow.isIncrease == false, 'text-green':increaseArrow.isIncrease == true, 'text-red':increaseArrow.isIncrease == false}"></i>
+                </td>
+                <td ng-if="data[0].increaseData" ng-repeat="increaseData in data[0].increaseData">
+                    <i ng-class="{'text-green':increaseData.isIncrease == true, 'text-red':increaseData.isIncrease == false}">{{increaseData.data}}</i>
+                </td>
             </tr>
         </table>
     </div>

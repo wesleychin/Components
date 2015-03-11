@@ -99,11 +99,11 @@
       "notification" : "default",
       "heading" : "Market overview",
       "hasVerticalTable" : true,
-      "tableData" : [
-      	[ "JSE", 6412.78, 25, 0.2, false ],
-      	[ "Gold", 14689.90, 20, 0.3, false ],
-      	[ "R/USD", 12.5231, 20, 0.3, true ]
-      	],
+      "tableData" :   [
+        [ { "data": ["JSE", 6412.78, 25], "increaseData" : [ {"isIncrease": false, "data" : "0.2%"} ] } ],        
+        [ { "data": ["Gold", 14689.90, 20], "increaseData" : [ {"isIncrease": true, "data" : "0.3%"} ] } ], 
+        [ { "data": ["R/USD", 12.5231, 20], "increaseData" : [ {"isIncrease": true, "data" : "0.3%"} ] } ]
+        ],
       "isHero" : false
     },
   "5" : { 
@@ -118,8 +118,8 @@
 	  "Total"
       ],
       "tableData" : [
-      	[ "Shares", 228, 208, 115, 551],
-      	[ "Value", "R6.2B", "R9.5B", "R1.1M", "R15.7B"]
+      	[ { "data": ["Shares", 228, 208, 115, 551] } ],
+        [ { "data": ["Value", "R6.2B", "R9.5B", "R1.1M", "R15.7B"] } ]
       	],
       "isHero" : false
     },
@@ -132,12 +132,12 @@
       	[{"id" : 1, "value" : "Top Gainers"}, {"id" : 2, "value" : "Top Losers"}]
       	],
       "tableData" : [
-      	[ "ANGGOLD", "11041c", "2.6%", true],
-      	[ "MR PRICE", "23884c", "1.2%", true],
-      	[ "AMPLATS", "38800c", "1.0%", true],
-      	[ "RICHMONT", "9649c", "0.8%", true],
-      	[ "INVPLC", "10302c", "0.7%", true]
-      	],
+        [ { "data": ["ANGGOLD", "11041c"], "increaseData" : [ {"isIncrease": true, "data" : "2.6%"} ] } ],
+        [ { "data": ["MR PRICE", "23884c"], "increaseData" : [ {"isIncrease": true, "data" : "1.2%"} ] } ],
+        [ { "data": ["AMPLATS", "38800c"], "increaseData" : [ {"isIncrease": true, "data" : "1.0%"} ] } ],
+        [ { "data": ["RICHMONT", "9649c"], "increaseData" : [ {"isIncrease": true, "data" : "0.8%"} ] } ],
+        [ { "data": ["INVPLC", "10302c"], "increaseData" : [ {"isIncrease": true, "data" : "0.7%"} ] } ]
+        ],
       "isHero" : false
     },
   "7" : { 
@@ -149,14 +149,14 @@
       	[{"id" : 1, "value" : "Completed"}, {"id" : 2, "value" : "Pending"}, {"id" : 3, "value" : "Failed"}]
       	],
       "tableData" : [
-      	[ "Sell 5000 PREFTX @ 327c", "22 Feb 2015 18:00", "Total cost 13.84"],
-      	[ "Sell 4000 AGL @ 456c", "22 Feb 2015 18:00", "Total cost 12.20"],
-      	[ "Buy 5000 SBK @ 227c", "21 Feb 2015 15:00", "Total cost 14.84"],
-      	[ "Sell 1000 CBS  @ 356c", "21 Feb 2015 16:00", "Total cost 9.84"],
-      	[ "Sell 2000 HHO @ 234c", "22 Feb 2015 12:00", "Total cost 10.74"],
-      	[ "Sell 4000 IGH @ 123c", "22 Feb 2015 13:00", "Total cost 13.00"],
-      	[ "Sell 1000 HHO @ 233c", "22 Feb 2015 12:00", "Total cost 10.74"],
-      	[ "Sell 3000 IGH @ 122c", "22 Feb 2015 13:00", "Total cost 13.00"]
+        [ { "data": ["Sell 5000 PREFTX @ 327c", "22 Feb 2015 18:00", "Total cost 13.84"] } ],
+        [ { "data": ["Sell 4000 AGL @ 456c", "22 Feb 2015 18:00", "Total cost 12.20"] } ],
+        [ { "data": ["Buy 5000 SBK @ 227c", "21 Feb 2015 15:00", "Total cost 14.84"] } ],
+        [ { "data": ["Sell 1000 CBS  @ 356c", "21 Feb 2015 16:00", "Total cost 9.84"] } ],
+        [ { "data": ["Sell 2000 HHO @ 234c", "22 Feb 2015 12:00", "Total cost 10.74"] } ],
+        [ { "data": ["Sell 4000 IGH @ 123c", "22 Feb 2015 13:00", "Total cost 13.00"] } ],
+        [ { "data": ["Sell 1000 HHO @ 233c", "22 Feb 2015 12:00", "Total cost 10.74"] } ],
+        [ { "data": ["Sell 3000 IGH @ 122c", "22 Feb 2015 13:00", "Total cost 13.00"] } ]
       	],
       "isHero" : true
     }
