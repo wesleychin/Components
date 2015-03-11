@@ -144,7 +144,7 @@
       "heading" : "Orders",
       "hasVerticalTable" : true,
       "hasDropdown" : true,
-      "bindDropdown" : true,
+      "hasDropdownBind" : true,
       "dropdownData" : [
       	[{"id" : 1, "value" : "Completed"}, {"id" : 2, "value" : "Pending"}, {"id" : 3, "value" : "Failed"}]
       	],
@@ -158,6 +158,41 @@
         [ { "data": ["Sell 1000 HHO @ 233c", "22 Feb 2015 12:00", "Total cost 10.74"] } ],
         [ { "data": ["Sell 3000 IGH @ 122c", "22 Feb 2015 13:00", "Total cost 13.00"] } ]
       	],
+      "isHero" : true
+    },
+  "8" : { 
+      "heading" : "Knowledge centre",
+      "hasVerticalTable" : true,
+      "hasIcon" : true,
+      "tableData" : [
+        [ { "data": ["Event : Upcoming webinars", "28 Feb 2015"], "typeData" : [ {"name" : "event" } ] } ],
+        [ { "data": ["Event : Upcoming webinars", "7 Mar 2015"], "typeData" : [ {"name" : "event" } ] } ],
+        [ { "data": ["Event : Upcoming webinars", "14 Mar 2015"], "typeData" : [ {"name" : "event" } ] } ],
+        [ { "data": ["How To:  Learn to trade CFDs"], "typeData" : [ {"name" : "howto" } ] } ],
+        [ { "data": ["How To:  Learn to trade CFDs"], "typeData" : [ {"name" : "howto" } ] } ],
+        [ { "data": ["Courses: SSF trading", "9649c"], "typeData" : [ {"name" : "courses" } ] } ],
+        [ { "data": ["Forum: Interest rate hike", "10 Mar 2015"], "typeData" : [ {"name" : "forum" } ] } ]
+        ],
+      "isHero" : true
+    },
+  "9" : { 
+      "heading" : "Market news",
+      "hasVerticalTable" : true,
+      "hasDropdown" : true,
+      "hasButton" : true,
+        "buttons" : [ "Al News", "Related to my porfolio" ],
+      "tableData" : [
+        [ { "data": ["Sens"]} ],
+        [ { "data": ["13 Feb 15:00", " AGL - Anglo American - New financial instrument listing"] } ],
+        [ { "data": ["13 Feb 16:00", "ASA - Interest rate reset"] } ],
+        [ { "data": ["Economic news"] } ],
+        [ { "data": ["13 Feb 12:00", "xxx"] } ],
+        [ { "data": ["13 Feb 16:00", "xx"] } ],
+        [ { "data": ["Economic calendar"] } ],
+        [ { "data": ["17 Feb 15:00", "Consumer Confidence (Jan)"] } ],
+        [ { "data": ["18 Feb 13:30", "Import Price Index (YoY) (Dec)"] } ],
+        [ { "data": ["19 Feb 14:00", "Westpac Leading Index (MoM) (Dec)"] } ]
+        ],
       "isHero" : true
     }
 }

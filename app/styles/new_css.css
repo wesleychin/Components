@@ -16267,4 +16267,17 @@ ul.show-all-account-table li:last-child {
   color : #FF0000;
 }
 
+.text-grey {
+  color : #FF0000;
+}
+
+.sticky_footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */
