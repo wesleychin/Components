@@ -80,28 +80,28 @@
         </div>
         <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true ,'dashboard-widget-content-small':tile.isHero == false}" class="clearfix">
           <div ng-if="tile.hasButton == true">
-             <button ng-repeat="button in tile.buttons">{{button}}</button>
-         </div>
-     </div>
-     <div class="dashboard-widget-table" ng-if="tile.hasVerticalTable">
-        <table>
-            <tr ng-if="tile.tableHeadings">
-                <td ng-repeat="heading in tile.tableHeadings"><b>{{heading}}</b></td>
-            </tr>
-            <tr ng-repeat="data in tile.tableData">
-                <td ng-if="tile.hasIcon" ng-repeat="type in data[0].typeData">
+           <button ng-repeat="button in tile.buttons">{{button}}</button>
+       </div>
+   </div>
+   <div class="dashboard-widget-table" ng-if="tile.hasVerticalTable">
+    <table>
+        <tr ng-if="tile.tableHeadings">
+            <td ng-repeat="heading in tile.tableHeadings"><b>{{heading}}</b></td>
+        </tr>
+        <tr ng-repeat="data in tile.tableData">
+            <td ng-if="tile.hasIcon" ng-repeat="type in data[0].typeData">
                 <i ng-class="{'fi-calendar':type.name == 'event', 'fi-torso':type.name == 'howto', 'fi-layout':type.name == 'courses', 'fi-torsos-all':type.name == 'forum'}"></i>
-                </td>
-                <td ng-repeat="actualData in data[0].data">{{actualData}}</td>
-                <td ng-if="data[0].increaseData" ng-repeat="increaseArrow in data[0].increaseData">
-                    <i ng-class="{'fi-arrow-up':increaseArrow.isIncrease == true, 'fi-arrow-down':increaseArrow.isIncrease == false, 'text-green':increaseArrow.isIncrease == true, 'text-red':increaseArrow.isIncrease == false}"></i>
-                </td>
-                <td ng-if="data[0].increaseData" ng-repeat="increaseData in data[0].increaseData">
-                    <i ng-class="{'text-green':increaseData.isIncrease == true, 'text-red':increaseData.isIncrease == false}">{{increaseData.data}}</i>
-                </td>
-            </tr>
-        </table>
-    </div>
+            </td>
+            <td ng-repeat="actualData in data[0].data">{{actualData}}</td>
+            <td ng-if="data[0].increaseData" ng-repeat="increaseArrow in data[0].increaseData">
+                <i ng-class="{'fi-arrow-up':increaseArrow.isIncrease == true, 'fi-arrow-down':increaseArrow.isIncrease == false, 'text-green':increaseArrow.isIncrease == true, 'text-red':increaseArrow.isIncrease == false}"></i>
+            </td>
+            <td ng-if="data[0].increaseData" ng-repeat="increaseData in data[0].increaseData">
+                <i ng-class="{'text-green':increaseData.isIncrease == true, 'text-red':increaseData.isIncrease == false}">{{increaseData.data}}</i>
+            </td>
+        </tr>
+    </table>
+</div>
 </div>
 </div>
 </div>

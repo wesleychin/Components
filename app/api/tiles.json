@@ -180,7 +180,7 @@
       "hasVerticalTable" : true,
       "hasDropdown" : true,
       "hasButton" : true,
-        "buttons" : [ "Al News", "Related to my porfolio" ],
+        "buttons" : [ "All News", "Related to my porfolio" ],
       "tableData" : [
         [ { "data": ["Sens"]} ],
         [ { "data": ["13 Feb 15:00", " AGL - Anglo American - New financial instrument listing"] } ],
