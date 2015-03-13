@@ -1,4 +1,4 @@
-<div class='dashboard-widget' ng-class="{ 'dashboard-widget-active':tile.notification == 'none','dashboard-widget-dormant-hover':tile.notification != 'none'}" ng-click="goToAccounts(tile.accountNumber,tile.name);">
+<div class='dashboard-widget' ng-class="{ 'dashboard-widget-active':tile.notification == 'none','dashboard-widget-dormant-hover':tile.notification != 'none'}">
 
     <div ng-switch on="tile.notification" class='widget-round-corner'>
         <img ng-switch-when="warning" src='images/widget-corner-grey.png'>
@@ -6,105 +6,11 @@
         <img ng-switch-when="default" src='images/widget-corner.png'>
     </div>
     <div class="dashboard-widget-content-wrapper" ng-class="{'small-widget-content-wrapper' : tile.isHero == false}">
-        <div class='dashboard-widget-heading'>
-            <span ng-if="tile.heading || tile.hasChart">{{tile.heading}}</span>
-            <span ng-if="tile.hasAccountTable">Account {{tile.accountNumber}}</span>
-        </div>
-        <div class="dashboard-widget-gradient"></div>
-        <div class='dashboard-widget-content'>
-            <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true ,'dashboard-widget-content-small':tile.isHero == false}" class="clearfix" ng-if="tile.hasAccountTable">
-                <div class="dashboard-widget-available-balance">
-                    <div class="widget-balance-value">
-                        <span ng-if="tile.subheading">{{tile.subheading}}</span><br/>
-                        <span class="widget-balance">{{tile.availableBalance.currency}}</span>
-                        <span class="widget-balance">{{tile.availableBalance.amount}}</span>
-                    </div>
-                </div>
-                <div class="dashboard-widget-table">
-                    <table>
-                        <tr ng-if="tile.accountTable.daily.amount || tile.accountTable.totalChange.amount">
-                            <td ng-if="tile.accountTable.daily.amount">{{tile.accountTable.daily.currency}}{{tile.accountTable.daily.amount}}</td>
-                            <td ng-if="tile.accountTable.totalChange.amount" ng-class="{'text-green':tile.accountTable.totalChange.isIncrease == true, 'text-red':tile.accountTable.totalChange.isIncrease == false}">{{tile.accountTable.totalChange.amount}} ({{tile.accountTable.totalChange.percent}}) <i ng-class="{'fi-arrow-up':tile.accountTable.totalChange.isIncrease == true, 'fi-arrow-down':tile.accountTable.totalChange.isIncrease == false}"></i></td>
-                        </tr>
-                        <tr ng-if="tile.accountTable.daily || tile.accountTable.totalChange">
-                            <td ng-if="tile.accountTable.daily">Daily</td>
-                            <td ng-if="tile.accountTable.totalChange">Total Change</td>
-                        </tr>
-                        <tr ng-if="tile.accountTable.securities.amount || tile.accountTable.cash.amount">
-                            <td ng-if="tile.accountTable.securities.amount">{{tile.accountTable.securities.currency}}{{tile.accountTable.securities.amount}}</td>
-                            <td ng-if="tile.accountTable.cash.amount">{{tile.accountTable.cash.currency}}{{tile.accountTable.cash.amount}}</td>
-                        </tr>
-                        <tr ng-if="tile.accountTable.securities || tile.accountTable.cash">
-                            <td ng-if="tile.accountTable.securities">Securities</td>
-                            <td ng-if="tile.accountTable.cash">Cash</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div ng-if="tile.hasChart == true">
-                <button type="button" class="button" ng-click="limitData()">Limit Data</button>
-                <button type="button" class="button" ng-click="resetData()">Reset Data</button>
-                <!--highchart id="chart" style="width: 427px; height: 243px;" config="tile.chartData"></highchart-->
-            </div>
-            <div ng-if="tile.hasDropdown">
-                <table>
-                    <tr>
-                        <td ng-if="tile.hasDropdownBind == true">
-                            <div>
-                                <label>{{dropdownValue}}</label>
-                            </div>
-                        </td>
-                        <td ng-if="tile.hasDropdownBind == true">
-                            <div>
-                            </div>
-                        </td>
-                        <td>
-                            <div ng-if="tile.hasDropdown == true">
-                                <select id="dropdown" ng-repeat="dropDownData in tile.dropdownData" ng-click="getDropdownValue()">
-                                    <option ng-repeat="dropdown in dropDownData" value="{{dropdown.id}}">{{dropdown.value}}</option>
-                                </select>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div ng-if="tile.hasTextArea == true">
-              <textarea rows="4" cols="4">{{tile.textAreaText}}</textarea>
-          </div>
-          <div ng-if="tile.hasButton == true">
-           <button ng-repeat="button in tile.buttons">{{button}}</button>
-       </div>
-       <div class="dashboard-widget-table" ng-if="tile.hasVerticalTable">
-        <table>
-            <tr ng-if="tile.tableHeadings">
-                <td ng-repeat="heading in tile.tableHeadings"><b>{{heading}}</b></td>
-            </tr>
-            <tr ng-repeat="data in tile.tableData">
-                <td ng-if="tile.hasIcon" ng-repeat="type in data[0].typeData">
-                    <i ng-class="{'fi-calendar':type.name == 'event', 'fi-torso':type.name == 'howto', 'fi-layout':type.name == 'courses', 'fi-torsos-all':type.name == 'forum'}"></i>
-                </td>
-                <td ng-repeat="actualData in data[0].data">{{actualData}}</td>
-                <td ng-if="data[0].increaseData" ng-repeat="increaseArrow in data[0].increaseData">
-                    <i ng-class="{'fi-arrow-up':increaseArrow.isIncrease == true, 'fi-arrow-down':increaseArrow.isIncrease == false, 'text-green':increaseArrow.isIncrease == true, 'text-red':increaseArrow.isIncrease == false}"></i>
-                </td>
-                <td ng-if="data[0].increaseData" ng-repeat="increaseData in data[0].increaseData">
-                    <i ng-class="{'text-green':increaseData.isIncrease == true, 'text-red':increaseData.isIncrease == false}">{{increaseData.data}}</i>
-                </td>
-            </tr>
-        </table>
+        <div ng-include src="'views/widgets/accountTable.html'" ng-if="tile.hasAccountTable"></div>
+        <div ng-include src="'views/widgets/chart.html'" ng-if="tile.hasChart"></div>
+        <div ng-include src="'views/widgets/textarea.html'" ng-if="tile.hasTextArea"></div>
+        <div ng-include src="'views/widgets/button.html'" ng-if="tile.hasButton == true"></div>
+        <div ng-include src="'views/widgets/verticalTable.html'" ng-if="tile.hasVerticalTable"></div>
+        <div ng-include src="'views/widgets/tableWithHeading.html'" ng-if="tile.hasTableWithHeading"></div>
     </div>
-    <div class="dashboard-widget-table" ng-if="tile.hasTableWithHeading">
-        <table>
-            <div ng-repeat="data in tile.tableData">
-                <tr>
-                    <td>{{data[0].heading}}</td>
-                </tr>
-                <tr>
-                    <td ng-repeat="actualData in data[0].data">{{actualData}}</td>
-                </tr>    
-            </div>
-        </table>
-    </div>
-</div>
-</div>
 </div>

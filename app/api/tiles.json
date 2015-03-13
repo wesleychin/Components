@@ -2,7 +2,7 @@
     "notification" : "default",
 	  "subheading" : "PORTFOLIO VALUE",
 	  "accountNumber" : "3456789",
-      "accountTable" : { "cash" : { "amount" : 18000001,
+      "tableData" : { "cash" : { "amount" : 18000001,
               "currency" : "R"
             },
           "daily" : { "amount" : 8189,
@@ -22,7 +22,25 @@
       "hasAccountTable" : true,
       "isHero" : true
     },
-  "1" : { "chartData" : { "legend" : { "enabled" : false },
+  "1" : { 
+      "notification" : "default",
+      "accountNumber" : "4567890",
+      "subheading" : "PORTFOLIO VALUE",
+      "tableData" : { "daily" : { "amount" : 8189,
+              "currency" : "R"
+            },
+          "totalChange" : { "amount" : 2.3999999999999999,
+              "isIncrease" : true,
+              "percent" : "0.02"
+            }
+        },
+      "availableBalance" : { "amount" : 56789,
+          "currency" : "R"
+        },
+      "hasAccountTable" : true,
+      "isHero" : false
+    },
+     "2" : { "chartData" : { "legend" : { "enabled" : false },
           "series" : [ { 
             "showInLegend" : false,
             "data" : [ 1000,
@@ -65,34 +83,16 @@
       "heading" : "Price Graph",
       "isHero" : true
     },
-  "2" : { 
-      "notification" : "default",
-      "accountNumber" : "4567890",
-      "subheading" : "PORTFOLIO VALUE",
-      "accountTable" : { "daily" : { "amount" : 8189,
-              "currency" : "R"
-            },
-          "totalChange" : { "amount" : 2.3999999999999999,
-              "isIncrease" : true,
-              "percent" : "0.02"
-            }
-        },
-      "availableBalance" : { "amount" : 56789,
-          "currency" : "R"
-        },
-      "hasAccountTable" : true,
-      "isHero" : false
-    },
   "3" : { 
       "heading" : "Cash summary",
       "hasDropdown" : true,
       "dropdownData" : [
-      	[{"id" : 1, "value" : "2345678"}, {"id" : 2, "value" : "3456789"}, {"id" : 3, "value" : "4567890"}]
-      	],
-      	"hasTextArea" : true,
-      	"textAreaText" : "This is some text",
-      	"hasButton" : true,
-      	"buttons" : [ "Deposit", "Withdraw" ],
+        [{"id" : 1, "value" : "2345678"}, {"id" : 2, "value" : "3456789"}, {"id" : 3, "value" : "4567890"}]
+        ],
+        "hasTextArea" : true,
+        "textAreaText" : "This is some text",
+        "hasButton" : true,
+        "buttons" : [ "Deposit", "Withdraw" ],
       "isHero" : false
     },
   "4" : { 
@@ -112,15 +112,15 @@
       "hasVerticalTable" : true,
       "tableHeadings" : [
       "Trade",
-	  "Up",
-	  "Down",
-	  "Same",
-	  "Total"
+    "Up",
+    "Down",
+    "Same",
+    "Total"
       ],
       "tableData" : [
-      	[ { "data": ["Shares", 228, 208, 115, 551] } ],
+        [ { "data": ["Shares", 228, 208, 115, 551] } ],
         [ { "data": ["Value", "R6.2B", "R9.5B", "R1.1M", "R15.7B"] } ]
-      	],
+        ],
       "isHero" : false
     },
   "6" : { 
@@ -128,9 +128,9 @@
       "hasVerticalTable" : true,
       "hasDropdown" : true,
       "dropdownData" : [
-      	[{"id" : 1, "value" : "Top 40 Index"}, {"id" : 2, "value" : "All Share Index"}, {"id" : 3, "value" : "Alt-X"}],
-      	[{"id" : 1, "value" : "Top Gainers"}, {"id" : 2, "value" : "Top Losers"}]
-      	],
+        [{"id" : 1, "value" : "Top 40 Index"}, {"id" : 2, "value" : "All Share Index"}, {"id" : 3, "value" : "Alt-X"}],
+        [{"id" : 1, "value" : "Top Gainers"}, {"id" : 2, "value" : "Top Losers"}]
+        ],
       "tableData" : [
         [ { "data": ["ANGGOLD", "11041c"], "increaseData" : [ {"isIncrease": true, "data" : "2.6%"} ] } ],
         [ { "data": ["MR PRICE", "23884c"], "increaseData" : [ {"isIncrease": true, "data" : "1.2%"} ] } ],
@@ -146,8 +146,8 @@
       "hasDropdown" : true,
       "hasDropdownBind" : true,
       "dropdownData" : [
-      	[{"id" : 1, "value" : "Completed"}, {"id" : 2, "value" : "Pending"}, {"id" : 3, "value" : "Failed"}]
-      	],
+        [{"id" : 1, "value" : "Completed"}, {"id" : 2, "value" : "Pending"}, {"id" : 3, "value" : "Failed"}]
+        ],
       "tableData" : [
         [ { "data": ["Sell 5000 PREFTX @ 327c", "22 Feb 2015 18:00", "Total cost 13.84"] } ],
         [ { "data": ["Sell 4000 AGL @ 456c", "22 Feb 2015 18:00", "Total cost 12.20"] } ],
@@ -157,7 +157,7 @@
         [ { "data": ["Sell 4000 IGH @ 123c", "22 Feb 2015 13:00", "Total cost 13.00"] } ],
         [ { "data": ["Sell 1000 HHO @ 233c", "22 Feb 2015 12:00", "Total cost 10.74"] } ],
         [ { "data": ["Sell 3000 IGH @ 122c", "22 Feb 2015 13:00", "Total cost 13.00"] } ]
-      	],
+        ],
       "isHero" : true
     },
   "8" : { 
@@ -177,21 +177,14 @@
     },
   "9" : { 
       "heading" : "Market news",
-      "hasVerticalTable" : true,
+      "hasTableWithHeading" : true,
       "hasButton" : true,
         "buttons" : [ "All News", "Related to my porfolio" ],
-      "tableData" : [
-        [ { "data": ["Sens"]} ],
-        [ { "data": ["13 Feb 15:00", " AGL - Anglo American - New financial instrument listing"] } ],
-        [ { "data": ["13 Feb 16:00", "ASA - Interest rate reset"] } ],
-        [ { "data": ["Economic news"] } ],
-        [ { "data": ["13 Feb 12:00", "xxx"] } ],
-        [ { "data": ["13 Feb 16:00", "xx"] } ],
-        [ { "data": ["Economic calendar"] } ],
-        [ { "data": ["17 Feb 15:00", "Consumer Confidence (Jan)"] } ],
-        [ { "data": ["18 Feb 13:30", "Import Price Index (YoY) (Dec)"] } ],
-        [ { "data": ["19 Feb 14:00", "Westpac Leading Index (MoM) (Dec)"] } ]
-        ],
+          "tableData" : [
+            [ { "heading": "Sens", "data": ["13 Feb 15:00  AGL - Anglo American - New financial instrument listing", "13 Feb 16:00 ASA - Interest rate reset"] } ],
+            [ { "heading": "Economic news", "data": ["13 Feb 12:00 xxx", "13 Feb 16:00 xx"] } ],
+            [ { "heading": "Economic calendar", "data": ["17 Feb 15:00 Consumer Confidence (Jan)", "18 Feb 13:30 Import Price Index (YoY) (Dec)", "19 Feb 14:00 Westpac Leading Index (MoM) (Dec)"] } ]
+        ]  ,
       "isHero" : true
     },
   "10" : { 
