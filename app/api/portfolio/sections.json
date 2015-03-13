@@ -1,0 +1,13 @@
+[
+{"id" : 1, "name" : "Portfolio overview"},
+{"id" : 2, "name" : "Sector breakdown"},
+{"id" : 3, "name" : "Portfolio performance"},
+{"id" : 4, "name" : "Market news"},
+{"id" : 5, "name" : "Triggers"},
+{"id" : 6, "name" : "Orders"},
+{"id" : 7, "name" : "Cash history"},
+{"id" : 8, "name" : "Reports"},
+{"id" : 9, "name" : "Statements"},
+{"id" : 10, "name" : "Cost structure"},
+{"id" : 11, "name" : "Contract notes"}
+]

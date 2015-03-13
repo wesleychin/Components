@@ -1,12 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name componentsApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the componentsApp
- */
  angular.module('componentsApp')
  .controller('MainCtrl', function ($scope, $http) {
   $scope.filterHeroTile = 'Hero Tile';

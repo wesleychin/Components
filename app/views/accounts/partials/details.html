@@ -1,0 +1,62 @@
+<div id="DetailsModal" ng-class="{'animate-down':animatethisDown, 'animate-up':   animatethisUp,'reveal-modal': revealit }" class=" details-warp small large sml-popup-top-gradient" data-reveal>
+    <div class='row details-overlay'>
+        <span class="arrow_box hide-for-small"></span>
+        <div class="column show-for-small small-12 account-details sml-popup-heading">Account Details</div>
+        <div class="show-for-small">
+            <a class="close-reveal-modal1 fa fa-times right pointer  close-reveal-modal " ng-click='detailsNotActive();togglePopup(false);'></a>
+        </div>
+        <div class='column large-3 medium-3 '>
+            <div class='details-overlay-info-block-top show-for-small'>
+                <div class='details-overlay-lable show-for-small'>
+                    Account number
+                </div>
+                <div class='details-overlay-value show-for-small' once-text="1111"></div>
+            </div>
+            <div class='details-overlay-info-block-top'>
+                <div class='details-overlay-lable'>
+                    Account type
+                </div>
+                <div class='details-overlay-value' once-text="22">
+
+                </div>
+            </div>
+            <div class='details-overlay-info-block-bottom'>
+                <div class='details-overlay-lable'>
+                    Account nickname
+                </div>
+                <i class="fa fa-pencil-square-o"></i>
+                <div class='details-overlay-value '>
+                    <input type="text" value="" class="input-type-textbox nickname-textbox" placeholder="" ng-model='nickName' ng-blur="changeNickName(nickName)" ng-keydown="keydownoperations(nickName,$event)" />
+                    <div class="form-elem-half-border" ng-if='ShowNickname'></div>
+                </div>
+            </div>
+        </div>
+        <div class='column large-3 medium-2 details-overlay-gutter'>
+            <div class='details-overlay-info-block-top'>
+                <div class='details-overlay-lable'>
+                    Account holder
+                </div>
+                <div class='details-overlay-value' once-text="Phred">
+                </div>
+            </div>
+            <div class='details-overlay-info-block-bottom'>
+                <div class='details-overlay-lable'>
+                    Account currency
+                </div>
+                <div class='details-overlay-value'>
+                    Nigerian Naira - <span once-text="Zars"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class='column large-3 medium-3 right'>
+            <div class='details-overlay-close clearfix'>
+                <i class="fa fa-times-circle right pointer hide-for-small" ng-click=' detailsOverlayClose();'></i>
+            </div>
+            <div class='details-overlay-share clearfix'>
+                <div class='right' ng-click='showModalDialog("shareaccount");'>Share Account details</div>
+                <i class="fa fa-share-alt right"></i>
+            </div>
+        </div>
+    </div>
+</div>

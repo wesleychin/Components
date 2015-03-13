@@ -8782,7 +8782,7 @@ div.acc-header-border {
 
 /* line 5805, ../../app/styles/main.scss */
 .acc-empty-boxes {
-  height: 130px;
+  height: 28px;
   width: 100%;
   background: white;
   border: 1px solid #c8c9cc;
@@ -16278,6 +16278,24 @@ ul.show-all-account-table li:last-child {
     width: 100%;
     background-color: white;
     text-align: center;
+}
+
+.portfolio-overview-container {
+  height: 509px;
+  width: 100%;
+  background: white;
+  border: 1px solid #c8c9cc;
+  float: left;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.mouse-cursor-hover {
+  cursor: pointer; cursor: hand;
+}
+
+.bold-text {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

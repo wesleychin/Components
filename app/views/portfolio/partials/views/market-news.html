@@ -1,0 +1,14 @@
+<div>
+	<span>Porfolio performance</span>
+</div>
+<div class="dashboard-widget-gradient"></div>
+<div ng-repeat="data in marketNews.tableData">
+	<ui>
+		<li ng-class="{'bold-text':data[0].heading.font === 'bold'}">{{data[0].heading.name}}</li>
+		<div ng-repeat="data in data[0]">
+		<li ng-repeat="date in data[0].date">{{date}}</li>
+		<li ng-repeat="description in data[0].description">{{description}}</li>
+		</div>
+	</ui>  
+	<div class="dashboard-widget-gradient"></div>
+</div>

@@ -1,0 +1,40 @@
+{ "chartData" : { "legend" : { "enabled" : false },
+"series" : [ { 
+  "showInLegend" : false,
+  "data" : [ 1000,
+  2000,
+  4000,
+  6000,
+  3000,
+  9000,
+  1000,
+  4500,
+  12000,
+  6000,
+  8000,
+  31000
+  ] } ],
+  "title" : { "text" : "" },
+  "xAxis" : { "categories" : [ "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec"
+  ],
+  "title" : { "text" : "" }
+  },
+  "yAxis" : { "plotLines" : [ { "color" : "#808080",
+  "value" : 0,
+  "width" : 1
+  } ],
+  "title" : { "enabled" : false }
+}
+}
+}
