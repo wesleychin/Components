@@ -9,8 +9,8 @@
  */
  angular.module('componentsApp')
  .controller('MainCtrl', function ($scope, $http) {
- 	$scope.filterHeroTile = 'Hero Tile';
- 	$scope.filterSmallTile = 'Small Tile';
+  $scope.filterHeroTile = 'Hero Tile';
+  $scope.filterSmallTile = 'Small Tile';
   $scope.dropdownValue = "Completed";
 
   $http.get('/api/tiles.json').success(function(response) {

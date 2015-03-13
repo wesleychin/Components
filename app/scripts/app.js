@@ -16,8 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'mm.foundation',
-    'highcharts-ng'
+    'mm.foundation', 
+    'gridster'
   ])
   .config(function ($routeProvider) {
     $routeProvider

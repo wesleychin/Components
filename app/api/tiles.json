@@ -178,7 +178,6 @@
   "9" : { 
       "heading" : "Market news",
       "hasVerticalTable" : true,
-      "hasDropdown" : true,
       "hasButton" : true,
         "buttons" : [ "All News", "Related to my porfolio" ],
       "tableData" : [
@@ -192,6 +191,16 @@
         [ { "data": ["17 Feb 15:00", "Consumer Confidence (Jan)"] } ],
         [ { "data": ["18 Feb 13:30", "Import Price Index (YoY) (Dec)"] } ],
         [ { "data": ["19 Feb 14:00", "Westpac Leading Index (MoM) (Dec)"] } ]
+        ],
+      "isHero" : true
+    },
+  "10" : { 
+      "heading" : "Research",
+      "hasTableWithHeading" : true,
+      "tableData" : [
+        [ { "heading": "Daily Standard", "data": ["27 Jan 2015 - TESA Master Agreement_V2", "Economic Report", "06 Jan 2015 - It's not plain sailing"] } ],
+        [ { "heading": "Economic Report", "data": ["06 Jan 2015 - It's not plain sailing", "FX & Fixed Income: Annual Outlook"] } ],
+        [ { "heading": "Economic Report", "data": ["05 Jan 2015 - G10 Daily: Tripple Whammy for the Euro", "January could be a tester for the euro"] } ]
         ],
       "isHero" : true
     }
