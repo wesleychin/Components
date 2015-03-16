@@ -1,62 +1,59 @@
+
 <div id="DetailsModal" ng-class="{'animate-down':animatethisDown, 'animate-up':   animatethisUp,'reveal-modal': revealit }" class=" details-warp small large sml-popup-top-gradient" data-reveal>
-    <div class='row details-overlay'>
-        <span class="arrow_box hide-for-small"></span>
-        <div class="column show-for-small small-12 account-details sml-popup-heading">Account Details</div>
-        <div class="show-for-small">
-            <a class="close-reveal-modal1 fa fa-times right pointer  close-reveal-modal " ng-click='detailsNotActive();togglePopup(false);'></a>
-        </div>
-        <div class='column large-3 medium-3 '>
-            <div class='details-overlay-info-block-top show-for-small'>
-                <div class='details-overlay-lable show-for-small'>
-                    Account number
-                </div>
-                <div class='details-overlay-value show-for-small' once-text="1111"></div>
-            </div>
-            <div class='details-overlay-info-block-top'>
-                <div class='details-overlay-lable'>
-                    Account type
-                </div>
-                <div class='details-overlay-value' once-text="22">
-
-                </div>
-            </div>
-            <div class='details-overlay-info-block-bottom'>
-                <div class='details-overlay-lable'>
-                    Account nickname
-                </div>
-                <i class="fa fa-pencil-square-o"></i>
-                <div class='details-overlay-value '>
-                    <input type="text" value="" class="input-type-textbox nickname-textbox" placeholder="" ng-model='nickName' ng-blur="changeNickName(nickName)" ng-keydown="keydownoperations(nickName,$event)" />
-                    <div class="form-elem-half-border" ng-if='ShowNickname'></div>
-                </div>
-            </div>
-        </div>
-        <div class='column large-3 medium-2 details-overlay-gutter'>
-            <div class='details-overlay-info-block-top'>
-                <div class='details-overlay-lable'>
-                    Account holder
-                </div>
-                <div class='details-overlay-value' once-text="Phred">
-                </div>
-            </div>
-            <div class='details-overlay-info-block-bottom'>
-                <div class='details-overlay-lable'>
-                    Account currency
-                </div>
-                <div class='details-overlay-value'>
-                    Nigerian Naira - <span once-text="Zars"></span>
-                </div>
-            </div>
-
-        </div>
-        <div class='column large-3 medium-3 right'>
-            <div class='details-overlay-close clearfix'>
-                <i class="fa fa-times-circle right pointer hide-for-small" ng-click=' detailsOverlayClose();'></i>
-            </div>
-            <div class='details-overlay-share clearfix'>
-                <div class='right' ng-click='showModalDialog("shareaccount");'>Share Account details</div>
-                <i class="fa fa-share-alt right"></i>
-            </div>
-        </div>
+<div class='row details-overlay'>
+  <div class="row"> <span class="arrow_box hide-for-small"></span>
+    <div class='column large-4 medium-4'>
+      <div class='details-overview'>
+        <div class='details-overview'> Portfolio value<br>
+          <span class="details-overview-amounts-bold"> R55000</span> </div>
+        <div class='details-overview'> Daily change<br>
+          R8500.00 </div>
+        <div class='details-overview'> Total change<br>
+          1.4% </div>
+      </div>
     </div>
+    <div class='column large-2 medium-2 details-overlay-gutter'> </div>
+    <div class='column large-6 medium-4 right' align="right">
+      <div class='details-overview-bluetext'> Quotes bank balance (1) (R100.00) </div>
+      <div class='details-overlay-lable'>
+        <select>
+          <option>Delayed</option>
+          <option>Live</option>
+        </select>
+      </div>
+      <div class='details-overlay-lable'>
+        <select>
+          <option>Bid</option>
+          <option>Ruling</option>
+        </select>
+      </div>
+      <div class='details-overview-bluetext-streaming'> Streaming </div>
+      <div class="details-overview-feed-details"> As at 11:31:33 (15 min delayed - Reuters) </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class='columns large-12 medium-4 small-4 details-overview-values'>
+      <div class='details-overview'>
+        <div class='details-overview'> JSE cash balance<br>
+          R 2000 008.90 
+         </div>
+        <div class='details-overview'> Derivatives initial margin<br>
+          R100 998.90 
+        </div>
+        <div class='details-overview'> Today's derivatives P&L<br>
+          R 299 008.90 
+        </div>
+        <div class='details-overview'> Total cash<br>
+          R 289 908.90 
+        </div>
+        <div class='details-overview'> Available trading funds<br>
+          R 200 000.00 
+        </div>
+        <div class='details-overview'> Value before auto close out<br>
+          R 200 000.00
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
