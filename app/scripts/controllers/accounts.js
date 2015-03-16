@@ -8,6 +8,10 @@ angular.module('componentsApp')
 		$scope.sections = response;
 	});
 
+	$http.get('/api/portfolio/portfolio-overview.json').success(function(response) {
+		$scope.JSONdata = response;
+	});
+
 	$http.get('/api/portfolio/chart-data.json').success(function(response) {
 		$scope.chartData = response;
 	});
