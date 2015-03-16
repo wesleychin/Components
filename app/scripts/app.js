@@ -16,8 +16,7 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'mm.foundation',
-    'highcharts-ng', 
+    'mm.foundation', 
     'gridster'
   ])
   .config(function ($routeProvider) {
@@ -25,9 +24,5 @@ angular
       .when('/', {
         templateUrl: 'views/accounts/accounts-overview.html',
         controller: 'AccountsCtrl'
-      })
-      .otherwise({
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
       });
   });
