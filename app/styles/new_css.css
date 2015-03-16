@@ -16259,12 +16259,16 @@ ul.show-all-account-table li:last-child {
   display: none;
 }
 
-.text-green {
-  color : #007f00;
-}
-
 .text-red {
   color : #FF0000;
+}
+
+.text-green {
+  color : #007F00;
+}
+
+.text-blue {
+  color : #0000FF;
 }
 
 .text-grey {
@@ -16296,6 +16300,38 @@ ul.show-all-account-table li:last-child {
 
 .bold-text {
   font-weight: bold;
+}
+
+ul{
+    width:215px;
+    border: 1px solid black;
+}
+
+li{
+    border: 1px solid black;
+    margin:0 10px 10px 0;
+    background:white;
+    float:left;
+}
+
+.spanAcrossOneColumn {
+    width:100px;
+}
+
+.spanAcrossTwoColumns {
+    width:210px;
+}
+
+.spanAcrossOneRow {
+    height:16px;
+}
+
+.spanAcrossTwoRows {
+    height:32px;
+}
+
+li:nth-child(even){
+    margin-right:0;
 }
 
 /*# sourceMappingURL=main.css.map */

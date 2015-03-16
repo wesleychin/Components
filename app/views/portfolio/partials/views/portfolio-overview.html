@@ -1,29 +1,11 @@
 <div>
-    <span>Porfolio overview</span>
+	<span>Porfolio overview</span>
 </div>
 <div class="dashboard-widget-gradient"></div>
 <div>
-<table>
-<tr>
-	<td>1</td>2<td>3</td>4<td>5</td>6<td>7</td>8<td>
-</tr>
-<tr>
-	<td>11</td>232<td>3423</td>455<td>2355</td>625<td>723</td>82<td>
-</tr>
-<tr>
-	<td>111</td>2324<td>38</td>477<td>566</td>556<td>733</td>5558<td>
-</tr>
-<tr>
-	<td>1111</td>5552<td>3</td>4777<td>9995</td>sa6<td>ee7</td>fesf8<td>
-</tr>
-<tr>
-	<td>11111</td>266<td>3</td>ewrwe4<td>5efwef</td>6bgb<td>7</td>8bbb<td>
-</tr>
-<tr>
-	<td>12223</td>278<td>3wew</td>4bgb<td>5</td>6fg<td>7fgbgf</td>8g<td>
-</tr>
-<tr>
-	<td>1111</td>9992<td>3343</td>4<td>5nttt</td>fgbgf6<td>7gfbfg</td>fgb8<td>
-</tr>
-</table>
+	<ul ng-repeat="tableData in JSONdata.tableData[0]">
+		<li ng-class="{'spanAcrossOneColumn':tableData.heading.styles.colspan == '1', 'spanAcrossTwoColumns':tableData.heading.styles.colspan == '2', 'spanAcrossOneRow':tableData.heading.styles.rowspan == '1', 'tableData.spanAcrossTwoRows':heading.styles.rowspan == '2'}">{{tableData.heading.name}}</li>
+		<li ng-class="{'spanAcrossOneColumn':subheading.styles.colspan == '1', 'spanAcrossTwoColumns':subheading.styles.colspan == '2', 'spanAcrossOneRow':subheading.styles.rowspan == '1', 'spanAcrossTwoRows':subheading.styles.rowspan == '2'}" ng-repeat="subheading in tableData.subheading">{{subheading.name}}</li>
+		<li ng-class="{'spanAcrossOneColumn':datastuff.styles.colspan == '1', 'spanAcrossTwoColumns':datastuff.styles.colspan == '2', 'spanAcrossOneRow':datastuff.styles.rowspan == '1', 'spanAcrossTwoRows':datastuff.styles.rowspan == '2'}" ng-repeat="data in tableData.subheading[0]">{{data.name}} {{data.amount.number}} {{data.gainOrLoss.number}}</li>
+	</ul>
 </div>
