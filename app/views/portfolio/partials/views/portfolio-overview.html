@@ -3,6 +3,11 @@
 </div>
 <div class="dashboard-widget-gradient"></div>
 <div>
+	<ul ng-repeat="tableData in JSONdata.tableData[0]">
+		<li ng-class="{'spanAcrossOneColumn':tableData.heading.styles.colspan == '1', 'spanAcrossTwoColumns':tableData.heading.styles.colspan == '2', 'spanAcrossOneRow':tableData.heading.styles.rowspan == '1', 'tableData.spanAcrossTwoRows':heading.styles.rowspan == '2'}">{{tableData.heading.name}}</li>
+		<li ng-class="{'spanAcrossOneColumn':subheading.styles.colspan == '1', 'spanAcrossTwoColumns':subheading.styles.colspan == '2', 'spanAcrossOneRow':subheading.styles.rowspan == '1', 'spanAcrossTwoRows':subheading.styles.rowspan == '2'}" ng-repeat="subheading in tableData.subheading">{{subheading.name}}</li>
+		<li ng-class="{'spanAcrossOneColumn':datastuff.styles.colspan == '1', 'spanAcrossTwoColumns':datastuff.styles.colspan == '2', 'spanAcrossOneRow':datastuff.styles.rowspan == '1', 'spanAcrossTwoRows':datastuff.styles.rowspan == '2'}" ng-repeat="data in tableData.subheading[0]">{{data.name}} {{data.amount.number}} {{data.gainOrLoss.number}}</li>
+	</ul>
 	<table>
 		<tr>
 		<td style="'colspan':{{heading.styles.colspan}}" 

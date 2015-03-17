@@ -1,4 +1,4 @@
-/*!
+s/*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
@@ -16302,6 +16302,36 @@ ul.show-all-account-table li:last-child {
   font-weight: bold;
 }
 
+ul{
+    width:215px;
+    border: 1px solid black;
+}
+
+li{
+    border: 1px solid black;
+    margin:0 10px 10px 0;
+    background:white;
+    float:left;
+}
+
+.spanAcrossOneColumn {
+    width:100px;
+}
+
+.spanAcrossTwoColumns {
+    width:210px;
+}
+
+.spanAcrossOneRow {
+    height:16px;
+}
+
+.spanAcrossTwoRows {
+    height:32px;
+}
+
+li:nth-child(even){
+    margin-right:0;
 td {
    border: 1px solid black;
 }

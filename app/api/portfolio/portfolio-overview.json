@@ -1,4 +1,42 @@
 {
+	"tableData" : [
+		[
+			{
+				"heading": {"name" : "Instrument", "styles" : {"font-style" : "bold", "rowspan" : 2, "colspan" : 2} },
+		        "subheading": [
+		        	{ "name" : "Code",
+		        		"styles" : {"rowspan" : 1, "colspan" : 1},
+		        		"data" :
+			        		{
+				        		"codes" :
+				        		[
+									{
+										"name" : "ABL", "styles" : {"rowspan" : 2, "colspan" : 1, "font-color" : "blue"}
+									},
+									{
+					        			"name" : "CMLcfd", "styles" : {"rowspan" : 2, "colspan" : 1, "font-color" : "blue"}
+									}
+								]
+							}
+					},
+					{ "name" : "Quantity (pending)",
+		        		"styles" : {"rowspan" : 2, "colspan" : },
+		        		"data" :
+			        		{
+				        		"codes" :
+				        		[
+									{
+										"name" : "ABL", "styles" : {"rowspan" : 2, "colspan" : 1, "font-color" : "blue"}
+									},
+									{
+					        			"name" : "CMLcfd", "styles" : {"rowspan" : 2, "colspan" : 1, "font-color" : "blue"}
+									}
+								]
+							}
+					}
+				]
+			}
+		]
 	"headings": [
 		{"name" : "Instrument", "styles" : {"colspan" : "2", "rowspan" : "1"} },
 		{"name" : "Cost (3)", "styles" : {"colspan" : 2, "rowspan" : 1} },
@@ -54,7 +92,7 @@
 	"totals" : [
 		{"name" : "TOTAL", "totalR" : "44,045.60","current" : "44,897.00",
 		"priceChangeToday" : "+123.89%", "profitLossToday" : "44.879.00",
-		"priceChangeTotal" : "+123.89%", "profitLossTotal" : "44,897.00", 
+		"priceChangeTotal" : "+123.89%", "profitLossTotal" : "44,897.00",
 		"porfolio" : "33.7%"}
 	]
 }
