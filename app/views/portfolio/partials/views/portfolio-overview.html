@@ -12,7 +12,7 @@
 			<td ng-style="{'rowspan':heading.styles.colspan}" 
 			ng-repeat="subheading in JSONdata.subheadings">{{subheading.name}}</td>
 		</tr>
-		<tr ng-repeat="data in JSONdata.data">
+		<tr ng-click="clickToOpen(data.code)" ng-repeat="data in JSONdata.data">
 			<td ng-if="data.code">{{data.code}}</td>
 			<td ng-if="data.instrument.amount">{{data.abl.amount}}</td>
 			<td ng-if="data.unitR">{{data.unitR}}</td>
@@ -38,6 +38,32 @@
 			<td>{{JSONdata.totals[0].profitLossTotal}}</td>
 			<td></td>
 			<td>{{JSONdata.totals.portfolio}}</td>
+		</tr>
+	</table>
+</div><br/><br/>
+<div>
+	<table>
+		<tr>
+			<td>On expiry</td><td>{{JSONdata.data[0].onExpiry}}</td>
+		</tr>
+		<tr>
+			<div>
+				<span>Instrument Information</span>
+			</div>
+			<div class="dashboard-widget-gradient"></div>
+		</tr>
+		<tr>
+			<td>12 month low</td><td>{{JSONdata.data[0].twelveMonthLow}}</td>
+			<td>12 month high</td><td>{{JSONdata.data[0].twelveMonthHigh}}</td>
+			<td>Market cap</td><td>{{JSONdata.data[0].marketCap}}</td>
+		</tr>
+		<tr>
+			<td>Date of low</td><td>{{JSONdata.data[0].dateOfLow}}</td>
+			<td>Date of high</td><td>{{JSONdata.data[0].dateOfHigh}}</td>
+			<td>P/E Ratio</td><td>{{JSONdata.data[0].peRatio}}</td>
+		</tr>
+		<tr ng-click>
+			<td class="mouse-cursor-hover" ng-repeat='section in sections' ng-click="goToView(section.id)">{{section.name}}</td>
 		</tr>
 	</table>
 </div>

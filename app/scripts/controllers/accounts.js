@@ -1,8 +1,9 @@
 'use strict';
 
 angular.module('componentsApp')
-.controller('AccountsCtrl', function ($scope, $http) {
+.controller('AccountsCtrl', function ($scope, $http, ngDialog) {
 	$scope.view = 1;
+	// $scope.visible = false;
 	
 	$http.get('/api/portfolio/sections.json').success(function(response) {
 		$scope.sections = response;
@@ -23,4 +24,8 @@ angular.module('componentsApp')
 	$scope.goToView= function (sectionId) {
 		$scope.view = sectionId;
 	}
+
+	// $scope.clickToOpen = function () {
+	// 	$scope.visible = true;
+	// }
 });
