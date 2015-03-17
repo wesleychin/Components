@@ -16332,6 +16332,8 @@ li{
 
 li:nth-child(even){
     margin-right:0;
+td {
+   border: 1px solid black;
 }
 
 /*# sourceMappingURL=main.css.map */
