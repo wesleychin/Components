@@ -1,41 +1,33 @@
 {
-	"tableData" : [
-		[ 
-			{ 
-				"heading": {"name" : "Instrument", "styles" : {"font-style" : "bold", "rowspan" : 2, "colspan" : 2} }, 
-		        "subheading": [
-		        	{ "name" : "Code",
-		        		"styles" : {"rowspan" : 1, "colspan" : 1}, 
-		        		"data" : 
-			        		{
-				        		"codes" : 
-				        		[
-									{
-										"name" : "ABL", "styles" : {"rowspan" : 2, "colspan" : 1, "font-color" : "blue"}
-									}, 
-									{
-					        			"name" : "CMLcfd", "styles" : {"rowspan" : 2, "colspan" : 1, "font-color" : "blue"} 
-									}
-								]
-							}
-					}, 
-					{ "name" : "Quantity (pending)",
-		        		"styles" : {"rowspan" : 2, "colspan" : }, 
-		        		"data" : 
-			        		{
-				        		"codes" : 
-				        		[
-									{
-										"name" : "ABL", "styles" : {"rowspan" : 2, "colspan" : 1, "font-color" : "blue"}
-									}, 
-									{
-					        			"name" : "CMLcfd", "styles" : {"rowspan" : 2, "colspan" : 1, "font-color" : "blue"} 
-									}
-								]
-							}
-					}
-				]
-			}
-		]
+	"headings": [
+		{"name" : "Instrument", "styles" : {"colspan" : "2", "rowspan" : "1"} },
+		{"name" : "Cost (3)", "styles" : {"colspan" : 2, "rowspan" : 1} },
+		{"name" : "Previous close/MTM R", "styles" : {"colspan" : "1", "rowspan" : "2"} },
+		{"name" : "Current/ Bid", "styles" : {"colspan" : 2, "rowspan" : 1} },
+		{"name" : "Today's movement (27/02/2015)", "styles" : {"colspan" : 2, "rowspan" : 1} },
+		{"name" : "Total movement", "styles" : {"colspan" : 2, "rowspan" : 1} },
+		{"name" : "Initial margin R", "styles" : {"colspan" : 1, "rowspan" : 1} },
+		{"name" : "% of portfolio", "styles" : {"colspan" : 1, "rowspan" : 1} }
+	],
+	"subheadings" :[
+		{"name" : "Code", "styles" : {"colspan" : 1, "rowspan" : 1} },
+		{"name" : "Quality (pending)", "styles" : {"colspan" : 1, "rowspan" : 1} },
+		{"name" : "Unit R", "styles" : {"colspan" : 1, "rowspan" : 1} },
+		{"name" : "Total R", "styles" : {"colspan" : 1, "rowspan" : 1} },
+		{"name" : "Price R(2)", "styles" : {"colspan" : 1, "rowspan" : 1} },
+		{"name" : "Total R", "styles" : {"colspan" : 1, "rowspan" : 1} },
+		{"name" : "Price change R % change", "styles" : {"colspan" : 1, "rowspan" : 1} },
+		{"name" : "Profit/Loss R", "styles" : {"colspan" : 1, "rowspan" : 1} },
+		{"name" : "Price change R % change", "styles" : {"colspan" : 1, "rowspan" : 1} },
+		{"name" : "Profit/Loss R (4)", "styles" : {"colspan" : 1, "rowspan" : 1} }
+	],
+	"data" : [
+		{"code" : "ABL", "abl" : {"amount" : 100, "decrease" : 15}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
+		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00"}
+	],
+	"totals" : [
+		{"name" : "TOTAL", "totalR" : "44,045.60","current" : "44,897.00",
+		"priceChangeToday" : "+123.89%", "profitLossToday" : "44.879.00"}
 	]
 }
