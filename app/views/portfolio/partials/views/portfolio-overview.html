@@ -14,7 +14,7 @@
 		</tr>
 		<tr ng-repeat="data in JSONdata.data">
 			<td ng-if="data.code">{{data.code}}</td>
-			<td ng-if="data.abl.amount">{{data.abl.amount}}</td>
+			<td ng-if="data.instrument.amount">{{data.abl.amount}}</td>
 			<td ng-if="data.unitR">{{data.unitR}}</td>
 			<td ng-if="data.totalUnit">{{data.totalUnit}}</td>
 			<td ng-if="data.priceR2">{{data.priceR2}}</td>
@@ -25,9 +25,19 @@
 			<td ng-if="data.profitLossTotal">{{data.profitLossTotal}}</td>
 		</tr>
 		<tr>
-			<td>
-
-			</td>
+			<td>{{JSONdata.totals[0].name}}</td>
+			<td></td>
+			<td></td>
+			<td>{{JSONdata.totals[0].totalR}}</td>
+			<td></td>
+			<td>{{JSONdata.totals[0].current}}</td>
+			<td>{{JSONdata.totals[0].priceChangeToday}}</td>
+			<td>{{JSONdata.totals[0].profitLossToday}}</td>
+			<td>{{JSONdata.totals[0].priceChangeToday}}</td>
+			<td>{{JSONdata.totals[0].priceChangeTotal}}</td>
+			<td>{{JSONdata.totals[0].profitLossTotal}}</td>
+			<td></td>
+			<td>{{JSONdata.totals.portfolio}}</td>
 		</tr>
 	</table>
 </div>

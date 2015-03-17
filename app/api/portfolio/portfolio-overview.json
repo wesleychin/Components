@@ -22,12 +22,32 @@
 		{"name" : "Profit/Loss R (4)", "styles" : {"colspan" : 1, "rowspan" : 1} }
 	],
 	"data" : [
-		{"code" : "ABL", "abl" : {"amount" : 100, "decrease" : 15}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		{"code" : "ABL", "instrument" : {"amount" : "100", "decrease" : 15}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
+		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00"},
+		{"code" : "CMLcfd", "instrument" : {"amount" : "-4", "increase" : 7}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
+		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00"},
+		{"code" : "AGL", "instrument" : {"amount" : "150", "increase" : 7}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
+		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00"},
+		{"code" : "AGL CC", "instrument" : {"amount" : "10"}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
+		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00"},
+		{"code" : "CMLcfd", "instrument" : {"amount" : "-4", "increase" : 7}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
+		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00"},
+		{"code" : "AGL", "instrument" : {"amount" : "150", "increase" : 7}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
+		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00"},
+		{"code" : "AGL CC", "instrument" : {"amount" : "10"}, "unitR" : "15.00", "totalUnit" : "1500.00",
 		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
 		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00"}
 	],
 	"totals" : [
 		{"name" : "TOTAL", "totalR" : "44,045.60","current" : "44,897.00",
-		"priceChangeToday" : "+123.89%", "profitLossToday" : "44.879.00"}
+		"priceChangeToday" : "+123.89%", "profitLossToday" : "44.879.00",
+		"priceChangeTotal" : "+123.89%", "profitLossTotal" : "44,897.00", 
+		"porfolio" : "33.7%"}
 	]
 }
