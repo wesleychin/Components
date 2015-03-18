@@ -1,12 +1,27 @@
-<div>
-	<table>
-		<tr>
-			<td>{{JSONdata.data[0].onExpiry}}</td>
-			<td>{{JSONdata.data[0].12monthLow}}</td>
-			<td>{{JSONdata.data[0].12monthHigh}}</td>
-			<td>{{JSONdata.data[0].dateOfHigh}}</td>
-			<td>{{JSONdata.data[0].marketCap}}</td>
-			<td>{{JSONdata.data[0].peRatio}}</td>
-		</tr>
-	</table>
-</div>
+
+	<div class="table-responsive" data-pattern="priority-columns" data-focus-btn-icon="fa-asterisk" data-sticky-table-header="true" data-add-display-all-btn="true" data-add-focus-btn="true">
+		<table class="table table-small-font table-bordered table-striped">
+			<tr>
+				<td>On expiry</td><td>{{JSONdata.data[0].onExpiry}}</td>
+			</tr>
+			<tr>
+				<div>
+					<span>Instrument Information</span>
+				</div>
+				<div class="dashboard-widget-gradient"></div>
+			</tr>
+			<tr>
+				<td>12 month low</td><td>{{JSONdata.data[0].twelveMonthLow}}</td>
+				<td>12 month high</td><td>{{JSONdata.data[0].twelveMonthHigh}}</td>
+				<td>Market cap</td><td>{{JSONdata.data[0].marketCap}}</td>
+			</tr>
+			<tr>
+				<td>Date of low</td><td>{{JSONdata.data[0].dateOfLow}}</td>
+				<td>Date of high</td><td>{{JSONdata.data[0].dateOfHigh}}</td>
+				<td>P/E Ratio</td><td>{{JSONdata.data[0].peRatio}}</td>
+			</tr>
+			<tr ng-click>
+				<td class="mouse-cursor-hover" ng-repeat='button in dialogButtons' ng-click="goToOption(button.id)"><i class="fi-calendar"> {{button.name}}</i></td>
+			</tr>
+		</table>
+	</div>

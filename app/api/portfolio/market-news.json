@@ -2,4 +2,5 @@
 [ { "heading": {"name" : "Sens", "font" : "bold"}, "data": [{ "date" : "13 Feb 15:00", "description" : "AGL - Anglo American - New financial instrument listing"}, {"date" : "13 Feb 16:00", "description" : "ASA - Interest rate reset"}] } ],
 [ { "heading": {"name" : "Economic news", "font" : "bold"}, "data": [{ "date" : "13 Feb 12:00", "description" : "xxx"}, {"date" : "13 Feb 16:00", "description" : "xx"} ] } ],
 [ { "heading": {"name" : "Economic calendar", "font" : "bold"}, "data": [{ "date" : "17 Feb 15:00", "description" : "Consumer Confidence (Jan)"}, {"date" : "18 Feb 13:30", "description" : "Import Price Index (YoY) (Dec)"}, {"date" : "19 Feb 14:00", "description" : "Westpac Leading Index (MoM) (Dec)"} ] } ]
-]}
+]
+}

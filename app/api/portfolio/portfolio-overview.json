@@ -1,42 +1,4 @@
 {
-	"tableData" : [
-		[
-			{
-				"heading": {"name" : "Instrument", "styles" : {"font-style" : "bold", "rowspan" : 2, "colspan" : 2} },
-		        "subheading": [
-		        	{ "name" : "Code",
-		        		"styles" : {"rowspan" : 1, "colspan" : 1},
-		        		"data" :
-			        		{
-				        		"codes" :
-				        		[
-									{
-										"name" : "ABL", "styles" : {"rowspan" : 2, "colspan" : 1, "font-color" : "blue"}
-									},
-									{
-					        			"name" : "CMLcfd", "styles" : {"rowspan" : 2, "colspan" : 1, "font-color" : "blue"}
-									}
-								]
-							}
-					},
-					{ "name" : "Quantity (pending)",
-		        		"styles" : {"rowspan" : 2, "colspan" : },
-		        		"data" :
-			        		{
-				        		"codes" :
-				        		[
-									{
-										"name" : "ABL", "styles" : {"rowspan" : 2, "colspan" : 1, "font-color" : "blue"}
-									},
-									{
-					        			"name" : "CMLcfd", "styles" : {"rowspan" : 2, "colspan" : 1, "font-color" : "blue"}
-									}
-								]
-							}
-					}
-				]
-			}
-		]
 	"headings": [
 		{"name" : "Instrument", "styles" : {"colspan" : "2", "rowspan" : "1"} },
 		{"name" : "Cost (3)", "styles" : {"colspan" : 2, "rowspan" : 1} },
@@ -60,39 +22,39 @@
 		{"name" : "Profit/Loss R (4)", "styles" : {"colspan" : 1, "rowspan" : 1} }
 	],
 	"data" : [
-		{"id" : 1, "code" : "ABL", "instrument" : {"amount" : "100", "decrease" : 15}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		{"id" : 1, "code" : "ABL", "instrument" : {"amount" : "100", "decrease" : 15}, "unitR" : "15.00", "totalUnit" : "1500.00", "previous" : "0",
 		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
-		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00", "onExpiry" : "23 March 2015", "twelveMonthLow" : "R59.90",
+		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00", "initialMargin" : "0", "portfolio" : "10%", "onExpiry" : "23 March 2015", "twelveMonthLow" : "R59.90",
 		"dateOfLow" : "16 Oct 2024", "twelveMonthHigh" : "R67.90", "dateOfHigh" : "16 Feb 2015", "marketCap" : "R190,374.891.90", "peRatio" : "14.7"},
-		{"id" : 2, "code" : "CMLcfd", "instrument" : {"amount" : "-4", "increase" : 7}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		{"id" : 2, "code" : "CMLcfd", "instrument" : {"amount" : "-4", "increase" : 7}, "unitR" : "15.00", "totalUnit" : "1500.00", "previous" : "0",
 		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
-		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00", "onExpiry" : "23 March 2015", "twelveMonthLow" : "R59.90",
+		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00", "initialMargin" : "0", "portfolio" : "10%", "onExpiry" : "23 March 2015", "twelveMonthLow" : "R59.90",
 		"dateOfLow" : "16 Oct 2024", "twelveMonthHigh" : "R67.90", "dateOfHigh" : "16 Feb 2015", "marketCap" : "R190,374.891.90", "peRatio" : "14.7"},
-		{"id" : 3, "code" : "AGL", "instrument" : {"amount" : "150", "increase" : 7}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		{"id" : 3, "code" : "AGL", "instrument" : {"amount" : "150", "increase" : 7}, "unitR" : "15.00", "totalUnit" : "1500.00", "previous" : "0",
 		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
-		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00", "onExpiry" : "23 March 2015", "twelveMonthLow" : "R59.90",
+		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00", "initialMargin" : "0", "portfolio" : "10%", "onExpiry" : "23 March 2015", "twelveMonthLow" : "R59.90",
 		"dateOfLow" : "16 Oct 2024", "twelveMonthHigh" : "R67.90", "dateOfHigh" : "16 Feb 2015", "marketCap" : "R190,374.891.90", "peRatio" : "14.7"},
-		{"id" : 4, "code" : "AGL CC", "instrument" : {"amount" : "10"}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		{"id" : 4, "code" : "AGL CC", "instrument" : {"amount" : "10"}, "unitR" : "15.00", "totalUnit" : "1500.00", "previous" : "0",
 		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
-		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00", "onExpiry" : "23 March 2015", "twelveMonthLow" : "R59.90",
+		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00", "initialMargin" : "0", "portfolio" : "10%", "onExpiry" : "23 March 2015", "twelveMonthLow" : "R59.90",
 		"dateOfLow" : "16 Oct 2024", "twelveMonthHigh" : "R67.90", "dateOfHigh" : "16 Feb 2015", "marketCap" : "R190,374.891.90", "peRatio" : "14.7"},
-		{"id" : 5, "code" : "CMLcfd", "instrument" : {"amount" : "-4", "increase" : 7}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		{"id" : 5, "code" : "CMLcfd", "instrument" : {"amount" : "-4", "increase" : 7}, "unitR" : "15.00", "totalUnit" : "1500.00", "previous" : "0",
 		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
-		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00", "onExpiry" : "23 March 2015", "twelveMonthLow" : "R59.90",
+		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00", "initialMargin" : "0", "portfolio" : "10%", "onExpiry" : "23 March 2015", "twelveMonthLow" : "R59.90",
 		"dateOfLow" : "16 Oct 2024", "twelveMonthHigh" : "R67.90", "dateOfHigh" : "16 Feb 2015", "marketCap" : "R190,374.891.90", "peRatio" : "14.7"},
-		{"id" : 6, "code" : "AGL", "instrument" : {"amount" : "150", "increase" : 7}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		{"id" : 6, "code" : "AGL", "instrument" : {"amount" : "150", "increase" : 7}, "unitR" : "15.00", "totalUnit" : "1500.00", "previous" : "0",
 		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
-		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00", "onExpiry" : "23 March 2015", "twelveMonthLow" : "R59.90",
+		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00", "initialMargin" : "0", "portfolio" : "10%", "onExpiry" : "23 March 2015", "twelveMonthLow" : "R59.90",
 		"dateOfLow" : "16 Oct 2024", "twelveMonthHigh" : "R67.90", "dateOfHigh" : "16 Feb 2015", "marketCap" : "R190,374.891.90", "peRatio" : "14.7"},
-		{"id" : 7, "code" : "AGL CC", "instrument" : {"amount" : "10"}, "unitR" : "15.00", "totalUnit" : "1500.00",
+		{"id" : 7, "code" : "AGL CC", "instrument" : {"amount" : "10"}, "unitR" : "15.00", "totalUnit" : "1500.00", "previous" : "0",
 		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",
-		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00", "onExpiry" : "23 March 2015", "twelveMonthLow" : "R59.90",
+		"priceChangeTotal" : "18.00", "profitLossTotal" : "1800.00", "initialMargin" : "0", "portfolio" : "10%", "onExpiry" : "23 March 2015", "twelveMonthLow" : "R59.90",
 		"dateOfLow" : "16 Oct 2024", "twelveMonthHigh" : "R67.90", "dateOfHigh" : "16 Feb 2015", "marketCap" : "R190,374.891.90", "peRatio" : "14.7"}
 	],
 	"totals" : [
 		{"name" : "TOTAL", "totalR" : "44,045.60","current" : "44,897.00",
 		"priceChangeToday" : "+123.89%", "profitLossToday" : "44.879.00",
 		"priceChangeTotal" : "+123.89%", "profitLossTotal" : "44,897.00",
-		"porfolio" : "33.7%"}
+		"portfolio" : "33.7%"}
 	]
 }

@@ -21,11 +21,21 @@ angular.module('componentsApp')
 		$scope.marketNews = response;
 	});
 
+	$http.get('/api/portfolio/portfolio-dialog-buttons.json').success(function(response) {
+		$scope.dialogButtons = response;
+	});
+
 	$scope.goToView= function (sectionId) {
 		$scope.view = sectionId;
 	}
 
-	// $scope.clickToOpen = function () {
-	// 	$scope.visible = true;
-	// }
+	$scope.goToOption= function (optionId) {
+		console.log(optionId);
+	}
+
+	$scope.clickToOpen = function () {
+        ngDialog.open({ template: 'views/portfolio/partials/views/portfolio-dialog.html' });
+    };
+
+	$scope.time = moment().format('h:mm:ss'); 
 });
