@@ -3,13 +3,13 @@
 </div>
 <div class="dashboard-widget-gradient"></div>
 <div>
-	<table>
+	<table class="responsive">
 		<tr>
 			<td colspan="2">Instrument</td>
 			<td colspan="2">Cost (3)</td>
 			<td rowspan="2">Previous close/MTM R</td>
 			<td colspan="2" colspan="2">Current/ Bid</td>
-			<td colspan="2">Today's movement (todays date)</td>
+			<td colspan="2">Today's movement ({{date}})</td>
 			<td colspan="2">Total movement</td>
 			<td rowspan="2">Initial margin R</td>
 			<td rowspan="2">% of portfolio</td>
@@ -26,8 +26,8 @@
 			<td>Price change R % change</td>
 			<td>Profit/Loss R (4)</td>
 		</tr>
-		<tr ng-click="clickToOpen(data.code)" ng-repeat="data in JSONdata.data">
-			<td ng-if="data.code">{{data.code}}</td>
+		<tr ng-repeat="data in JSONdata.data">
+			<td class="mouse-cursor-hover" ng-click="clickToOpen(data.code)" ng-if="data.code">{{data.code}}</td>
 			<td ng-if="data.instrument.amount">{{data.instrument.amount}}</td>
 			<td ng-if="data.unitR">{{data.unitR}}</td>
 			<td ng-if="data.totalUnit">{{data.totalUnit}}</td>

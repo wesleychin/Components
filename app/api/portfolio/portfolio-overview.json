@@ -1,26 +1,4 @@
 {
-	"headings": [
-		{"name" : "Instrument", "styles" : {"colspan" : "2", "rowspan" : "1"} },
-		{"name" : "Cost (3)", "styles" : {"colspan" : 2, "rowspan" : 1} },
-		{"name" : "Previous close/MTM R", "styles" : {"colspan" : "1", "rowspan" : "2"} },
-		{"name" : "Current/ Bid", "styles" : {"colspan" : 2, "rowspan" : 1} },
-		{"name" : "Today's movement (27/02/2015)", "styles" : {"colspan" : 2, "rowspan" : 1} },
-		{"name" : "Total movement", "styles" : {"colspan" : 2, "rowspan" : 1} },
-		{"name" : "Initial margin R", "styles" : {"colspan" : 1, "rowspan" : 1} },
-		{"name" : "% of portfolio", "styles" : {"colspan" : 1, "rowspan" : 1} }
-	],
-	"subheadings" :[
-		{"name" : "Code", "styles" : {"colspan" : 1, "rowspan" : 1} },
-		{"name" : "Quality (pending)", "styles" : {"colspan" : 1, "rowspan" : 1} },
-		{"name" : "Unit R", "styles" : {"colspan" : 1, "rowspan" : 1} },
-		{"name" : "Total R", "styles" : {"colspan" : 1, "rowspan" : 1} },
-		{"name" : "Price R(2)", "styles" : {"colspan" : 1, "rowspan" : 1} },
-		{"name" : "Total R", "styles" : {"colspan" : 1, "rowspan" : 1} },
-		{"name" : "Price change R % change", "styles" : {"colspan" : 1, "rowspan" : 1} },
-		{"name" : "Profit/Loss R", "styles" : {"colspan" : 1, "rowspan" : 1} },
-		{"name" : "Price change R % change", "styles" : {"colspan" : 1, "rowspan" : 1} },
-		{"name" : "Profit/Loss R (4)", "styles" : {"colspan" : 1, "rowspan" : 1} }
-	],
 	"data" : [
 		{"id" : 1, "code" : "ABL", "instrument" : {"amount" : "100", "decrease" : 15}, "unitR" : "15.00", "totalUnit" : "1500.00", "previous" : "0",
 		"priceR2" : "33.00", "totalRCurrent" : "3300.00", "priceChangeToday" : "3.00", "profitLossToday" : "300.00",

@@ -3,7 +3,8 @@
 angular.module('componentsApp')
 .controller('AccountsCtrl', function ($scope, $http, ngDialog) {
 	$scope.view = 1;
-	// $scope.visible = false;
+	$scope.time = moment().format('h:mm:ss');
+	$scope.date = moment().format('YYYY/MM/DD'); 
 	
 	$http.get('/api/portfolio/sections.json').success(function(response) {
 		$scope.sections = response;
@@ -34,8 +35,9 @@ angular.module('componentsApp')
 	}
 
 	$scope.clickToOpen = function () {
-        ngDialog.open({ template: 'views/portfolio/partials/views/portfolio-dialog.html' });
-    };
-
-	$scope.time = moment().format('h:mm:ss'); 
+		ngDialog.open({ template: 'views/portfolio/partials/views/portfolio-dialog.html',
+			className: 'ngdialogCustom',
+			controller: 'AccountsCtrl',
+		});
+	};
 });
