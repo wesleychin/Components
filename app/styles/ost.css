@@ -110,7 +110,6 @@
   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 }
 
-
 ul {
     width: 200px;
     border: 0px solid black;
@@ -121,4 +120,85 @@ li {
     margin: 0 10px 20px 10;
     background: white;
     float: left;
+}
+
+  .text-red {
+    color : #FF0000;
+  }
+
+  .text-green {
+    color : #007F00;
+  }
+
+  .text-blue {
+    color : #0000FF;
+  }
+
+  .text-grey {
+    color : #D3D3D3;
+  }
+
+  .sticky_footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+  }
+
+  .portfolio-overview-container {
+    height: 509px;
+    width: 100%;
+    background: white;
+    border: 1px solid #c8c9cc;
+    float: left;
+    margin-bottom: 20px;
+    list-style-type: none;
+  }
+
+  .mouse-cursor-hover {
+    cursor: pointer; cursor: hand;
+  }
+
+  .bold-text {
+    font-weight: bold;
+  }
+
+  table, th, td {
+   border: 1px solid #d3d3d3;
+ }
+
+ .ngdialogCustom {
+  border-radius: 5px;
+  background: #FFFFFF;
+  font-family: 'Helvetica',sans-serif;
+  font-color: #000000;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  padding: 1em;
+  position: center;
+  width: 700px;
+  height: 400px;
+}
+
+.ngdialog-overlay { 
+  background: none !important; 
+}
+
+div.acc-trans-body-container {
+  padding-left: 15px;
+}
+
+.empty-box-container {
+  height: 680px;
+}
+
+.sbBlue {
+  color: #2570E0;
+}
+
+.selected {
+  background-color: #666666;
 }
