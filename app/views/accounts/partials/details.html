@@ -1,59 +1,59 @@
 
 <div id="DetailsModal" ng-class="{'animate-down':animatethisDown, 'animate-up':   animatethisUp,'reveal-modal': revealit }" class=" details-warp small large sml-popup-top-gradient" data-reveal>
-<div class='row details-overlay'>
-  <div class="row"> <span class="arrow_box hide-for-small"></span>
-    <div class='column large-4 medium-4'>
-      <div class='details-overview'>
-        <div class='details-overview'> Portfolio value<br>
-          <span class="details-overview-amounts-bold"> R55000</span> </div>
-        <div class='details-overview'> Daily change<br>
-          R8500.00 </div>
-        <div class='details-overview'> Total change<br>
-          1.4% </div>
-      </div>
-    </div>
-    <div class='column large-2 medium-2 details-overlay-gutter'> </div>
-    <div class='column large-6 medium-4 right' align="right">
-      <div class='details-overview-bluetext'> Quotes bank balance (1) (R100.00) </div>
-      <div class='details-overlay-lable'>
-        <select>
-          <option>Delayed</option>
-          <option>Live</option>
-        </select>
-      </div>
-      <div class='details-overlay-lable'>
-        <select>
-          <option>Bid</option>
-          <option>Ruling</option>
-        </select>
-      </div>
-      <div class='details-overview-bluetext-streaming'> Streaming </div>
-      <div class="details-overview-feed-details"> As at {{time}} (15 min delayed - Reuters) </div>
-    </div>
-  </div>
-  <hr>
-  <div class="row">
-    <div class='columns large-12 medium-4 small-4 details-overview-values'>
-      <div class='details-overview'>
-        <div class='details-overview'> JSE cash balance<br>
-          R 2000 008.90 
-         </div>
-        <div class='details-overview'> Derivatives initial margin<br>
-          R100 998.90 
+  <div class='row details-overlay'>
+    <div class="row"> <span class="arrow_box hide-for-small"></span>
+      <div class='column large-4 medium-4'>
+        <div class='details-overview'>
+          <div class='details-overview'> Portfolio value<br>
+            <span class="details-overview-amounts-bold"> R55000</span> </div>
+            <div class='details-overview'> Daily change<br>
+              R8500.00 </div>
+              <div class='details-overview'> Total change<br>
+                1.4% </div>
+              </div>
+            </div>
+            <div class='column large-2 medium-2 details-overlay-gutter'> </div>
+            <div class='column large-6 medium-4 right' align="right">
+              <div class='details-overview-bluetext'> Quotes bank balance (1) (R100.00) </div>
+              <div class='details-overlay-lable'>
+                <select>
+                  <option>Delayed</option>
+                  <option>Live</option>
+                </select>
+              </div>
+              <div class='details-overlay-lable'>
+                <select>
+                  <option>Bid</option>
+                  <option>Ruling</option>
+                </select>
+              </div>
+              <div class="details-overview-bluetext-streaming" ng-click="btn.streaming = !btn.streaming">{{!btn.streaming && 'Streaming' || 'Other'}}</div>
+              <div class="details-overview-feed-details"> As at {{time}} (15 min delayed - Reuters) </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class='columns large-12 medium-4 small-4 details-overview-values'>
+              <div class='details-overview'>
+                <div class='details-overview'> JSE cash balance<br>
+                  R 2000 008.90 
+                </div>
+                <div class='details-overview'> Derivatives initial margin<br>
+                  R100 998.90 
+                </div>
+                <div class='details-overview'> Today's derivatives P&L<br>
+                  R 299 008.90 
+                </div>
+                <div class='details-overview'> Total cash<br>
+                  R 289 908.90 
+                </div>
+                <div class='details-overview'> Available trading funds<br>
+                  R 200 000.00 
+                </div>
+                <div class='details-overview'> Value before auto close out<br>
+                  R 200 000.00
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class='details-overview'> Today's derivatives P&L<br>
-          R 299 008.90 
-        </div>
-        <div class='details-overview'> Total cash<br>
-          R 289 908.90 
-        </div>
-        <div class='details-overview'> Available trading funds<br>
-          R 200 000.00 
-        </div>
-        <div class='details-overview'> Value before auto close out<br>
-          R 200 000.00
-        </div>
-      </div>
-    </div>
-  </div>
-</div>

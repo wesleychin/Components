@@ -41,8 +41,7 @@ $http.get('/api/portfolio/portfolio-dialog-buttons.json').success(function(respo
 });
 
 $scope.goToView= function (sectionId) {
-	console.log(sectionId);
-	//$scope.view = sectionId;
+	$scope.view = sectionId;
 	$scope.idSelectedVote = sectionId;
 }
 });

@@ -1,11 +1,11 @@
 <div body-height height-offset='236' height-type='min-height'>
 	<div ng-include src="'views/accounts/partials/details.html'" class="accounts-details-wrapper"></div>
 	<div class="row">
-		<!--div ng-include src="'views/portfolio/partials/sections.html'"></div-->
-		<ul class="columns large-2 medium-12 small-12 left empty-box-container">
+		<div ng-include src="'views/portfolio/partials/sections.html'"></div>
+		<!-- <ul class="columns large-2 medium-12 small-12 left empty-box-container">
 			<li class="acc-empty-boxes mouse-cursor-hover left" ng-repeat='section in sections' 
 			ng-click="goToView(section.id)" ng-class="{selected: section.id == idSelectedVote}">{{section.name}}</li>
-		</ul>
+		</ul> -->
 		<div class="columns large-10 medium-12 right acc-trans-body-container" 
 		ng-include src="'views/portfolio/partials/views.html'">
 	</div>
