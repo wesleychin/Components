@@ -5,7 +5,7 @@ angular.module('componentsApp')
 	$scope.view = 1;
 	$scope.time = moment().format('h:mm:ss');
 	$scope.date = moment().format('YYYY/MM/DD'); 
-	$scope.idSelectedVote = null;
+	$scope.idSelectedVote = 1;
 	
 	$http.get('/api/portfolio/sections.json').success(function(response) {
 		$scope.sections = response;
