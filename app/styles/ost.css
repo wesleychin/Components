@@ -230,6 +230,16 @@ hr {
   margin: 1em 0; padding: 0; 
 }
 
+.header {
+  background-image: none !important;
+  border-bottom: none !important;
+}
+
+.icons-dashboard-overview {
+  float:right;
+  top: 10px;
+}
+
 /* Tablet size */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .acc-empty-boxes {

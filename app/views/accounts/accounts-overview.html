@@ -1,25 +1,25 @@
-<div body-height height-offset='236' height-type='min-height'>
-	<div class="row">
-		<div ng-include src="'views/accounts/partials/dashboard-details.html'" class="columns large-12 medium-12 accounts-details-wrapper"></div>
-	</div>
-	<div class="row">
-		<div class="noLeftPadding">
-			<hr/></div>
-		</div>
-		<div class="row">
-			<div ng-include src="'views/accounts/partials/details.html'" class="columns large-12 medium-12 accounts-details-wrapper"></div>
-		</div>
-		<div class="row">
-			<div ng-include src="'views/portfolio/partials/sections.html'"></div>
-		<!-- <ul class="columns large-2 medium-12 small-12 left empty-box-container">
-			<li class="acc-empty-boxes mouse-cursor-hover left" ng-repeat='section in sections' 
-			ng-click="goToView(section.id)" ng-class="{selected: section.id == idSelectedVote}">{{section.name}}</li>
-		</ul> -->
-		<div class="columns large-10 medium-12 right acc-trans-body-container" 
-		ng-include src="'views/portfolio/partials/views.html'">
-	</div>
-	<div class="columns large-12 medium-12 right acc-trans-body-container noLeftPadding">
+<div class="row">
+	<div ng-include src="'common/header.html'"></div>
+</div>
+<!--div body-height height-offset='236' height-type='min-height'-->
+<div class="row">
+	<div ng-include src="'views/accounts/partials/dashboard-details.html'" class="columns large-12 medium-12 accounts-details-wrapper"></div>
+</div>
+<div class="row">
+	<div class="noLeftPadding">
 		<hr/>
-		<div ng-include src="'views/portfolio/partials/views/disclaimer.html'"></div>
 	</div>
+</div>
+<div class="row">
+	<div ng-include src="'views/accounts/partials/details.html'" class="columns large-12 medium-12 accounts-details-wrapper"></div>
+</div>
+<div class="row">
+	<div ng-include src="'views/portfolio/partials/sections.html'"></div>
+	<div class="columns large-10 medium-12 right acc-trans-body-container" 
+	ng-include src="'views/portfolio/partials/views.html'">
+</div>
+<div class="columns large-12 medium-12 right acc-trans-body-container noLeftPadding">
+	<hr/>
+	<div ng-include src="'views/portfolio/partials/views/disclaimer.html'"></div>
+</div>
 </div>	
