@@ -7,6 +7,38 @@ angular.module('componentsApp')
 	$scope.date = moment().format('YYYY/MM/DD'); 
 	$scope.idSelectedVote = 1;
 
+	$scope.sectorBreakdownChart = {
+		dataSource: {
+                type: "json",
+                transport: {
+                    read: "api/portfolio/sector-breakdown.json"
+                },
+                pageSize: 10
+            },
+            scrollable: false,
+		    resizable: true,
+		    reorderable: true,
+		    sortable: true,
+		    pageable: true,
+            columns: [{
+                field: "sectorName",
+                title: "Sector name"
+            },{
+                field: "cost",
+                title: "Cost"
+
+            },{
+                field: "marketValue",
+                title: "Market Value"
+            },{
+                field: "difference",
+                title: "% Difference (Difference)"
+            },{
+                field: "portfolio",
+                title: "% of portfolio"
+            }]
+	};
+
 	$scope.mainGridOptions = {
 		dataSource: {
                 type: "json",

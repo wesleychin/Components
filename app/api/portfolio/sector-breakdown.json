@@ -1,0 +1,15 @@
+[
+	{ "sectorName":"Banks" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorName":"Diversified Industrials" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorName":"Exchange Traded Funds" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorName":"Exchange Traded Notes" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorName":"Food Products" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorName":"General Mining" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorName":"Health Care Providers" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorName":"Industrial & Office REITs" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorName":"Investment Services" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorName":"Iron & Steel" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorName":"Preference Shares" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorName":"Retail REITs" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorName":"Telecommunications Equipment" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" }
+]
