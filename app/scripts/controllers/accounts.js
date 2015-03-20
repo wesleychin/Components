@@ -6,6 +6,7 @@ angular.module('componentsApp')
 	$scope.time = moment().format('h:mm:ss');
 	$scope.date = moment().format('YYYY/MM/DD'); 
 	$scope.idSelectedVote = 1;
+	$scope.displayDisclaimer = true;
 
 	$scope.sectorBreakdownChart = {
 		dataSource: {
@@ -19,8 +20,11 @@ angular.module('componentsApp')
 		    resizable: true,
 		    reorderable: true,
 		    sortable: true,
-		    pageable: true,
+		    pageable: false,
             columns: [{
+                field: "symbol",
+                title: " "
+            },{
                 field: "sectorName",
                 title: "Sector name"
             },{
@@ -29,7 +33,7 @@ angular.module('componentsApp')
 
             },{
                 field: "marketValue",
-                title: "Market Value"
+                title: "Market value"
             },{
                 field: "difference",
                 title: "% Difference (Difference)"
@@ -105,6 +109,16 @@ angular.module('componentsApp')
 
 	$scope.goToView= function (sectionId) {
 		$scope.view = sectionId;
+
+		displayDisclaimer(sectionId);
 		$scope.idSelectedVote = sectionId;
+	}
+
+	function displayDisclaimer(sectionId) {
+		if (sectionId == 1) {
+			$scope.displayDisclaimer = true;
+		} else {
+			$scope.displayDisclaimer = false;
+		}
 	}
 });
