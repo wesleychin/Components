@@ -90,13 +90,8 @@ angular.module('componentsApp')
 			}, 
 			majorGridLines: false
 		},
-		tooltip: {
-			visible: true,
-			format: "{0}%",
-			template: "#= series.name #: #= value #"
-		},
 		chartArea: { margin: 0, padding: 0, height: (screen.height * 0.55), width: (screen.width * 0.57) },
-plotArea: { margin: 0, padding: 0, height: (screen.height * 0.55), width: (screen.width * 0.57) }
+		plotArea: { margin: 0, padding: 0, height: (screen.height * 0.55), width: (screen.width * 0.57) }
 	}
 
 	$scope.mainGridOptions = {
