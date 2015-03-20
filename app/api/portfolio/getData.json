@@ -1,0 +1,5 @@
+[
+    { "firstName":"John" , "lastName":"Doe", "country": "country1" },
+    { "firstName":"Anna" , "lastName":"Smith", "country": "country2" },
+    { "firstName":"Peter" , "lastName":"Jones", "country": "country3" }
+]

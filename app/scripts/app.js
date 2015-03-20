@@ -16,8 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'mm.foundation',  
-    'highcharts-ng'
+    'mm.foundation', 
+    'kendo.directives'
   ])
   .config(function ($routeProvider) {
     $routeProvider
