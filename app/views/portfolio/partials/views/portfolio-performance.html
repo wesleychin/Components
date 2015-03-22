@@ -1,5 +1,21 @@
-<div>
-<div class="left">% Holding period return</div><div class="right">Stuff</div>
+<div class="row">
+	<div class="left">
+		% Holding period return
+	</div>
+	<div class="right details-overlay-lable">
+		<select>
+			<option>2015</option>
+			<option>2014</option>
+			<option>2013</option>
+			<option>2012</option>
+			<option>2011</option>
+			<option>2010</option>
+		</select>
+	</div>
 </div>
-<div kendo-chart k-options="portfolioPerformanceChart"/>
-<div class="right"><i class="fi-calendar"></i>Show following years</div>
+<div class="row" kendo-chart k-options="portfolioPerformanceChart"/>
+<div class="row">
+	<div class="right">
+		<i class="fi-calendar"></i>Show previous years
+	</div>
+</div>
