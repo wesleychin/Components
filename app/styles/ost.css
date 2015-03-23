@@ -218,11 +218,6 @@ hr {
   margin: 1em 0; padding: 0; 
 }
 
-.header {
-  background-image: none !important;
-  border-bottom: none !important;
-}
-
 .icons-dashboard-overview {
   float:right;
   top: 10px;

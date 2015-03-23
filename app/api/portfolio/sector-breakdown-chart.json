@@ -1,0 +1,48 @@
+{  
+   "dataSource":{  
+      "type":"json",
+      "transport":{  
+         "read":{  
+            "url":"api/portfolio/sector-breakdown.json"
+         }
+      },
+      "table":null
+   },
+   "scrollable":false,
+   "resizable":true,
+   "reorderable":true,
+   "sortable":true,
+   "pageable":false,
+   "columns":[  
+      {  
+         "field":"symbol",
+         "title":" ",
+         "template":"<span ng-bind='dataItem.symbol'>#: data.symbol#</span>"
+      },
+      {  
+         "field":"sectorName",
+         "title":"Sector name",
+         "template":"<span ng-bind='dataItem.sectorName'>#: data.sectorName#</span>"
+      },
+      {  
+         "field":"cost",
+         "title":"Cost",
+         "template":"<span ng-bind='dataItem.cost'>#: data.cost#</span>"
+      },
+      {  
+         "field":"marketValue",
+         "title":"Market value",
+         "template":"<span ng-bind='dataItem.marketValue'>#: data.marketValue#</span>"
+      },
+      {  
+         "field":"difference",
+         "title":"% Difference (Difference)",
+         "template":"<span ng-bind='dataItem.difference'>#: data.difference#</span>"
+      },
+      {  
+         "field":"portfolio",
+         "title":"% of portfolio",
+         "template":"<span ng-bind='dataItem.portfolio'>#: data.portfolio#</span>"
+      }
+   ]
+}

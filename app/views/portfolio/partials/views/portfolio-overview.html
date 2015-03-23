@@ -2,57 +2,6 @@
 	<span class="headingFormat">Porfolio overview</span>
 </div>
 <div class="row"><hr/></div>
-<table>
-	<tr>
-		<td colspan="2">Instrument</td>
-		<td colspan="2">Cost (3)</td>
-		<td rowspan="2">Previous close/MTM R</td>
-		<td colspan="2" colspan="2">Current/ Bid</td>
-		<td colspan="2">Today's movement ({{date}})</td>
-		<td colspan="2">Total movement</td>
-		<td rowspan="2">Initial margin R</td>
-		<td rowspan="2">% of portfolio</td>
-	</tr>
-	<tr>
-		<td>Code</td>
-		<td>Quality (pending)</td>
-		<td>Unit R</td>
-		<td>Total R</td>
-		<td>Price R(2)</td>
-		<td>Total R</td>
-		<td>Price change R % change</td>
-		<td>Profit/Loss R</td>
-		<td>Price change R % change</td>
-		<td>Profit/Loss R (4)</td>
-	</tr>
-	<tr ng-repeat="data in JSONdata.data">
-		<td class="pointer sbBlue" ng-click="clickToOpen(data.code)" ng-if="data.code">{{data.code}}</td>
-		<td ng-if="data.instrument.amount">{{data.instrument.amount}}</td>
-		<td ng-if="data.unitR">{{data.unitR}}</td>
-		<td ng-if="data.totalUnit">{{data.totalUnit}}</td>
-		<td ng-if="data.previous">{{data.previous}}</td>
-		<td ng-if="data.priceR2">{{data.priceR2}}</td>
-		<td ng-if="data.totalRCurrent">{{data.totalRCurrent}}</td>
-		<td ng-if="data.priceChangeToday">{{data.priceChangeToday}}</td>
-		<td ng-if="data.profitLossToday">{{data.profitLossToday}}</td>
-		<td ng-if="data.initialMargin">{{data.initialMargin}}</td>
-		<td ng-if="data.portfolio">{{data.portfolio}}</td>
-		<td ng-if="data.priceChangeTotal">{{data.priceChangeTotal}}</td>
-		<td ng-if="data.profitLossTotal">{{data.profitLossTotal}}</td>
-	</tr>
-	<tr>
-		<td>{{JSONdata.totals[0].name}}</td>
-		<td></td>
-		<td></td>
-		<td>{{JSONdata.totals[0].totalR}}</td>
-		<td></td>
-		<td></td>
-		<td>{{JSONdata.totals[0].current}}</td>
-		<td>{{JSONdata.totals[0].priceChangeToday}}</td>
-		<td>{{JSONdata.totals[0].profitLossToday}}</td>
-		<td>{{JSONdata.totals[0].priceChangeTotal}}</td>
-		<td>{{JSONdata.totals[0].profitLossTotal}}</td>
-		<td></td>
-		<td>{{JSONdata.totals[0].portfolio}}</td>
-	</tr>
-</table>
+<kendo-grid options="portfolioOverviewGrid">
+</kendo-grid>
+</div>

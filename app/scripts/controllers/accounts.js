@@ -8,39 +8,17 @@ angular.module('componentsApp')
 	$scope.idSelectedVote = 1;
 	$scope.displayDisclaimer = true;
 
-	$scope.sectorBreakdownGrid = {
-		dataSource: {
-			type: "json",
-			transport: {
-				read: "api/portfolio/sector-breakdown.json"
-			}
-		},
-		scrollable: false,
-		resizable: true,
-		reorderable: true,
-		sortable: true,
-		pageable: false,
-		columns: [{
-			field: "symbol",
-			title: " "
-		},{
-			field: "sectorName",
-			title: "Sector name"
-		},{
-			field: "cost",
-			title: "Cost"
+	$http.get('/api/portfolio/portfolio-overview-grid.json').success(function(response) {
+		$scope.portfolioOverviewGrid = response;
+	});
 
-		},{
-			field: "marketValue",
-			title: "Market value"
-		},{
-			field: "difference",
-			title: "% Difference (Difference)"
-		},{
-			field: "portfolio",
-			title: "% of portfolio"
-		}]
-	}
+	$http.get('/api/portfolio/sector-breakdown-chart.json').success(function(response) {
+		$scope.sectorBreakdownGrid = response;
+	});
+
+	// $http.get('/api/portfolio/portfolio-performance-chart.json').success(function(response) {
+	// 	$scope.portfolioPerformanceChart = response;
+	// });
 
 	$scope.portfolioPerformanceChart = {
 		seriesDefaults: {
@@ -93,28 +71,6 @@ angular.module('componentsApp')
 		plotArea: { margin: 0, padding: 0, height: (screen.height * 0.55), width: (screen.width * 0.57) }
 	}
 
-	$scope.mainGridOptions = {
-		dataSource: {
-			type: "json",
-			transport: {
-				read: "api/portfolio/getData.json"
-			},
-			pageSize: 10
-		},
-		sortable: true,
-		pageable: true,
-		columns: [{
-			field: "firstName",
-			title: "First Name"
-		},{
-			field: "lastName",
-			title: "Last Name"
-
-		},{
-			field: "country"
-		}]
-	};
-
 	// $scope.detailGridOptions = function(dataItem) {
 	// 	return {
 	// 		dataSource: {
@@ -146,10 +102,6 @@ angular.module('componentsApp')
 
 	$http.get('/api/portfolio/sections.json').success(function(response) {
 		$scope.sections = response;
-	});
-
-	$http.get('/api/portfolio/portfolio-overview.json').success(function(response) {
-		$scope.JSONdata = response;
 	});
 
 	$scope.goToView= function (sectionId) {
