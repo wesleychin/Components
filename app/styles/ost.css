@@ -228,6 +228,10 @@ hr {
   top: 10px;
 }
 
+.headingFormat {
+  font-size: 24px;
+}
+
 /* Tablet size */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .acc-empty-boxes {

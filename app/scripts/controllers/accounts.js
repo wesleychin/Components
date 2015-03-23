@@ -13,8 +13,7 @@ angular.module('componentsApp')
 			type: "json",
 			transport: {
 				read: "api/portfolio/sector-breakdown.json"
-			},
-			pageSize: 10
+			}
 		},
 		scrollable: false,
 		resizable: true,
