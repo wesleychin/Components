@@ -1,14 +1,55 @@
-<div class="header">
-    <div class="fluid-grid">
-        <div class="header-top">
-            <div class="row">
-                <div class='header-bank-logo inline-block' ng-class="{'header-logo-popup-active': isPopupOpen,'display-none':setPersonalAccOnHeaderSmall,'display-block':setPersonalAccOnHeader}">
-                    <img class="header-logo-icon" src='images/logo.png'>
-                    <div class="sign-out-header sign-out-text pointer"><i class="fi-telephone"></i></div>
-                    <div class="sign-out-header sign-out-text pointer"><i class="fi-mail"></i></div>
-                    <div class="sign-out-header">
-                        <span class="sign-out-text pointer" ng-click="gotoLogin()">Sign Out</span>
+<div class="header-wrapper">
+    <div class="header" ng-class="{'reset-border': isPopupOpen}">
+        <div class='fluid-grid' ng-class="{'grey-page-background': isPopupOpen}">
+            <div class='header-top' ng-class="{'display-none': hideHeaderForPopupScreen}">
+                <div class="hide-for-large">
+                    <div class='header-top-left-content inline-block display-none' ng-class="{'blur': isPopupOpen}">
+                        <div class="menu-wrapper">
+                            <span class="header-menu-icon"><i class="fa fa-bars"></i></span>
+                            <span class="header-menu-text">Menu</span>
+                        </div>
                     </div>
+                    <div class='left header-logo inline-block' ng-class="{'header-logo-popup-active': isPopupOpen,'display-none':setPersonalAccOnHeaderSmall,'display-block':setPersonalAccOnHeader}">
+                        <img class="header-logo-icon" src='images/logo.png'>
+                    </div>
+       
+       
+                </div>
+                <div class="row show-for-large">
+                    <div class='header-bank-logo inline-block' ng-class="{'header-logo-popup-active': isPopupOpen,'display-none':setPersonalAccOnHeaderSmall,'display-block':setPersonalAccOnHeader}">
+                        <img class="header-logo-icon" src='images/logo.png'>
+                        <div class="sign-out-header" ng-class="{'sign-out-small-screen':setPersonalAccOnHeaderSmall,'blur': isPopupOpen}">
+                         	 
+                              <i class="fa fi-telephone" style="margin-right:20px;"></i>
+                              <i class="fa fi-mail" style="margin-right:20px;"></i>
+                             
+                             <span class="sign-out-text pointer" ng-click="gotoLogin()">Sign Out</span>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sub-header-wrapper" ng-class="{'display-none': isPopupOpen}">
+        <div class="sub-header-grid">
+            <div class="sub-header row clearfix">
+                <div class="sub-header-title left show-for-large-up" ng-class="{'base-link-color pointer':setPersonalAccOnHeader}" ng-click="accountsToDashboard();">
+                    My Dashboard
+                </div>
+                <div class="left hide-for-medium hide-for-small" ng-if="setPersonalAccOnHeader">
+                    <span class="fa fa-angle-right header-smallscreen-back-icon"></span>
+                    <span class="header-smallscreen-top-label">{{currentAccountName}} -</span>
+                    <span class="header-smallscreen-top-value">{{currentAccountNum}}</span>
+                </div>
+                <div class="right sub-header-options small-12 medium-12 columns large-5">
+                	<span class="right small-3 medium-3"><i class="fa fi-magnifying-glass"></i></span>
+					<span class="right small-3 medium-3">Trade</span>
+                    <span class="right small-3 medium-3">Transfer</span>
+					
                 </div>
             </div>
         </div>
