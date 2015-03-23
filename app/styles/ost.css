@@ -139,15 +139,6 @@ li {
   color : #D3D3D3;
 }
 
-.sticky_footer {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  background-color: white;
-  text-align: center;
-}
-
 .portfolio-overview-container {
   height: 509px;
   width: 100%;
@@ -156,10 +147,6 @@ li {
   float: left;
   margin-bottom: 20px;
   list-style-type: none;
-}
-
-.mouse-cursor-hover {
-  cursor: pointer; cursor: hand;
 }
 
 .bold-text {

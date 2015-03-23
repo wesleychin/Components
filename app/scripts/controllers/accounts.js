@@ -141,6 +141,9 @@ angular.module('componentsApp')
 	// 	};
 	// };
 
+	$http.get('/api/portfolio/market-news.json').success(function(response) {
+	$scope.marketNews = response;
+	}); 
 
 	$http.get('/api/portfolio/sections.json').success(function(response) {
 		$scope.sections = response;

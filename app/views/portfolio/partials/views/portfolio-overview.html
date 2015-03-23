@@ -26,7 +26,7 @@
 		<td>Profit/Loss R (4)</td>
 	</tr>
 	<tr ng-repeat="data in JSONdata.data">
-		<td class="mouse-cursor-hover sbBlue" ng-click="clickToOpen(data.code)" ng-if="data.code">{{data.code}}</td>
+		<td class="pointer sbBlue" ng-click="clickToOpen(data.code)" ng-if="data.code">{{data.code}}</td>
 		<td ng-if="data.instrument.amount">{{data.instrument.amount}}</td>
 		<td ng-if="data.unitR">{{data.unitR}}</td>
 		<td ng-if="data.totalUnit">{{data.totalUnit}}</td>
