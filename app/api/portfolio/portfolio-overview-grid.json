@@ -42,6 +42,9 @@
       {  
          "title":"Cost (3)",
          "field":"cost",
+         "headerAttributes":{  
+            "style":"text-align:center; vertical-align: middle;"
+         },
          "columns":[  
             {  
                "title":"Unit R",
@@ -72,6 +75,9 @@
       {  
          "title":"Current/ Bid",
          "field":"currentBid",
+         "headerAttributes":{  
+            "style":"text-align:center; vertical-align: middle;"
+         },
          "columns":[  
             {  
                "title":"Price<br/>R (2)",
