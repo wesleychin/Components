@@ -265,6 +265,10 @@ td:first-child {
   padding-right:0;
 }
 
+.k-grid {
+    font-size: 10px;
+}
+
 /* Tablet size */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .acc-empty-boxes {

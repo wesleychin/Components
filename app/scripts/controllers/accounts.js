@@ -6,7 +6,6 @@ angular.module('componentsApp')
 	$scope.time = moment().format('h:mm:ss');
 	$scope.date = moment().format('YYYY/MM/DD'); 
 	$scope.idSelectedVote = 1;
-	$scope.displayDisclaimer = true;
 
 	$http.get('/api/portfolio/portfolio-overview-grid.json').success(function(response) {
 		$scope.portfolioOverviewGrid = response;
@@ -106,16 +105,6 @@ angular.module('componentsApp')
 
 	$scope.goToView= function (sectionId) {
 		$scope.view = sectionId;
-
-		displayDisclaimer(sectionId);
 		$scope.idSelectedVote = sectionId;
-	}
-
-	function displayDisclaimer(sectionId) {
-		if (sectionId == 1) {
-			$scope.displayDisclaimer = true;
-		} else {
-			$scope.displayDisclaimer = false;
-		}
 	}
 });
