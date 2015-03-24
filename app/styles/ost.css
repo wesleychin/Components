@@ -140,7 +140,7 @@ li {
 }
 
 .portfolio-overview-container {
-  height: 509px;
+  height: 550px;
   width: 100%;
   background: white;
   border: 1px solid #c8c9cc;
@@ -159,8 +159,8 @@ li {
   font-weight: bold;
 }
 
-table, th, td {
- border: 1px solid #d3d3d3;
+.noBorder {
+  border: none;
 }
 
 div.acc-trans-body-container {
@@ -229,12 +229,46 @@ hr {
   font-size: 24px;
 }
 
+.row-headings-market-news {
+  font-weight:bold;
+  font-size: 16px;
+  color: #666666;
+}
+
+.row-data-market-news-date {
+  font-size: 16px;
+  color:#999999;
+}
+
+.row-data-market-news-description {
+  font-size: 16px;
+  color:#2570E0;
+}
+
+.portfolio-performance-previous-years {
+  font-size: 14px;
+  color: #666666;
+}
+
+.fi-calendar {
+  font-size: 40px;
+}
+
+td {
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+td:first-child {
+  padding-right:0;
+}
+
 /* Tablet size */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .acc-empty-boxes {
     height: 50px;
     width: 18%;
-    background: c8c9cc;
+    background: #c8c9cc;
     float: left;
     margin-bottom: 20px;
     margin-left: 15px;

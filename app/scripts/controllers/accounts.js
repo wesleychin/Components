@@ -67,8 +67,8 @@ angular.module('componentsApp')
 			}, 
 			majorGridLines: false
 		},
-		chartArea: { margin: 0, padding: 0, height: (screen.height * 0.55), width: (screen.width * 0.57) },
-		plotArea: { margin: 0, padding: 0, height: (screen.height * 0.55), width: (screen.width * 0.57) }
+		chartArea: { background: "#f4f5f6", margin: 0, padding: 0, height: (screen.height * 0.52), width: (screen.width * 0.54) },
+		plotArea: { background: "#f4f5f6", margin: 0, padding: 0, height: (screen.height * 0.52), width: (screen.width * 0.54) }
 	}
 
 	// $scope.detailGridOptions = function(dataItem) {

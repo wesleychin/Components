@@ -2,20 +2,23 @@
 	<span class="headingFormat">Market news</span>
 </div>
 <div class="row"><hr/></div>
-<table>
+<table class="noBorder">
 	<tbody ng-repeat="item in marketNews">
 		<tr>
-			<td>{{item.heading}}</td>
+			<td class="row-headings-market-news">{{item.heading}}</td>
 		</tr>
 		<tr ng-repeat="row in item.details">
-			<td>{{row.date}}</td>
-			<td>{{row.description}}</td>
+			<td class="row-data-market-news-date">{{row.date}}</td>
+			<td class="row-data-market-news-description">{{row.description}}</td>
 		</tr>
 		<tr>
 		<td></td>
 		<td>
-		<div class="details-overview-bluetext-streaming right">View more</div>
+		<div class="details-overview-bluetext-streaming left">View more</div>
 		</td>
+		</tr>
+		<tr>
+		<td colspan="2"><hr/></td>
 		</tr>
 	</tbody>
 </table>
