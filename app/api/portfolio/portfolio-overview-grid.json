@@ -5,110 +5,121 @@
          "read":{  
             "url":"api/portfolio/portfolio-overview.json"
          }
-      },
-      "table":null
-   },
-   "scrollable":false,
-   "resizable":true,
-   "reorderable":true,
-   "sortable":true,
-   "pageable":false,
-   "columns":[  
-      {  
-         "title":"Instrument",
-         "field":"instrument",
+         },
+         "table":null
+         },
+         "scrollable":false,
+         "resizable":true,
+         "reorderable":true,
+         "sortable":true,
+         "pageable":false,
          "columns":[  
-            {  
-               "title":"Code",
-               "field":"code",
-               "width":200
-            },
-            {  
-               "title":"Quality<br/>(pending)",
-               "field":"instrument.amount",
-               "width":50,
-               "rowspan":2
-            }
-         ]
-      },
-      {  
-         "title":"Cost (3)",
-         "field":"cost",
-         "columns":[  
-            {  
-               "title":"Unit R",
-               "field":"unitR",
-               "width":200
-            },
-            {  
-               "title":"Total R",
-               "field":"totalUnit",
-               "width":200
-            }
-         ]
-      },
-      {  
-         "title":"Previous<br/>close/MT<br/>M R",
-         "field":"previous",
-         "width":200
-      },
-      {  
-         "title":"Current/ Bid",
-         "field":"currentBid",
-         "columns":[  
-            {  
-               "title":"Price<br/>R (2)",
-               "field":"priceR2",
-               "width":200
-            },
-            {  
-               "title":"Total R",
-               "field":"totalRCurrent",
-               "width":200
-            }
-         ]
-      },
-      {  
-         "title":"Today's movement",
-         "field":"movementToday",
-         "columns":[  
-            {  
-               "title":"Price change R<br/>% change",
-               "field":"priceChangeToday",
-               "width":200
-            },
-            {  
-               "title":"Profit/Loss R",
-               "field":"profitLossToday",
-               "width":200
-            }
-         ]
-      },
-      {  
-         "title":"Total movement",
-         "field":"movementTotal",
-         "columns":[  
-            {  
-               "title":"Price change R<br/>% change",
-               "field":"priceChangeTotal",
-               "width":200
-            },
-            {  
-               "title":"Profit/Loss<br/>R (4)",
-               "field":"profitLossTotal",
-               "width":200
-            }
-         ]
-      },
-      {  
-         "title":"Initial<br/>margin R",
-         "field":"initialMargin",
-         "width":200
-      },
-      {  
-         "title":"% of<br/>portfolio",
-         "field":"portfolio",
-         "width":200
-      }
-   ]
-}
+         {  
+            "title":"Instrument",
+            "field":"instrument",
+            "attributes": 
+            {
+               "style":"text-align:right;"
+               },
+               "columns":[  
+               {  
+                  "title":"Code",
+                  "field":"code",
+                  "width":200, 
+                  "attributes": 
+                  {
+                     "style":"text-align:center;"
+                  }
+                  },
+                  {  
+                     "title":"Quality<br/>(pending)",
+                     "field":"instrument.amount",
+                     "width":50,
+                     "attributes": 
+                     {
+                        "style":"text-align:center;"
+                     }
+                  }
+                  ]
+                  },
+                  {  
+                     "title":"Cost (3)",
+                     "field":"cost",
+                     "columns":[  
+                     {  
+                        "title":"Unit R",
+                        "field":"unitR",
+                        "width":200
+                        },
+                        {  
+                           "title":"Total R",
+                           "field":"totalUnit",
+                           "width":200
+                        }
+                        ]
+                        },
+                        {  
+                           "title":"Previous<br/>close/MT<br/>M R",
+                           "field":"previous",
+                           "width":200
+                           },
+                           {  
+                              "title":"Current/ Bid",
+                              "field":"currentBid",
+                              "columns":[  
+                              {  
+                                 "title":"Price<br/>R (2)",
+                                 "field":"priceR2",
+                                 "width":200
+                                 },
+                                 {  
+                                    "title":"Total R",
+                                    "field":"totalRCurrent",
+                                    "width":200
+                                 }
+                                 ]
+                                 },
+                                 {  
+                                    "title":"Today's movement",
+                                    "field":"movementToday",
+                                    "columns":[  
+                                    {  
+                                       "title":"Price change R<br/>% change",
+                                       "field":"priceChangeToday",
+                                       "width":200
+                                       },
+                                       {  
+                                          "title":"Profit/Loss R",
+                                          "field":"profitLossToday",
+                                          "width":200
+                                       }
+                                       ]
+                                       },
+                                       {  
+                                          "title":"Total movement",
+                                          "field":"movementTotal",
+                                          "columns":[  
+                                          {  
+                                             "title":"Price change R<br/>% change",
+                                             "field":"priceChangeTotal",
+                                             "width":200
+                                             },
+                                             {  
+                                                "title":"Profit/Loss<br/>R (4)",
+                                                "field":"profitLossTotal",
+                                                "width":200
+                                             }
+                                             ]
+                                             },
+                                             {  
+                                                "title":"Initial<br/>margin R",
+                                                "field":"initialMargin",
+                                                "width":200
+                                                },
+                                                {  
+                                                   "title":"% of<br/>portfolio",
+                                                   "field":"portfolio",
+                                                   "width":200
+                                                }
+                                                ]
+                                             }
