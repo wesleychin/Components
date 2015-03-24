@@ -147,7 +147,7 @@ li {
   float: left;
   margin-bottom: 20px;
   list-style-type: none;
-  font-size:12px;
+  font-size:12px !important; 
   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
   position: relative;
   border: 1px solid #c8c9cc;
@@ -227,24 +227,31 @@ hr {
   top: 10px;
 }
 
+.header-smallscreen-back-icon {
+  margin: 0 3px 0 10px;
+  font-size: 16px !important;
+  color: #666;}
+
 .headingFormat {
   font-size: 24px;
 }
 
 .row-headings-market-news {
   font-weight:bold;
-  font-size: 16px;
+  font-size: 14px;
   color: #666666;
 }
 
 .row-data-market-news-date {
-  font-size: 16px;
+  font-size: 14px;
   color:#999999;
+  margin-bottom:10px; border-bottom:1px solid #e3e4e4;
 }
 
 .row-data-market-news-description {
-  font-size: 16px;
+  font-size: 14px;
   color:#2570E0;
+  margin-bottom:10px; border-bottom:1px solid #e3e4e4;
 }
 
 .portfolio-performance-previous-years {
