@@ -27,6 +27,9 @@
                "width":200,
                "headerAttributes":{  
                   "style":"text-align:center; vertical-align: middle;"
+               },
+               "attributes":{  
+                  "style":"text-align:right;"
                }
             },
             {  
@@ -35,6 +38,9 @@
                "width":50,
                "headerAttributes":{  
                   "style":"text-align:center; vertical-align: middle;"
+               },
+               "attributes":{  
+                  "style":"text-align:right;"
                }
             }
          ]
@@ -52,6 +58,9 @@
                "width":200,
                "headerAttributes":{  
                   "style":"text-align:center; vertical-align: middle;"
+               },
+               "attributes":{  
+                  "style":"text-align:right;"
                }
             },
             {  
@@ -60,6 +69,9 @@
                "width":200,
                "headerAttributes":{  
                   "style":"text-align:center; vertical-align: middle;"
+               },
+               "attributes":{  
+                  "style":"text-align:right;"
                }
             }
          ]
@@ -70,6 +82,9 @@
          "width":200,
          "headerAttributes":{  
             "style":"text-align:center; vertical-align: middle;"
+         },
+         "attributes":{  
+            "style":"text-align:right;"
          }
       },
       {  
@@ -85,6 +100,9 @@
                "width":200,
                "headerAttributes":{  
                   "style":"text-align:center; vertical-align: middle;"
+               },
+               "attributes":{  
+                  "style":"text-align:right;"
                }
             },
             {  
@@ -93,6 +111,9 @@
                "width":200,
                "headerAttributes":{  
                   "style":"text-align:center; vertical-align: middle;"
+               },
+               "attributes":{  
+                  "style":"text-align:right;"
                }
             }
          ]
@@ -110,6 +131,9 @@
                "width":200,
                "headerAttributes":{  
                   "style":"text-align:center; vertical-align: middle;"
+               },
+               "attributes":{  
+                  "style":"text-align:right;"
                }
             },
             {  
@@ -118,6 +142,9 @@
                "width":200,
                "headerAttributes":{  
                   "style":"text-align:center; vertical-align: middle;"
+               },
+               "attributes":{  
+                  "style":"text-align:right;"
                }
             }
          ]
@@ -135,6 +162,9 @@
                "width":200,
                "headerAttributes":{  
                   "style":"text-align:center; vertical-align: middle;"
+               },
+               "attributes":{  
+                  "style":"text-align:right;"
                }
             },
             {  
@@ -143,6 +173,9 @@
                "width":200,
                "headerAttributes":{  
                   "style":"text-align:center; vertical-align: middle;"
+               },
+               "attributes":{  
+                  "style":"text-align:right;"
                }
             }
          ]
@@ -153,6 +186,9 @@
          "width":200,
          "headerAttributes":{  
             "style":"text-align:center; vertical-align: middle;"
+         },
+         "attributes":{  
+            "style":"text-align:right;"
          }
       },
       {  
@@ -161,6 +197,9 @@
          "width":200,
          "headerAttributes":{  
             "style":"text-align:center; vertical-align: middle;"
+         },
+         "attributes":{  
+            "style":"text-align:right;"
          }
       }
    ]

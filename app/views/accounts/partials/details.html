@@ -15,18 +15,16 @@
             <div class='column large-2 medium-2 details-overlay-gutter'> </div>
             <div class='column large-6 medium-4 right' align="right">
               <div class='details-overview-bluetext'> Quotes bank balance (1) (R100.00) </div>
-              <div class='details-overlay-lable'>
-                <select>
-                  <option>Delayed</option>
-                  <option>Live</option>
-                </select>
-              </div>
-              <div class='details-overlay-lable'>
-                <select>
-                  <option>Bid</option>
-                  <option>Ruling</option>
-                </select>
-              </div>
+
+              <!-- <div class="details-overview-bluetext-streaming pointer" 
+              ng-init="delayedEnabled=false" ng-disabled="delayedEnabled" ng-click="delayedEnabled=!delayedEnabled">Delayed</div>
+
+              <div class="details-overview-bluetext-streaming pointer"
+              ng-init="liveEnabled=true" ng-disabled="liveEnabled" ng-click="liveEnabled=!liveEnabled">Live</div>
+
+
+              <div class="details-overview-bluetext-streaming pointer">Bid</div>
+              <div class="details-overview-bluetext-streaming pointer">Ruling</div> -->
               <div class="details-overview-bluetext-streaming pointer" ng-click="btn.streaming = !btn.streaming">{{!btn.streaming && 'Streaming' || 'Other'}}</div>
               <div class="details-overview-feed-details"> As at {{time}} (15 min delayed - Reuters) </div>
             </div>

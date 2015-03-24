@@ -137,5 +137,5 @@ $scope.portfolioPerformanceChart = {
 	$scope.goToView= function (sectionId) {
 		$scope.view = sectionId;
 		$scope.idSelectedVote = sectionId;
-	}
+	};
 });
