@@ -17,7 +17,7 @@
       {  
          "field":"symbol",
          "title":" ",
-         "template":"<span ng-bind='dataItem.symbol'>#: data.symbol#</span>"
+         "template":"<span class='k-icon k-i-arrowhead-w'></span>"
       },
       {  
          "field":"sectorName",

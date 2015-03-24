@@ -12,19 +12,16 @@
                 1.4% </div>
               </div>
             </div>
-            <div class='column large-2 medium-2 details-overlay-gutter'> </div>
-            <div class='column large-6 medium-4 right' align="right">
+            <div class='column large-1 medium-1 details-overlay-gutter'> </div>
+            <div class='column large-7 medium-5 right' align="right">
               <div class='details-overview-bluetext'> Quotes bank balance (1) (R100.00) </div>
 
-              <!-- <div class="details-overview-bluetext-streaming pointer" 
-              ng-init="delayedEnabled=false" ng-disabled="delayedEnabled" ng-click="delayedEnabled=!delayedEnabled">Delayed</div>
+              <button type="button" ng-click="disableDelayed=true;disableLive=false;" ng-init="disableDelayed=true" ng-disabled="disableDelayed">Delayed</button>
+              <button type="button" ng-click="disableDelayed=false;disableLive=true;" ng-init="disableLive=false" ng-disabled="disableLive">Live</button>
 
-              <div class="details-overview-bluetext-streaming pointer"
-              ng-init="liveEnabled=true" ng-disabled="liveEnabled" ng-click="liveEnabled=!liveEnabled">Live</div>
+              <button type="button" ng-click="disableBid=true;disableRuling=false;" ng-init="disableBid=true" ng-disabled="disableBid">Bid</button>
+              <button type="button" ng-click="disableBid=false;disableRuling=true;" ng-init="disableRuling=false" ng-disabled="disableRuling">Ruling</button>
 
-
-              <div class="details-overview-bluetext-streaming pointer">Bid</div>
-              <div class="details-overview-bluetext-streaming pointer">Ruling</div> -->
               <div class="details-overview-bluetext-streaming pointer" ng-click="btn.streaming = !btn.streaming">{{!btn.streaming && 'Streaming' || 'Other'}}</div>
               <div class="details-overview-feed-details"> As at {{time}} (15 min delayed - Reuters) </div>
             </div>
