@@ -37,9 +37,10 @@
     <div class="sub-header-wrapper" ng-class="{'display-none': isPopupOpen}">
         <div class="sub-header-grid">
             <div class="sub-header row clearfix">
-                <div class="sub-header-title left show-for-large-up" ng-class="{'base-link-color pointer':setPersonalAccOnHeader}" ng-click="accountsToDashboard();">
-                    My Dashboard
-                </div>
+                <div class="sub-header-title left show-for-large-up base-link-color pointer" ng-class="{'base-link-color pointer':setPersonalAccOnHeader}" ng-click="accountsToDashboard();">My Dashboard </div> 
+               
+                &nbsp;> <span class="header-smallscreen-top-label">Personal Account -</span>
+                <span class="header-smallscreen-top-value ng-binding">05694084460</span>
                 <div class="left hide-for-medium hide-for-small" ng-if="setPersonalAccOnHeader">
                     <span class="fa fa-angle-right header-smallscreen-back-icon"></span>
                     <span class="header-smallscreen-top-label">{{currentAccountName}} -</span>
