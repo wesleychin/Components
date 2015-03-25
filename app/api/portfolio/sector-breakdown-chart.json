@@ -17,7 +17,7 @@
       {  
          "field":"symbol",
          "title":" ",
-         "template":"<span class='k-icon k-i-arrowhead-w'></span>"
+         "template":"<span ng-class=\"{'k-icon k-i-arrowhead-n': dataItem.symbol == 'increase'}\"></span>"
       },
       {  
          "field":"sectorName",

@@ -16,11 +16,10 @@
             <div class='column large-7 medium-5 right' align="right">
               <div class='details-overview-bluetext'> Quotes bank balance (1) (R100.00) </div>
 
-              <button type="button" ng-click="disableDelayed=true;disableLive=false;" ng-init="disableDelayed=true" ng-disabled="disableDelayed">Delayed</button>
-              <button type="button" ng-click="disableDelayed=false;disableLive=true;" ng-init="disableLive=false" ng-disabled="disableLive">Live</button>
-
-              <button type="button" ng-click="disableBid=true;disableRuling=false;" ng-init="disableBid=true" ng-disabled="disableBid">Bid</button>
-              <button type="button" ng-click="disableBid=false;disableRuling=true;" ng-init="disableRuling=false" ng-disabled="disableRuling">Ruling</button>
+              <div class="ost-buttons" ng-click="disableDelayed=true;disableLive=false;" ng-init="disableDelayed=true" ng-class="{'disabled pointer': disableDelayed, 'enabled pointer': !disableDelayed}">Delayed</div>&nbsp;|
+              <div class="ost-buttons" ng-click="disableDelayed=false;disableLive=true;" ng-init="disableLive=false" ng-class="{'disabled pointer': disableLive, 'enabled pointer': !disableLive}">Live</div>&nbsp;&nbsp;&nbsp;
+              <div class="ost-buttons" ng-click="disableBid=true;disableRuling=false;" ng-init="disableBid=true" ng-class="{'disabled pointer': disableBid, 'enabled pointer': !disableBid}">Bid</div>&nbsp;|
+              <div class="ost-buttons" ng-click="disableBid=false;disableRuling=true;" ng-init="disableRuling=false" ng-class="{'disabled pointer': disableRuling, 'enabled pointer': !disableRuling}">Ruling</div>
 
               <div class="details-overview-bluetext-streaming pointer" ng-click="btn.streaming = !btn.streaming">{{!btn.streaming && 'Streaming' || 'Other'}}</div>
               <div class="details-overview-feed-details"> As at {{time}} (15 min delayed - Reuters) </div>

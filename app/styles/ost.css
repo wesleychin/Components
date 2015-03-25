@@ -253,6 +253,23 @@ td:first-child {
     font-size: 10px;
 }
 
+.enabled {
+  background-color: #0099FF;
+  color: #FFFFFF;
+}
+
+.disabled {
+  background-color: #EFEFEF;
+  color: #0099FF;
+}
+
+.ost-buttons {
+  font-size: 12px;
+  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+  display: inline-block;
+  padding:2px;
+}
+
 /* Tablet size */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .acc-empty-boxes {
