@@ -19,6 +19,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       // bower:js
+      'bower_components/modernizr/modernizr.js',
       'bower_components/jquery/dist/jquery.js',
       'bower_components/angular/angular.js',
       'bower_components/angular-animate/angular-animate.js',
@@ -31,6 +32,10 @@ module.exports = function(config) {
       'bower_components/lodash/lodash.js',
       'bower_components/moment/moment.js',
       'bower_components/highcharts-ng/dist/highcharts-ng.js',
+      'bower_components/fastclick/lib/fastclick.js',
+      'bower_components/jquery.cookie/jquery.cookie.js',
+      'bower_components/jquery-placeholder/jquery.placeholder.js',
+      'bower_components/foundation/js/foundation.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
