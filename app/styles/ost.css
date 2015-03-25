@@ -292,7 +292,7 @@ fieldset {
 }
 
 table thead tr th, table tr td {
-  font-size: 8px !important;
+  font-size: 8px;
 }
 
 /* Tablet size */
