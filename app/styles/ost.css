@@ -265,9 +265,11 @@ td:first-child {
 
 .ost-buttons {
   font-size: 12px;
+  width: 50px;
   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
   display: inline-block;
   padding:2px;
+  text-align: center;
 }
 
 /* Tablet size */
