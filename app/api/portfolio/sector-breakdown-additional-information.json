@@ -1,0 +1,15 @@
+[
+	{ "sectorId":1, "OrderID":"increase", "ShipCountry":"Banks" , "ShipAddress":"R 1,980.29", "ShipName": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorId":2, "OrderID":"increase", "ShipCountry":"Diversified Industrials" , "ShipAddress":"R 1,980.29", "ShipName": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorId":3, "OrderID":"decrease", "ShipCountry":"Exchange Traded Funds" , "ShipAddress":"R 1,980.29", "ShipName": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorId":4, "OrderID":"neutral", "ShipCountry":"Exchange Traded Notes" , "ShipAddress":"R 1,980.29", "ShipName": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorId":5, "OrderID":"increase", "ShipCountry":"Food Products" , "ShipAddress":"R 1,980.29", "ShipName": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorId":6, "OrderID":"decrease", "ShipCountry":"General Mining" , "ShipAddress":"R 1,980.29", "ShipName": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorId":7, "OrderID":"neutral", "ShipCountry":"Health Care Providers" , "ShipAddress":"R 1,980.29", "ShipName": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorId":8, "OrderID":"increase", "ShipCountry":"Industrial & Office REITs" , "ShipAddress":"R 1,980.29", "ShipName": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorId":9, "OrderID":"decrease", "ShipCountry":"Investment Services" , "ShipAddress":"R 1,980.29", "ShipName": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorId":10, "OrderID":"neutral", "ShipCountry":"Iron & Steel" , "ShipAddress":"R 1,980.29", "ShipName": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorId":11, "OrderID":"increase", "ShipCountry":"Preference Shares" , "ShipAddress":"R 1,980.29", "ShipName": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorId":12, "OrderID":"decrease", "ShipCountry":"Retail REITs" , "ShipAddress":"R 1,980.29", "ShipName": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
+	{ "sectorId":13, "OrderID":"neutral", "ShipCountry":"Telecommunications Equipment" , "ShipAddress":"R 1,980.29", "ShipName": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" }
+]
