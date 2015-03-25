@@ -113,7 +113,6 @@ li {
 }
 
 .portfolio-overview-container {
-  height: 570px;
   width: 100%;
   background: white;
   border: 1px solid #c8c9cc;
@@ -250,7 +249,7 @@ td:first-child {
 }
 
 .k-grid {
-    font-size: 10px;
+    font-size: 10px !important;
 }
 
 .enabled {
