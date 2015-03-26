@@ -15,6 +15,16 @@
   margin-bottom: 30px;
 }
 
+.portfolio-performance-buttons {
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.search-button-size {
+  height: 32px;
+  width: 149;
+}
+
 .details-overview-amounts-bold{
   font-size: 14px;
   color: #666666;
@@ -325,9 +335,30 @@ table thead tr th, table tr td {
   margin-right: 30px;
   margin-bottom: 10px;
 }
+
 .center-calendar-text {
   padding-left: 280px;
 }
+
+.top-widgets {
+  height: 90px;
+  width: 81px;
+  display: inline-block;
+  padding:2px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.gainers {
+  background-color: #007F00 !important;
+  padding:2px;
+}
+
+.losers {
+  background-color: #FF0000 !important;
+  padding:2px;
+}
+
 /* Tablet size */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .acc-empty-boxes {
