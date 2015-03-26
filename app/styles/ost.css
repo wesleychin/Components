@@ -92,7 +92,7 @@
   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 }
 
-ul {
+/*ul {
   width: 160px;
   border: 0px solid black;
 }
@@ -102,7 +102,7 @@ li {
   margin: 0 10px 20px 10;
   background: white;
   float: left;
-}
+}*/
 
 .text-red {
   color : #FF0000;
@@ -279,6 +279,13 @@ td:first-child {
   text-align: center;
 }
 
+.ost-text {
+  font-size: 12px;
+  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+  display: inline-block;
+  color: #2570E0;
+}
+
 fieldset {
   height: 16px;
 }
@@ -293,6 +300,21 @@ fieldset {
 
 table thead tr th, table tr td {
   font-size: 8px;
+}
+
+.switch.tiny label {
+  height: 16px;
+  vertical-align: bottom;
+}
+
+.switch.tiny label:after {
+  height: 8px;
+  width: 8px;
+}  
+
+.positionSwitch {
+  display: inline-block;
+  padding:2px;
 }
 
 /* Tablet size */

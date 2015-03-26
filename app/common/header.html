@@ -12,48 +12,59 @@
                     <div class='left header-logo inline-block' ng-class="{'header-logo-popup-active': isPopupOpen,'display-none':setPersonalAccOnHeaderSmall,'display-block':setPersonalAccOnHeader}">
                         <img class="header-logo-icon" src='images/logo.png'>
                     </div>
-       
-       
+
+
                 </div>
                 <div class="row show-for-large">
                     <div class='header-bank-logo inline-block' ng-class="{'header-logo-popup-active': isPopupOpen,'display-none':setPersonalAccOnHeaderSmall,'display-block':setPersonalAccOnHeader}">
                         <img class="header-logo-icon" src='images/logo.png'>
                         <div class="sign-out-header" ng-class="{'sign-out-small-screen':setPersonalAccOnHeaderSmall,'blur': isPopupOpen}">
-                             
-                              <i class="fa fi-telephone" style="margin-right:20px;"></i>
-                              <i class="fa fi-mail" style="margin-right:20px;"></i>
-                             
-                             <span class="sign-out-text pointer" ng-click="gotoLogin()">Sign Out</span>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+
+                          <i class="fa fi-telephone" style="margin-right:20px;"></i>
+                          <i class="fa fi-mail" style="margin-right:20px;"></i>
+
+                          <span class="sign-out-text pointer" ng-click="gotoLogin()">Sign Out</span>
+
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="sub-header-wrapper" ng-class="{'display-none': isPopupOpen}">
+    <div class="sub-header-grid">
+        <div class="sub-header row clearfix">
+            <div class="sub-header-title left show-for-large-up base-link-color pointer" ng-class="{'base-link-color pointer':setPersonalAccOnHeader}" ng-click="accountsToDashboard();">My Dashboard </div> 
+
+            &nbsp;> <span class="header-smallscreen-top-label">Personal Account -</span>
+            <span class="header-smallscreen-top-value ng-binding">05694084460</span>
+            <a href="#" data-dropdown="drop" class="login">Dropdown Button</a><br>
+        <ul id="drop" data-dropdown-content class="f-dropdown">
+            <li><a href="#">This is a link</a></li>
+            <li><a href="#">This is another</a></li>
+            <li><a href="#">Yet another</a></li>
+        </ul>
+
+      <div class="left hide-for-medium hide-for-small" ng-if="setPersonalAccOnHeader">
+        <span class="fa fa-angle-right header-smallscreen-back-icon"></span>
+        <span class="header-smallscreen-top-label">{{currentAccountName}} -</span>
+        <span class="header-smallscreen-top-value">{{currentAccountNum}}</span>
     </div>
+    <div class="right sub-header-options small-12 medium-12 columns large-5">
+        <span class="right small-3 medium-3"><i class="fa fi-magnifying-glass"></i></span>
+        <span class="right small-3 medium-3">Trade</span>
+        <span class="right small-3 medium-3">Transfer</span>
 
-
-    <div class="sub-header-wrapper" ng-class="{'display-none': isPopupOpen}">
-        <div class="sub-header-grid">
-            <div class="sub-header row clearfix">
-                <div class="sub-header-title left show-for-large-up base-link-color pointer" ng-class="{'base-link-color pointer':setPersonalAccOnHeader}" ng-click="accountsToDashboard();">My Dashboard </div> 
-               
-                &nbsp;> <span class="header-smallscreen-top-label">Personal Account -</span>
-                <span class="header-smallscreen-top-value ng-binding">05694084460</span>
-                
-                <div class="left hide-for-medium hide-for-small" ng-if="setPersonalAccOnHeader">
-                    <span class="fa fa-angle-right header-smallscreen-back-icon"></span>
-                    <span class="header-smallscreen-top-label">{{currentAccountName}} -</span>
-                    <span class="header-smallscreen-top-value">{{currentAccountNum}}</span>
-                </div>
-                <div class="right sub-header-options small-12 medium-12 columns large-5">
-                    <span class="right small-3 medium-3"><i class="fa fi-magnifying-glass"></i></span>
-                    <span class="right small-3 medium-3">Trade</span>
-                    <span class="right small-3 medium-3">Transfer</span>
-                    
-                </div>
-            </div>
-        </div>
     </div>
 </div>
+</div>
+</div>
+</div>
+
+
+<script>
+  $(document).foundation();
+</script>
