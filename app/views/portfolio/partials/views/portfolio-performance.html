@@ -1,11 +1,33 @@
 <div>
 	<span class="headingFormat">Portfolio performance</span>
 </div>
-<div class="row"><hr/></div>
-<!-- <div class="row">
-	<highchart id="chart1" config="chartConfig"></highchart>
-</div> -->
 <div class="row">
+	<hr/>
+</div>
+<!-- <span class="left">% Holding period return showing</span> -->
+<!-- <span class="center">2015&nbsp;|&nbsp;2014&nbsp;|&nbsp;2013&nbsp;|&nbsp;2012&nbsp;|&nbsp;2011</span> -->
+<div class="row">
+	<div class='columns large-12 medium-4 small-12'>
+		<div class='portfolio-performance-text left'>
+			<div class='portfolio-performance-text'>% Holding period return showing
+			</div>
+			<div class='portfolio-performance-text'> 
+			</div>
+			<div class='portfolio-performance-text'><span class="pointer">2015</span>&nbsp;|&nbsp;<span class="pointer">2014</span>&nbsp;|&nbsp;<span class="pointer">2013</span>&nbsp;|&nbsp;<span class="pointer">2012</span>&nbsp;|&nbsp;<span class="pointer">2011</span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<highchart id="chart1" config="portfolioPerformanceChart"></highchart>
+</div>
+<div class="row">
+	<div class='columns large-12 medium-4 small-12'>
+		<div class='portfolio-performance-text center-calendar-text pointer'><i class="fi-calendar"></i>&nbsp;&nbsp;&nbsp;<span>Compare with previous years</span>
+		</div>
+	</div>
+</div>
+<!-- <div class="row">
 	<div class="left">
 		% Holding period return
 	</div>
@@ -26,3 +48,4 @@
 		<i class="fi-calendar"></i> <span class="portfolio-performance-previous-years">Show previous years</span>
 	</div>
 </div>
+ -->

@@ -11,10 +11,6 @@ angular.module('componentsApp')
 		$scope.portfolioOverviewGrid = response;
 	});
 
-	// $http.get('/api/portfolio/sector-breakdown-chart.json').success(function(response) {
-	// 	$scope.sectorBreakdownGrid = response;
-	// });
-
 	$scope.sectorBreakdownGrid = {
 		dataSource:{  
 			type:"json",
@@ -94,76 +90,122 @@ angular.module('componentsApp')
 	$http.get('/api/portfolio/portfolio-performance.json').success(function (data, status) {
 		$scope.chartConfig = {
 			chart: {
-				type: 'column'
-			},
-			xAxis: {
-				categories: data.categories
-			},
-			series: [{
-				data: data.values
-			}],
-			legend: {
-				enabled: false
-			}, 
-			plotOptions: {
-				column: {
-					pointPadding: 0.2,
-					borderWidth: 0
-				}
-			}
+            type: 'column'
+	        },
+	        title: {
+	            text: 'Column chart with negative values'
+	        },
+	        xAxis: {
+	            categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+	        },
+	        credits: {
+	            enabled: false
+	        },
+	        series: [{
+	            name: 'John',
+	            data: [5, 3, 4, 7, 2]
+	        }, {
+	            name: 'Jane',
+	            data: [2, -2, -3, 2, 1]
+	        }, {
+	            name: 'Joe',
+	            data: [3, 4, 4, -2, 5]
+	        }]
 		};
 	});
 
 	$scope.portfolioPerformanceChart = {
-		seriesDefaults: {
-			type: "column"
+        options: {
+            chart: {
+                type: 'column'
+            }
+        },
+        title:{
+		    text:''
 		},
-		series: [{
-			color: function(data) {
-				if (data.value > 0) {
-					return "green";
-				} else {
-					return "red";
-				}
-			}, 
-			gap: 0,
-			spacing: 0,
-			data: [20,
-			-50,
-			-40,
-			-30,
-			40,
-			-80,
-			10,
-			-5,
-			60,
-			-60,
-			70,
-			-20]
-		}],
-		valueAxis: {
-			labels: {
-				format: "{0}%"
-			},
-			line: {
-				visible: false
-			},
-			axisCrossingValue: 0, 
-			majorGridLines: false
-		},
-		categoryAxis: {
+        series: [{
+        	color: "green",
+        	negativeColor: "red", 
+            data: [20,
+			   -50,
+			   -40,
+			   -30,
+			   40,
+			   -80,
+			   10,
+			   -5,
+			   60,	
+			   -60,
+			   70,
+			   -20],
+			pointPadding: 0,
+            groupPadding: 0,
+            showInLegend: false,
+        }],
+        xAxis: {
 			categories: ["Jan", "Feb", "Mar", "Apr", "May", "June", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-			line: {
-				visible: false
+			lineColor: 'transparent'
+		}, 
+		yAxis: {
+			title:{
+			    text:''
 			},
-			labels: {
-				padding: {top: 200}
-			}, 
-			majorGridLines: false
-		},
-		chartArea: { background: "#FFF", margin: 0, padding: 0, height: (screen.height * 0.48), width: (screen.width * 0.50) },
-		plotArea: { background: "#FFF", margin: 0, padding: 0, height: (screen.height * 0.48), width: (screen.width * 0.50) }
-	}
+			gridLineWidth: 0,
+            minorGridLineWidth: 0, 
+            lineColor: 'transparent'
+		}
+    }
+
+	// $scope.portfolioPerformanceChart = {
+	// 	seriesDefaults: {
+	// 		type: "column"
+	// 	},
+	// 	series: [{
+	// 		color: function(data) {
+	// 			if (data.value > 0) {
+	// 				return "green";
+	// 			} else {
+	// 				return "red";
+	// 			}
+	// 		}, 
+	// 		gap: 0,
+	// 		spacing: 0,
+	// 		data: [20,
+	// 		-50,
+	// 		-40,
+	// 		-30,
+	// 		40,
+	// 		-80,
+	// 		10,
+	// 		-5,
+	// 		60,
+	// 		-60,
+	// 		70,
+	// 		-20]
+	// 	}],
+	// 	valueAxis: {
+	// 		labels: {
+	// 			format: "{0}%"
+	// 		},
+	// 		line: {
+	// 			visible: false
+	// 		},
+	// 		axisCrossingValue: 0, 
+	// 		majorGridLines: false
+	// 	},
+	// 	categoryAxis: {
+	// 		categories: ["Jan", "Feb", "Mar", "Apr", "May", "June", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+	// 		line: {
+	// 			visible: false
+	// 		},
+	// 		labels: {
+	// 			padding: {top: 200}
+	// 		}, 
+	// 		majorGridLines: false
+	// 	},
+	// 	chartArea: { background: "#FFF", margin: 0, padding: 0, height: (screen.height * 0.48), width: (screen.width * 0.50) },
+	// 	plotArea: { background: "#FFF", margin: 0, padding: 0, height: (screen.height * 0.48), width: (screen.width * 0.50) }
+	// }
 
 	$http.get('/api/portfolio/market-news.json').success(function(response) {
 		$scope.marketNews = response;
