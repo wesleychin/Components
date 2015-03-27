@@ -341,8 +341,8 @@ table thead tr th, table tr td {
 }
 
 .top-widgets {
-  height: 90px;
-  width: 81px;
+  height: 70px;
+  width: 60px;
   display: inline-block;
   padding:2px;
   color: #FFFFFF;
@@ -357,6 +357,18 @@ table thead tr th, table tr td {
 .losers {
   background-color: #FF0000 !important;
   padding:2px;
+}
+
+.top-performers-heading-spacing {
+  display: inline-block;
+  padding-right: 305px;
+}
+
+.top-performers-headings {
+  font-size: 18px;
+  color: #666666;
+  line-height: 48px;
+  padding-bottom:10px;
 }
 
 /* Tablet size */

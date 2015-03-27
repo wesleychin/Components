@@ -1,15 +1,22 @@
-<div class="top-widgets gainers" ng-show="performer.gain == true" ng-repeat-start="performer in performers">
-	<span>{{performer.name}}</span><br/>
-	<i class="k-icon k-i-arrow-n"></i><br/>
-	<span>{{performer.percentage}}<span><br/>
-	<span>{{performer.amount}}<span>
+<div class="row">
+	<div class="portfolio-performance-buttons"><span class="top-performers-headings">Top gainers</span></div>
+	<div class="top-performers-heading-spacing"></div>
+	<div class="portfolio-performance-buttons"><span class="top-performers-headings">Top losers</span></div>
 </div>
-<div class="positionSwitch" ng-repeat-end></div>
-
-<div class="top-widgets losers" ng-show="performer.gain == false" ng-repeat-start="performer in performers">
-	<span>{{performer.name}}</span><br/>
-	<i class="k-icon k-i-arrow-s"></i><br/>
-	<span>{{performer.percentage}}<span><br/>
-	<span>{{performer.amount}}<span> 
+<div class="row">
+	<div class="top-widgets gainers" ng-show="performer.gain == true" ng-repeat-start="performer in performers">
+		<span>{{performer.name}}</span><br/><br/>
+		<i class="k-icon k-i-arrow-n"></i><br/>
+		<span>{{performer.percentage}}<span><br/>
+		<span>{{performer.amount}}<span>
 	</div>
-<div class="positionSwitch" ng-repeat-end></div>
+	<div class="positionSwitch" ng-repeat-end></div>
+
+	<div class="top-widgets losers" ng-show="performer.gain == false" ng-repeat-start="performer in performers">
+		<span>{{performer.name}}</span><br/><br/>
+		<i class="k-icon k-i-arrow-s"></i><br/>
+		<span>{{performer.percentage}}<span><br/>
+		<span>{{performer.amount}}<span> 
+		</div>
+	<div class="positionSwitch" ng-repeat-end></div>
+</div>
