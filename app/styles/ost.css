@@ -378,6 +378,7 @@ li.list-separator:hover {
 
 .f-dropdown li a:hover {
   color: #0000FF;
+  background-color: #FFFFFF;
 }
 
 .account-details-dropdown {
@@ -424,4 +425,5 @@ li.list-separator:hover {
 }
 
 .account-wrapper {
-  background: #e9eaed; }
+  background: #e9eaed; 
+}
