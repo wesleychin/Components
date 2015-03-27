@@ -1,5 +1,5 @@
 .details-overview .details-overview {
-  font-size: 14px;
+  font-size: 12px;
   color: #666666;
   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
   display: inline-block;
@@ -90,29 +90,18 @@
 }
 
 .acc-empty-boxes {
-  width: 100%;
+  width: 96px;
   height: 35px;
   background: #d6d6d6;
   float: left;
   color: #2570e0;
-  font-size:13px;
-  padding:15px 15px 25px 15px;
+  font-size:12px;
+  padding-left:5px;
+  padding-top:5px;
   border:0px solid #2570e0;
   margin-bottom:10px;
   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 }
-
-/*ul {
-  width: 160px;
-  border: 0px solid black;
-}
-
-li {
-  border: 0px solid black;
-  margin: 0 10px 20px 10;
-  background: white;
-  float: left;
-}*/
 
 .text-red {
   color : #FF0000;
@@ -168,7 +157,7 @@ div.acc-trans-body-container {
 .selected {
   background-color: #FFF;
   border-left:1px solid #c8c9cc; border-bottom:1px solid #c8c9cc; border-top:1px solid #c8c9cc;
-  width:177px;
+  width:96px;
   color:#000;
   position:relative;
   z-index: 10000 !important;
@@ -341,8 +330,8 @@ table thead tr th, table tr td {
 }
 
 .top-widgets {
-  height: 70px;
-  width: 60px;
+  height: 79px;
+  width: 68px;
   display: inline-block;
   padding:2px;
   color: #FFFFFF;
@@ -361,7 +350,7 @@ table thead tr th, table tr td {
 
 .top-performers-heading-spacing {
   display: inline-block;
-  padding-right: 305px;
+  padding-right: 345px;
 }
 
 .top-performers-headings {
@@ -369,6 +358,15 @@ table thead tr th, table tr td {
   color: #666666;
   line-height: 48px;
   padding-bottom:10px;
+}
+
+.account-details-dropdown {
+  display: inline-block;
+  font-family: 'Arial';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #666666;
 }
 
 /* Tablet size */

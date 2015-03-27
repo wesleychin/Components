@@ -1,10 +1,10 @@
-<li class="portfolio-overview-container left" ng-show="view == 1" 
+<li ng-controller="PortfolioOverviewCtrl" class="portfolio-overview-container left" ng-show="view == 1"
 ng-include src="'views/portfolio/partials/views/portfolio-overview.html'"></li>
-<li class="portfolio-overview-container left" ng-show="view == 2" 
+<li ng-controller="SectorBreakdownCtrl" class="portfolio-overview-container left" ng-show="view == 2" 
 ng-include src="'views/portfolio/partials/views/sector-breakdown.html'"></li>
-<li class="portfolio-overview-container left" ng-show="view == 3" 
+<li ng-controller="PortfolioPerformanceCtrl" class="portfolio-overview-container left" ng-show="view == 3"
 ng-include src="'views/portfolio/partials/views/portfolio-performance.html'"></li>
-<li class="portfolio-overview-container left" ng-show="view == 4" 
+<li ng-controller="MarketNewsCtrl" class="portfolio-overview-container left" ng-show="view == 4" 
 ng-include src="'views/portfolio/partials/views/market-news.html'"></li>
 <li class="portfolio-overview-container left" ng-show="view == 5" 
 ng-include src="'views/portfolio/partials/views/triggers.html'"></li>

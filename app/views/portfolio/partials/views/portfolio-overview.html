@@ -1,7 +1,7 @@
 <div class="row">
 	<span class="headingFormat left">Portfolio overview</span>
 	<div class="portfolio-performance-buttons right">
-		<div class="portfolio-performance-buttons" ng-include src="'common/search-button.html'">
+		<div class="portfolio-performance-buttons" ng-include src="'common/search-dropdown.html'">
 		</div>
 		<div class="portfolio-performance-buttons" ng-include src="'common/download-button.html'">
 		</div>
@@ -18,61 +18,7 @@
 		<li class="k-state-active"></li>
 	</ul>
 	<div kendo-grid k-options="portfolioOverviewGridAdditionalInformation(dataItem)">
-		{{portfolioOverviewGridMetaData|json}}
-		<div class="row">
-			<div class='columns large-12 medium-4 small-12 details-overview-values'>
-				<div class='details-overview-medium left'>
-					<div class='details-overview-medium'>On expiry
-					</div>
-					<div class='details-overview-medium'>{{portfolioOverviewGridMetaData.onExpiry}}
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class='columns large-12 medium-4 small-12 details-overview-values'>
-				<div class='details-overview-medium left'>
-					<div class='details-overview-medium'>12 month low
-					</div>
-					<div class='details-overview-medium'>{{portfolioOverviewGridMetaData.twelveMonthLow}}
-					</div>
-					<div class='details-overview-medium'>12 month high
-					</div>
-					<div class='details-overview-medium'>{{portfolioOverviewGridMetaData.twelveMonthHigh}}
-					</div>
-					<div class='details-overview-medium'>Market cap
-					</div>
-					<div class='details-overview-medium'>{{portfolioOverviewGridMetaData.marketCap}}
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class='columns large-12 medium-4 small-12 details-overview-values'>
-				<div class='details-overview-medium left'>
-					<div class='details-overview-medium'>Date of low
-					</div>
-					<div class='details-overview-medium'>{{portfolioOverviewGridMetaData.dateOfLow}}
-					</div>
-					<div class='details-overview-medium'>Date of high
-					</div>
-					<div class='details-overview-medium'>{{portfolioOverviewGridMetaData.dateOfHigh}}
-					</div>
-					<div class='details-overview-medium'>Shares in issue
-					</div>
-					<div class='details-overview-medium'>{{portfolioOverviewGridMetaData.peRatio}}
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class='columns large-12 medium-4 small-12 details-overview-values'>
-				<div class='details-overview-medium left'>
-					<div class='details-overview-medium' ng-repeat="button in buttons">{{button.name}}
-					</div>
-				</div>
-			</div>		
-		</div>
+		<div ng-include src="'views/portfolio/partials/views/portfolio-overview-grid-additional-information.html'"></div>
 	</kendo-tabstrip>
 </div>
 </kendo-grid>

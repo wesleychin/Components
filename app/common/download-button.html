@@ -1,5 +1,6 @@
-<button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">PDF</button><br>
-<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
-  <li><a href="#">XLS</a></li>
-  <li><a href="#">CSV</a></li>
+<a class="button dropdown" dropdown-toggle="#download-dropdown"></a>
+<ul id="download-dropdown" class="f-dropdown">
+	<li ng-repeat="(id, label) in downloadOptions">
+	  <a href="{{id}}" target="_blank">{{label}}</a>
+	</li>
 </ul>
