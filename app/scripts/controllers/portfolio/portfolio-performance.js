@@ -2,6 +2,11 @@
 
 angular.module('componentsApp')
 .controller('PortfolioPerformanceCtrl', function ($scope, $http, $timeout, $filter) {
+
+	$http.get('/api/portfolio/portfolio-performance-years.json').success(function(response) {
+		$scope.years = response;
+	});
+
 	$scope.portfolioPerformanceChart = {
 		options: {
 			chart: {

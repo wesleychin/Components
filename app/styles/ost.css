@@ -360,6 +360,10 @@ table thead tr th, table tr td {
   padding-bottom:10px;
 }
 
+.top-performers-name {
+  padding-top: 6px;
+}
+
 .account-details-dropdown {
   display: inline-block;
   font-family: 'Arial';
