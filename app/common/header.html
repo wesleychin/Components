@@ -12,8 +12,6 @@
                     <div class='left header-logo inline-block' ng-class="{'header-logo-popup-active': isPopupOpen,'display-none':setPersonalAccOnHeaderSmall,'display-block':setPersonalAccOnHeader}">
                         <img class="header-logo-icon" src='images/logo.png'>
                     </div>
-
-
                 </div>
                 <div class="row show-for-large">
                     <div class='header-bank-logo inline-block' ng-class="{'header-logo-popup-active': isPopupOpen,'display-none':setPersonalAccOnHeaderSmall,'display-block':setPersonalAccOnHeader}">
@@ -24,7 +22,6 @@
                           <i class="fa fi-mail" style="margin-right:20px;"></i>
 
                           <span class="sign-out-text pointer" ng-click="gotoLogin()">Sign Out</span>
-
                       </div>
 
                   </div>
@@ -32,22 +29,20 @@
           </div>
       </div>
   </div>
-
   <div class="sub-header-wrapper" ng-class="{'display-none': isPopupOpen}">
     <div class="sub-header-grid">
         <div class="sub-header row clearfix">
             <div class="sub-header-title left show-for-large-up base-link-color pointer" ng-class="{'base-link-color pointer':setPersonalAccOnHeader}" ng-click="accountsToDashboard();">My Dashboard</div>&nbsp;<span class="k-icon k-i-expand-w"></span>&nbsp;&nbsp;
             <div class ="account-details-dropdown">
-              <p>
-                <a dropdown-toggle="#dropdown-example-1">Cheque Account - 1234567 <span class="k-icon k-i-collapse"></span></a>
+              <p class="accounts-dropdown">
+                <a class="accounts-dropdown" dropdown-toggle="#dropdown-example-1">Cheque Account - 1234567 <span class="k-icon k-i-collapse"></span></a>
               </p>
               <ul id="dropdown-example-1" class="f-dropdown">
-                <li ng-repeat="account in accounts">
+                <li class="list-separator" ng-repeat="account in accounts">
                   <a>{{account}}</a>
                 </li>
               </ul>
             </div>
-
       <div class="left hide-for-medium hide-for-small" ng-if="setPersonalAccOnHeader">
         <span class="fa fa-angle-right header-smallscreen-back-icon"></span>
         <span class="header-smallscreen-top-label">{{currentAccountName}} -</span>
@@ -57,7 +52,6 @@
         <span class="right small-3 medium-3"><i class="fa fi-magnifying-glass"></i></span>
         <span class="right small-3 medium-3">Trade</span>
         <span class="right small-3 medium-3">Transfer</span>
-
     </div>
 </div>
 </div>

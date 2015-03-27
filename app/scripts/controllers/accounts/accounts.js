@@ -6,6 +6,7 @@ angular.module('componentsApp')
 	$scope.time = moment().format('h:mm:ss');
 	$scope.date = moment().format('YYYY/MM/DD'); 
 	$scope.idSelectedVote = 1;
+	$scope.streamingButtonActive = true;
 
 	$http.get('/api/accounts/account-details.json').success(function(response) {
 		$scope.accounts = response;
@@ -34,5 +35,13 @@ angular.module('componentsApp')
 	$scope.goToView= function (sectionId) {
 		$scope.view = sectionId;
 		$scope.idSelectedVote = sectionId;
+	};
+
+	$scope.toggleStreaming = function () {
+		if ($scope.streamingButtonActive === true) {
+			$scope.streamingButtonActive = false;
+		} else {
+			$scope.streamingButtonActive = true;
+		}
 	};
 });

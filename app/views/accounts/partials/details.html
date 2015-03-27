@@ -25,7 +25,8 @@
   <label for="exampleCheckboxSwitch"></label>&nbsp;<span class="ost-text">Ruling</span>
 </div> 
 
-              <div class="details-overview-bluetext-streaming pointer" ng-click="btn.streaming = !btn.streaming">Streaming</div>
+              <div class="details-overview-bluetext-streaming pointer" ng-click="toggleStreaming()" 
+              ng-class="{'text-blue': streamingButtonActive == true, 'text-grey': streamingButtonActive == false}">Streaming</div>
               <div class="details-overview-feed-details"> As at {{time}} (15 min delayed - Reuters) </div>
             </div>
           </div>
