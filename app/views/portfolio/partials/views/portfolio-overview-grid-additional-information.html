@@ -1,61 +1,62 @@
 <div class="row">
-			<div class='columns large-12 medium-4 small-12 details-overview-values'>
-				<div class='details-overview-medium left'>
-					<div class='details-overview-medium'>On expiry
-					</div>
-					<div class='details-overview-medium'>{{portfolioOverviewGridMetaData.onExpiry}}
-					</div>
-				</div>
+	<div class='columns large-12 medium-4 small-12 details-overview-values'>
+		<div class='grid-additional-information left'>
+			<div class='grid-additional-information grid-on-expiry-heading'>On expiry
+			</div>
+			<div class='grid-additional-information grid-additional-information-data'>{{portfolioOverviewGridMetaData.onExpiry}}
 			</div>
 		</div>
+	</div>
+</div>
 
-		<div class="row">
-			<tabset horizontal="true" type="navType">
-			    <tab heading="Market statistics"><div class="row">
+<div class="row">
+	<tabset horizontal="true" type="navType">
+		<tab heading="Market statistics"><div class="row">
 			<div class='columns large-12 medium-4 small-12 details-overview-values'>
-				<div class='details-overview-medium left'>
-					<div class='details-overview-medium'>12 month low
+				<div class='grid-additional-information left'>
+					<div class='grid-additional-information'>12 month low
 					</div>
-					<div class='details-overview-medium'>{{portfolioOverviewGridMetaData.twelveMonthLow}}
+					<div class='grid-additional-information grid-additional-information-data'>{{portfolioOverviewGridMetaData.twelveMonthLow}}
 					</div>
-					<div class='details-overview-medium'>12 month high
+					<div class='grid-additional-information'>12 month high
 					</div>
-					<div class='details-overview-medium'>{{portfolioOverviewGridMetaData.twelveMonthHigh}}
+					<div class='grid-additional-information grid-additional-information-data'>{{portfolioOverviewGridMetaData.twelveMonthHigh}}
 					</div>
-					<div class='details-overview-medium'>Market cap
+					<div class='grid-additional-information'>Market cap
 					</div>
-					<div class='details-overview-medium'>{{portfolioOverviewGridMetaData.marketCap}}
+					<div class='grid-additional-information grid-additional-information-data'>{{portfolioOverviewGridMetaData.marketCap}}
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class='columns large-12 medium-4 small-12 details-overview-values'>
-				<div class='details-overview-medium left'>
-					<div class='details-overview-medium'>Date of low
+				<div class='grid-additional-information left'>
+					<div class='grid-additional-information'>Date of low
 					</div>
-					<div class='details-overview-medium'>{{portfolioOverviewGridMetaData.dateOfLow}}
+					<div class='grid-additional-information grid-additional-information-data'>{{portfolioOverviewGridMetaData.dateOfLow}}
 					</div>
-					<div class='details-overview-medium'>Date of high
+					<div class='grid-additional-information'>Date of high
 					</div>
-					<div class='details-overview-medium'>{{portfolioOverviewGridMetaData.dateOfHigh}}
+					<div class='grid-additional-information grid-additional-information-data'>{{portfolioOverviewGridMetaData.dateOfHigh}}
 					</div>
-					<div class='details-overview-medium'>Shares in issue
+					<div class='grid-additional-information'>Shares in issue
 					</div>
-					<div class='details-overview-medium'>{{portfolioOverviewGridMetaData.peRatio}}
+					<div class='grid-additional-information grid-additional-information-data'>{{portfolioOverviewGridMetaData.peRatio}}
 					</div>
 				</div>
 			</div>
 		</div></tab>
-			    <tab heading="To be added">Other stuff</tab>
-			</tabset>
-		</div>
-		
-		<div class="row">
-			<div class='columns large-12 medium-4 small-12 details-overview-values'>
-				<div class='details-overview-medium left'>
-					<div class='details-overview-medium' ng-repeat="button in buttons">{{button.name}}
-					</div>
-				</div>
-			</div>		
-		</div>
+		<tab heading="To be added">Other stuff</tab>
+	</tabset>
+</div>
+
+<div class="row">
+	<ul>
+		<li ng-repeat="button in buttons">
+		<a class='grid-additional-information grid-additional-information-links left' href="">
+				<i ng-class="{'fi-align-justify': button.id == 1, 'fi-align-justify': button.id == 2}"></i>&nbsp;{{button.name}}
+			</a>
+		</li>
+	</ul>
+</div>

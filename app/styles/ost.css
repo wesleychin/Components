@@ -416,6 +416,65 @@ hr {
     padding-right: 30px;
   }
 
+  .grid-additional-information {
+    font-family: 'Arial';
+    font-size: 11px;
+    color: #666666;
+    display: inline-block;
+    text-align: left;
+    line-height: normal;
+    font-style: normal;
+  }
+
+  .grid-additional-information-data {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11px;
+    color: #999999;
+  }
+
+  .grid-on-expiry-heading {
+    font-weight:bold;
+    font-weight: 700;
+  }
+
+  .grid-additional-information-links {
+    padding-right: 40px;
+    color : #0000FF;
+  }
+
+  .tabs dd > a {
+    font-family: 'Arial';
+    font-size: 11px;
+    color: #666666;
+    display: inline-block;
+    text-align: left;
+    line-height: normal;
+    font-style: normal;
+    padding-right: 10px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: #FFFFFF !important;
+  }
+
+  .k-grid-content {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .tabs dd.active a {
+    color:#2570E0;
+  }
+
+  .tabs dd:not(:last-child) {
+    border-right: 2px solid #000000 !important;
+  }
+
+  .tabs dd:last-child {
+    padding-left: 10px;
+  }
+
   /* Tablet size */
   @media only screen and (min-width: 40.063em) and (max-width: 64em) {
     .acc-empty-boxes {
