@@ -1,6 +1,6 @@
-<a class="button dropdown" dropdown-toggle="#download-dropdown"></a>
-<ul id="download-dropdown" class="f-dropdown">
-	<li ng-repeat="(id, label) in downloadOptions">
-	  <a href="{{id}}" target="_blank">{{label}}</a>
-	</li>
-</ul>
+<div>
+	<select class="downloadDropdown">
+		<option ng-repeat="(id, label) in downloadOptions" value="id">{{label}}</option>
+	</select>
+	<div class="downloadButton"><i class="fi-download"></i></div>
+</div>
