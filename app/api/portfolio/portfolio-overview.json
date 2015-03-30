@@ -2,6 +2,7 @@
    {  
       "id":1,
       "code":"ABL",
+      "fullName":"Additional text 1", 
       "instrument":{  
          "amount":"100",
          "decrease":15
@@ -28,6 +29,7 @@
    {  
       "id":2,
       "code":"CMLcfd",
+      "fullName":"Additional text 2", 
       "instrument":{  
          "amount":"-4",
          "increase":7
@@ -54,6 +56,7 @@
    {  
       "id":3,
       "code":"AGL",
+      "fullName":"Additional text 3", 
       "instrument":{  
          "amount":"150",
          "increase":7
@@ -80,6 +83,7 @@
    {  
       "id":4,
       "code":"AGL CC",
+      "fullName":"Additional text 4", 
       "instrument":{  
          "amount":"10"
       },
@@ -105,6 +109,7 @@
    {  
       "id":5,
       "code":"CMLcfd",
+      "fullName":"Additional text 5", 
       "instrument":{  
          "amount":"-4",
          "increase":7
@@ -131,6 +136,7 @@
    {  
       "id":6,
       "code":"AGL",
+      "fullName":"Additional text 6", 
       "instrument":{  
          "amount":"150",
          "increase":7
@@ -157,6 +163,7 @@
    {  
       "id":7,
       "code":"AGL CC",
+      "fullName":"Additional text 8", 
       "instrument":{  
          "amount":"10"
       },

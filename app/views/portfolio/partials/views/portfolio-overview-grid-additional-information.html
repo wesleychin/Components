@@ -46,15 +46,16 @@
 					</div>
 				</div>
 			</div>
-		</div></tab>
-		<tab heading="To be added">Other stuff</tab>
-	</tabset>
+		</div>
+	</tab>
+	<tab heading="To be added">Other stuff</tab>
+</tabset>
 </div>
 
 <div class="row">
 	<ul>
 		<li ng-repeat="button in buttons">
-		<a class='grid-additional-information grid-additional-information-links left' href="">
+			<a class='grid-additional-information grid-additional-information-links left' href="">
 				<i ng-class="{'fi-align-justify': button.id == 1, 'fi-align-justify': button.id == 2}"></i>&nbsp;{{button.name}}
 			</a>
 		</li>

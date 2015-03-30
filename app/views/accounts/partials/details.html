@@ -2,14 +2,16 @@
 <div class="details-warp small large sml-popup-top-gradient">
   <div class='row details-overlay'>
     <div class="row">
-      <div class='column large-4 medium-4'>
+      <div class='column large-5 medium-5'>
         <div class='details-overview'>
           <div class='details-overview'> Portfolio value<br>
-            <span class="details-overview-amounts-bold"> R55000</span> </div>
-            <div class='details-overview'> Daily change<br>
-              R8500.00 </div>
-              <div class='details-overview'> Total change<br>
-                1.4% </div>
+            <span class="details-overview-amounts-bold">R55000</span> </div>
+            <div class="details-overview">Daily change<br>
+              <span class="details-overview-amounts-bold text-green">0.8 (0.01%)</span>
+              <i class="text-green fi-arrow-up"></i></div>
+              <div class="details-overview">Total change<br>
+                <span class="details-overview-amounts-bold text-green">1.4 (0.01%)</span>
+                <i class="text-green fi-arrow-up"></i></div>
               </div>
             </div>
             <div class='column large-1 medium-1 details-overlay-gutter'> </div>
@@ -17,14 +19,10 @@
               <div class='details-overview-bluetext'> Quotes bank balance (1) (R100.00) </div>
               <div class="ost-buttons" ng-click="disableDelayed=true;disableLive=false;" ng-init="disableDelayed=true" ng-class="{'disabled pointer': disableDelayed, 'enabled pointer': !disableDelayed}">Delayed</div>&nbsp;|
               <div class="ost-buttons" ng-click="disableDelayed=false;disableLive=true;" ng-init="disableLive=false" ng-class="{'disabled pointer': disableLive, 'enabled pointer': !disableLive}">Live</div>
-              <!-- <div class="ost-buttons" ng-click="disableBid=true;disableRuling=false;" ng-init="disableBid=true" ng-class="{'disabled pointer': disableBid, 'enabled pointer': !disableBid}">Bid</div>&nbsp;|
-              <div class="ost-buttons" ng-click="disableBid=false;disableRuling=true;" ng-init="disableRuling=false" ng-class="{'disabled pointer': disableRuling, 'enabled pointer': !disableRuling}">Ruling</div> -->
-
               <div class="switch tiny positionSwitch"><span class="ost-text">Bid&nbsp;</span>
-  <input id="exampleCheckboxSwitch" type="checkbox">
-  <label for="exampleCheckboxSwitch"></label>&nbsp;<span class="ost-text">Ruling</span>
-</div> 
-
+                <input id="exampleCheckboxSwitch" type="checkbox">
+                <label for="exampleCheckboxSwitch"></label>&nbsp;<span class="ost-text">Ruling</span>
+              </div> 
               <div class="streaming-button pointer" ng-click="toggleStreaming()" 
               ng-class="{'text-blue': streamingButtonActive == true, 'text-grey': streamingButtonActive == false}">Streaming</div>
               <div class="details-overview-feed-details"> As at {{time}} (15 min delayed - Reuters) </div>
