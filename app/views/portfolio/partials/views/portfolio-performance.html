@@ -9,12 +9,14 @@
 <div class="row">
 	<div class='columns large-12 medium-4 small-12'>
 		<div class='portfolio-performance-text left'>
-			<div class='portfolio-performance-text'>% Holding period return showing
+			<div class="portfolio-performance-text">% Holding period return showing
 			</div>
-			<div class='portfolio-performance-text'> 
+			<div class="portfolio-performance-text"> 
 			</div>
-			<div class='portfolio-performance-text'><span ng-repeat="year in years">{{year}}
-			&nbsp;&nbsp;</span>
+			<div class="portfolio-performance-text">
+			<i class="fi-arrow-left"></i>&nbsp;&nbsp;&nbsp;
+			<a href="" ng-repeat="year in years" class="years-selection"><span>{{year}}</span></a>
+			&nbsp;&nbsp;&nbsp;<i class="fi-arrow-right"></i>
 			</div>
 		</div>
 	</div>
