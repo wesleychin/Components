@@ -37,6 +37,15 @@ div.acc-trans-body-container {
 	margin-right: 20px;
 }
 
+.details-overview-medium .details-overview-medium {
+  font-size: 12px;
+  color: #666666;
+  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
 .positionSwitch {
 	display: inline-block;
 	padding:2px;

@@ -15,15 +15,6 @@
   z-index:0;
 }
 
-.details-overview-medium .details-overview-medium {
-  font-size: 12px;
-  color: #666666;
-  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-  display: inline-block;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
 .portfolio-performance-buttons {
   display: inline-block;
   margin-top: 0px;
@@ -229,22 +220,42 @@ li.list-separator:hover {
   font-style: normal;
 }
 
+table {
+  width:100%;
+}
+
 .grid-additional-information-data {
   font-weight: 400;
   font-style: normal;
   font-size: 11px;
   color: #999999;
+  border-style: none !important;
+  background-color: #FFFFFF;
+}
+
+.grid-additional-information-headings {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11px;
+  color: #666666;
+  border-style: none !important;
+  background-color: #FFFFFF;
 }
 
 .grid-on-expiry-heading {
   font-weight:bold;
   font-weight: 700;
+  padding-right: 63px;
 }
 
 .grid-additional-information-links {
   padding-right: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   color : #0000FF;
+}
+
+.grid-additional-information-tabs {
+  padding-top: 15px;
 }
 
 .tabs dd > a {
@@ -291,5 +302,5 @@ li.list-separator:hover {
 }
 
 .years-selection:last-of-type {
-  border-right: none !important;
+  border-right: none;
 }

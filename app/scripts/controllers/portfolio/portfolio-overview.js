@@ -208,6 +208,17 @@ angular.module('componentsApp')
 			attributes:{  
 				style:"text-align:right;"
 			}
+		},
+		{  
+			title:"On expiry",
+			field:"onExpiry",
+			width:200,
+			headerAttributes:{  
+				style:"text-align:center; vertical-align: middle;"
+			},
+			attributes:{  
+				style:"text-align:right;"
+			}
 		}
 		]
 	}
