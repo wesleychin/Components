@@ -11,7 +11,7 @@
 <div class="row">
 	<div class="positionSwitch" ng-include src="'common/performers.html'"></div>
 </div>
-<kendo-grid options="portfolioOverviewGrid">
+<kendo-grid options="portfolioOverviewGrid" k-selectable="true" k-on-change="onSelection(kendoEvent)">
 <div k-detail-template>
 	<kendo-tabstrip>
 	<ul>

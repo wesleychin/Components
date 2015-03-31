@@ -305,3 +305,7 @@ table {
 .years-selection:last-of-type {
   border-right: none;
 }
+
+.k-hierarchy-cell, .k-hierarchy-col {
+  display: none;
+}

@@ -220,8 +220,7 @@ angular.module('componentsApp')
 				style:"text-align:right;"
 			}
 		}
-		], 
-    	aggregate: [ { field:"instrument.amount", aggregate: "sum"} ]
+		]
 	}
 
 	$scope.portfolioOverviewGridAdditionalInformation = function(dataItem) {
@@ -230,4 +229,13 @@ angular.module('componentsApp')
 			$scope.portfolioOverviewGridMetaData = single_object;
 		});
 	}; 
+
+	$scope.onSelection = function(kendoEvent) {
+        var grid = kendoEvent.sender;
+        var selectedData = grid.dataItem(grid.select());
+        $http.get('/api/portfolio/portfolio-overview.json').success(function(response) {
+			var single_object = $filter('filter')(response, function (d) {return d.id === selectedData.id;})[0];
+			$scope.portfolioOverviewGridMetaData = single_object;
+		});
+    }
 });		

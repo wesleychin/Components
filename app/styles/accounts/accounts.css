@@ -87,7 +87,6 @@ div.acc-trans-body-container {
 
 .dashboard-overview-details {
 	font-size: 14px;
-	font-weight: bold;
 	color: #0099FF;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 	display: inline-block;
@@ -98,4 +97,9 @@ div.acc-trans-body-container {
 	height: 10px !important;
 	padding:2px !important;
 	background-color: #FFFFFF;
+}
+
+.sub-header-options {
+	font-weight: bold;
+	color: #0099FF;
 }
