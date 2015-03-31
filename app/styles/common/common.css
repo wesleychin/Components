@@ -82,7 +82,7 @@
 }
 
 .noBorder {
-  border: none;
+  border-style: none !important;
 }
 
 .sbBlue {
@@ -113,4 +113,8 @@ td:first-child {
 
 .k-grid {
   font-size: 10px !important;
+}
+
+.white-background {
+  background-color: #FFFFFF;
 }

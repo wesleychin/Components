@@ -220,7 +220,8 @@ angular.module('componentsApp')
 				style:"text-align:right;"
 			}
 		}
-		]
+		], 
+    	aggregate: [ { field:"instrument.amount", aggregate: "sum"} ]
 	}
 
 	$scope.portfolioOverviewGridAdditionalInformation = function(dataItem) {
