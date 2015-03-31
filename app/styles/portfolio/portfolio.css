@@ -1,3 +1,9 @@
+/* Start of override css from main.css */
+
+/* End of override css from main.css */
+
+/* Start of custom OST css */
+
 .portfolio-overview-container {
   width: 100%;
   background: white;
@@ -26,7 +32,7 @@
   width: 149;
 }
 
-.details-bluetext{
+.details-bluetext {
   font-size: 14px;
   color: #2570e0;
   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
@@ -37,12 +43,6 @@
 .icons-dashboard-overview {
   float:right;
   top: 10px;
-}
-
-.header-smallscreen-back-icon {
-  margin: 0 3px 0 10px;
-  font-size: 16px !important;
-  color: #666;
 }
 
 .headingFormat {
@@ -309,3 +309,5 @@ table {
 .k-hierarchy-cell, .k-hierarchy-col {
   display: none;
 }
+
+/* End of custom OST css */

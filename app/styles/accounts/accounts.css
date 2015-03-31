@@ -1,4 +1,6 @@
-div.acc-trans-body-container {
+/* Start of override css from main.css */
+
+.acc-trans-body-container {
 	padding-left: 15px;
 }
 
@@ -12,7 +14,16 @@ div.acc-trans-body-container {
 	height: 160px;
 }
 
-.details-overview .details-overview {
+.sub-header-options {
+	font-weight: bold;
+	color: #0099FF;
+}
+
+/* End of override css from main.css */
+
+/* Start of custom OST css */
+
+.details-overview {
 	font-size: 12px;
 	color: #666666;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
@@ -20,7 +31,7 @@ div.acc-trans-body-container {
 	margin-right: 15px;
 }
 
-.details-overview-amounts-bold{
+.details-overview-amounts-bold {
 	font-size: 14px;
 	color: #666666;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
@@ -29,7 +40,7 @@ div.acc-trans-body-container {
 	margin-right: 20px;
 }
 
-.details-overview-bluetext{
+.details-overview-bluetext {
 	font-size: 12px;
 	color: #2570e0;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
@@ -37,13 +48,13 @@ div.acc-trans-body-container {
 	margin-right: 20px;
 }
 
-.details-overview-medium .details-overview-medium {
-  font-size: 12px;
-  color: #666666;
-  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-  display: inline-block;
-  margin-right: 30px;
-  margin-bottom: 30px;
+.details-overview-medium {
+	font-size: 12px;
+	color: #666666;
+	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+	display: inline-block;
+	margin-right: 30px;
+	margin-bottom: 30px;
 }
 
 .positionSwitch {
@@ -51,7 +62,7 @@ div.acc-trans-body-container {
 	padding:2px;
 }
 
-.streaming-button{
+.streaming-button {
 	font-size: 12px;
 	color: #2570e0;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
@@ -60,7 +71,7 @@ div.acc-trans-body-container {
 	padding:2px;
 }
 
-.details-overview-feed-details{
+.details-overview-feed-details {
 	font-size: 12px;
 	color: #999;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
@@ -69,7 +80,7 @@ div.acc-trans-body-container {
 	margin-top:10px;
 }
 
-.details-overview-values{
+.details-overview-values {
 	font-size: 12px;
 	color: #999;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
@@ -79,10 +90,6 @@ div.acc-trans-body-container {
 
 .dashboard-details-font-size {
 	font-size: 14px;
-}
-
-.brightBlue {
-	color: #0099FF;
 }
 
 .dashboard-overview-details {
@@ -99,7 +106,4 @@ div.acc-trans-body-container {
 	background-color: #FFFFFF;
 }
 
-.sub-header-options {
-	font-weight: bold;
-	color: #0099FF;
-}
+/* End of custom OST css */
