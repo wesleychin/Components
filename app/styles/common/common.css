@@ -112,6 +112,15 @@
   color: #0099FF;
 }
 
+.downloadButton {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  color: #0000FF;
+  border:1px solid #0000FF;
+  padding: 12px  0px 0px 12px;
+}
+
 /* End of custom OST css */
 
 /* Start of override HTML elements */

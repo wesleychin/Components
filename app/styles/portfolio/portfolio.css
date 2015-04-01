@@ -198,15 +198,6 @@ li.list-separator:hover {
   display: inline-block;
 }
 
-.downloadButton {
-  display: inline-block;
-  width: 37px;
-  height: 37px;
-  color: #0000FF;
-  border:1px solid #0000FF;
-  padding: 12px  0px 0px 12px;
-}
-
 .button-padding-right {
   padding-right: 30px;
 }
