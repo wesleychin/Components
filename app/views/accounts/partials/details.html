@@ -19,18 +19,20 @@
       <div class="column large-7 medium-5 right" align="right">
         <div class="details-overview-bluetext"> Quotes bank balance (1) (R100.00) 
         </div>
-        <div class="ost-buttons" ng-click="disableDelayed=true;disableLive=false;" ng-init="disableDelayed=true" ng-class="{"disabled pointer": disableDelayed, "enabled pointer": !disableDelayed}">Delayed
-        </div>&nbsp;|
-        <div class="ost-buttons" ng-click="disableDelayed=false;disableLive=true;" ng-init="disableLive=false" ng-class="{"disabled pointer": disableLive, "enabled pointer": !disableLive}">Live
+        <div class="liveDelayedDropdown">
+          <select>
+            <option value="live">Live</option>
+            <option value="delayed">Delayed</option>
+          </select>
         </div>
-        <div class="switch tiny positionSwitch">
-          <span class="ost-text">Bid&nbsp;</span>
-          <input id="exampleCheckboxSwitch" type="checkbox">
-          <label for="exampleCheckboxSwitch"></label>&nbsp;
-          <span class="ost-text">Ruling</span>
-        </div> 
+        <div class="bidRulingDropdown">
+        <select>
+            <option value="bid">Bid</option>
+            <option value="ruling">Ruling</option>
+          </select>
+        </div>
         <div class="streaming-button pointer" ng-click="toggleStreaming()" 
-        ng-class="{"text-blue": streamingButtonActive == true, "text-grey": streamingButtonActive == false}">Streaming
+        ng-class="{'text-blue': streamingButtonActive === true, 'text-grey': streamingButtonActive === false}">Streaming
       </div>
       <div class="details-overview-feed-details"> As at {{time}} (15 min delayed - Reuters) 
       </div>

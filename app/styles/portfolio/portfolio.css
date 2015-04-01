@@ -123,41 +123,6 @@ table thead tr th, table tr td {
   padding-left: 280px;
 }
 
-.top-widgets {
-  height: 79px;
-  width: 68px;
-  display: inline-block;
-  padding:2px;
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.gainers {
-  background-color: #007F00 !important;
-  padding:2px;
-}
-
-.losers {
-  background-color: #FF0000 !important;
-  padding:2px;
-}
-
-.top-performers-heading-spacing {
-  display: inline-block;
-  padding-right: 345px;
-}
-
-.top-performers-headings {
-  font-size: 18px;
-  color: #666666;
-  line-height: 48px;
-  padding-bottom:10px;
-}
-
-.top-performers-name {
-  padding-top: 6px;
-}
-
 .accounts-dropdown {
   padding-bottom:10px;
 }
@@ -182,20 +147,6 @@ li.list-separator:hover {
   font-style: normal;
   font-size: 14px;
   color: #666666;
-}
-
-.searchDropdown {
-  width: 160px;
-}
-
-.downloadDropdown {
-  width: 64px;
-  color: #0000FF;
-  border:1px solid #0000FF;
-}
-
-.downloadDropdownMargin {
-  display: inline-block;
 }
 
 .button-padding-right {
@@ -299,6 +250,10 @@ table {
 
 .k-hierarchy-cell, .k-hierarchy-col {
   display: none;
+}
+
+.padding-below-performers {
+  padding-bottom: 30px;
 }
 
 /* End of custom OST css */

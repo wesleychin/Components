@@ -26,7 +26,7 @@
 .selected {
   background-color: #FFF;
   border-left:1px solid #999999; border-bottom:1px solid #999999; border-top:1px solid #999999;
-  width:96px;
+  width:91px;
   color:#000;
   position:relative;
   z-index: 10000 !important;
@@ -76,11 +76,11 @@
 }
 
 .text-blue {
-	color : #0000FF;
+	color : #0000FF !important;
 }
 
 .text-grey {
-	color : #D3D3D3;
+	color : #D3D3D3 !important;
 }
 
 .bold-text {
@@ -112,13 +112,78 @@
   color: #0099FF;
 }
 
+.searchDropdown {
+  width: 160px;
+}
+
+.downloadDropdown {
+  width: 64px;
+  color: #0000FF;
+  border:1px solid #0000FF;
+}
+
+.downloadDropdownMargin {
+  display: inline-block;
+}
+
 .downloadButton {
   display: inline-block;
   width: 37px;
   height: 37px;
   color: #0000FF;
   border:1px solid #0000FF;
+  border-left: 0px;
   padding: 12px  0px 0px 12px;
+}
+
+.no-padding-bottom {
+  padding-bottom:0px;
+  margin-bottom: 0px;
+}
+
+no-padding-top {
+  padding-top:0px;
+  margin-top: 0px;
+}
+
+.top-widgets {
+  height: 85px;
+  width: 75px;
+  display: inline-block;
+  padding:2px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.gainers {
+  background-color: #007F00 !important;
+  padding:2px;
+}
+
+.losers {
+  background-color: #FF0000 !important;
+  padding:2px;
+}
+
+.top-performers-heading-spacing {
+  display: inline-block;
+  padding-right: 335px;
+}
+
+.top-performers-headings {
+  font-size: 18px;
+  color: #666666;
+  line-height: 48px;
+  padding-bottom:10px;
+}
+
+.top-performers-name {
+  padding-top: 6px;
+}
+
+.positionSwitch {
+  display: inline-block;
+  padding:2px;
 }
 
 /* End of custom OST css */
