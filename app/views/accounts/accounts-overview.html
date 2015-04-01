@@ -1,20 +1,17 @@
-<div class="blur-placeholder blur" blur-background>
+<div class="blur-placeholder blur">
 </div>
-<div ng-include src="'common/header.html'"></div>
+<div ng-include src="'common/header.html'">
+</div>
 <div>
 	<div class="body-wrapper" body-height height-offset='236' height-type='min-height'>
 		<div class="row">
 			<div ng-include src="'views/accounts/partials/details.html'" class="columns large-12 medium-12 accounts-details-wrapper"></div>
 		</div>
 		<div class="row">
-			<div class="columns large-1 medium-6 small-12 left empty-box-container" ng-include src="'views/portfolio/partials/sections.html'">
-			</div>
+			<div class="columns large-1 medium-6 small-12 left empty-box-container" ng-include src="'views/portfolio/partials/sections.html'"></div>
 			<div class="columns large-11 medium-12 right acc-trans-body-container" 
-			ng-include src="'views/portfolio/partials/views.html'">
-		</div>
-		<div class="columns large-12 medium-12 right acc-trans-body-container noLeftPadding">
-			<div src="'common/footer.html'" class="ng-scope"><div class="footer-wrapper ng-scope"><div class="sub-header-grid row"><div class="footer"><p class="footer-last-login ng-binding">Last Login : </p><p>© Copyright 2015 Stanbic IBTC Bank PLC. Stanbic IBTC Bank is a member of the Standard Bank Group,an authorized</p><p>financial services and registered credit provider. RC125097</p><img ng-src="images/footer-logo.png" class="footer-logo" src="images/footer-logo.png"></div></div></div></div>
-		</div>
-	</div>	
-</div>
+			ng-include src="'views/portfolio/partials/views.html'"></div>
+			<div class="columns large-12 medium-12 right acc-trans-body-container noLeftPadding" ng-include src="'common/footer.html'"></div>
+		</div>	
+	</div>
 </div>
