@@ -8,6 +8,10 @@ angular.module('componentsApp')
 	$scope.idSelectedVote = 1;
 	$scope.streamingButtonActive = true;
 
+	$http.get('/api/accounts/cash-summary.json').success(function(response) {
+		$scope.cashSummaryComponent = response;
+	});
+
 	$http.get('/api/accounts/account-details.json').success(function(response) {
 		$scope.accounts = response;
 	});

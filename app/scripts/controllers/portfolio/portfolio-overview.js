@@ -9,7 +9,6 @@ angular.module('componentsApp')
 			cache: $templateCache
 		}).then(function(result) {
 			var template = result.data;
-			console.log(template);
 			$scope.portfolioOverviewGrid = {  
 				dataSource:{  
 					type:"json",

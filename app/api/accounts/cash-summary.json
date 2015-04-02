@@ -1,0 +1,16 @@
+{  
+   "ostModel":{  
+      "portfolioValueFormatted":"R 59 562.70",
+      "dailyChangeValueFormatted":"0.8",
+      "dailyChangePercentageFormatted":"0.01%",
+      "totalChangeValueFormatted":"1.4",
+      "totalChangePercentageFormatted":"0.01%",
+      "accountType":"JSET",
+      "cashBalanceFormatted":"R 2000 008.90",
+      "totalInitialMarginFormatted":"R100 998.90",
+      "marginProductPLFormatted":"R 299 008.90",
+      "totalCashValueFormatted":"R 289 908.90",
+      "availableTradingFundsFormatted":"R 200 000.00",
+      "availableCashBeforeAutoCloseoutFormatted":"R 10 000.00"
+   }
+}
