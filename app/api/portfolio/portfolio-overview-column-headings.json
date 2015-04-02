@@ -1,0 +1,159 @@
+[  
+   {  
+      "title":"Instrument",
+      "field":"instrument",
+      "headerAttributes":{  
+         "style":"text-align:center; vertical-align: middle;"
+      },
+      "columns":[  
+         {  
+            "title":"Code",
+            "field":"code",
+            "width":200,
+            "headerAttributes":{  
+               "style":"text-align:center; vertical-align: middle;"
+            }
+         },
+         {  
+            "title":"Quality<br/>(pending)",
+            "field":"instrument.amount",
+            "width":50,
+            "headerAttributes":{  
+               "style":"text-align:center; vertical-align: middle;"
+            }
+         }
+      ]
+   },
+   {  
+      "title":"Cost (3)",
+      "field":"cost",
+      "headerAttributes":{  
+         "style":"text-align:center; vertical-align: middle;"
+      },
+      "columns":[  
+         {  
+            "title":"Unit R",
+            "field":"unitR",
+            "width":200,
+            "headerAttributes":{  
+               "style":"text-align:center; vertical-align: middle;"
+            }
+         },
+         {  
+            "title":"Total R",
+            "field":"totalUnit",
+            "width":200,
+            "headerAttributes":{  
+               "style":"text-align:center; vertical-align: middle;"
+            }
+         }
+      ]
+   },
+   {  
+      "title":"Previous<br/>close/MT<br/>M R",
+      "field":"previous",
+      "width":200,
+      "headerAttributes":{  
+         "style":"text-align:center; vertical-align: middle;"
+      }
+   },
+   {  
+      "title":"Current/ Bid",
+      "field":"currentBid",
+      "headerAttributes":{  
+         "style":"text-align:center; vertical-align: middle;"
+      },
+      "columns":[  
+         {  
+            "title":"Price<br/>R (2)",
+            "field":"priceR2",
+            "width":200,
+            "headerAttributes":{  
+               "style":"text-align:center; vertical-align: middle;"
+            }
+         },
+         {  
+            "title":"Total R",
+            "field":"totalRCurrent",
+            "width":200,
+            "headerAttributes":{  
+               "style":"text-align:center; vertical-align: middle;"
+            }
+         }
+      ]
+   },
+   {  
+      "title":"Today's movement",
+      "field":"movementToday",
+      "headerAttributes":{  
+         "style":"text-align:center; vertical-align: middle;"
+      },
+      "columns":[  
+         {  
+            "title":"Price change R<br/>% change",
+            "field":"priceChangeToday",
+            "width":200,
+            "headerAttributes":{  
+               "style":"text-align:center; vertical-align: middle;"
+            }
+         },
+         {  
+            "title":"Profit/Loss R",
+            "field":"profitLossToday",
+            "width":200,
+            "headerAttributes":{  
+               "style":"text-align:center; vertical-align: middle;"
+            }
+         }
+      ]
+   },
+   {  
+      "title":"Total movement",
+      "field":"movementTotal",
+      "headerAttributes":{  
+         "style":"text-align:center; vertical-align: middle;"
+      },
+      "columns":[  
+         {  
+            "title":"Price change R<br/>% change",
+            "field":"priceChangeTotal",
+            "width":200,
+            "headerAttributes":{  
+               "style":"text-align:center; vertical-align: middle;"
+            }
+         },
+         {  
+            "title":"Profit/Loss<br/>R (4)",
+            "field":"profitLossTotal",
+            "width":200,
+            "headerAttributes":{  
+               "style":"text-align:center; vertical-align: middle;"
+            }
+         }
+      ]
+   },
+   {  
+      "title":"Initial<br/>margin R",
+      "field":"initialMargin",
+      "width":200,
+      "headerAttributes":{  
+         "style":"text-align:center; vertical-align: middle;"
+      }
+   },
+   {  
+      "title":"% of<br/>portfolio",
+      "field":"portfolio",
+      "width":200,
+      "headerAttributes":{  
+         "style":"text-align:center; vertical-align: middle;"
+      }
+   },
+   {  
+      "title":"On expiry",
+      "field":"onExpiry",
+      "width":200,
+      "headerAttributes":{  
+         "style":"text-align:center; vertical-align: middle;"
+      }
+   }
+]

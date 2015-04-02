@@ -2,15 +2,15 @@
   <div class="row details-overlay">
     <div class="row">
       <div class="column large-5 medium-5">
-        <div class="details-overview"> Portfolio value<br>
-          <span class="details-overview-amounts-bold">R55000</span> 
+        <div class="details-overview">Portfolio value<br>
+          <span class="details-overview-amounts-bold">{{cashSummaryComponent.ostModel.portfolioValueFormatted}}</span> 
         </div>
         <div class="details-overview">Daily change<br>
-          <span class="details-overview-amounts-bold text-green">0.8 (0.01%)</span>
+          <span class="details-overview-amounts-bold text-green">{{cashSummaryComponent.ostModel.dailyChangeValueFormatted}}({{cashSummaryComponent.ostModel.dailyChangePercentageFormatted}})</span>
           <i class="text-green fi-arrow-up"></i>
         </div>
         <div class="details-overview">Total change<br>
-          <span class="details-overview-amounts-bold text-green">1.4 (0.01%)</span>
+          <span class="details-overview-amounts-bold text-green">{{cashSummaryComponent.ostModel.totalChangeValueFormatted}}({{cashSummaryComponent.ostModel.totalChangePercentageFormatted}})</span>
           <i class="text-green fi-arrow-up"></i>
         </div>
       </div>
@@ -26,7 +26,7 @@
           </select>
         </div>
         <div class="bidRulingDropdown">
-        <select>
+          <select>
             <option value="bid">Bid</option>
             <option value="ruling">Ruling</option>
           </select>
@@ -41,23 +41,23 @@
   <hr>
   <div class="row">
     <div class="columns large-12 medium-4 small-12 details-overview-values left">
-      <div class="details-overview-medium"> JSE cash balance<br>
-        R 2000 008.90 
+      <div class="details-overview-medium">{{cashSummaryComponent.ostModel.accountType}} cash balance<br>
+        {{cashSummaryComponent.ostModel.cashBalanceFormatted}}
       </div>
       <div class="details-overview-medium"> Derivatives initial margin<br>
-        R100 998.90 
+        {{cashSummaryComponent.ostModel.totalInitialMarginFormatted}}
       </div>
-      <div class="details-overview-medium"> Today"s derivatives P&L<br>
-        R 299 008.90 
+      <div class="details-overview-medium"> Today"s derivatives P&amp;L<br>
+        {{cashSummaryComponent.ostModel.marginProductPLFormatted}}
       </div>
       <div class="details-overview-medium"> Total cash<br>
-        R 289 908.90 
+        {{cashSummaryComponent.ostModel.totalCashValueFormatted}}
       </div>
       <div class="details-overview-medium"> Available trading funds<br>
-        R 200 000.00 
+        {{cashSummaryComponent.ostModel.availableTradingFundsFormatted}}
       </div>
       <div class="details-overview-medium"> Value before auto close out<br>
-        R 200 000.00
+        {{cashSummaryComponent.ostModel.availableCashBeforeAutoCloseoutFormatted}}
       </div>
     </div>
   </div>
