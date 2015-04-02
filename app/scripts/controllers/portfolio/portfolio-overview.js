@@ -37,7 +37,8 @@ angular.module('componentsApp')
 				},
 				attributes:{  
 					style:"text-align:right;"
-				}
+				},
+				template: '<span class="text-blue">#: code #</span>'
 			},
 			{  
 				title:"Quality<br/>(pending)",
