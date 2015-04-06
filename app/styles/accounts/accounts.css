@@ -19,6 +19,13 @@
 	color: #0099FF;
 }
 
+.account-icons {
+  padding-left: 20px;
+  font-size: 26px;
+  color : #0000FF;
+  top: 0px;
+}
+
 /* End of override css from main.css */
 
 /* Start of custom OST css */
@@ -98,11 +105,6 @@
 	height: 10px !important;
 	padding:2px !important;
 	background-color: #FFFFFF;
-}
-
-.header-icons {
-	margin-right:20px;
-	font-size: 26px;
 }
 
 .cash-summary-buttons {

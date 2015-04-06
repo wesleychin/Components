@@ -186,6 +186,19 @@ no-padding-top {
   padding:2px;
 }
 
+.header-icons {
+  right:70px;
+  font-size: 26px;
+  color : #0000FF;
+  position: absolute;
+  top: 4px;
+}
+
+.header-icons-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 /* End of custom OST css */
 
 /* Start of override HTML elements */
