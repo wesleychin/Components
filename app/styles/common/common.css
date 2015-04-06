@@ -199,6 +199,10 @@ no-padding-top {
   padding-right: 10px;
 }
 
+.block-text {
+  display: block;
+}
+
 /* End of custom OST css */
 
 /* Start of override HTML elements */

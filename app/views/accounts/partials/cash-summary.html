@@ -2,16 +2,23 @@
   <div class="row details-overlay">
     <div class="row">
       <div class="column large-5">
-        <div class="details-overview">Portfolio value<br>
-          <span class="details-overview-amounts-bold">{{cashSummaryComponent.ostModel.portfolioValueFormatted}}</span> 
+        <div class="details-overview inline-block portfolio-value">
+          <span class="block-text block-portfolio-value-text">Portfolio value</span>
+          <span class="portfolio-value-bold">{{cashSummaryComponent.ostModel.portfolioValueFormatted}}</span> 
         </div>
-        <div class="details-overview">Daily change<br>
-          <span class="details-overview-amounts-bold text-green">{{cashSummaryComponent.ostModel.dailyChangeValueFormatted}}({{cashSummaryComponent.ostModel.dailyChangePercentageFormatted}})</span>
-          <i class="text-green fi-arrow-up"></i>
-        </div>
-        <div class="details-overview">Total change<br>
-          <span class="details-overview-amounts-bold text-green">{{cashSummaryComponent.ostModel.totalChangeValueFormatted}}({{cashSummaryComponent.ostModel.totalChangePercentageFormatted}})</span>
-          <i class="text-green fi-arrow-up"></i>
+        <div class="bigger-width-on-phone inline-block">
+          <div class="details-overview inline-block">
+            <span class="block-text">Daily change</span>
+            <div class="details-overview-amounts-bold-phone">
+              <span class="details-overview-amounts-bold text-green">{{cashSummaryComponent.ostModel.dailyChangeValueFormatted}}({{cashSummaryComponent.ostModel.dailyChangePercentageFormatted}})<i class="text-green fi-arrow-up"></i></span>
+            </div>
+          </div>
+          <div class="details-overview inline-block">
+            <span class="block-text">Total change</span>
+            <div class="details-overview-amounts-bold-phone">
+              <span class="details-overview-amounts-bold text-green">{{cashSummaryComponent.ostModel.totalChangeValueFormatted}}({{cashSummaryComponent.ostModel.totalChangePercentageFormatted}})<i class="text-green fi-arrow-up"></i></span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="column large-1 details-overlay-gutter"> 
@@ -38,28 +45,73 @@
       </div>
     </div>
   </div>
-  <hr>
+  <hr class="hide-hr">
   <div class="row">
     <div class="columns large-12 details-overview-values left">
-      <div class="details-overview-medium">{{cashSummaryComponent.ostModel.accountType}} cash balance<br>
-        {{cashSummaryComponent.ostModel.cashBalanceFormatted}}
+      <div class="details-overview inline-block">
+        <span class="block-text">
+          {{cashSummaryComponent.ostModel.accountType}} cash balance
+        </span>
+        <div class="details-overview-amounts-bold-phone">
+          <span class="account-details-amounts-bold-phone">
+            {{cashSummaryComponent.ostModel.cashBalanceFormatted}}
+          </span>
+        </div>
       </div>
-      <div class="details-overview-medium"> Derivatives initial margin<br>
-        {{cashSummaryComponent.ostModel.totalInitialMarginFormatted}}
+      <div class="details-overview inline-block">
+        <span class="block-text">
+          Derivatives initial margin
+        </span>
+        <div class="details-overview-amounts-bold-phone">
+          <span class="account-details-amounts-bold-phone">
+            {{cashSummaryComponent.ostModel.totalInitialMarginFormatted}}
+          </div>
+        </div>
+        <div class="details-overview inline-block">
+          <span class="block-text">
+            Today"s derivatives P&amp;L
+          </span>
+          <div class="details-overview-amounts-bold-phone">
+            <span class="account-details-amounts-bold-phone">
+              {{cashSummaryComponent.ostModel.marginProductPLFormatted}}
+            </span>
+          </div>
+        </div>
+        <div class="details-overview inline-block">
+          <span class="block-text">
+            Total cash
+          </span>
+          <div class="details-overview-amounts-bold-phone">
+            <span class="account-details-amounts-bold-phone">
+              {{cashSummaryComponent.ostModel.totalCashValueFormatted}}
+            </span>
+          </div>
+        </div>
+        <div class="details-overview inline-block">
+          <span class="block-text">
+            Available trading funds
+          </span>
+          <div class="details-overview-amounts-bold-phone">
+            <span class="account-details-amounts-bold-phone">
+              {{cashSummaryComponent.ostModel.availableTradingFundsFormatted}}
+            </span>
+          </div>
+        </div>
+        <div class="details-overview inline-block">
+          <span class="block-text">
+            Value before auto close out
+          </span>
+          <div class="details-overview-amounts-bold-phone">
+            <span class="account-details-amounts-bold-phone">
+              {{cashSummaryComponent.ostModel.availableCashBeforeAutoCloseoutFormatted}}
+            </span>
+          </div>
+        </div>
       </div>
-      <div class="details-overview-medium"> Today"s derivatives P&amp;L<br>
-        {{cashSummaryComponent.ostModel.marginProductPLFormatted}}
-      </div>
-      <div class="details-overview-medium"> Total cash<br>
-        {{cashSummaryComponent.ostModel.totalCashValueFormatted}}
-      </div>
-      <div class="details-overview-medium"> Available trading funds<br>
-        {{cashSummaryComponent.ostModel.availableTradingFundsFormatted}}
-      </div>
-      <div class="details-overview-medium"> Value before auto close out<br>
-        {{cashSummaryComponent.ostModel.availableCashBeforeAutoCloseoutFormatted}}
+    </div>
+    <div class="show-for-small row time-delay-phone">
+      <div class="details-overview-feed-details left"> As at {{time}} (15 min delayed - Reuters) 
       </div>
     </div>
   </div>
-</div>
 </div>

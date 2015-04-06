@@ -1,0 +1,47 @@
+@media only screen and (max-width: 40em) {
+	.details-overview {
+		display: block;
+	}
+
+	.bigger-width-on-phone {
+		width: 100%;
+	}
+
+	.block-portfolio-value-text {
+		display: block !important;
+	}
+
+	.portfolio-value {
+		text-align: center;
+	}
+
+	.block-text {
+		display: inline-block;
+		padding: 5px;
+	}
+
+	.details-overview-amounts-bold-phone {
+		float:right;
+		padding: 3px;
+	}
+
+	.hide-hr {
+		display: none;
+	}
+
+	.account-details-amounts-bold-phone {
+		font-size: 14px;
+		color: #666666;
+		font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+		display: inline-block;
+		font-weight:900;
+		margin-right: 20px;
+	}
+
+	.time-delay-phone {
+		background-color: #FFFFFF;
+		width: 100% !important;
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+}

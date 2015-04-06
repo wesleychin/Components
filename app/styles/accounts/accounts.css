@@ -34,11 +34,19 @@
 	font-size: 12px;
 	color: #666666;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-	display: inline-block;
 	margin-right: 15px;
 }
 
 .details-overview-amounts-bold {
+	font-size: 14px;
+	color: #666666;
+	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+	display: inline-block;
+	font-weight:900;
+	margin-right: 20px;
+}
+
+.portfolio-value-bold {
 	font-size: 14px;
 	color: #666666;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
