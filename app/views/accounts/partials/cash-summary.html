@@ -1,7 +1,7 @@
-<div class="details-warp small large sml-popup-top-gradient">
+<div class="details-warp large sml-popup-top-gradient">
   <div class="row details-overlay">
     <div class="row">
-      <div class="column large-5 medium-5">
+      <div class="column large-5">
         <div class="details-overview">Portfolio value<br>
           <span class="details-overview-amounts-bold">{{cashSummaryComponent.ostModel.portfolioValueFormatted}}</span> 
         </div>
@@ -14,19 +14,19 @@
           <i class="text-green fi-arrow-up"></i>
         </div>
       </div>
-      <div class="column large-1 medium-1 details-overlay-gutter"> 
+      <div class="column large-1 details-overlay-gutter"> 
       </div>
-      <div class="column large-7 medium-5 right" align="right">
+      <div class="column large-7 right" align="right">
         <div class="details-overview-bluetext"> Quotes bank balance (1) (R100.00) 
         </div>
-        <div class="liveDelayedDropdown">
-          <select>
+        <div class="inline-block">
+          <select class="cash-summary-buttons text-blue">
             <option value="live">Live</option>
             <option value="delayed">Delayed</option>
           </select>
         </div>
-        <div class="bidRulingDropdown">
-          <select>
+        <div class="inline-block">
+          <select class="cash-summary-buttons text-blue">
             <option value="bid">Bid</option>
             <option value="ruling">Ruling</option>
           </select>
@@ -40,7 +40,7 @@
   </div>
   <hr>
   <div class="row">
-    <div class="columns large-12 medium-4 small-12 details-overview-values left">
+    <div class="columns large-12 details-overview-values left">
       <div class="details-overview-medium">{{cashSummaryComponent.ostModel.accountType}} cash balance<br>
         {{cashSummaryComponent.ostModel.cashBalanceFormatted}}
       </div>
