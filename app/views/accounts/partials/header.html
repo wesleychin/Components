@@ -1,28 +1,30 @@
 <div class="sub-header-wrapper">
-    <div class="sub-header-grid">
-      <div class="sub-header row clearfix">
-        <div class="sub-header-title left show-for-large-up base-link-color pointer">My Dashboard
-        </div>&nbsp;
-        <i class="fi-arrow-right"></i>
-        &nbsp;&nbsp;
-        <div class ="account-details-dropdown">
-          <p class="accounts-dropdown">
-            <a class="accounts-dropdown" dropdown-toggle="#accounts-dropdown">Cheque Account - 1234567&nbsp;<i class="fi-arrow-down"></i></a>
-          </p>
-          <ul id="accounts-dropdown" class="f-dropdown">
-            <li class="list-separator" ng-repeat="account in accounts">
-              <a>{{account}}</a>
-            </li>
-          </ul>
-        </div>
-        <div class="inline-block right account-icons">
-            <i class="fi-magnifying-glass header-icons-padding"></i>
-        </div>
-        <div class="right sub-header-options">
+  <div class="sub-header-grid">
+    <div class="sub-header row clearfix">
+      <div class="show-for-large sub-header-title left base-link-color pointer">
+        <p>My Dashboard</p><!-- &nbsp;<i class="fi-arrow-right"></i> -->
+      </div>
+      &nbsp;&nbsp;
+      <div class ="account-details-dropdown">
+        <p class="show-for-large accounts-dropdown">
+          <a class="accounts-dropdown" dropdown-toggle="#accounts-dropdown">Cheque Account - 1234567&nbsp;<i class="fi-arrow-down"></i></a>
+        </p>
+        <ul id="accounts-dropdown" class="show-for-large f-dropdown">
+          <li class="list-separator" ng-repeat="account in accounts">
+            <a>{{account}}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="inline-block right">
+        <div class="inline-block sub-header-options">
           <span class="right">Trade</span>
           <span class="right">Transfer</span>
+        </div>
+        <div class="inline-block account-icons">
+          <i class="fi-magnifying-glass header-icons-padding"></i>
         </div>
       </div>
     </div>
   </div>
+</div>
 </div>
