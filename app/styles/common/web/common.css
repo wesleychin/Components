@@ -231,6 +231,10 @@ no-padding-top {
   border: 1px solid #2570E0;
 }
 
+.underline-text {
+  text-decoration: underline;
+}
+
 /* End of custom OST css */
 
 /* Start of override HTML elements */
