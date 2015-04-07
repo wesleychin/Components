@@ -1,4 +1,4 @@
-<div class="row no-padding-bottom">
+<div class="row show-for-large no-padding-bottom">
 	<span class="headingFormat left">Portfolio overview</span>
 	<div class="show-for-large portfolio-performance-buttons right">
 		<div class="portfolio-performance-buttons button-padding-right" ng-include src="'common/search-dropdown.html'">
@@ -7,11 +7,14 @@
 		</div>
 	</div>
 </div>
+<div class="hide-for-large">
+	<div class="portfolio-performance-buttons button-padding-right" ng-include src="'common/search-dropdown.html'">
+</div>
 <div class="show-for-large row no-padding-top"><hr/></div>
 <div class="show-for-large row padding-below-performers">
 	<div ng-include src="'common/performers.html'"></div>
 </div>
-<kendo-grid options="portfolioOverviewGrid">
+<kendo-grid options="portfolioOverviewGrid"class="show-for-large">
 <!-- <div k-detail-template>
 	<kendo-tabstrip>
 	<ul>

@@ -1,3 +1,5 @@
 @media only screen and (max-width: 40em) {
-	
+	.portfolio-performance-buttons, .downloadDropdownMargin, .downloadDropdown, .downloadOption {
+		width: 100% !important;
+	}
 }
