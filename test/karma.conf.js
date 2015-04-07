@@ -36,6 +36,8 @@ module.exports = function(config) {
       'bower_components/jquery.cookie/jquery.cookie.js',
       'bower_components/jquery-placeholder/jquery.placeholder.js',
       'bower_components/foundation/js/foundation.js',
+      'bower_components/spin.js/spin.js',
+      'bower_components/angular-spinner/angular-spinner.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

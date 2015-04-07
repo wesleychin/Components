@@ -18,7 +18,8 @@ angular
     'ngTouch',
     'mm.foundation', 
     'kendo.directives', 
-    'highcharts-ng'
+    'highcharts-ng', 
+    'angularSpinner'
   ])
   .config(function ($routeProvider) {
     $routeProvider
