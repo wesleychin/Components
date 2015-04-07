@@ -1,81 +1,78 @@
 <accordion close-others="false">
-<accordion-group is-open="isopen" ng-init="isopen=true">
+<accordion-group is-open="isopenmovers" ng-init="isopenmovers=true">
 <accordion-heading>
-Top movers <i class="right" ng-class="{'fi-arrow-up': isopen, 'fi-arrow-down': !isopen}"></i>
+Top movers <i class="right" ng-class="{'fi-arrow-up': isopenmovers, 'fi-arrow-right': !isopenmovers}"></i>
 </accordion-heading>
-Top movers content
+<div ng-controller="PortfolioOverviewCtrl" ng-include src="'common/performers.html'"></div>
 </accordion-group>
-<accordion-group is-open="isopen" ng-init="isopen=false">
+<accordion-group is-open="isopeninstruments" ng-init="isopeninstruments=false">
 <accordion-heading>
-Instruments <i class="right" ng-class="{'fi-arrow-up': isopen, 'fi-arrow-down': !isopen}"></i>
+Instruments <i class="right" ng-class="{'fi-arrow-up': isopeninstruments, 'fi-arrow-right': !isopeninstruments}"></i>
 </accordion-heading>
-Instruments content
+<div ng-controller="SectorBreakrightCtrl" class="portfolio-overview-container left"
+ng-include src="'views/portfolio/partials/views/sector-breakright.html'"></div>
 </accordion-group>
-<accordion-group is-open="isopen" ng-init="isopen=false">
+<accordion-group is-open="isopenperformance" ng-init="isopenperformance=false">
 <accordion-heading>
-Portfolio performance <i class="right" ng-class="{'fi-arrow-up': isopen, 'fi-arrow-down': !isopen}"></i>
+Portfolio performance <i class="right" ng-class="{'fi-arrow-up': isopenperformance, 'fi-arrow-right': !isopenperformance}"></i>
 </accordion-heading>
-Portfolio performance content
+<div ng-controller="PortfolioOverviewCtrl" class="portfolio-overview-container left"
+ng-include src="'views/portfolio/partials/views/portfolio-overview.html'"></div>
 </accordion-group>
-<accordion-group is-open="isopen" ng-init="isopen=false">
+<accordion-group is-open="isopenmarketnews" ng-init="isopen=false">
 <accordion-heading>
-Market news <i class="right" ng-class="{'fi-arrow-up': isopen, 'fi-arrow-down': !isopen}"></i>
+Market news <i class="right" ng-class="{'fi-arrow-up': isopenmarketnews, 'fi-arrow-right': !isopenmarketnews}"></i>
 </accordion-heading>
-Market news content
+<div ng-controller="MarketNewsCtrl" class="portfolio-overview-container left"
+ng-include src="'views/portfolio/partials/views/market-news.html'"></div>
 </accordion-group>
-<accordion-group is-open="isopen" ng-init="isopen=false">
+<accordion-group is-open="isopenorders" ng-init="isopen=false">
 <accordion-heading>
-Orders <i class="right" ng-class="{'fi-arrow-up': isopen, 'fi-arrow-down': !isopen}"></i>
+Orders <i class="right" ng-class="{'fi-arrow-up': isopenorders, 'fi-arrow-right': !isopenorders}"></i>
 </accordion-heading>
-Orders content
+<div class="portfolio-overview-container left" 
+ng-include src="'views/portfolio/partials/views/orders.html'"></div>
 </accordion-group>
-<accordion-group is-open="isopen" ng-init="isopen=false">
+<accordion-group is-open="isopentriggers" ng-init="isopen=false">
 <accordion-heading>
-Triggers <i class="right" ng-class="{'fi-arrow-up': isopen, 'fi-arrow-down': !isopen}"></i>
+Triggers <i class="right" ng-class="{'fi-arrow-up': isopentriggers, 'fi-arrow-right': !isopentriggers}"></i>
 </accordion-heading>
-Triggers content
+<div class="portfolio-overview-container left" 
+ng-include src="'views/portfolio/partials/views/triggers.html'"></div>
 </accordion-group>
-<accordion-group is-open="isopen" ng-init="isopen=false">
+<accordion-group is-open="isopencashhistory" ng-init="isopencashhistory=false">
 <accordion-heading>
-Cash history <i class="right" ng-class="{'fi-arrow-up': isopen, 'fi-arrow-down': !isopen}"></i>
+Cash history <i class="right" ng-class="{'fi-arrow-up': isopencashhistory, 'fi-arrow-right': !isopencashhistory}"></i>
 </accordion-heading>
-Cash history content
+<div class="portfolio-overview-container left" 
+ng-include src="'views/portfolio/partials/views/cash-history.html'"></div>
 </accordion-group>
-<accordion-group is-open="isopen" ng-init="isopen=false">
+<accordion-group is-open="isopenreports" ng-init="isopenreports=false">
 <accordion-heading>
-Reports <i class="right" ng-class="{'fi-arrow-up': isopen, 'fi-arrow-down': !isopen}"></i>
+Reports <i class="right" ng-class="{'fi-arrow-up': isopenreports, 'fi-arrow-right': !isopenreports}"></i>
 </accordion-heading>
-Reports content
+<div class="portfolio-overview-container left" 
+ng-include src="'views/portfolio/partials/views/reports.html'"></div>
 </accordion-group>
-<accordion-group is-open="isopen" ng-init="isopen=false">
+<accordion-group is-open="isopenstatements" ng-init="isopenstatements=false">
 <accordion-heading>
-Statements <i class="right" ng-class="{'fi-arrow-up': isopen, 'fi-arrow-down': !isopen}"></i>
+Statements <i class="right" ng-class="{'fi-arrow-up': isopenstatements, 'fi-arrow-right': !isopenstatements}"></i>
 </accordion-heading>
-Statements content
+<div class="portfolio-overview-container left" 
+ng-include src="'views/portfolio/partials/views/statements.html'"></div>
 </accordion-group>
-<accordion-group is-open="isopen" ng-init="isopen=false">
+<accordion-group is-open="isopencoststructure" ng-init="isopen=false">
 <accordion-heading>
-Cost structure <i class="right" ng-class="{'fi-arrow-up': isopen, 'fi-arrow-down': !isopen}"></i>
+Cost structure <i class="right" ng-class="{'fi-arrow-up': isopencoststructure, 'fi-arrow-right': !isopencoststructure}"></i>
 </accordion-heading>
-Cost structure content
+<div class="portfolio-overview-container left"
+ng-include src="'views/portfolio/partials/views/cost-structure.html'"></div>
 </accordion-group>
-<accordion-group is-open="isopen" ng-init="isopen=false">
+<accordion-group is-open="isopencontractnotes" ng-init="isopencontractnotes=false">
 <accordion-heading>
-Contract notes <i class="right" ng-class="{'fi-arrow-up': isopen, 'fi-arrow-down': !isopen}"></i>
+Contract notes <i class="right" ng-class="{'fi-arrow-up': isopencontractnotes, 'fi-arrow-right': !isopencontractnotes}"></i>
 </accordion-heading>
-Contract notes content
+<div class="portfolio-overview-container left"
+ng-include src="'views/portfolio/partials/views/contract-notes.html'"></div>
 </accordion-group>
-<!-- <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
-{{group.content}}
-</accordion-group>
-<accordion-group heading="Dynamic Body Content">
-<p>The body of the accordion group grows to fit the contents</p>
-<div ng-repeat="item in items">{{item}}</div>
-</accordion-group>
-<accordion-group is-open="isopen">
-<accordion-heading>
-I can have markup, too! <i class="right" ng-class="{'fa fa-chevron-down': isopen, 'fa fa-chevron-right': !isopen}"></i>
-</accordion-heading>
-This is just some content to illustrate fancy headings.
-</accordion-group> -->
 </accordion>
