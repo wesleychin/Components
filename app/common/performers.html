@@ -3,7 +3,7 @@
 	<div class="top-performers-heading-spacing"></div>
 	<div class="portfolio-performance-buttons"><span class="top-performers-headings">Top losers</span></div>
 </div>
-<div class="row">
+<div class="row show-for-large">
 	<div class="top-widgets gainers" ng-show="performer.gain == true" ng-repeat-start="performer in performers">
 		<div class="top-performers-name"><span>{{performer.name}}    {{$index}}</span></div><br/>
 		<i class="k-icon k-i-arrow-n"></i><br/>
@@ -20,4 +20,15 @@
 		</div>
 		<div class="inline-block" ng-repeat-end></div>
 	</div>
+</div>
+<div class="hide-for-large">
+<table>
+
+	<tr ng-class="{'gainers': performer.gain === true, 'losers': performer.gain === false}" ng-repeat="performer in performers">
+		<td class="top-performers-name inline-block"><span>{{performer.name}}    {{$index}}</span></td>
+		<td class="inline-block"><i class="k-icon k-i-arrow-n"></i></td>
+		<td class="inline-block"><span>{{performer.percentage}}</span></td>
+		<td class="inline-block"><span>{{performer.amount}}</span></td>
+	</tr>
+	</table>
 </div>
