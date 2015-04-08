@@ -1,14 +1,18 @@
-<div class="row show-for-large no-padding-bottom">
-	<span class="headingFormat left">Portfolio overview</span>
+<div class="row no-padding-bottom">
+	<span class="show-for-large headingFormat left">Portfolio overview</span>
 	<div class="show-for-large portfolio-performance-buttons right">
 		<div class="portfolio-performance-buttons button-padding-right" ng-include src="'common/search-dropdown.html'">
 		</div>
 		<div class="portfolio-performance-buttons" ng-include src="'common/download-button.html'">
 		</div>
 	</div>
+	<div class="hide-for-large">
+		<div class="" ng-include src="'common/search-textbox.html'">
+		</div>
+	</div>
 </div>
-<div class="show-for-large row no-padding-top"><hr/></div>
-<div class="show-for-large row padding-below-performers">
+<div class="row show-for-large no-padding-top"><hr/></div>
+<div class="row show-for-large padding-below-performers">
 	<div ng-include src="'common/performers.html'"></div>
 </div>
 <div class="show-for-large">
