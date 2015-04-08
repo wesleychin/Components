@@ -68,11 +68,11 @@
 }
 
 .text-red {
-	color : #FF0000;
+	color : #FF0000 !important;
 }
 
 .text-green {
-	color : #007F00;
+	color : #007F00 !important;
 }
 
 .text-blue {
