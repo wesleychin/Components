@@ -1,0 +1,49 @@
+.header-pagination-bullets {
+    display: inline-block;
+}
+.header-pagination-bullets:first-child > div:first-child {
+    display: none;
+}
+.inner-page-sub-title {
+    font-size: 18px;
+    font-family: $font-bold;
+    color: #000;
+    padding-top: 5px;
+	padding-bottom: 5px;
+}
+.pagination-bullets-container {
+    text-align: center;
+}
+.transaction-steps-widget.pagination-bullets-con {
+    display: inline-block;
+    margin-top: 0;
+    padding-top:28px;
+    padding-bottom: 10px;
+    width: 100%;
+    .transaction-steps-line {
+        margin-left: 0;
+    }
+}
+
+.inner-page-popup-heading {
+    background: transparent;
+} 
+.inner-page-popup-back{
+    left:0px;
+    top: 4px;
+    .fa{
+        font-size: 22px;
+        color: #2570e0;
+    }
+}
+
+
+@media only screen and (max-width: 40em) {
+	.inner-page-sub-title {
+		font-size: 14px;
+		font-family: $font-regular;
+		color: $base-color-medium;
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+}

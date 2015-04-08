@@ -26,6 +26,21 @@
       <div class="show-for-large column large-7 right" align="right">
         <div class="details-overview-bluetext"><a href="#" class="underline-text">Quotes bank balance (1) (R100.00)</a>
         </div>
+        <div class='drop-down columns large-3 medium-3 small-4'>
+          <ui-select ng-model="groupModel.group" ng-disabled="disabled" name='groups' ng-change='clearAllGroups();' required >
+            <ui-select-match placeholder="Groups">
+              {{$select.selected.name}}             
+            </ui-select-match>
+            <ui-select-choices repeat="group in groups " ng-click="clearFilterData()">
+              <div ng-bind-html="group.name | highlight: $select.search">
+              </div>     
+              <span class='fa fa-active fa-check'>
+              </span>
+            </ui-select-choices>
+          </ui-select>
+          <span class="control-label">
+          </span>
+        </div>
         <div class="inline-block">
           <select class="cash-summary-buttons text-blue">
             <option value="live">Live</option>
@@ -41,6 +56,7 @@
         <div class="streaming-button pointer" ng-click="toggleStreaming()" 
         ng-class="{'text-blue': streamingButtonActive === true, 'text-grey': streamingButtonActive === false}">Streaming
       </div>
+      <div class='popup-buttons right' primary-button button-value='Streaming'></div>
       <div class="details-overview-feed-details"> As at {{time}} (15 min delayed - Reuters) 
       </div>
     </div>

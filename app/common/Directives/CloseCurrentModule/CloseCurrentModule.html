@@ -1,0 +1,9 @@
+<div modal-dialog show='modal.showClosethismodule' id="closeThisModule" class="columns large-4 large-centered
+medium-6 medium-centered small-12 small-centered close-this-module-wrapper" ignore-mask-click="true">
+    <div class="close-this-top-info">{{closeDetailText}}</div>
+    <div class="close-this-top-info">This action cannot be undone</div>
+    <div class='close-this-module-buttons columns large-8 large-centered medium-8 medium-centered small-12 small-centered clearfix'>
+        <div class='right module-close-btn small-12 small-centered large-6 medium-6' primary-button button-value='{{closeButtonText}}' onclick-function='closethisModule();' icon-required='false'></div>
+        <div class='left cancel-btn small-12 small-centered large-6 medium-6' secondary-button button-value='Cancel' onclick-function='goBackToCurrentModule();' icon-required='false'></div>
+    </div>
+</div>

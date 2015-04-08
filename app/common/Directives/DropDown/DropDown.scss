@@ -1,0 +1,29 @@
+
+.width-block{
+	width:100% !important;
+	display:block;
+}
+.multiSelect .multiSelectItem:hover .fa-active {
+display: inline-block;
+position: absolute;
+margin-left: -40px;
+}
+.multiSelect .tickMark {
+margin-top: 0px;
+position: absolute;
+margin-left: -40px;
+}
+.display-none-important{
+	display:none !important;
+}
+.viewAllAccounts-text{
+	font-family:$font-bold;
+}
+.multiSelect .multiSelectItem:hover, .multiSelect .multiSelectGroup:hover{
+	.multiSelectItem:last-child{
+		color:#2570e0 !important;
+	}
+	.viewAllAccounts-text:hover {
+		color:#2570e0 !important;		
+		}
+}
