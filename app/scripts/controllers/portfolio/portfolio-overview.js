@@ -29,6 +29,10 @@ angular.module('componentsApp')
 			}
 		});
 	});
+
+	$http.get('/api/portfolio/portfolio-overview.json').success(function(response) {
+		$scope.portfolioOverviewInfo = response;
+	});
 });	
 	// $scope.portfolioOverviewGridAdditionalInformation = function(dataItem) {
 	// 	$http.get('/api/portfolio/portfolio-overview.json').success(function(response) {

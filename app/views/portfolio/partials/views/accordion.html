@@ -1,11 +1,11 @@
 <accordion close-others="false">
-<accordion-group is-open="isopenmovers" ng-init="isopenmovers=true">
+<accordion-group is-open="isopenmovers" ng-init="isopenmovers=false">
 <accordion-heading>
 Top movers <i class="right" ng-class="{'fi-arrow-up': isopenmovers, 'fi-arrow-right': !isopenmovers}"></i>
 </accordion-heading>
 <div ng-controller="PortfolioOverviewCtrl" ng-include src="'common/performers.html'"></div>
 </accordion-group>
-<accordion-group is-open="isopeninstruments" ng-init="isopeninstruments=false">
+<accordion-group is-open="isopeninstruments" ng-init="isopeninstruments=true">
 <accordion-heading>
 Instruments <i class="right" ng-class="{'fi-arrow-up': isopeninstruments, 'fi-arrow-right': !isopeninstruments}"></i>
 </accordion-heading>
