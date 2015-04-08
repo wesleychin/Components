@@ -34,6 +34,9 @@ angular.module('componentsApp')
 
 	$http.get('/api/portfolio/performers.json').success(function(response) {
 		$scope.performers = response;
+
+		var sortedPerformers = response.sort(function(a,b) { return parseFloat(a.amount) - parseFloat(b.amount) } );
+		$scope.top5performers = sortedPerformers.reverse().slice(0,5);
 	});
 
 	$scope.goToView= function (sectionId) {

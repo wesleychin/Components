@@ -7,14 +7,12 @@
 		</div>
 	</div>
 </div>
-<div class="hide-for-large">
-	<div class="portfolio-performance-buttons button-padding-right" ng-include src="'common/search-dropdown.html'">
-</div>
 <div class="show-for-large row no-padding-top"><hr/></div>
 <div class="show-for-large row padding-below-performers">
 	<div ng-include src="'common/performers.html'"></div>
 </div>
-<kendo-grid options="portfolioOverviewGrid"class="show-for-large">
+<div class="show-for-large">
+	<kendo-grid options="portfolioOverviewGrid">
 <!-- <div k-detail-template>
 	<kendo-tabstrip>
 	<ul>
@@ -25,3 +23,4 @@
 	</kendo-tabstrip>
 </div> -->
 </kendo-grid>
+</div>
