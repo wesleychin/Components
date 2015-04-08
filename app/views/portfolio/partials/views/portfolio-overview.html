@@ -32,13 +32,10 @@
 <table ng-repeat="row in portfolioOverviewInfo">
 <tr>
 <td><span class="text-blue">{{row.code}}</span><br/><span class="text-blue">{{row.fullName}}</span></td>
-<td></td>
-<td></td>
 <td><span class="right">{{row.instrument.amount}}</span></td>
 </tr>
 <td>QTY:2<br/>{{row.priceR2}}</td>
 <td>Unit cost<br/>{{row.unitR}}</td>
-<td></td>
 <td>Total change<br/><span ng-class="{'text-green': row.priceChangeTotal > 0, 'text-red': row.priceChangeTotal < 0}">{{row.priceChangeTotal}}<i  ng-class="{'fi-arrow-up': row.priceChangeTotal > 0, 'fi-arrow-down': row.priceChangeTotal < 0}"></i></span></td>
 </tr>
 </table>

@@ -73,4 +73,8 @@ angular.module('componentsApp')
 			]
 		};
 	};
+
+	$http.get('/api/portfolio/sector-breakdown.json').success(function(response) {
+		$scope.sectorBreakdownInfo = response;
+	});
 });		
