@@ -1,0 +1,10 @@
+<div class="form-elem-textbox" ng-click='textBoxClick();' ng-switch on='type'>
+    <span class='textbox-placeholder' ng-class="{'textbox-txt-position-active':textBoxActive}">{{placeholderText}}</span>
+    <input ng-switch-when='text' type='text' value="" class="{{inputClass}}" placehoder="" class="input-type-textbox" ng-blur='getTextBoxValue()' ng-model='$parent.ngModel' ng-focus='txtBoxActive();' maxlength="{{maxlength}}" />
+    <input ng-switch-when='password' type='password' value="" class="{{inputClass}}" placehoder="" class="input-type-textbox" ng-blur='getTextBoxValue()' ng-model='$parent.ngModel' ng-focus='txtBoxActive();' />
+    <input ng-switch-when='amount' type='text' value="" class="{{inputClass}}" placehoder="" class="input-type-textbox" ng-blur='getTextBoxValue()' valid-number decimal-upto="{{decimalUpto}}" allow-decimal="{{allowDecimal}}" ng-model='$parent.ngModel' ng-focus='txtBoxActive();' />
+    <input ng-switch-when='email' type='email' value="" class="{{inputClass}}" placehoder="" class="input-type-textbox" ng-blur='getTextBoxValue()' ng-model='$parent.ngModel' ng-focus='txtBoxActive();' />
+    <input ng-switch-when='tel' type='tel' maxlength="{{maxlength}}" value="" class="{{inputClass}}" placehoder="" class="input-type-textbox" ng-blur='getTextBoxValue()' ng-model='$parent.ngModel' ng-focus='txtBoxActive();' valid-number allow-decimal="false" />
+    <input ng-switch-when='code' type='tel' maxlength="{{maxlength}}" value="" class="{{inputClass}}" placehoder="" class="input-type-textbox" ng-blur='getTextBoxValue()' ng-model='$parent.ngModel' ng-focus='txtBoxActive();' valid-number allow-decimal="false" />
+    <div class="form-elem-half-border" ng-class="{'half-border-textbox-nonempty':textBoxActive}"></div>
+</div>

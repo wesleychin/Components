@@ -1,0 +1,46 @@
+.combo-textbox-wrapper{
+	width:100%;
+	position:relative;
+
+	div>div>div.form-elem-half-border{
+		display: none !important;
+	}
+	.input-box-combo {
+		width: 85%;
+	}
+}
+.combo-textbox-half-border{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 17px;
+	width: 100%;
+	border: 1px solid #666;
+	border-top: none;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.input-box-combo:focus + .input-type-textbox:focus + .combo-textbox-half-border{
+	border:1px solid #26428b;
+	box-shadow: 0 5px 6px -7px #26428b;
+	border-top: none;
+}
+
+// .form-elem-textbox .input-type-textbox:focus + .form-elem-half-border{
+	
+//  	border: 1px solid rgb(38, 66, 139);
+//   	box-shadow: 0 5px 6px -7px #26428b;
+// 	border-top:0
+// }
+
+.input-box-combo{
+	margin-top:8px;
+}
+@media (max-width: 350px) {
+	.combo-textbox-wrapper .input-box-combo {
+		width: 70%;
+	}
+	.form-elem-textbox .input-type-textbox {
+		margin-left: 0;
+	}
+}

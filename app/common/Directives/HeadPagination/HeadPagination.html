@@ -1,0 +1,21 @@
+<div class='inner-page-popup-heading transfer-window relative'>
+    <div class='pagination-heading-con'>
+        <div class='inner-page-popup-txt inline-block'>{{mainTitle}}</div>
+        <div class="inline-block" ng-show='iconRequired' ng-click="expr(onclickFunction)"><i class="fa {{iconType}}"></i>
+        </div>
+        <div class='inner-page-sub-title'>{{subTitle}}</div>
+    </div>
+    <span class='inner-page-popup-close absolute' ng-click="showHead(); backHome();"><i class='fa fa-times right pointer '></i></span>
+    <div close-current-module close-detail-text='{{closeModText}}' close-button-text='{{closeModButtonText}}'></div>
+    <span class='inner-page-popup-back absolute' ng-click="arrowClick();" ng-show='showBack'><i class='fa fa-chevron-left pointer'></i></span>
+    <span class='receipt-done-text show-for-small absolute' ng-if="showReceiptView">Done</span>
+    <ul class='transaction-steps-widget pagination-bullets-con clearfix' ng-show="showBullets">
+        <li ng-repeat='x in renderingArray' class='header-pagination-bullets'>
+            <div class="transaction-steps-line" ng-class="{'transaction-done': thisStateIndex >= $index}"></div>
+            <div class="transaction-steps-number" ng-class="{'transaction-done': 
+			 thisStateIndex >= $index}"><span class="show-for-medium-up">{{$index + 1}}</span></div>
+
+        </li>
+    </ul>
+
+</div>

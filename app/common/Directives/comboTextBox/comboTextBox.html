@@ -1,0 +1,10 @@
+<div class="combo-textbox-wrapper clearfix">
+    <span class="{{leftIconType}} left {{leftIconClass}}" ng-class="{{leftIconNgClass}}" ng-if="leftIconRequired"></span>
+
+    <span class="left  {{leftLabelClass}}" ng-class="{{leftlabelNgClass}}" ng-click="comboTextBoxClick();" ng-if="leftLabelRequired">{{leftLabelValue}}</span>
+    <div class="left input-box-combo" input-class='{{inputBoxClass}}' text-box index="{{focusEvent}}" placeholder-text='{{placeholderText}}' type='{{type}}' ng-model="ngModel" allow-decimal="{{allowDecimal}}" decimal-upto="{{decimalUpto}}"></div>
+
+    <span class="right {{rightLabelClass}}" ng-class="{{rightLabelNgClass}}" ng-click="rightContentOnclick" ng-if="rightLabelRequired">{{rightLabelValue}}</span>
+    <span class="{{rightIconType}} right {{rightIconClass}}" ng-class="{{rightIconClass}}" ng-click="rightContentOnclick" ng-if="rightIconRequired"></span>
+    <div class="form-elem-half-border" ng-class="{'form-elem-half-border-active':comboTextboxActive}"></div>
+</div>

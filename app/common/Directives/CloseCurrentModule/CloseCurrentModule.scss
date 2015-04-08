@@ -1,0 +1,70 @@
+.close-this-module-wrapper{
+	background:#474747 !important;
+	width:  100% !important;
+	z-index:1000 !important;
+
+	div.ng-modal{
+		display:table-cell !important;
+		vertical-align:middle !important;
+		width: 60% !important;
+		border: none !important;
+		box-shadow: none !important;
+		background: transparent !important;
+		overflow: hidden !important;
+	}
+}
+
+.close-this-top-info{
+	color: #ffffff;
+	font-family: $font-light;
+	font-size: $base-font-size;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.close-this-module-buttons{
+	margin-top:20px;
+	div>button.primary-form-button{
+		border: 1px solid #cc0033 !important;
+		border-radius: 3px !important;
+		background: #cc0033 !important;
+		background-image: -moz-linear-gradient(90deg, #cc0033 0%, #DD3861 100%) !important;
+		background-image: -webkit-linear-gradient(90deg, #cc0033 0%, #DD3861 100%) !important;
+	}
+	div>button.primary-form-button:hover, div>button.primary-form-button:active{
+		border: 1px solid #cc0033 !important;
+		border-radius: 3px !important;
+		background: #cc0033 !important;
+		background-image: -moz-linear-gradient(90deg, #DD3861 0%, #cc0033 100%) !important;
+		background-image: -webkit-linear-gradient(90deg, #DD3861 0%, #cc0033 100%) !important;
+	}
+}
+
+
+.cancel-btn>button.secondary-form-button, .cancel-btn>button.secondary-form-button:hover, .cancel-btn>button.secondary-form-button:active {
+	height: 32px;
+	background: #474747 !important;
+	border: 1px solid #ffffff;
+	border-radius: 3px;
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 30px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+
+@media only screen and (max-width: 40em){
+
+	.close-this-module-wrapper div.ng-modal {
+		display: table-cell !important;
+		vertical-align: middle !important;
+		width: 100% !important;
+		border: none !important;
+		box-shadow: none !important;
+		background: transparent !important;
+	}
+
+	.cancel-btn{
+		margin-top: 15px !important;
+	}
+}

@@ -1,0 +1,48 @@
+<span class="multiSelect inlineBlock"> 
+
+   <button type="button" class="button multiSelectButton" ng-click="toggleCheckboxes( $event );  refreshSelectedItems(); refreshButton();" ng-bind-html="varButtonLabel">
+    </button>           
+    <div class="checkboxLayer">                        
+        <form> 
+            <div class="helperContainer" ng-if="displayHelper( 'filter' ) || displayHelper( 'all' ) || displayHelper( 'none' ) || displayHelper( 'reset' )">
+                <div class="line" ng-if="displayHelper( 'all' ) || displayHelper( 'none' ) || displayHelper( 'reset' )">
+                    <button type="button" ng-click="select( 'all',   $event );"    class="helperButton" ng-if="!isDisabled && displayHelper( 'all' )">   &#10003;&nbsp; Select All</button> 
+                    <button type="button" ng-click="select( 'none',  $event );"   class="helperButton" ng-if="!isDisabled && displayHelper( 'none' )">  &times;&nbsp; Select None</button>
+                    <button type="button" ng-click="select( 'reset', $event );"  class="helperButton" ng-if="!isDisabled && displayHelper( 'reset' )" style="float:right">&#8630;&nbsp; Reset</button>
+                </div>
+                <div class="line" style="position:relative" ng-if="displayHelper( 'filter' )">
+                    <input placeholder="Search..." type="text" ng-click="select( 'filter', $event )" ng-model="inputLabel.labelFilter" ng-change="updateFilter();$scope.getFormElements();" class="inputFilter" />
+                    <button type="button" class="clearButton" ng-click="inputLabel.labelFilter='';updateFilter();prepareGrouping();prepareIndex();select( 'clear', $event )">&times;</button> 
+                </div>
+            </div>
+            <div class="checkBoxContainer" style="{{setHeight();}}">
+                <div ng-repeat="item in filteredModel | filter:removeGroupEndMarker" class="multiSelectItem clearfix"
+                    ng-class="{selected: item[ tickProperty ], horizontal: orientationH, vertical: orientationV, multiSelectGroup:item[ groupProperty ], disabled:itemIsDisabled( item )}"
+                     
+                    ng-mouseleave="removeFocusStyle( tabIndex );"> 
+                    <div class="acol" ng-if="item[ spacingProperty ] > 0" ng-repeat="i in numberToArray( item[ spacingProperty ] ) track by $index">&nbsp;</div>              
+                    <div class="acol width-block">
+                        <label class="width-block">
+                            <input ng-if="!item.viewAllAccounts" class="checkbox focusable" type="checkbox" ng-disabled="itemIsDisabled( item )" ng-checked="item[ tickProperty ]" ng-click="syncItems( item, $event, $index )" />
+                             <input ng-if="item.viewAllAccounts" ng-click="viewall()" class="checkbox focusable" type="checkbox"/>
+                            <span class="width-block" ng-class="{disabled:itemIsDisabled( item ),'viewAllAccounts-text':item.viewAllAccounts}" ng-bind-html="writeLabel( item, 'itemLabel' )"></span>
+                             <span class='dropdown-option-available-balance' ng-if='item.showBalance'>
+                                Available Balance:<span>NGN</span><span>{{item.AvailableBalance}}</span>
+                            </span>
+
+                        </label>                                
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <span class="fa fa-check tickMark " ng-if="item[ groupProperty ] !== true && item[ tickProperty ] === true"></span>
+                    <span class="fa-active fa-check" ng-class="{'display-none-important':item.viewAllAccounts}"></span>
+                </div>
+            </div> 
+        </form> 
+    </div>
+     <div class="dropdown-placeholder" ng-class="{'dropdown-txt-position-active':DropdownActive , 'dropdown-click-text':Dropdownplacetext ,'dropdown-text-back ' :DropdownPlaceReturn}"
+     ng-click="toggleCheckboxes( $event ); ">{{placeholderText}} </div>
+     <div class="form-elem-half-border dropdown-border" ng-click="toggleCheckboxes( $event );  refreshSelectedItems(); refreshButton();"></div>
+    <span class="caret fa fa-chevron-down" ng-class="{'fa-chevron-up':dropDownClicked}"></span> 
+    
+
+</span>
