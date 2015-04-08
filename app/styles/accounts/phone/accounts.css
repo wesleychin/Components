@@ -63,10 +63,91 @@
 }
 
 .accounts-details-wrapper {
-    margin-bottom: 20px !important;
-	padding:0px;
+    margin-bottom: 0px;
+	padding:0px!important;
+	margin-top:-4px;
 }
+
+.details-warp .details-overlay {
+        height: auto;
+		padding:0px;
+    }
+.phone-color {
+		background-color: #E0E0E0;
+		padding-left: 10px;
+		padding-top: 10px;
+		padding-right: 0px;
+		padding-bottom: 10px;
+		width: !important;
+	}
+
+.details-overview {
+	font-size: 12px;
+	color: #666666;
+	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+	margin-right: 0px !important; 
+}
+.row .row {
+    width: auto;
+    margin-left: 0px;
+    margin-right: 0px !important;
+    margin-top: 0;
+    margin-bottom: 0 !important;
+    max-width: none;
+}
+
+.time-delay-phone {
+	background-color: #FFFFFF;
+	width: 100% !important;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	}
 	
+.column, .columns {
+    padding-left: 10px;
+}
+
+.accounts-details-wrapper {
+    margin-bottom: 0px !important;
+	
+}
+
+.account-details-amounts-bold-phone {
+	font-size: 14px; 
+	color: #666666; */
+	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+	display: inline-block;
+	font-weight:900;
+	margin-right: 10px;
+	}
+	
+.details-overview-amounts-bold {
+	font-size: 14px;
+	color: #666666;
+	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+	display: inline-block;
+	font-weight:900;
+	margin-right: 10px;
+}
+
+.portfolio-value-bold {
+	font-size: 14px;
+	color: #666666;
+	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+	display: inline-block;
+	font-weight:900;
+	margin-right:0px;
+}
+
+div.sub-header-wrapper .sub-header .sub-header-options span {
+	cursor: pointer;
+	margin: 0px;
+	margin-left: 20px;
+	text-align: center;
+	width: 10%;
+    }
+
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
