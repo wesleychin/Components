@@ -47,15 +47,16 @@
             <option value="delayed">Delayed</option>
           </select>
         </div>
+        
         <div class="inline-block">
           <select class="cash-summary-buttons text-blue">
             <option value="bid">Bid</option>
             <option value="ruling">Ruling</option>
           </select>
-        </div>
+        </div>&nbsp;
       <div class='popup-buttons streaming-button right' primary-button button-value='Streaming' ng-click="toggleStreaming()" 
         ng-class="{'text-blue': streamingButtonActive === true, 'text-grey': streamingButtonActive === false}"></div>
-      <div class="details-overview-feed-details"> As at {{time}} (15 min delayed - Reuters) 
+      <div class="details-overview-feed-details right"> As at {{time}} (15 min delayed - Reuters) 
       </div>
     </div>
   </div>

@@ -158,16 +158,17 @@ no-padding-top {
 .gainers {
   background-color: #007F00 !important;
   padding:2px;
+  border-bottom:1px solid #FFF;
 }
 
 .losers {
   background-color: #FF0000 !important;
   padding:2px;
+  border-bottom:1px solid #FFF;
 }
 
 .top-performers-heading-spacing {
   display: inline-block;
-  padding-right: 335px;
 }
 
 .top-performers-headings {
@@ -179,6 +180,9 @@ no-padding-top {
 
 .top-performers-name {
   padding-top: 6px;
+  font-size:12px;
+  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+  color:#FFF;
 }
 
 .positionSwitch {
@@ -250,6 +254,7 @@ hr {
 td {
   padding-top:5px;
   padding-bottom:5px;
+  
 }
 
 td:first-child {
