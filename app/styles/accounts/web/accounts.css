@@ -9,7 +9,7 @@
 	border-radius: 3px;
 	padding: 18px 20px;
 	margin-top: 8px;
-	background: #e2e4e9;
+	background: #eff0f3;
 	position: relative;
 	height: 155px;
 }
@@ -31,6 +31,13 @@
 /* Start of custom OST css */
 
 .details-overview {
+	font-size: 12px;
+	color: #666666;
+	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+	margin-right: 32px;
+}
+
+.details-overview-portfolio {
 	font-size: 12px;
 	color: #666666;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
@@ -82,7 +89,7 @@
 	color: #999;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 	display: inline-block;
-	float:right;
+	float:right !important;
 }
 
 .details-overview-values {
@@ -119,27 +126,27 @@
 }
 
 .gainers1 {
-  background-color: #007F00 !important;
+  background-color: #008000 !important;
   padding:2px;
 }
 
 .gainers2 {
-  background-color: #339933 !important;
+  background-color: #0d860d !important;
   padding:2px;
 }
 
 .gainers3 {
-  background-color: #66b266 !important;
+  background-color: #198c19 !important;
   padding:2px;
 }
 
 .gainers4 {
-  background-color: #99cc99 !important;
+  background-color: #269226 !important;
   padding:2px;
 }
 
 .gainers5 {
-  background-color: #cce5cc !important;
+  background-color: #51a851 !important;
   padding:2px;
 }
 
@@ -149,22 +156,22 @@
 }
 
 .losers2 {
-  background-color: #ff3333 !important;
+  background-color: #ff1919 !important;
   padding:2px;
 }
 
 .losers3 {
-  background-color: #ff6666 !important;
+  background-color: #ff3333 !important;
   padding:2px;
 }
 
 .losers4 {
-  background-color: #ff9999 !important;
+  background-color: #ff4c4c !important;
   padding:2px;
 }
 
 .losers5 {
-  background-color: #ffcccc !important;
+  background-color: #ff6666 !important;
   padding:2px;
 }
 
