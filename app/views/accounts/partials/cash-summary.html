@@ -2,18 +2,18 @@
   <div class="row details-overlay">
     <div class="row">
       <div class="column large-5">
-        <div class="details-overview inline-block portfolio-value">
+        <div class="details-overview-portfolio inline-block portfolio-value">
           <span class="block-text block-portfolio-value-text">Portfolio value</span>
           <span class="portfolio-value-bold">{{cashSummaryComponent.ostModel.portfolioValueFormatted}}</span> 
         </div>
         <div class="bigger-width-on-phone inline-block">
-          <div class="details-overview inline-block">
+          <div class="details-overview-portfolio inline-block">
             <span class="block-text">Daily change</span>
             <div class="details-overview-amounts-bold-phone" ng-class="{'text-green': cashSummaryComponent.ostModel.dailyChangeValueFormatted > 0, 'text-red': cashSummaryComponent.ostModel.dailyChangeValueFormatted < 0}">
               <span class="details-overview-amounts-bold">{{cashSummaryComponent.ostModel.dailyChangeValueFormatted}}({{cashSummaryComponent.ostModel.dailyChangePercentageFormatted}})&nbsp;<i  ng-class="{'fa fa-caret-up': cashSummaryComponent.ostModel.dailyChangeValueFormatted > 0, 'fa fa-caret-down': cashSummaryComponent.ostModel.dailyChangeValueFormatted < 0}"></i></span>
             </div>
           </div>
-          <div class="details-overview inline-block">
+          <div class="details-overview-portfolio inline-block">
             <span class="block-text">Total change</span>
             <div class="details-overview-amounts-bold-phone" ng-class="{'text-green': cashSummaryComponent.ostModel.totalChangeValueFormatted > 0, 'text-red': cashSummaryComponent.ostModel.totalChangeValueFormatted < 0}">
               <span class="details-overview-amounts-bold">{{cashSummaryComponent.ostModel.totalChangeValueFormatted}}({{cashSummaryComponent.ostModel.totalChangePercentageFormatted}})&nbsp;<i  ng-class="{'fa fa-caret-up': cashSummaryComponent.ostModel.totalChangeValueFormatted > 0, 'fa fa-caret-down': cashSummaryComponent.ostModel.totalChangeValueFormatted < 0}"></i></span>
@@ -47,7 +47,6 @@
             <option value="delayed">Delayed</option>
           </select>
         </div>
-        
         <div class="inline-block">
           <select class="cash-summary-buttons text-blue">
             <option value="bid">Bid</option>
@@ -56,7 +55,7 @@
         </div>&nbsp;
       <div class='popup-buttons streaming-button right' primary-button button-value='Streaming' ng-click="toggleStreaming()" 
         ng-class="{'text-blue': streamingButtonActive === true, 'text-grey': streamingButtonActive === false}"></div>
-      <div class="details-overview-feed-details right"> As at {{time}} (15 min delayed - Reuters) 
+      <div class="details-overview-feed-details"> As at {{time}} (15 min delayed - Reuters)
       </div>
     </div>
   </div>
