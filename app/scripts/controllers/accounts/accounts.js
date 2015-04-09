@@ -33,9 +33,18 @@ angular.module('componentsApp')
 	});
 
 	$http.get('/api/portfolio/performers.json').success(function(response) {
-		$scope.performers = response;
+		var data = response;
+
+		var obj = data.sort(function(a, b){ return a.gain < b.gain; });
+
+		$scope.performers = [];
+
+		for (var o in obj) {
+			$scope.performers.push(obj[o])
+		}
 
 		var sortedPerformers = response.sort(function(a,b) { return parseFloat(a.amount) - parseFloat(b.amount) } );
+		
 		$scope.top5performers = sortedPerformers.reverse().slice(0,5);
 	});
 

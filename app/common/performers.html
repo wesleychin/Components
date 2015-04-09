@@ -4,7 +4,7 @@
 	<div class="portfolio-performance-buttons"><span class="top-performers-headings">Top losers</span></div>
 </div>
 <div class="row show-for-large">
-	<div class="top-widgets gainers" ng-show="performer.gain == true" ng-repeat-start="performer in performers">
+	<div class="top-widgets" ng-class="{'gainers1': $index == 0, 'gainers2': $index == 1, 'gainers3': $index == 2, 'gainers4': $index == 3, 'gainers5': $index == 4}" ng-show="performer.gain == true" ng-repeat-start="performer in performers">
 		<div class="top-performers-name"><span>{{performer.name}}    {{$index}}</span></div><br/>
 		<i class="k-icon k-i-arrow-n"></i><br/>
 		<span>{{performer.percentage}}</span><br/>
@@ -12,8 +12,8 @@
 	</div>
 	<div class="inline-block" ng-repeat-end></div>
 	<div class="inline-block right">
-		<div class="top-widgets losers" ng-show="performer.gain == false" ng-repeat-start="performer in performers">
-			<div class="top-performers-name"><span>{{performer.name}}</span></div><br/>
+		<div class="top-widgets" ng-class="{'losers1': $index == 5, 'losers2': $index == 6, 'losers3': $index == 7, 'losers4': $index == 8, 'losers5': $index == 9}" ng-show="performer.gain == false" ng-repeat-start="performer in performers">
+			<div class="top-performers-name"><span>{{performer.name}}    {{$index}}</span></div><br/>
 			<i class="k-icon k-i-arrow-s"></i><br/>
 			<span>{{performer.percentage}}</span><br/>
 			<span>{{performer.amount}}</span> 
