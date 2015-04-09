@@ -239,6 +239,11 @@ no-padding-top {
   text-decoration: underline;
 }
 
+.fa-chevron-right, .fa-chevron-down {
+    font-size:10px;
+    color: #666666;
+}
+
 /* End of custom OST css */
 
 /* Start of override HTML elements */
