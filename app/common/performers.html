@@ -5,16 +5,16 @@
 </div>
 <div class="row show-for-large">
 	<div class="top-widgets" ng-class="{'gainers1': $index == 0, 'gainers2': $index == 1, 'gainers3': $index == 2, 'gainers4': $index == 3, 'gainers5': $index == 4}" ng-show="performer.gain == true" ng-repeat-start="performer in performers">
-		<div class="top-performers-name"><span>{{performer.name}}    {{$index}}</span></div><br/>
-		<i class="k-icon k-i-arrow-n"></i><br/>
+		<div class="top-performers-name"><span>{{performer.name}}</span></div><br/>
+		<i class="fa fa-caret-up"></i><br/>
 		<span>{{performer.percentage}}</span><br/>
 		<span>{{performer.amount}}</span>
 	</div>
 	<div class="inline-block" ng-repeat-end></div>
 	<div class="inline-block right">
 		<div class="top-widgets" ng-class="{'losers1': $index == 5, 'losers2': $index == 6, 'losers3': $index == 7, 'losers4': $index == 8, 'losers5': $index == 9}" ng-show="performer.gain == false" ng-repeat-start="performer in performers">
-			<div class="top-performers-name"><span>{{performer.name}}    {{$index}}</span></div><br/>
-			<i class="k-icon k-i-arrow-s"></i><br/>
+			<div class="top-performers-name"><span>{{performer.name}}</span></div><br/>
+			<i class="fa fa-caret-down"></i><br/>
 			<span>{{performer.percentage}}</span><br/>
 			<span>{{performer.amount}}</span> 
 		</div>
@@ -25,16 +25,16 @@
 <table>
 
 	<tr class="gainers" ng-repeat="performer in top5performers" ng-if="performer.gain === true">
-		<td class="top-performers-name inline-block"><span>{{performer.name}}    {{$index}}</span></td>
+		<td class="top-performers-name inline-block"><span>{{performer.name}}</span></td>
 		<td class="top-performers-name inline-block"><span>{{performer.percentage}}</span></td>
 		<td class="top-performers-name inline-block"><span>{{performer.amount}}</span></td>
-		<td class="top-performers-name inline-block"><i class="k-icon k-i-arrow-n"></i></td>
+		<td class="top-performers-name inline-block"><i class="fa fa-caret-up"></i></td>
 	</tr>
 	<tr class="losers" ng-repeat="performer in top5performers" ng-if="performer.gain === false">
-		<td class="top-performers-name inline-block"><span>{{performer.name}}    {{$index}}</span></td>
+		<td class="top-performers-name inline-block"><span>{{performer.name}}</span></td>
 		<td class="top-performers-name inline-block"><span>{{performer.percentage}}</span></td>
 		<td class="top-performers-name inline-block"><span>{{performer.amount}}</span></td>
-		<td class="top-performers-name inline-block"><i class="k-icon k-i-arrow-s"></i></td>
+		<td class="top-performers-name inline-block"><i class="fa fa-caret-down"></i></td>
 	</tr>
 	</table>
 </div>
