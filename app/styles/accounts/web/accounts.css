@@ -34,7 +34,7 @@
 	font-size: 12px;
 	color: #666666;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-	margin-right: 32px;
+	padding-right: 29px;
 }
 
 .details-overview-portfolio {
@@ -79,10 +79,12 @@
 }
 
 .streaming-button {
-	font-size: 12px;
-	color: #2570e0 !important;
-	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-}
+ 	font-size: 12px;
+ 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+ 	display: inline-block;
+ 	border: 1px solid #A3A3A5;
+ 	padding: 7px;
+ }
 
 .details-overview-feed-details {
 	font-size: 12px;

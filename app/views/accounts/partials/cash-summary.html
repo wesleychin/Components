@@ -1,7 +1,7 @@
 <div class="details-warp large sml-popup-top-gradient">
   <div class="row details-overlay">
     <div class="row">
-      <div class="column large-5">
+      <div class="column large-6">
         <div class="details-overview-portfolio inline-block portfolio-value">
           <span class="block-text block-portfolio-value-text">Portfolio value</span>
           <span class="portfolio-value-bold">{{cashSummaryComponent.ostModel.portfolioValueFormatted}}</span> 
@@ -21,9 +21,7 @@
           </div>
         </div>
       </div>
-      <div class="column large-1 details-overlay-gutter"> 
-      </div>
-      <div class="show-for-large column large-7 right" align="right">
+      <div class="show-for-large column large-6 right" align="right">
         <div class="details-overview-bluetext"><a href="#" class="underline-text">Quotes bank balance (1) (R100.00)</a>
         </div>
         <div class="inline-block">
@@ -38,8 +36,9 @@
             <option value="ruling">Ruling</option>
           </select>
         </div>&nbsp;
-      <div class='popup-buttons streaming-button right' primary-button button-value='Streaming' ng-click="toggleStreaming()" 
-        ng-class="{'text-blue': streamingButtonActive === true, 'text-grey': streamingButtonActive === false}"></div>
+        <div class="streaming-button pointer" ng-click="toggleStreaming()" 
+        ng-class="{'text-blue': streamingButtonActive === true, 'text-grey': streamingButtonActive === false}">Streaming
+      </div>
       <div class="details-overview-feed-details"> As at {{time}} (15 min delayed - Reuters)
       </div>
     </div>
@@ -108,9 +107,8 @@
         </div>
       </div>
     </div>
-    <div class="show-for-small row time-delay-phone">
-      <div class="details-overview-feed-details left"> As at {{time}} (15 min delayed - Reuters) 
-      </div>
+    <div class="show-for-small row time-delay-phone details-overview-feed-details left">
+      As at {{time}} (15 min delayed - Reuters) 
     </div>
   </div>
 </div>

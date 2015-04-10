@@ -1,11 +1,11 @@
-<tr data-uid='#: id #'><td>{{dataItem.code}}</td><td>{{dataItem.instrument. amount}}</td><td>{{dataItem.unitR}}</td><td>{{dataItem.totalUnit}}</td>
-	<td>{{dataItem.previous}}</td><td>{{dataItem.priceR2}}</td>
-	<td>{{dataItem.totalRCurrent}}</td>
-	<td>{{dataItem.priceChangeToday}}</td>
-	<td>{{dataItem.profitLossToday}}</td>
-	<td>{{dataItem.priceChangeTotal}}</td>
-	<td>{{dataItem.profitLossTotal}}</td>
-	<td>{{dataItem.initialMargin}}</td>
-	<td>{{dataItem.portfolio}}</td>
-	<td>{{dataItem.onExpiry}}</td>
+<tr data-uid='#: id #'><td><span class="text-blue">{{dataItem.code}}</span></td><td><span class="right">{{dataItem.instrument. amount}}</span></td><td><span class="right">{{dataItem.unitR}}</td><td><span class="right">{{dataItem.totalUnit}}</span></td>
+	<td><span class="right">{{dataItem.previous}}</span></td><td><span class="right">{{dataItem.priceR2}}</span></td>
+	<td><span class="right">{{dataItem.totalRCurrent}}</span></td>
+	<td><span class="right">{{dataItem.priceChangeToday}}&nbsp;<i ng-class="{'fa fa-caret-up': priceChangeToday > 0, 'fa fa-caret-down': priceChangeToday < 0}"></i></span></td>
+	<td><span class="right">{{dataItem.profitLossToday}}</span></td>
+	<td><span class="right">{{dataItem.priceChangeTotal}}&nbsp;<i ng-class="{'fa fa-caret-up': priceChangeTotal > 0, 'fa fa-caret-down': priceChangeTotal < 0}"></i></span></td>
+	<td><span class="right">{{dataItem.profitLossTotal}}</span></td>
+	<td><span class="right">{{dataItem.initialMargin}}</span></td>
+	<td><span class="right">{{dataItem.portfolio}}</span></td>
+	<td><span class="right">{{dataItem.onExpiry}}</span></td>
 </tr>

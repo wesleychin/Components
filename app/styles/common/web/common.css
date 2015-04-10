@@ -241,8 +241,19 @@ no-padding-top {
 }
 
 .fa-chevron-right, .fa-chevron-down {
-    font-size:10px;
-    color: #666666;
+  font-size:10px;
+  color: #666666;
+}
+
+.k-group {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  white-space: nowrap;
+  border-width: 1px;
+  border-style: solid;
+  padding: 2em;
+  margin: 10px;
 }
 
 /* End of custom OST css */
@@ -266,5 +277,9 @@ td {
 td:first-child {
   padding-right:0;
 }
+
+/*table, tr, td {
+   border: 1px solid black !important;
+}*/
 
 /* End of override HTML elements */

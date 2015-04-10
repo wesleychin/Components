@@ -1,5 +1,5 @@
 <accordion close-others="false">
-<accordion-group is-open="isopenmovers" ng-init="isopenmovers=false">
+<accordion-group is-open="isopenmovers" ng-init="isopenmovers=true">
 <accordion-heading>
 Top movers <i class="right" ng-class="{'fi-arrow-up': isopenmovers, 'fi-arrow-right': !isopenmovers}"></i>
 </accordion-heading>
@@ -12,7 +12,7 @@ Instruments <i class="right" ng-class="{'fi-arrow-up': isopeninstruments, 'fi-ar
 <div ng-controller="PortfolioOverviewCtrl" class="portfolio-overview-container left"
 ng-include src="'views/portfolio/partials/views/portfolio-overview.html'"></div>
 </accordion-group>
-<accordion-group is-open="isopenperformance" ng-init="isopenperformance=true">
+<accordion-group is-open="isopenperformance" ng-init="isopenperformance=false">
 <accordion-heading>
 Portfolio performance <i class="right" ng-class="{'fi-arrow-up': isopenperformance, 'fi-arrow-right': !isopenperformance}"></i>
 </accordion-heading>
