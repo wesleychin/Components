@@ -23,7 +23,7 @@
 	.details-overview-amounts-bold-phone {
 		float:right;
 		padding: 0px;
-	}
+			}
 
 	.hide-hr {
 		display: none;
@@ -157,6 +157,16 @@ div.sub-header-wrapper .sub-header .sub-header-options span {
 	float:left !important;
 }
 
+.details-overview {
+	font-size: 12px;
+	color: #666666;
+	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+	padding-right: 0px;
+}
+
+.seperator {
+	border-left:1px solid #DEDEDE;
+	padding-left:0px;}
 
 }
 
