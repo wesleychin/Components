@@ -256,6 +256,36 @@ no-padding-top {
   margin: 10px;
 }
 
+.menu-icon {
+  margin-top: 4px;
+  background-color: #000000;
+}
+
+.left-small .left-off-canvas-toggle {
+  height: 45px;
+  width: 45px;
+}
+
+.left-small {
+  border-right: none;
+} 
+
+.tab-bar .header-wrapper .header .fluid-grid {
+  height: 45px;
+}
+
+.header .header-top {
+  padding-top: 0px !important;
+}
+
+.header-logo-icon {
+  margin: 5px 0;
+}
+
+.sign-out-header {
+  top: 0px !important;
+}
+
 /* End of custom OST css */
 
 /* Start of override HTML elements */
