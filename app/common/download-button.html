@@ -1,5 +1,46 @@
-<div class="downloadDropdownMargin">
-	<select class="downloadDropdown">
-		<option class="downloadOption" ng-repeat="(id, label) in downloadOptions" value="id">{{label}}</option>
-	</select>
-</div><div class="downloadButton pointer"><i class="fi-download"></i></div>
+			
+			<section class="main">
+			
+				<div class="wrapper-demo">
+					<div id="dd" class="wrapper-dropdown-2" tabindex="1">Live
+						<ul class="dropdown">
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Github</a></li>
+							<li><a href="#">Facebook</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</section>
+			
+		<!-- jQuery if needed -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+
+			function DropDown(el) {
+				this.dd = el;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						event.stopPropagation();
+					});	
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-2').removeClass('active');
+				});
+
+			});
+
+		</script>

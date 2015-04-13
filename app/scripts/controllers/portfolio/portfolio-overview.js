@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('componentsApp')
-.controller('PortfolioOverviewCtrl', function ($scope, $http, $timeout, $filter, $templateCache) {
+.controller('PortfolioOverviewCtrl', function ($scope, $http, $timeout, $filter, $templateCache) 
+{$scope.downloadOptions = [ 'pdf', 'xls', 'csv'];
 	$http.get('/api/portfolio/portfolio-overview-column-headings.json').success(function(response) {
 		var columnData = response;
 

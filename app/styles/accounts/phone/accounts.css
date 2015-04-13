@@ -22,7 +22,7 @@
 
 	.details-overview-amounts-bold-phone {
 		float:right;
-		padding: 3px;
+		padding: 0px;
 	}
 
 	.hide-hr {
@@ -87,6 +87,7 @@
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 	margin-right: 0px !important; 
 }
+
 .row .row {
     width: auto;
     margin-left: 0px;
@@ -143,10 +144,19 @@
 div.sub-header-wrapper .sub-header .sub-header-options span {
 	cursor: pointer;
 	margin: 0px;
-	margin-left: 20px;
+	margin-left: 50px;
 	text-align: center;
 	width: 10%;
     }
+	
+.details-overview-feed-details {
+	font-size: 12px;
+	color: #999;
+	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+	display: inline-block;
+	float:left !important;
+}
+
 
 }
 
@@ -159,7 +169,7 @@ div.sub-header-wrapper .sub-header {
     border-bottom: 1px solid #a3a3a5;
 	}
 	
-	.body-wrapper {
+.body-wrapper {
     background: #e9eaed;
     padding-top: 0px;
 	margin-top:0px;

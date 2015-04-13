@@ -14,6 +14,7 @@ angular
     'ngCookies',
     'ngResource',
     'ngRoute',
+	'ui.select',
     'ngSanitize',
     'ngTouch',
     'mm.foundation', 
@@ -21,8 +22,10 @@ angular
     'highcharts-ng', 
     'angularSpinner'
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
+  .config(function ($routeProvider, uiSelectConfig) {
+    uiSelectConfig.theme='select2';
+	uiSelectConfig.resetSearchInput = true;
+	$routeProvider
       .when('/', {
         templateUrl: 'views/accounts/accounts-overview.html',
         controller: 'AccountsCtrl'
