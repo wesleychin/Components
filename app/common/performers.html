@@ -22,19 +22,18 @@
 	</div>
 </div>
 <div class="hide-for-large">
-<table>
-
-	<tr class="gainers" ng-repeat="performer in top5performers" ng-if="performer.gain === true">
-		<td class="top-performers-name inline-block"><span>{{performer.name}}</span></td>
-		<td class="top-performers-name inline-block"><span>{{performer.percentage}}</span></td>
-		<td class="top-performers-name inline-block"><span>{{performer.amount}}</span></td>
-		<td class="top-performers-name inline-block"><i class="fa fa-caret-up"></i></td>
-	</tr>
-	<tr class="losers" ng-repeat="performer in top5performers" ng-if="performer.gain === false">
-		<td class="top-performers-name inline-block"><span>{{performer.name}}</span></td>
-		<td class="top-performers-name inline-block"><span>{{performer.percentage}}</span></td>
-		<td class="top-performers-name inline-block"><span>{{performer.amount}}</span></td>
-		<td class="top-performers-name inline-block"><i class="fa fa-caret-down"></i></td>
-	</tr>
+	<table>
+		<tr class="gainers" ng-repeat="performer in top5performers" ng-if="performer.gain === true">
+			<td class="top-performers-name inline-block"><span>{{performer.name}}  {{$index}}</span></td>
+			<td class="top-performers-name inline-block"><span class="right">{{performer.percentage}}</span></td>
+			<td class="top-performers-name inline-block"><span class="right">{{performer.amount}}</span></td>
+			<td class="top-performers-name inline-block"><i class="fa fa-caret-up right"></i></td>
+		</tr>
+		<tr class="losers" ng-repeat="performer in top5performers" ng-if="performer.gain === false">
+			<td class="top-performers-name inline-block"><span>{{performer.name}}  {{$index}}</span></td>
+			<td class="top-performers-name inline-block"><span class="right">{{performer.percentage}}</span></td>
+			<td class="top-performers-name inline-block"><span class="right">{{performer.amount}}</span></td>
+			<td class="top-performers-name inline-block"><i class="fa fa-caret-down right"></i></td>
+		</tr>
 	</table>
 </div>
