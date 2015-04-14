@@ -1,117 +1,120 @@
 <div class="details-warp large sml-popup-top-gradient">
-  <div class="row details-overlay">
-    <div class="row">
-      <div class="column large-6">
-        <div class="details-overview inline-block portfolio-value">
-          <span class="block-text block-portfolio-value-text">Portfolio value</span>
-          <span class="portfolio-value-bold">{{cashSummaryComponent.ostModel.portfolioValueFormatted}}</span> 
-        </div>
-        <div class="bigger-width-on-phone inline-block">
-          <div class="details-overview inline-block">
-            <span class="block-text">Daily change</span>
-            <div class="details-overview-amounts-bold-phone" ng-class="{'text-green': cashSummaryComponent.ostModel.dailyChangeValueFormatted > 0, 'text-red': cashSummaryComponent.ostModel.dailyChangeValueFormatted < 0}">
-              <span class="details-overview-amounts-bold">{{cashSummaryComponent.ostModel.dailyChangeValueFormatted}}({{cashSummaryComponent.ostModel.dailyChangePercentageFormatted}})&nbsp;<i  ng-class="{'fa fa-caret-up': cashSummaryComponent.ostModel.dailyChangeValueFormatted > 0, 'fa fa-caret-down': cashSummaryComponent.ostModel.dailyChangeValueFormatted < 0}"></i></span>
-            </div>
-          </div>
-          <div class="details-overview inline-block">
-            <span class="block-text">Total change</span>
-            <div class="details-overview-amounts-bold-phone" ng-class="{'text-green': cashSummaryComponent.ostModel.totalChangeValueFormatted > 0, 'text-red': cashSummaryComponent.ostModel.totalChangeValueFormatted < 0}">
-              <span class="details-overview-amounts-bold">{{cashSummaryComponent.ostModel.totalChangeValueFormatted}}({{cashSummaryComponent.ostModel.totalChangePercentageFormatted}})&nbsp;<i  ng-class="{'fa fa-caret-up': cashSummaryComponent.ostModel.totalChangeValueFormatted > 0, 'fa fa-caret-down': cashSummaryComponent.ostModel.totalChangeValueFormatted < 0}"></i></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="show-for-large column large-6 right" align="right">
-        <div class="details-overview-bluetext"><a href="#" class="underline-text">Quotes bank balance (1) (R100.00)</a>
-        </div>
+    <div class="row details-overlay">
+        <div class="row">
+            <div class="column large-6">
+                <div class="details-overview-portfolio inline-block portfolio-value">
+                    <span class="block-text block-portfolio-value-text">Portfolio value</span>
+                    <span class="portfolio-value-bold">{{cashSummaryComponent.ostModel.portfolioValueFormatted}}</span>
+                </div>
+                <div class="bigger-width-on-phone inline-block">
+                    <div class="details-overview-portfolio inline-block">
+                        <span class="block-text">Daily change</span>
 
-        <div class="inline-block">
-          <select class="cash-summary-buttons text-blue">
-            <option value="live">Live</option>
-            <option value="delayed">Delayed</option>
-          </select>
+                        <div class="details-overview-amounts-bold-phone"
+                             ng-class="{'text-green': cashSummaryComponent.ostModel.dailyChangeValueFormatted > 0, 'text-red': cashSummaryComponent.ostModel.dailyChangeValueFormatted < 0}">
+                            <span class="details-overview-amounts-bold">{{cashSummaryComponent.ostModel.dailyChangeValueFormatted}}({{cashSummaryComponent.ostModel.dailyChangePercentageFormatted}})&nbsp;<i
+                                    ng-class="{'fa fa-caret-up': cashSummaryComponent.ostModel.dailyChangeValueFormatted > 0, 'fa fa-caret-down': cashSummaryComponent.ostModel.dailyChangeValueFormatted < 0}"></i></span>
+                        </div>
+                    </div>
+                    <div class="details-overview-portfolio inline-block">
+                        <span class="block-text">Total change</span>
+
+                        <div class="details-overview-amounts-bold-phone"
+                             ng-class="{'text-green': cashSummaryComponent.ostModel.totalChangeValueFormatted > 0, 'text-red': cashSummaryComponent.ostModel.totalChangeValueFormatted < 0}">
+                            <span class="details-overview-amounts-bold">{{cashSummaryComponent.ostModel.totalChangeValueFormatted}}({{cashSummaryComponent.ostModel.totalChangePercentageFormatted}})&nbsp;<i
+                                    ng-class="{'fa fa-caret-up': cashSummaryComponent.ostModel.totalChangeValueFormatted > 0, 'fa fa-caret-down': cashSummaryComponent.ostModel.totalChangeValueFormatted < 0}"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="show-for-large column large-6 right" align="right">
+                <div class="details-overview-bluetext">
+                    <a href="#" class="underline-text">Quotes bank balance (1) {{cashSummaryComponent.ostModel.quoteBankBalance}}</a>
+                </div>
+                <div class="inline-block">
+                    <select class="cash-summary-buttons text-blue">
+                        <option value="live">Live</option>
+                        <option value="delayed">Delayed</option>
+                    </select>
+                </div>
+                <div class="inline-block">
+                    <select class="cash-summary-buttons text-blue">
+                        <option value="bid">Bid</option>
+                        <option value="ruling">Ruling</option>
+                    </select>
+                </div>
+                &nbsp;
+                <button class="button streaming-button">Streaming</button>
+                <div class="details-overview-feed-details right"> As at {{cashSummaryComponent.ostModel.portfolioTime}} (15 min delayed - Reuters)
+                </div>
+            </div>
         </div>
-         &nbsp;
-        <div class="inline-block">
-          <select class="cash-summary-buttons text-blue">
-            <option value="bid">Bid</option>
-            <option value="ruling">Ruling</option>
-          </select>
+        <hr class="hide-hr">
+        <div class="row">
+            <div class="columns large-12 phone-color left">
+                <div class="details-overview inline-block">
+                    <span class="block-text">
+                      {{cashSummaryComponent.ostModel.accountType}} cash balance
+                    </span>
+
+                    <div class="details-overview-amounts-bold-phone">
+                      <span class="account-details-amounts-bold-phone">
+                        {{cashSummaryComponent.ostModel.cashBalanceFormatted}}
+                      </span>
+                    </div>
+                </div>
+                <div class="details-overview inline-block seperator">
+                    <span class="block-text">
+                      Derivatives initial margin
+                    </span>
+                    <div class="details-overview-amounts-bold-phone">
+                      <span class="account-details-amounts-bold-phone">
+                        {{cashSummaryComponent.ostModel.totalInitialMarginFormatted}}
+                      </span>
+                    </div>
+                </div>
+                <div class="details-overview inline-block seperator">
+                    <span class="block-text">
+                    Today"s derivatives P&amp;L
+                    </span>
+                    <div class="details-overview-amounts-bold-phone">
+                        <span class="account-details-amounts-bold-phone">
+                          {{cashSummaryComponent.ostModel.marginProductPLFormatted}}
+                        </span>
+                    </div>
+                </div>
+                <div class="details-overview inline-block seperator">
+                    <span class="block-text">
+                    Total cash
+                    </span>
+                    <div class="details-overview-amounts-bold-phone">
+                        <span class="account-details-amounts-bold-phone">
+                          {{cashSummaryComponent.ostModel.totalCashValueFormatted}}
+                        </span>
+                    </div>
+                </div>
+                <div class="details-overview inline-block seperator">
+                    <span class="block-text">Available trading funds</span>
+                    <div class="details-overview-amounts-bold-phone">
+                        <span class="account-details-amounts-bold-phone">
+                          {{cashSummaryComponent.ostModel.availableTradingFundsFormatted}}
+                        </span>
+                    </div>
+                </div>
+                <div class="details-overview inline-block seperator">
+                    <span class="block-text">
+                        Value before auto close out
+                    </span>
+                    <div class="details-overview-amounts-bold-phone">
+                        <span class="account-details-amounts-bold-phone">
+                          {{cashSummaryComponent.ostModel.availableCashBeforeAutoCloseoutFormatted}}
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
- &nbsp;
-      <div class='popup-buttons right' primary-button button-value='Streaming' ng-click="toggleStreaming()" 
-        ng-class="{'text-blue': streamingButtonActive === true, 'text-grey': streamingButtonActive === false}"></div>
-      <div class="details-overview-feed-details"> As at {{time}} (15 min delayed - Reuters) 
-      </div>
+        <div class="show-for-small row time-delay-phone details-overview-feed-details left">
+            As at {{cashSummaryComponent.ostModel.portfolioTime}} (15 min delayed - Reuters)
+        </div>
     </div>
-  </div>
-  <hr class="hide-hr">
-  <div class="row">
-    <div class="columns large-12 phone-color left">
-      <div class="details-overview inline-block">
-        <span class="block-text">
-         {{cashSummaryComponent.ostModel.accountType}} cash balance
-        </span>
-        <div class="details-overview-amounts-bold-phone">
-          <span class="account-details-amounts-bold-phone">
-           {{cashSummaryComponent.ostModel.cashBalanceFormatted}}
-          </span>
-        </div>
-      </div>
-      <div class="details-overview inline-block seperator">
-        <span class="block-text">
-          Derivatives initial margin
-        </span>
-        <div class="details-overview-amounts-bold-phone">
-          <span class="account-details-amounts-bold-phone">
-            {{cashSummaryComponent.ostModel.totalInitialMarginFormatted}}
-          </span>
-          </div>
-        </div>
-        <div class="details-overview inline-block seperator">
-          <span class="block-text">
-            Today's derivatives P&amp;L
-          </span>
-          <div class="details-overview-amounts-bold-phone">
-            <span class="account-details-amounts-bold-phone">
-              {{cashSummaryComponent.ostModel.marginProductPLFormatted}}
-            </span>
-          </div>
-        </div>
-        <div class="details-overview inline-block seperator">
-          <span class="block-text">
-            Total cash
-          </span>
-          <div class="details-overview-amounts-bold-phone">
-            <span class="account-details-amounts-bold-phone">
-              {{cashSummaryComponent.ostModel.totalCashValueFormatted}}
-            </span>
-          </div>
-        </div>
-        <div class="details-overview inline-block seperator">
-          <span class="block-text">
-            Available trading funds
-          </span>
-          <div class="details-overview-amounts-bold-phone">
-            <span class="account-details-amounts-bold-phone">
-              {{cashSummaryComponent.ostModel.availableTradingFundsFormatted}}
-            </span>
-          </div>
-        </div>
-        <div class="details-overview inline-block seperator">
-          <span class="block-text">
-            Value before auto close out
-          </span>
-          <div class="details-overview-amounts-bold-phone">
-            <span class="account-details-amounts-bold-phone">
-              {{cashSummaryComponent.ostModel.availableCashBeforeAutoCloseoutFormatted}}
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="show-for-small row time-delay-phone details-overview-feed-details left">
-      As at {{time}} (15 min delayed - Reuters) 
-    </div>
-  </div>
 </div>

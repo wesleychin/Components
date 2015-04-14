@@ -8,12 +8,11 @@
 	}
 	
 	.top-performers-name {
-	  padding-top: 6px;
-	  font-size:12px;
-	  padding-right:15px;
-	  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-	  color:#FFF;
-	  width:25%;
-}
-
+		padding-top: 6px;
+		font-size:12px;
+		padding-right:15px;
+		font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+		color:#FFF;
+		width:25%;
+	}
 }
