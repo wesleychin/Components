@@ -200,6 +200,13 @@
 	border-radius: 3px;
 }
 
+.streaming-button {
+  width: 80px;
+  height: 32px;
+  border: 1px solid #2f67b1;
+  border-radius: 3px;
+}
+
 .seperator {
 	border-left:1px solid #DEDEDE;
 	padding-left:10px;}
