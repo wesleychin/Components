@@ -123,32 +123,6 @@ table thead tr th, table tr td {
   padding-left: 280px;
 }
 
-.accounts-dropdown {
-  padding-bottom:10px;
-}
-
-.list-separator:not(:last-child) {
-  border-bottom: 1px dashed #999;
-}
-
-li.list-separator:hover {
-  border-left: 2px solid #0000FF;
-}
-
-.f-dropdown li a:hover {
-  color: #0000FF;
-  background-color: #FFFFFF;
-}
-
-.account-details-dropdown {
-  display: inline-block;
-  font-family: 'Arial';
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  color: #666666;
-}
-
 .button-padding-right {
   padding-right: 30px;
 }

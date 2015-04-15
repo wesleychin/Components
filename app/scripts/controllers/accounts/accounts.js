@@ -61,4 +61,14 @@ angular.module('componentsApp')
 			$scope.streamingButtonActive = true;
 		}
 	};
+
+	$http.get('/api/accounts/breadcrumb.json').success(function(response) {
+		$scope.breadcrumbComponent = response;
+		var accounts =response.ostModel.accounts;
+		$scope.selectedAccount = accounts[0].AccountId;
+	});
+
+	$scope.setSelectedAccount = function(accountId) {
+    	$scope.selectedAccount = accountId;
+  	};
 });

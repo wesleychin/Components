@@ -287,6 +287,31 @@ no-padding-top {
   top: 0px !important;
 }
 
+.rounded-dropdown-corners {
+  border-radius: 3px;
+}
+
+.list-separator:not(:last-child) {
+  border-bottom: 1px solid #E3E3E3;
+}
+
+li.list-separator:hover {
+  border-left: 2px solid #0000FF;
+}
+
+li.list-separator {
+  border-left: 2px solid #FFFFFF;
+}
+
+.f-dropdown li a:hover {
+  color: #0000FF;
+  background-color: #FFFFFF;
+}
+
+.options-position {
+  top: 86px !important;
+}
+
 /* End of custom OST css */
 
 /* Start of override HTML elements */

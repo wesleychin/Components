@@ -1,0 +1,21 @@
+{  
+	"ostModel":{
+		"accounts": [
+			{ "AccountId" : "1111"}, 
+			{ "AccountId" : "2222"}, 
+			{ "AccountId" : "3333"}, 
+			{ "AccountId" : "4444"}
+		],
+		"selectedAccount": {},
+		"crumbs": [
+			{
+				"text": "My Dashboard",
+				"link": "#/dashboard"
+			}, 
+			{
+				"text": "Portfolio",
+				"link": "#/portfolio/overview"
+			}
+		]
+	}
+}
