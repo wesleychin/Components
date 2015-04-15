@@ -25,23 +25,25 @@
 /* DEMO 2 */
 
 .wrapper-dropdown-2 {
-    /* Size and position */
-    position: relative; /* Enable absolute positionning for children and pseudo elements */
-    width: 80px;
-    margin: 0 auto;
-    padding: 10px 15px;
-
-    /* Styles */
-    background: #fff;
-    border: 1px solid grey;
+	   /* Size and position */
+	   position: absolute; /* Enable absolute positionning for children and pseudo elements */
+	   width: 130px;
+	   margin: 0 auto;
+	   padding: 10px 15px;
+	   top: 0;
+	   left 0;
+	
+	   /* Styles */
+	   background: #fff;
+	   border: 1px solid grey;
 	border-radius: 3px;
-    cursor: pointer;
-    outline: none;
+	   cursor: pointer;
+	   outline: none;
 }
 
 .wrapper-dropdown-2:after {
     content: "";
-    width: 0;
+    width: 100;
     height: 0;
     position: absolute;
     right: 16px;
@@ -57,30 +59,33 @@
 	position: absolute;
 	top: 99%;
 	left: -1px;
-	width: 80px;
+	right: 10px;
+	width: auto;
+	overflow-x: 30px;
 	border-left: 1px solid #999;
 	border-right: 1px solid #999;
-	right: 0px;
-
-    /* Styles */
-    background: white;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    list-style: none;
-
-    /* Hiding */
-    opacity: 0;
-    pointer-events: none;
+	right: -1px;
+	
+	   /* Styles */
+	   background: white;
+	   -webkit-transition: all 0.3s ease-out;
+	   -moz-transition: all 0.3s ease-out;
+	   -ms-transition: all 0.3s ease-out;
+	   -o-transition: all 0.3s ease-out;
+	   transition: all 0.3s ease-out;
+	   list-style: none;
+	
+	   /* Hiding */
+	   opacity: 0;
+	   pointer-events: none;
 }
 
 .wrapper-dropdown-2 .dropdown li a {
     display: block;
     text-decoration: none;
-    color: #333;
-    padding: 10px;
+    color: #2414C1;
+    padding: 10px 10px 10px 15px;
+    border-top: 1px solid #EAEAEA;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;

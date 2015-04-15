@@ -2,12 +2,12 @@
     <div class="row details-overlay">
         <div class="row">
             <div class="column large-6">
-                <div class="details-overview-portfolio inline-block portfolio-value">
+                <div class="details-overview inline-block portfolio-value">
                     <span class="block-text block-portfolio-value-text">Portfolio value</span>
                     <span class="portfolio-value-bold">{{cashSummaryComponent.ostModel.portfolioValueFormatted}}</span>
                 </div>
                 <div class="bigger-width-on-phone inline-block">
-                    <div class="details-overview-portfolio inline-block">
+                    <div class="details-overview inline-block">
                         <span class="block-text">Daily change</span>
 
                         <div class="details-overview-amounts-bold-phone"
@@ -16,7 +16,7 @@
                                     ng-class="{'fa fa-caret-up': cashSummaryComponent.ostModel.dailyChangeValueFormatted > 0, 'fa fa-caret-down': cashSummaryComponent.ostModel.dailyChangeValueFormatted < 0}"></i></span>
                         </div>
                     </div>
-                    <div class="details-overview-portfolio inline-block">
+                    <div class="details-overview inline-block">
                         <span class="block-text">Total change</span>
 
                         <div class="details-overview-amounts-bold-phone"
@@ -37,6 +37,7 @@
                         <option value="delayed">Delayed</option>
                     </select>
                 </div>
+                &nbsp;
                 <div class="inline-block">
                     <select class="cash-summary-buttons text-blue">
                         <option value="bid">Bid</option>
@@ -75,7 +76,7 @@
                 </div>
                 <div class="details-overview inline-block seperator">
                     <span class="block-text">
-                    Today"s derivatives P&amp;L
+                    Today's derivatives P&amp;L
                     </span>
                     <div class="details-overview-amounts-bold-phone">
                         <span class="account-details-amounts-bold-phone">

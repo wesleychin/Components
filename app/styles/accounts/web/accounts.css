@@ -1,8 +1,7 @@
 /* Start of override css from main.css */
 
 .acc-trans-body-container {
-	padding-left: 15px;
-}
+	padding-left: 15px;}
 
 .details-overlay {
 	border: 1px solid #999;
@@ -11,7 +10,7 @@
 	margin-top: 8px;
 	background: #eff0f3;
 	position: relative;
-	height: 155px;
+	height: 162px;
 }
 
 .sub-header-options {
