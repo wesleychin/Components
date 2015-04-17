@@ -1,46 +1,9 @@
-			
-			<section class="main">
-			
-				<div class="wrapper-demo">
-					<div id="dd" class="wrapper-dropdown-2" tabindex="1">All instruments
-						<ul class="dropdown">
-							<li><a href="#">Equities</a></li>
-							<li><a href="#">Warrants</a></li>
-							<li><a href="#">CFD's</a></li>
-						</ul>
-					</div>
-				</div>
-
-			</section>
-			
-		<!-- jQuery if needed -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script type="text/javascript">
-
-			function DropDown(el) {
-				this.dd = el;
-				this.initEvents();
-			}
-			DropDown.prototype = {
-				initEvents : function() {
-					var obj = this;
-
-					obj.dd.on('click', function(event){
-						$(this).toggleClass('active');
-						event.stopPropagation();
-					});	
-				}
-			}
-
-			$(function() {
-
-				var dd = new DropDown( $('#dd') );
-
-				$(document).click(function() {
-					// all dropdowns
-					$('.wrapper-dropdown-2').removeClass('active');
-				});
-
-			});
-
-		</script>
+ <div class="inline-block">
+ 	<button dropdown-toggle="#downloads" class="button dropdown">Downloads</button>
+ 	<ul id="downloads" class="f-dropdown-common" style="width:133px; max-width:140px;">
+ 		<li><a href="#">PDF</a></li>
+ 		<li><a href="#">XLS</a></li>
+ 		<li><a href="#">CSV</a></li>
+ 		<li><a href="#">OFX</a></li>
+ 	</ul>
+ </div>

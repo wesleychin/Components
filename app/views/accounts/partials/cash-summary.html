@@ -31,18 +31,21 @@
                 <div class="details-overview-bluetext">
                     <a href="#" class="underline-text">Quotes bank balance (1) {{cashSummaryComponent.ostModel.quoteBankBalance}}</a>
                 </div>
+                
+            
+                
                 <div class="inline-block">
-                    <select class="cash-summary-buttons text-blue">
-                        <option value="live">Live</option>
-                        <option value="delayed">Delayed</option>
-                    </select>
+                    <button dropdown-toggle="#live" class="button dropdown">Live</button><br>
+                        <ul id="live" class="f-dropdown-common">
+                          <li><a href="#">Delayed</a></li>
+                        </ul>
                 </div>
                 &nbsp;
                 <div class="inline-block">
-                    <select class="cash-summary-buttons text-blue">
-                        <option value="bid">Bid</option>
-                        <option value="ruling">Ruling</option>
-                    </select>
+                     <button dropdown-toggle="#bid" class="button dropdown">Bid</button><br>
+                        <ul id="bid" class="f-dropdown-common" style="width:87px;">
+                          <li><a href="#">Ruling</a></li>
+                        </ul>
                 </div>
                 &nbsp;
                 <button class="button streaming-button">Streaming</button>
