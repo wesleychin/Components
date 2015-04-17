@@ -30,7 +30,6 @@ angular.module('componentsApp')
 	});
 
 	$http.get('/api/portfolio/sections.json').success(function(response) {
-		console.log(response);
 		$scope.sections = response;
 	});
 

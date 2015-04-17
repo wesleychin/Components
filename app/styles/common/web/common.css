@@ -241,8 +241,7 @@ no-padding-top {
   text-decoration: underline;
 }
 
-.fa-chevron-right, .fa-chevron-down {
-  font-size:10px;
+.fa-chevron-right, .fa-chevron-down, fa-chevron-up {
   color: #666666;
 }
 
@@ -312,6 +311,17 @@ li.list-separator {
   top: 86px !important;
 }
 
+
+.phone-table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.phone-row {
+  background-color: #FFFFFF !important;
+}
+
 /* End of custom OST css */
 
 /* Start of override HTML elements */
@@ -324,14 +334,14 @@ hr {display: block;
 	padding: 0;}
 
 
-td {
-  padding-top:5px;
-  padding-bottom:5px;
-  
-}
+  td {
+    padding-top:5px;
+    padding-bottom:5px;
 
-td:first-child {
-  padding-right:0;
-}
+  }
+
+  td:first-child {
+    padding-right:0;
+  }
 
 /* End of override HTML elements */

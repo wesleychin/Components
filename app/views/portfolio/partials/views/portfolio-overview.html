@@ -5,12 +5,12 @@
 		</div>
 
 	<!--<div class="portfolio-performance-buttons" ng-include src="'common/download-button.html'">
-		</div> -->
+</div> -->
+</div>
+<div class="hide-for-large">
+	<div class="" ng-include src="'common/search-textbox.html'">
 	</div>
-	<div class="hide-for-large">
-		<div class="" ng-include src="'common/search-textbox.html'">
-		</div>
-	</div>
+</div>
 </div>
 <div class="row show-for-large no-padding-top"><hr/></div>
 <div class="row show-for-large padding-below-performers">
@@ -18,27 +18,32 @@
 </div>
 <div class="show-for-large">
 	<kendo-grid options="portfolioOverviewGrid">
-<!-- <div k-detail-template>
-	<kendo-tabstrip>
-	<ul>
-		<li class="k-state-active"></li>
-	</ul>
-	<div kendo-grid k-options="portfolioOverviewGridAdditionalInformation(dataItem)">
-		<div ng-include src="'views/portfolio/partials/views/portfolio-overview-grid-additional-information.html'"></div>
-	</kendo-tabstrip>
-</div> -->
 </kendo-grid>
 <div ng-include src="'views/portfolio/partials/views/portfolio-overview-grid-additional-information.html'"></div>
 </div>
 <div class="hide-for-large">
-	<table ng-repeat="row in portfolioOverviewInfo">
+	<table ng-repeat="row in portfolioOverviewInfo" class="phone-table">
 		<tr>
-			<td><span class="text-blue">{{row.code}}</span><br/><span class="text-blue">{{row.fullName}}</span></td>
-			<td><span class="right">{{row.instrument.amount}}</span></td>
+			<td> 
+				<table>
+					<tr>
+						<td><span class="text-blue">{{row.code}}</span><br/><span class="text-blue">{{row.fullName}}</span></td>
+						<td><span class="right">{{row.instrument.amount}}</span></td>
+					</tr>
+				</table>
+			</td>
 		</tr>
-		<td>QTY:2<br/>{{row.priceR2}}</td>
-		<td>Unit cost<br/>{{row.unitR}}</td>
-		<td>Total change<br/><span ng-class="{'text-green': row.priceChangeTotal > 0, 'text-red': row.priceChangeTotal < 0}">{{row.priceChangeTotal}}<i  ng-class="{'fi-arrow-up': row.priceChangeTotal > 0, 'fi-arrow-down': row.priceChangeTotal < 0}"></i></span></td>
-	</tr>
-</table>
+
+		<tr>
+			<td> 
+				<table>
+					<tr>
+						<td>QTY:2<br/>{{row.priceR2}}</td>
+						<td>Unit cost<br/>{{row.unitR}}</td>
+						<td>Total change<br/><span ng-class="{'text-green': row.priceChangeTotal > 0, 'text-red': row.priceChangeTotal < 0}">{{row.priceChangeTotal}}<i  ng-class="{'fi-arrow-up': row.priceChangeTotal > 0, 'fi-arrow-down': row.priceChangeTotal < 0}"></i></span></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
 </div>
