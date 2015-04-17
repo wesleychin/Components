@@ -98,7 +98,6 @@
 
 	.accounts-details-wrapper {
 		margin-bottom: 0px !important;
-
 	}
 
 	.account-details-amounts-bold-phone {
@@ -160,6 +159,7 @@
 		height: 100%;
 		margin-bottom:0px;
 		border-bottom: 1px solid #a3a3a5;
+  		padding-top: 20px;
 	}
 	
 	.body-wrapper {
