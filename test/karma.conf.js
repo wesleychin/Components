@@ -38,6 +38,7 @@ module.exports = function(config) {
       'bower_components/foundation/js/foundation.js',
       'bower_components/spin.js/spin.js',
       'bower_components/angular-spinner/angular-spinner.js',
+      'bower_components/foundation-select/foundation-select.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
