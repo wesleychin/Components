@@ -152,6 +152,14 @@
 	width: 86px;
 }
 
+.details-overview-amounts-bold {
+	font-size: 14px;
+	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+	display: inline-block;
+	font-weight:900;
+	margin-right: 10px;
+}
+
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textare {
 	-webkit-appearance: none;
 	border-radius: 3px;
