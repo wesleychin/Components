@@ -78,14 +78,6 @@
 	margin-bottom: 30px;
 }
 
-.streaming-button {
-	font-size: 12px;
-	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-	display: inline-block;
-	border: 1px solid #A3A3A5;
-	padding: 7px;
-}
-
 .details-overview-feed-details {
 	font-size: 12px;
 	color: #999;
@@ -200,12 +192,7 @@
 	border-radius: 3px;
 }
 
-.streaming-button {
-	width: 80px;
-	height: 32px;
-	border: 1px solid #2f67b1;
-	border-radius: 3px;
-}
+
 
 .seperator {
 	border-left:1px solid #DEDEDE;
@@ -253,7 +240,7 @@
 	border: 1px solid #2f67b1;
 	border-radius: 3px;
 	background-color: #2f67b1;
-	padding: 8px;
+	padding: 7px;
 	color: #FFF;
 	font-size: 13px;
 }
