@@ -43,7 +43,7 @@
 }
 
 .search-textbox {
-  padding-right: 15px;
+  padding-right: 13px;
 }
 
 .ost-buttons {
@@ -312,11 +312,6 @@ li.list-separator {
   background-color: #FFFFFF;
 }
 
-.options-position {
-  top: 86px !important;
-}
-
-
 .phone-table {
   border-collapse: collapse;
   border: 1px solid black;
@@ -325,6 +320,10 @@ li.list-separator {
 
 .phone-row {
   background-color: #FFFFFF !important;
+}
+
+.downloads-dropdown {
+  width: 130px;
 }
 
 /* End of custom OST css */
@@ -368,72 +367,71 @@ hr {display: block;
    background-color: #fff;
    border-color: #2f67b1;
    color: #2570e0;
-   transition: background-color 300ms ease-out; }
+   transition: background-color 300ms ease-out; 
+ }
 
-   .dropdown.button::after, button.dropdown::after {
-     font-family: 'FontAwesome';
-     content: "\f078";
-     border: none;
-     margin-top: 0px;
-     top:10px;
-     right: 20px;
-     text-align: right;
-     
-   }
+ .dropdown.button::after, button.dropdown::after {
+   font-family: 'FontAwesome';
+   content: "\f078";
+   border: none;
+   margin-top: 0px;
+   top:10px;
+   right: 20px;
+   text-align: right;
 
-   .button:hover, button:focus, .button:hover, .button:focus {
-     color: #2570e0; 
-   }
-   
-   .button:hover, button:focus, .button:hover, .button:focus {
-     background-color: #fff; 
-   }
-   
-   .f-dropdown-common li a {
-     display: block;
-     padding: 8px;
-     color: #2570e0;
-     text-align: left;
-     width: 100%;
-   }
+ }
 
-   .f-dropdown-common {
-     position: absolute;
-     left: -9999px;
-     list-style: none;
-     margin-left: 0;
-     outline: none;
-     width: 100%;
-     max-height: none;
-     height: auto;
-     background: #FFFFFF;
-     border: solid 1px #2f67b1;
-     font-size: 13px;
-     z-index: 89;
-     margin-top: -2px;
-     max-width: 91px;
-     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-     border-bottom-left-radius: 3px;
-     border-bottom-right-radius: 3px;
-   }
+ .button:hover, button:focus, .button:hover, .button:focus {
+   color: #2570e0; 
+ }
 
-   ul#dropdown-example-2.f-dropdown-common {
-     display: block;
-     top: 30px;
-     left: 204px; 
-   }
+ .button:hover, button:focus, .button:hover, .button:focus {
+   background-color: #fff; 
+ }
 
-   .search-textbox {
-    width: 202px !important;
-  }
+ .f-dropdown-common li a {
+   display: block;
+   padding: 8px;
+   color: #2570e0;
+   text-align: left;
+   width: 100%;
+ }
 
-  .k-i-arrow-n {
-    background-image: url('../../../images/arrow-up.png');
-  }
+ .f-dropdown-common {
+   position: absolute;
+   left: -9999px;
+   list-style: none;
+   margin-left: 0;
+   outline: none;
+   max-height: none;
+   height: auto;
+   background: #FFFFFF;
+   border: solid 1px #2f67b1;
+   font-size: 13px;
+   z-index: 89;
+   margin-top: -2px;
+   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+   border-bottom-left-radius: 3px;
+   border-bottom-right-radius: 3px;
+ }
 
-  .k-i-arrow-s {
-    background-image: url('../../../images/arrow-down.png');
-    background-position: 0;
-  }
+ ul#dropdown-example-2.f-dropdown-common {
+   display: block;
+   top: 30px;
+   left: 204px; 
+ }
+
+ .search-textbox {
+  width: 202px !important;
+}
+
+.k-i-arrow-n {
+  background-image: url('../../../images/arrow-up.png');
+}
+
+.k-i-arrow-s {
+  background-image: url('../../../images/arrow-down.png');
+  background-position: 0;
+}
 
 /* End of override HTML elements */

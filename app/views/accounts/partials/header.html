@@ -5,7 +5,7 @@
         <ul class="account-breadcrumb">
           <li class="inline-block" ng-repeat="crumb in breadcrumbComponent.ostModel.crumbs" ng-class="{ 'unavailable': crumb.unavailable, 'current': $last }"><a class="sub-header-title base-link-color pointer" href="{{crumb.link}}">{{crumb.text}}</a>&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i>&nbsp;&nbsp;&nbsp;</li>
           <li class="inline-block">
-            <!-- <div class ="account-details-dropdown">
+            <div class ="account-details-dropdown">
               <p class="show-for-large accounts-dropdown">
                 <a class="accounts-dropdown" dropdown-toggle="#accounts-dropdown">{{selectedAccount}}&nbsp;&nbsp;<i class="fa fa-chevron-down"></i></a>
               </p>
@@ -16,13 +16,7 @@
                 <a>{{x.AccountId}}</a>
               </li>
             </ul>
-          </div> -->
-          <select id="single-bsg-pilot">
-            <option value="husker">Husker</option>
-            <option value="starbuck" selected>Starbuck</option>
-            <option value="hotdog">Hot Dog</option>
-            <option value="apollo">Apollo</option>
-          </select>
+          </div>
         </li>
       </ul>
     </div>
