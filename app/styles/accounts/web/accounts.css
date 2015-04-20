@@ -48,56 +48,55 @@
 	color: #999;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 	display: inline-block;
-	float:right !important;
 }
 
 .gainers1 {
-	background-color: #008000 !important;
+	background-color: #008000;
 	padding:2px;
 }
 
 .gainers2 {
-	background-color: #0d860d !important;
+	background-color: #0d860d;
 	padding:2px;
 }
 
 .gainers3 {
-	background-color: #198c19 !important;
+	background-color: #198c19;
 	padding:2px;
 }
 
 .gainers4 {
-	background-color: #269226 !important;
+	background-color: #269226;
 	padding:2px;
 }
 
 .gainers5 {
-	background-color: #51a851 !important;
+	background-color: #51a851;
 	padding:2px;
 }
 
 .losers1 {
-	background-color: #FF0000 !important;
+	background-color: #FF0000;
 	padding:2px;
 }
 
 .losers2 {
-	background-color: #ff1919 !important;
+	background-color: #ff1919;
 	padding:2px;
 }
 
 .losers3 {
-	background-color: #ff3333 !important;
+	background-color: #ff3333;
 	padding:2px;
 }
 
 .losers4 {
-	background-color: #ff4c4c !important;
+	background-color: #ff4c4c;
 	padding:2px;
 }
 
 .losers5 {
-	background-color: #ff6666 !important;
+	background-color: #ff6666;
 	padding:2px;
 }
 
@@ -108,11 +107,11 @@
 
 .account-details-amounts-bold-phone {
 	font-size: 14px; 
-	color: #666666; */
+	color: #666666; 
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 	display: inline-block;
 	font-weight:900;
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 .account-breadcrumb {
