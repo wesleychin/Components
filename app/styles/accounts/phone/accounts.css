@@ -9,7 +9,7 @@
 	}
 
 	.bigger-width-on-phone {
-		width: 100% !important;
+		width: 100%;
 	}
 
 	.block-portfolio-value-text {
@@ -58,7 +58,7 @@
 
 	.time-delay-phone {
 		background-color: #FFFFFF;
-		width: 100%;
+		width: 100% !important;
 		padding: 10px 0 10px 15px;
 	}
 	
