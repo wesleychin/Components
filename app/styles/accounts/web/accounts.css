@@ -1,9 +1,5 @@
 /* Start of override css from main.css */
 
-.acc-trans-body-container {
-	padding-left: 15px;
-}
-
 .details-overlay {
 	border: 1px solid #999;
 	border-radius: 3px;
@@ -19,13 +15,6 @@
 	color: #0099FF;
 }
 
-.account-icons {
-	padding-left: 20px;
-	font-size: 26px;
-	color : #0000FF;
-	top: 0px;
-}
-
 /* End of override css from main.css */
 
 /* Start of custom OST css */
@@ -35,21 +24,6 @@
 	color: #666666;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 	padding-right: 20px;
-}
-
-.details-overview-portfolio {
-	font-size: 12px;
-	color: #666666;
-	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-	margin-right: 15px;
-}
-
-.details-overview-amounts-bold {
-	font-size: 14px;
-	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-	display: inline-block;
-	font-weight:900;
-	margin-right: 20px;
 }
 
 .portfolio-value-bold {
@@ -69,54 +43,12 @@
 	margin-right: 20px;
 }
 
-.details-overview-medium {
-	font-size: 12px;
-	color: #666666;
-	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-	display: inline-block;
-	margin-right: 25px;
-	margin-bottom: 30px;
-}
-
 .details-overview-feed-details {
 	font-size: 12px;
 	color: #999;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 	display: inline-block;
 	float:right !important;
-}
-
-.details-overview-values {
-	font-size: 12px;
-	color: #999;
-	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-	padding-top:5px;
-	padding-bottom:10px;
-}
-
-.dashboard-details-font-size {
-	font-size: 14px;
-}
-
-.dashboard-overview-details {
-	font-size: 14px;
-	color: #0099FF;
-	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-	display: inline-block;
-	padding:2px;
-}
-
-.dashboard-details-overlay {
-	height: 10px !important;
-	padding:2px !important;
-	background-color: #FFFFFF;
-}
-
-.cash-summary-buttons {
-	font-size: 12px;
-	width: 68px;
-	height: 28px;
-	padding: 5px;
 }
 
 .gainers1 {
@@ -169,31 +101,6 @@
 	padding:2px;
 }
 
-.primary-form-button {
-	height: 32px;
-	color: white;
-	font-size: 14px;
-	cursor: pointer;
-	border: 1px solid #2f67b1;
-	border-radius: 3px;
-	background: #2f67b1;
-	padding: 0 10px;
-	line-height: 30px;
-	margin-bottom:0px;
-}
-.cash-summary-buttons {
-	font-size: 14px;
-	width: 60px;
-	height: 32px;
-	background-color: #FFF;
-	padding: 5px;
-	color: #2f67b1;
-	border: 1px solid #2f67b1;
-	border-radius: 3px;
-}
-
-
-
 .seperator {
 	border-left:1px solid #DEDEDE;
 	padding-left:10px;
@@ -206,14 +113,6 @@
 	display: inline-block;
 	font-weight:900;
 	margin-right: 0px;
-}
-
-.hr-dotted { 
-	display: block; 
-	height: 1px;
-	border: 0;
-	border-top: 1px dotted #A8A8A8;
-	margin: 1em 0; padding: 0; 
 }
 
 .account-breadcrumb {
@@ -245,6 +144,14 @@
 	font-size: 13px;
 }
 
+.live-dropdown {
+	width: 91px;
+}
+
+.bid-dropdown {
+	width: 86px;
+}
+
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textare {
 	-webkit-appearance: none;
 	border-radius: 3px;
@@ -266,14 +173,6 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	transition: all 0.15s linear; 
-}
-
-.live-dropdown {
-	width: 91px;
-}
-
-.bid-dropdown {
-	width: 86px;
 }
 
 /* End of custom OST css */
