@@ -17,7 +17,7 @@
   border-top: 1px solid #c9cacb;
   border-left: 1px solid #c9cacb;
   border-bottom: 1px solid #c9cacb;
-  border-right: 0px solid #c9cacb;
+  border-right: 0 solid #c9cacb;
   margin-bottom: 8px;
   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
   border-bottom-left-radius: 3px;
@@ -39,7 +39,7 @@
 /* Start of custom OST css */
 
 .noLeftPadding {
-	padding-left: 0px !important;
+	padding-left: 0 !important;
 }
 
 .search-textbox {
@@ -138,18 +138,18 @@
   height: 37px;
   color: #0000FF;
   border:1px solid #0000FF;
-  border-left: 0px;
-  padding: 12px  0px 0px 12px;
+  border-left: 0;
+  padding: 12px 0 0px 12px;
 }
 
 .no-padding-bottom {
-  padding-bottom:0px;
-  margin-bottom: 0px;
+  padding-bottom:0;
+  margin-bottom: 0;
 }
 
 no-padding-top {
-  padding-top:0px;
-  margin-top: 0px;
+  padding-top:0;
+  margin-top: 0;
 }
 
 .top-widgets {
@@ -280,7 +280,7 @@ no-padding-top {
 }
 
 .header .header-top {
-  padding-top: 0px !important;
+  padding-top: 0 !important;
 }
 
 .header-logo-icon {
@@ -288,7 +288,7 @@ no-padding-top {
 }
 
 .sign-out-header {
-  top: 0px !important;
+  top: 0 !important;
 }
 
 .rounded-dropdown-corners {
@@ -313,8 +313,12 @@ li.list-separator {
 }
 
 .phone-table {
-  border-collapse: collapse;
-  border: 1px solid black;
+  border-radius: 10px;
+  border: 2px solid #FFFFFF;
+  background-color: #FFFFFF;
+  padding: 20px; 
+  width: 100%;
+  height: 150px; 
   margin-bottom: 20px;
 }
 
@@ -374,7 +378,7 @@ hr {display: block;
    font-family: 'FontAwesome';
    content: "\f078";
    border: none;
-   margin-top: 0px;
+   margin-top: 0;
    top:10px;
    right: 20px;
    text-align: right;

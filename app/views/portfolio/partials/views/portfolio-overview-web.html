@@ -1,0 +1,20 @@
+<div class="row no-padding-bottom">
+	<span class="show-for-large headingFormat left inline-block">Portfolio overview</span>
+	<div class="show-for-large portfolio-performance-buttons inline-block">
+
+		<div class="show-for-large column large-8 right" align="right">
+			<div class="inline-block search-textbox" ng-include src="'common/search-textbox.html'">
+			</div>
+			<div class="portfolio-performance-buttons right" ng-include src="'common/download-button.html'">
+		</div>
+	</div>
+</div>
+<div class="row no-padding-top"><hr/></div>
+<div class="row padding-below-performers">
+	<div ng-include src="'common/performers.html'"></div>
+</div>
+<div>
+	<kendo-grid options="portfolioOverviewGrid">
+</kendo-grid>
+<div ng-include src="'views/portfolio/partials/views/portfolio-overview-grid-additional-information.html'"></div>
+</div>

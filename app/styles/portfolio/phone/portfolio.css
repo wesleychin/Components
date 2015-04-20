@@ -1,0 +1,10 @@
+@media only screen and (max-width: 40em) {
+	.portfolio-overview-phone {
+		width: 100%;
+	}
+
+	.search-textbox, searchDropdown {
+		width: 100% !important;
+		padding-right: 0;
+	}
+}
