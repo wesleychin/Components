@@ -1,13 +1,13 @@
-<div class="row show-for-large">
+<div class="row show-for-large-up">
 	<span class="headingFormat">Sector breakdown</span>
 </div>
-<div class="row show-for-large"><hr/></div>
-<div class="show-for-large">
+<div class="row show-for-large-up"><hr/></div>
+<div class="show-for-large-up">
     <kendo-grid  options="sectorBreakdownGrid">
 </kendo-grid>
 <div ng-include src="'views/portfolio/partials/views/sector-breakdown-grid-additional-information.html'"></div>
 </div>
-<div class="hide-for-large">
+<div class="hide-for-large-up">
     <table ng-repeat="row in sectorBreakdownInfo">
         <tr>
             <td><i ng-class="{'fi-arrow-up': row.symbol == 'increase', 'fi-arrow-down': row.symbol == 'decrease', 'fi-arrow-right': row.symbol == 'neutral', 'text-green': row.symbol == 'increase', 'text-red': row.symbol == 'decrease', 'text-grey': row.symbol == 'neutral'}"></i><span class="text-blue">{{row.sectorName}}</span></td>

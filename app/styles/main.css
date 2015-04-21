@@ -4612,7 +4612,7 @@ input[type="radio"]:checked + label {
   padding: 0; }
 
 .row {
-  max-width: 960px; }
+  max-width: 80%; }
 
 .reset-margin {
   margin: 0 !important; }
@@ -5868,7 +5868,7 @@ div.acc-header-border {
   display: none; }
 
 div.acc-trans-body-container {
-  padding-left: 10px; }
+  padding-left: 0px; }
 
 div.accTrans-body-wrap {
   position: relative;
