@@ -73,19 +73,19 @@
 }
 
 .text-red {
-	color : #FF0000 !important;
+	color : #FF0000;
 }
 
 .text-green {
-	color : #007F00 !important;
+	color : #007F00;
 }
 
 .text-blue {
-	color : #0000FF !important;
+	color : #0000FF;
 }
 
 .text-grey {
-	color : #D3D3D3 !important;
+	color : #D3D3D3;
 }
 
 .bold-text {
@@ -93,7 +93,7 @@
 }
 
 .noBorder {
-  border-style: none !important;
+  border-style: none;
 }
 
 .sbBlue {
@@ -107,7 +107,7 @@
 
 .k-grid {
   width: 824px;
-  font-size: 10px !important;
+  font-size: 10px;
 }
 
 .white-background {
@@ -139,7 +139,7 @@
   color: #0000FF;
   border:1px solid #0000FF;
   border-left: 0;
-  padding: 12px 0 0px 12px;
+  padding: 12px 0 0 12px;
 }
 
 .no-padding-bottom {
@@ -232,10 +232,7 @@ no-padding-top {
   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
   display: inline-block;
   border: 1px solid #2570E0;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding: 3px 10px 3px 10px;
 }
 
 .session-timed-out-option-box {
