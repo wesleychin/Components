@@ -373,6 +373,27 @@ hr {display: block;
    color: #2570e0;
    transition: background-color 300ms ease-out; 
  }
+ 
+   button, .button.small {
+   border-style: solid;
+   border-width: 1px;
+   cursor: pointer;
+   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+   font-weight: normal;
+   line-height: normal;
+   position: relative;
+   text-decoration: none;
+   text-align: center;
+   -moz-appearance: none;
+   border-radius: 3px;
+   padding: 8px;
+   display: inline-block;
+   font-size: 13px;
+   background-color: #fff;
+   border-color: #2f67b1;
+   color: #2570e0;
+   transition: background-color 300ms ease-out; 
+ }
 
  .dropdown.button::after, button.dropdown::after {
    font-family: 'FontAwesome';
@@ -384,6 +405,17 @@ hr {display: block;
    text-align: right;
 
  }
+ 
+  .dropdown.small::after, button.small::after {
+   font-family: 'FontAwesome';
+   content: "\f078";
+   border: none;
+   margin-top: 0;
+   top:12px;
+   right: 20px;
+   text-align: right;
+ }
+ 
 
  .button:hover, button:focus, .button:hover, .button:focus {
    color: #2570e0; 
@@ -418,12 +450,69 @@ hr {display: block;
    border-bottom-left-radius: 3px;
    border-bottom-right-radius: 3px;
  }
-
- ul#dropdown-example-2.f-dropdown-common {
-   display: block;
-   top: 30px;
-   left: 204px; 
+ 
+ .f-dropdown-small {
+   position: absolute;
+   left: auto;
+   list-style: none;
+   margin-left: 0;
+   outline: none;
+   max-height: none;
+   height: auto;
+   background: #FFFFFF;
+   border: solid 1px #2f67b1;
+   font-size: 13px;
+   z-index: 89;
+   width:auto;
+   margin-top: -2px;
+   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+   border-bottom-left-radius: 3px;
+   border-bottom-right-radius: 3px;
+   display: block; 
+   top: 33px; 
+   left: auto !important;
+   width:91px;
  }
+ 
+ .f-dropdown-small li a {
+   display: block;
+   padding: 8px 8px 8px 12px;
+   color: #2570e0;
+   text-align: left;
+   width: 100%;
+ }
+ 
+ .f-dropdown-medium {
+   position: absolute;
+   left: auto;
+   list-style: none;
+   margin-left: 0;
+   outline: none;
+   max-height: none;
+   height: auto;
+   background: #FFFFFF;
+   border: solid 1px #2f67b1;
+   font-size: 13px;
+   z-index: 89;
+   width:auto;
+   margin-top: -2px;
+   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+   border-bottom-left-radius: 3px;
+   border-bottom-right-radius: 3px;
+   display: block; 
+   top: 33px; 
+   left: auto !important;
+   width:133px;
+ }
+ 
+ .f-dropdown-medium li a {
+   display: block;
+   padding: 8px;
+   color: #2570e0;
+   text-align: left;
+   width: 100%;
+ }
+ 
 
  .search-textbox {
   width: 202px !important;
