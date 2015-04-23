@@ -202,5 +202,30 @@
   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
   margin-left: 10px;
 }
+
+.text-blue-instruments-name {
+  color: #0000FF;
+  font-size: 18px;
+}
+
+.text-grey-instruments-name {
+  color: #cdcdcd;
+  font-size: 12px;
+}
+
+.text-grey-instruments-value-large {
+  color: #a3a3a3;
+  font-size: 25px;
+}
+
+.text-grey-instruments-qty {
+  color: #6b6b6b;
+  font-size: 14px;
+}
 	
+.text-grey-instruments-qty-value {
+  color: #6b6b6b;
+  font-size: 14px;
+}
+
 }

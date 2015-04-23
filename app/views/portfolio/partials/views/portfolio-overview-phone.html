@@ -3,20 +3,22 @@
 <div>
 	<div ng-repeat="row in portfolioOverviewInfo" class="phone-table">
 		<div class="row" style="border-bottom: 1px solid #E3E3E3;">
-			<div class="inline-block" style="border-right: 1px solid #E3E3E3; width:49%;">
-				<span class="text-blue">{{row.code}}</span><br/><span class="text-blue">{{row.fullName}}</span>
+			<div class="inline-block" style="border-right: 1px solid #E3E3E3; width:49%; padding-bottom:15px;">
+				<span class="text-blue-instruments-name">{{row.code}}</span><br/><span class="text-grey-instruments-name">{{row.fullName}}</span>
 			</div>
 			<div class="inline-block" style="width:49%;">
-				<span class="right">{{row.instrument.amount}}</span>
+				<span class="right text-grey-instruments-value-large">{{row.instrument.amount}}</span>
 			</div>
 		</div>
 		<div class="row">
-        <div class="inline-block" style="width:49%; padding-top:17px; border-right:1px solid #999;">
-			<div class="inline-block" style="width:24%;">
-				<span>QTY:2<br/>{{row.priceR2}}</span>
+        <div class="inline-block" style="width:49%; padding-top:17px; border-right:1px solid #dbdbdb;">
+			<div class="inline-block left" style="width:24%;">
+				<span class="text-grey-instruments-qty">QTY:2</span>
+                <span>{{row.priceR2}}</span>
 			</div>
-			<div class="inline-block" style="border-right: 1px solid #E3E3E3; width:24%;">
-				<span>Unit cost<br/>{{row.unitR}}</span>
+			<div class="inline-block" style="width:65%;">
+				<span class="text-block right">Unit cost</span>
+                <span class="text-block right">{{row.unitR}}</span>
 			</div>
             </div>
 			<div class="inline-block" style="width:49%;">
