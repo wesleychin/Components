@@ -5,15 +5,14 @@
 }
 
 .acc-empty-boxes {
-  width: 96px;
   height: 45px;
   background: #eff0f3;
   float: left;
   color: #2570e0;
   font-size:12px;
   padding-left:10px;
+  margin-right: 0;
   padding-top:10px;
-  padding-right:10px;
   border-top: 1px solid #c9cacb;
   border-left: 1px solid #c9cacb;
   border-bottom: 1px solid #c9cacb;
@@ -24,15 +23,17 @@
   border-top-left-radius: 3px;
 }
 
-.selected {
-  background-color: #FFF;
-  border-left:1px solid #999999; border-bottom:1px solid #999999; border-top:1px solid #999999;
-  width:91px;
-  color:#000;
-  position:relative;
-  z-index: 10000 !important;
-  overflow:hidden;
-}
+.selected {background-color: #FFF;
+border-left: 1px solid #999999;
+border-bottom: 1px solid #999999;
+border-top: 1px solid #999999;
+width: 100%;
+;
+margin-right: 0;
+color: #000;
+position: absolute;
+z-index: 10000 !important;
+overflow: hidden;}
 
 /* End of override css from main.css */
 
