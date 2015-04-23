@@ -24,26 +24,26 @@
 }
 
 .selected {background-color: #FFF;
-border-left: 1px solid #999999;
-border-bottom: 1px solid #999999;
-border-top: 1px solid #999999;
-width: 100%;
-;
-margin-right: 0;
-color: #000;
-position: absolute;
-z-index: 10000 !important;
-overflow: hidden;}
+  border-left: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  border-top: 1px solid #999999;
+  width: 100%;
+  ;
+  margin-right: 0;
+  color: #000;
+  position: absolute;
+  z-index: 10000 !important;
+  overflow: hidden;}
 
-/* End of override css from main.css */
+  /* End of override css from main.css */
 
-/* Start of custom OST css */
+  /* Start of custom OST css */
 
-.noLeftPadding {
-	padding-left: 0 !important;
-}
+  .noLeftPadding {
+   padding-left: 0 !important;
+ }
 
-.search-textbox {
+ .search-textbox {
   padding-right: 13px;
 }
 
@@ -369,7 +369,7 @@ hr {display: block;
    transition: background-color 300ms ease-out; 
  }
  
-   button, .button.small {
+ button, .button.small {
    border-style: solid;
    border-width: 1px;
    cursor: pointer;
@@ -401,7 +401,7 @@ hr {display: block;
 
  }
  
-  .dropdown.small::after, button.small::after {
+ .dropdown.small::after, button.small::after {
    font-family: 'FontAwesome';
    content: "\f078";
    border: none;
@@ -508,7 +508,7 @@ hr {display: block;
    width: 100%;
  }
  
-hr {
+ hr {
   display: block;
   height: 1px;
   border: 0;
@@ -588,7 +588,7 @@ button, .button {
 }
 
 .search-textbox {
-  width: 202px !important;
+  width: 225px !important;
 }
 
 .k-i-arrow-n {
@@ -598,6 +598,34 @@ button, .button {
 .k-i-arrow-s {
   background-image: url('../../../images/arrow-down.png');
   background-position: 0;
+}
+
+.icon-ph {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  min-width: 16px;
+  padding: 4px 5px 0 0;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 0 #FFFFFF;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 10px;
+  top: 4px;
+  bottom: 3px;
+  z-index: 3;
+}
+
+.custom-text {
+  padding-left:30px !important;
+  background-color: #FFFFFF !important;
+}
+.input-container {
+  position:relative;
+  background-color: #FFFFFF !important;
 }
 
 /* End of override HTML elements */
