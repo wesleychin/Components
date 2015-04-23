@@ -1,0 +1,65 @@
+<style type="text/css">
+    .color-green {
+        color: #5FA33B;
+        font-size: 68px;
+    }
+
+    .timeout-alert-outer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #eff0f3;
+        z-index: 9999;
+    }
+
+    .timeout-alert-content {
+        padding: 20px;
+        background-color: white;
+        z-index: 10000;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        max-width: 500px;
+        -webkit-box-shadow: 0 23px 23px 7px #A6A6A6;
+        box-shadow: 0 23px 23px 7px #A6A6A6;
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+</style>
+<div type="text/ng-template" id="session-timeout-alert-popup.html">
+    <div class="timeout-alert-outer">
+        <div class="timeout-alert-content">
+            <div>
+                <div class="row">
+                    <div class="large-text-center"><i class="fa fa-check-circle color-green"></i></div>
+                    <div class="large-text-center">Are you still trading?</div>
+                </div>
+
+                <div class="row">
+                    <div class="medium-text-center">
+                        You have not interacted with this website in a while.
+                    </div>
+                    <div class="medium-text-center">
+                        To protect your account's security, you will be automatically logged out in:
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="medium-text-center">
+                        SECONDS
+                    </div>
+                    <div class="large-text-center">
+                        333
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="button left" ng-click="sessionTimeoutAlert.logOut()">Logout</button>
+                    <button class="button right" ng-click="sessionTimeoutAlert.continueSession()">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
