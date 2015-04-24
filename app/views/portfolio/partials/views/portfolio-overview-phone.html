@@ -14,15 +14,15 @@
         <div class="inline-block" style="width:49%; padding-top:17px; border-right:1px solid #dbdbdb;">
 			<div class="inline-block left" style="width:24%;">
 				<span class="text-grey-instruments-qty">QTY:2</span>
-                <span>{{row.priceR2}}</span>
+                <span class="text-grey-instruments-qty-value">{{row.priceR2}}</span>
 			</div>
 			<div class="inline-block" style="width:65%;">
 				<span class="text-block right">Unit cost</span>
-                <span class="text-block right">{{row.unitR}}</span>
+                <span class="text-block right text-grey-instruments-qty-value">{{row.unitR}}</span>
 			</div>
             </div>
 			<div class="inline-block" style="width:49%;">
-				<span class="right">Total change<br/><span ng-class="{'text-green': row.priceChangeTotal > 0, 'text-red': row.priceChangeTotal < 0}">{{row.priceChangeTotal}}<i  ng-class="{'fi-arrow-up': row.priceChangeTotal > 0, 'fi-arrow-down': row.priceChangeTotal < 0}"></i></span>
+				<span class="right"><span ng-class="{'text-green': row.priceChangeTotal > 0, 'text-red': row.priceChangeTotal < 0}">{{row.priceChangeTotal}}<i  ng-class="{'fi-arrow-up': row.priceChangeTotal > 0, 'fi-arrow-down': row.priceChangeTotal < 0}"></i></span></span>
 			</div>
 		</div>
         </

@@ -600,12 +600,17 @@ button, .button {
   background-position: 0;
 }
 
-.icon-ph {
+.row {
+    max-width: 80%;
+}
+
+div.acc-trans-body-container {
+  padding-left: 0;
   display: inline-block;
   width: auto;
   height: auto;
   min-width: 16px;
-  padding: 4px 5px 0 0;
+  /*padding: 4px 5px 0 0;*/
   font-size: 17px;
   font-weight: normal;
   line-height: 20px;
