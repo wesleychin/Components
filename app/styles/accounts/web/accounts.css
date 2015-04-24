@@ -31,7 +31,7 @@
 	color: #666666;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 	display: inline-block;
-	/* font-weight:900; */
+	font-weight:900;
 	margin-right: 20px;
 }
 
@@ -112,6 +112,7 @@
 	color: #666666; 
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 	display: inline-block;
+	font-weight:900;
 	margin-right: 0;
 }
 

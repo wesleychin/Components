@@ -1,8 +1,21 @@
 <style type="text/css">
-    .color-green {
+    .alert-tick-green {
         color: #5FA33B;
         font-size: 68px;
     }
+	
+	.alert-text-large {
+		font-size:20px;
+		text-align:center !important;
+		margin-bottom:20px;
+		}
+		
+		.alert-text-medium {
+		font-size:15px;
+		text-align:center !important;
+		margin-bottom:20px;
+		color:#808080;
+		}
 
     .timeout-alert-outer {
         position: fixed;
@@ -34,30 +47,26 @@
         <div class="timeout-alert-content">
             <div>
                 <div class="row">
-                    <div class="large-text-center"><i class="fa fa-check-circle color-green"></i></div>
-                    <div class="large-text-center">Are you still trading?</div>
+                    <div class="large-text-center"><i class="fa fa-check-circle alert-tick-green"></i></div>
+                    <div class="alert-text-large">Are you still trading?</div>
                 </div>
 
                 <div class="row">
-                    <div class="medium-text-center">
-                        You have not interacted with this website in a while.
+                    <div class="alert-text-medium">
+                       You have not interacted with this website in a while. To protect your account's security, you will be automatically logged out in:
                     </div>
-                    <div class="medium-text-center">
-                        To protect your account's security, you will be automatically logged out in:
-                    </div>
+                 
 
                 </div>
                 <div class="row">
-                    <div class="medium-text-center">
-                        SECONDS
-                    </div>
-                    <div class="large-text-center">
-                        333
+                    <div class="alert-text-large">
+                        <strong>42</strong> <br>
+Seconds
                     </div>
                 </div>
-                <div class="row">
-                    <button class="button left" ng-click="sessionTimeoutAlert.logOut()">Logout</button>
-                    <button class="button right" ng-click="sessionTimeoutAlert.continueSession()">Continue</button>
+                <div class="row" align="center">
+                    <button class="button" ng-click="sessionTimeoutAlert.logOut()">Logout</button>
+                    <button class="button" ng-click="sessionTimeoutAlert.continueSession()">Continue</button>
                 </div>
             </div>
         </div>

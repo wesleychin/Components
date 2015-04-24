@@ -604,4 +604,8 @@ button, .button {
     max-width: 80%;
 }
 
+div.acc-trans-body-container {
+ 	padding-left: 0;
+}
+
 /* End of override HTML elements */
