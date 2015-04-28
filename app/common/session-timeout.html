@@ -4,6 +4,13 @@
         font-size: 68px;
     }
 	
+	.alert-text-large-bold {
+		font-size:20px;
+		text-align:center !important;
+		margin-bottom:20px;
+		font-weight:900;
+		}
+		
 	.alert-text-large {
 		font-size:20px;
 		text-align:center !important;
@@ -29,7 +36,7 @@
 
     .timeout-alert-content {
         padding: 20px;
-        background-color: white;
+        background-color: #f8f8f8;
         z-index: 10000;
         margin-top: 10%;
         margin-left: auto;
@@ -40,6 +47,7 @@
         box-shadow: 0 23px 23px 7px #A6A6A6;
         -webkit-border-radius: 5px 5px 5px 5px;
         border-radius: 5px 5px 5px 5px;
+		border:1px solid #d8d8d8;
     }
 </style>
 <div type="text/ng-template" id="session-timeout-alert-popup.html">
@@ -53,16 +61,16 @@
 
                 <div class="row">
                     <div class="alert-text-medium">
-                       You have not interacted with this website in a while. To protect your account's security, you will be automatically logged out in:
-                    </div>
+                       You have not interacted with this website in a while. <br>
+To protect your account's security, you will be <br>
+automatically logged out in: </div>
                  
 
                 </div>
                 <div class="row">
-                    <div class="alert-text-large">
-                        <strong>42</strong> <br>
-Seconds
-                    </div>
+                    <div class="alert-text-large-bold">
+                        42<br>
+						Seconds</div>
                 </div>
                 <div class="row" align="center">
                     <button class="button" ng-click="sessionTimeoutAlert.logOut()">Logout</button>

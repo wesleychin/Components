@@ -258,10 +258,6 @@ no-padding-top {
   margin: 10px;
 }
 
-.menu-icon {
-  margin-top: 4px;
-  background-color: #000000;
-}
 
 .left-small .left-off-canvas-toggle {
   height: 45px;
@@ -626,5 +622,24 @@ button, .button {
   position:relative;
   background-color: #FFFFFF !important;
 }
+
+.row {
+    max-width: 80%;
+}
+
+div.acc-trans-body-container {
+    padding-left: 0;
+}
+
+.tab-bar .menu-icon {
+	text-indent: 2.1875rem;
+	width: 2.8125rem;
+	height: 2.8125rem;
+	display: block;
+	padding: 0;
+	color: #000 !important;
+	position: relative;
+	background-color: #fff;
+	transform: translate3d(0, 0, 0); }
 
 /* End of override HTML elements */
