@@ -234,8 +234,4 @@ table {
   padding-left: 50px;
 }
 
-.accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
-  background: #e3e3e3;
-}
-
 /* End of custom OST css */
