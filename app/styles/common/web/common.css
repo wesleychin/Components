@@ -152,44 +152,9 @@ no-padding-top {
   margin-top: 0;
 }
 
-.top-widgets {
-  height: 85px;
-  width: 75px;
-  display: inline-block;
-  padding:2px;
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.gainers {
-  background-color: #007F00 !important;
-  padding:2px;
-  border-bottom:1px solid #FFF;
-}
-
-.losers {
-  background-color: #FF0000 !important;
-  padding:2px;
-  border-bottom:1px solid #FFF;
-}
-
-.top-performers-heading-spacing {
-  display: inline-block;
-  padding-right: 335px;
-}
-
-.top-performers-headings {
-  font-size: 18px;
-  color: #666666;
-  line-height: 48px;
-  padding-bottom:10px;
-}
-
-.top-performers-name {
-  padding-top: 6px;
-  font-size:12px;
-  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-  color:#FFF;
+no-padding-left {
+  padding-left:0;
+  margin-left: 0;
 }
 
 .positionSwitch {

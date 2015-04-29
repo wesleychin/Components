@@ -6,23 +6,22 @@
                     <div class="large-text-center"><i class="fa fa-check-circle alert-tick-green"></i></div>
                     <div class="alert-text-large">Are you still trading?</div>
                 </div>
-
                 <div class="row">
                     <div class="alert-text-medium">
-                       You have not interacted with this website in a while. <br>
-                       To protect your account's security, you will be <br>
-                       automatically logged out in: </div>
-                   </div>
-                   <div class="row">
-                    <div class="alert-text-large-bold">
-                        <span class="block-text time-text">42</span>
-                        Seconds</div>
+                        <span class="block-text">You have not interacted with this website in a while.</span>
+                        <span class="block-text">To protect your account's security, you will be</span>
+                        <span class="block-text">automatically logged out in:</span></div>
                     </div>
-                    <div class="row" align="center">
-                        <button class="button logout-button" ng-click="sessionTimeoutAlert.logOut()">Logout</button>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button class="button" ng-click="sessionTimeoutAlert.continueSession()">Continue</button>
+                    <div class="row">
+                        <div class="alert-text-large-bold">
+                            <span class="block-text time-text">{{42}}</span>
+                            <span>Seconds</span></div>
+                        </div>
+                        <div class="row" align="center">
+                            <button class="button logout-button" ng-click="sessionTimeoutAlert.logOut()">Logout</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="button" ng-click="sessionTimeoutAlert.continueSession()">Continue</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
