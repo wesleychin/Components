@@ -641,5 +641,13 @@ div.acc-trans-body-container {
 	background-color: #fff;
 	transform: translate3d(0, 0, 0); }
 	
+.account_text {
+    color: #000;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	display: block;
+	line-height: 1;
+	font-size: 15px;
+	padding-bottom: 5px;
+    font-size: 14px;}
 
 /* End of override HTML elements */
