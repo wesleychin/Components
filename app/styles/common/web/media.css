@@ -1,0 +1,17 @@
+/* Start of override css from main.css */
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+.details-overview, .portfolio-value-bold, .details-overview-amounts-bold, .account-details-amounts-bold-phone {
+font-size: 1.1rem;
+	}
+.details-overlay {height: 183px;}
+.underline-text {font-size:1rem;}
+.details-overview-feed-details  {font-size:1rem;}
+.acc-empty-boxes {font-size:1rem; height:55px;}
+.acc-trans-body-container {font-size:2rem;}
+button, .button.small {font-size:1.1rem;}
+}
+
+
+/* End of override HTML elements */
