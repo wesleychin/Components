@@ -2,23 +2,21 @@
     <div class="row details-overlay">
         <div class="row">
             <div class="column large-6">
-                <div class="details-overview inline-block portfolio-value">
+                <div class="details-overview inline-block" style="width:33%;">
                     <span class="block-text block-portfolio-value-text">Portfolio value</span>
                     <span class="portfolio-value-bold">{{cashSummaryComponent.ostModel.portfolioValueFormatted}}</span>
                 </div>
-                <div class="bigger-width-on-phone inline-block">
-                    <div class="details-overview inline-block">
+                <div class="bigger-width-on-phone inline-block" style="width:66%;">
+                    <div class="details-overview inline-block" style="width:49%;">
                         <span class="block-text">Daily change</span>
-
                         <div class="details-overview-amounts-bold-phone"
                         ng-class="{'text-green': cashSummaryComponent.ostModel.dailyChangeValueFormatted > 0, 'text-red': cashSummaryComponent.ostModel.dailyChangeValueFormatted < 0}">
                         <span class="details-overview-amounts-bold">{{cashSummaryComponent.ostModel.dailyChangeValueFormatted}}({{cashSummaryComponent.ostModel.dailyChangePercentageFormatted}})&nbsp;<i
                             ng-class="{'fa fa-caret-up': cashSummaryComponent.ostModel.dailyChangeValueFormatted > 0, 'fa fa-caret-down': cashSummaryComponent.ostModel.dailyChangeValueFormatted < 0}"></i></span>
                         </div>
                     </div>
-                    <div class="details-overview inline-block mobilelineseperator">
+                    <div class="details-overview inline-block mobilelineseperator" style="width:49%;">
                         <span class="block-text">Total change</span>
-
                         <div class="details-overview-amounts-bold-phone"
                         ng-class="{'text-green': cashSummaryComponent.ostModel.totalChangeValueFormatted > 0, 'text-red': cashSummaryComponent.ostModel.totalChangeValueFormatted < 0}">
                         <span class="details-overview-amounts-bold">{{cashSummaryComponent.ostModel.totalChangeValueFormatted}}({{cashSummaryComponent.ostModel.totalChangePercentageFormatted}})&nbsp;<i
@@ -32,10 +30,8 @@
                     <a href="#" class="underline-text">Quotes bank balance (1) {{cashSummaryComponent.ostModel.quoteBankBalance}}</a>
                 </div>
                 <div class="inline-block">
-
                     <button dropdown-toggle="#live" class="button dropdown small" style="width:91px;">Live</button><br>
                     <ul id="live" class="f-dropdown-small">
-
                       <li><a href="#">Delayed</a></li>
                   </ul>
               </div>
@@ -43,7 +39,6 @@
               <div class="inline-block">
                <button dropdown-toggle="#bid" class="button dropdown small" style="width:91px;">Bid</button><br>
                <ul id="bid" class="f-dropdown-small">
-
                   <li><a href="#">Ruling</a></li>
               </ul>
           </div>
@@ -55,19 +50,18 @@
   </div>
   <hr class="hide-hr">
   <div class="row">
-    <div class="columns large-12 phone-color left">
-        <div class="details-overview inline-block">
+    <div class="columns large-12 phone-color left" style="width:100%;">
+        <div class="details-overview inline-block" style="width:16%;">
             <span class="block-text">
               {{cashSummaryComponent.ostModel.accountType}} cash balance
           </span>
-
           <div class="details-overview-amounts-bold-phone">
               <span class="account-details-amounts-bold-phone">
                 {{cashSummaryComponent.ostModel.cashBalanceFormatted}}
             </span>
         </div>
     </div>
-    <div class="details-overview inline-block seperator">
+    <div class="details-overview inline-block seperator" style="width:16%;">
         <span class="block-text">
           Derivatives initial margin
       </span>
@@ -77,7 +71,7 @@
         </span>
     </div>
 </div>
-<div class="details-overview inline-block seperator">
+<div class="details-overview inline-block seperator" style="width:16%;">
     <span class="block-text">
         Today's derivatives P&amp;L
     </span>
@@ -87,7 +81,7 @@
       </span>
   </div>
 </div>
-<div class="details-overview inline-block seperator mobilelineseperator">
+<div class="details-overview inline-block seperator mobilelineseperator" style="width:16%;">
     <span class="block-text">
         Total cash
     </span>
@@ -97,7 +91,7 @@
       </span>
   </div>
 </div>
-<div class="details-overview inline-block seperator">
+<div class="details-overview inline-block seperator" style="width:16%;">
     <span class="block-text">Available trading funds</span>
     <div class="details-overview-amounts-bold-phone">
         <span class="account-details-amounts-bold-phone">
@@ -105,7 +99,7 @@
       </span>
   </div>
 </div>
-<div class="details-overview inline-block seperator mobilelineseperator">
+<div class="details-overview inline-block seperator mobilelineseperator" style="width:16%;">
     <span class="block-text">
         Value before auto close out
     </span>
