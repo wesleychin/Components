@@ -1,13 +1,8 @@
 /* Start of override css from main.css */
 
 .details-overlay {
-	border: 1px solid #999;
-	border-radius: 3px;
-	padding: 18px 20px;
-	margin-top: 8px;
 	background: #eff0f3;
 	position: relative;
-	height: 162px;
 }
 
 .sub-header-options {

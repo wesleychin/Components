@@ -12,5 +12,12 @@ font-size: 1.1rem;
 .acc-trans-body-container {font-size:2rem;}
 }
 
+.details-overlay {
+	border: 1px solid #999;
+	border-radius: 3px;
+	padding: 18px 20px;
+	margin-top: 8px;
+	height: 162px;
+}
 
 /* End of override HTML elements */
