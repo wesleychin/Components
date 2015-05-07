@@ -1,65 +1,179 @@
-<style type="text/css">
-    .login-outer {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #eff0f3;
-        z-index: 9999;
-    }
+<style>
+	.login-outer {
+		position:relative;
+		width: 100% !important;
+		z-index: 9999;
+	}
+	
+	.login-bluetext {
+		font-size:11px;
+		color:#2570e0;
+		text-decoration:none;
+		font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	}
+	
+	.login-blacktext {
+		font-size:11px;
+		text-decoration:none;
+		font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	}
+	
+	button, .button {
+		border-style: solid;
+		border-width: 1px;
+		cursor: pointer;
+		font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+		font-weight: normal;
+		line-height: normal;
+		position: relative;
+		text-decoration: none;
+		text-align: center;
+		-moz-appearance: none;
+		border-radius: 3px;
+		padding: 8px;
+		display: inline-block;
+		font-size: 13px;
+		background-color: #2570e0;
+		border-color: #2f67b1;
+		color: #FFF;
+		transition: background-color 300ms ease-out; 
+	}
+	
+	.loginheader {
+		font-size:2rem; font-size:20px;
+	}
 
-    .login-content {
-        padding: 20px;
-        background-color: white;
-        z-index: 10000;
-        margin-top: 10%;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
-        max-width: 500px;
-        -webkit-box-shadow: 0 23px 23px 7px #A6A6A6;
-        box-shadow: 0 23px 23px 7px #A6A6A6;
-        -webkit-border-radius: 5px 5px 5px 5px;
-        border-radius: 5px 5px 5px 5px;
-    }
-    .color-red {
-        color: red;
-    }
+	.login-input {
+		padding:8px;
+		border:1px solid #e8e8e8;
+		border-radius:3px;
+		border-style: solid;
+		width:300px;
+	}
+
+	.login-content {
+		padding: 30px;
+		background-color: #f8f8f8;
+		z-index: 10000;
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+		border:1px solid #e8e8e8;
+		max-width: 400px;
+		-webkit-box-shadow: 0 2px 36px 0px #A6A6A6;
+		-webkit-border-radius: 5px 5px 5px 5px;
+		border-radius: 5px 5px 5px 5px;
+		font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+	}
+
+	.color-red {
+		color: red;
+		text-align:center;
+		font-size:12px;
+	}
+
 </style>
-<form data-abide id="loginForm">
-    <div ng-class="{'login-outer': login.isStandAlone}">
-        <div ng-class="{'login-content': login.isStandAlone}">
-            <div class="row" ng-show="login.isAuthenticated">
-                <div style="font-size:16px;">Welcome to Online Share Trading</div>
-                <div ng-show="login.isAuthenticated">
-                    <button ng-click="login.goToApp()">Continue</button>
-                </div>
-            </div>
-            <div ng-show="!login.isAuthenticated">
-                <div id="u23" class="row">
-                    <p><span>Sign in to Online Share Trading</span></p>
-                </div>
-                <div class="row color-red" ng-if="login.sessionTimedOut" style="color: red">
-                    <div>You have not interacted with this website in a while.</div>
-                    <div>To protect your account's security, we automatically logged you out of Online Share Trading.</div>
-                </div>
-                <div class="row color-red" ng-if="login.authenticationFailed">
-                    You have entered an incorrect username or password. please try again.
-                </div>
-                <div class="row">
-                    <input type="text" placeholder="User ID" ng-model="login.username" required/>
-                    <small class="error">You have to specify your User ID.</small>
-                </div>
-                <div class="row">
-                    <input type="password" placeholder="Password" ng-model="login.password" required/>
-                    <small class="error">You have to specify your password.</small>
-                    <a href="#">Have you forgotten your password?</a>
-                </div>
-                <div class="row">
-                    <button type="submit" ng-click="login.login()">Sign in</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</form>
+<p align="center">
+	<<<<<<< HEAD
+	<form data-abide id="loginForm">
+		<div class="login-outer">
+			<div class="login-content">
+				<div class="row">
+					<div>
+						<p align="center"><img src="../images/logo_login.png" alt=""/></p>
+						<br/>
+						<p align="center" class="loginheader">Sign in to Online Share Trading</p>
+					</div>
+				</div>
+				<br/>
+				<div >
+					<div class="row color-red">
+						<div>You have not interacted with this website in a while.</div>
+						<div>To protect your account's security, we automatically logged you out of Online Share Trading.</div><br/>
+					</div>
+					<div class="row color-red">
+						You have entered an incorrect username or password.  Please try again.
+					</div>
+					<br/>
+					<div class="row">
+						<p align="center">
+							<input type="text" placeholder="User ID" ng-model="login.username" required/ class="login-input">
+							<small class="error"></small>
+						</p>
+					</div>
+					<div class="row">
+						<p align="center">
+							<input type="password" placeholder="Password" ng-model="login.password" required/ class="login-input">
+							<small class="error"></small>
+							<p align="center">
+								<a href="#" class="login-bluetext">Have you forgotten your password?</a>
+							</p>
+						</p>
+					</div>
+					<br/>
+					<div class="row">
+						<p align="center">
+							<button type="submit" ng-click="login.login()" class="button" style="width:80px;">Sign in</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br><br>
+		<p align="center" class="login-blacktext">By signing on I acknowledge that I have read and understand<br>
+			the <span class="login-bluetext">terms and conditions</span> for using Online Share Trading.</p>
+			<p align="center" class="login-bluetext">Need help? Call us on : 0861 121  161</p>
+		</p>
+		<p>&nbsp;</p>
+	</form>
+	=======
+	<form data-abide id="loginForm">
+		<div class="login-outer">
+			<div class="login-content">
+				<div class="row" ng-show="login.isAuthenticated">
+					<div>
+						<p align="center"><img src="../images/logo_login.png" alt="Standardbank"/></p>
+						<p align="center" class="loginheader">Sign in to Online Share Trading</p>
+					</div>
+				</div>
+				<div ng-show="!login.isAuthenticated">
+					<div class="row color-red" style="color: red">
+						<div>You have not interacted with this website in a while.</div>
+						<div>To protect your account's security, we automatically logged you out of Online Share Trading.</div>
+					</div>
+					<div class="row color-red" style="color: red">
+						You have entered an incorrect username or password. please try again.
+					</div>
+					<p></p>
+					<div class="row">
+						<p align="center">
+							<input type="text" placeholder="User ID" ng-model="login.username" required/ class="login-input">
+							<small class="error"></small>
+						</p>
+					</div>
+					<div class="row">
+						<p align="center">
+							<input type="password" placeholder="Password" ng-model="login.password" required/ class="login-input">
+							<small class="error"></small>
+							<p align="center">
+								<a href="#" class="login-bluetext">Have you forgotten your password?</a>
+							</p>
+						</p>
+					</div>
+					<div class="row">
+						<p align="center">
+							<button type="submit" ng-click="login.login()" class="button" style="width:80px;">Sign in</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br><br>
+		<p align="center" class="login-blacktext">By signing on I acknowledge that I have read <br>
+			the <span class="login-bluetext">terms and conditions</span> for using Online Share Trading.</p>
+			<p align="center" class="login-bluetext">Need help? Call us on: 0861 121  161</p>
+		</p>
+		<p>&nbsp;</p>
+	</form>
+	>>>>>>> 0af91750a2f64eb5356fbff5d91c57f0d117faf6
