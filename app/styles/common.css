@@ -128,7 +128,7 @@ a {
 }
 
 .text-blue {
-  color : #0000FF;
+  color : #0000FF !important;
 }
 
 .text-grey {

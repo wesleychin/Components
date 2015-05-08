@@ -6,16 +6,10 @@
 </div>
 <div class="row">
 	<div class='columns large-12 medium-4 small-12'>
-		<div class='portfolio-performance-text left'>
-			<div class="portfolio-performance-text">% Holding period return showing
-			</div>
-			<div class="portfolio-performance-text"> 
-			</div>
-			<div class="portfolio-performance-text">
-			<i class="fi-arrow-left"></i>&nbsp;&nbsp;&nbsp;
-			<a href="" ng-repeat="year in years" class="years-selection"><span>{{year}}</span></a>
-			&nbsp;&nbsp;&nbsp;<i class="fi-arrow-right"></i>
-			</div>
+	<div class="portfolio-performance-text left">% Holding period return showing
+		</div>
+		<div class="portfolio-performance-text right" style="margin-right: 0;">
+			<div class="inline-block years-selection back-arrow pointer"><i class="fa fa-chevron-left text-blue"></i></div><div class="inline-block years-selection pointer"><a href="" class="text-blue"><span>2015</span></a></div><div class="inline-block years-selection pointer"><a href="" class="text-blue"><span>2014</span></a></div><div class="inline-block years-selection pointer"><a href="" class="text-blue"><span>2013</span></a></div><div class="inline-block years-selection pointer"><a href="" class="text-blue"><span>2012</span></a></div><div class="inline-block years-selection pointer"><a href="" class="text-blue"><span>2011</span></a></div><div class="inline-block years-selection forward-arrow pointer"><i class="fa fa-chevron-right text-blue"></i></div>
 		</div>
 	</div>
 </div>
@@ -28,25 +22,3 @@
 		</div>
 	</div>
 </div>
-<!-- <div class="row">
-	<div class="left">
-		% Holding period return
-	</div>
-	<div class="right details-overlay-lable">
-		<select>
-			<option>2015</option>
-			<option>2014</option>
-			<option>2013</option>
-			<option>2012</option>
-			<option>2011</option>
-			<option>2010</option>
-		</select>
-	</div>
-</div>
-<div class="row" kendo-chart k-options="portfolioPerformanceChart"/>
-<div class="row">
-	<div class="right">
-		<i class="fi-calendar"></i> <span class="portfolio-performance-previous-years">Show previous years</span>
-	</div>
-</div>
- -->

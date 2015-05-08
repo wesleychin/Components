@@ -19,7 +19,7 @@ angular
     'ngTouch',
     'mm.foundation', 
     'kendo.directives', 
-    // 'highcharts-ng', 
+    'highcharts-ng', 
     'angularSpinner',
     'ui.multiselect'
   ])
