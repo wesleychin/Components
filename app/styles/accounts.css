@@ -635,13 +635,6 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   color: #6b9de8;
 }
 
-.search-textbox, searchDropdown {
-  width: 100% !important;
-  padding: 20px 10px 5px 10px !important;
-  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-}
-
-
 .phone-table {
   border-radius: 3px;
   border: 1px solid #e9e9e9;
