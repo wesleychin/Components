@@ -715,12 +715,9 @@ multiselect .btn.error{
 }
 
 multiselect .dropdown-menu {
-  max-height: 300px;
-  overflow-y: auto;
-}
-
-multiselect .dropdown-menu {
-  width: 100%;
+  height: auto;
+  width: 150px;
+  border: 1px solid #2f67b1;
   box-sizing: border-box;
   padding: 2px;
 }

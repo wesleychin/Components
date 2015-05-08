@@ -1,3 +1,10 @@
+<style>
+.manage-columns-dropdown {
+	border: 1px solid black;
+	padding: 5px;
+	width: 170px;
+}
+</style>
 <div class="row no-padding-bottom">
 	<span class="show-for-large-up headingFormat left inline-block">Portfolio overview</span>
 	<div class="show-for-large portfolio-performance-buttons inline-block">
@@ -6,21 +13,18 @@
 			<div class="inline-block search-textbox" ng-include src="'common/search-textbox.html'">
 			</div>
 
+			<div class="manage-columns-dropdown inline-block">
+				<multiselect class="input-xlarge" multiple="true"
+				ng-model="selectedCar"
+				options="c.name for c in cars"
+				change="selected()" ></multiselect>
+			</div>
 
-			<multiselect class="input-xlarge" multiple="true"
-        ng-model="selectedCar"
-        options="c.name for c in cars"
-        change="selected()" ></multiselect>
-        <div class="well well-small">
-            {{selectedCar}}
-        </div>
-
-				
-				<div class="portfolio-performance-buttons right" ng-include src="'common/download-button.html'">
-				</div>
+			<div class="portfolio-performance-buttons right" ng-include src="'common/download-button.html'">
 			</div>
 		</div>
-		<div class="row no-padding-top"><hr/></div>
-		<div class="row padding-below-performers">
-			<div ng-include src="'common/performers.html'"></div>
-		</div>
+	</div>
+	<div class="row no-padding-top"><hr/></div>
+	<div class="row padding-below-performers">
+		<div ng-include src="'common/performers.html'"></div>
+	</div>
