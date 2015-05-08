@@ -1,12 +1,12 @@
 <div class="dropdown">
-  <button class="button" ng-click="toggleSelect()" ng-disabled="disabled" ng-class="{'error': !valid()}" style="width:150px; margin-bottom: -1px; border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
+  <button class="button" ng-click="toggleSelect()" ng-disabled="disabled" ng-class="{'error': !valid()}" style="width:170px; margin-bottom: -1px; border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
     <span class="pull-left">Manage columns</span>
-    <span class="fa fa-chevron-down pull-right"></span>
+    <span class="pull-right"><i class="fa fa-chevron-down" style="color: #2570e0; font-size: 13px;"></i></span>
   </button>
   <ul class="dropdown-menu">
-    <li ng-repeat="i in items">
+    <li ng-repeat="i in items" class="list-separator" style="padding: 8px; text-align: left; border-left: none;">
       <a ng-click="select(i); focus()">
-        <i ng-class="{'fa-check-square-o': i.checked, 'icon-empty': !i.checked}"></i>{{i.label}}</a>
+        <i ng-class="{'fa fa-check-square-o text-blue': i.checked, 'fa fa-square-o text-blue': !i.checked}">&nbsp;&nbsp;</i>{{i.label}}</a>
     </li>
   </ul>
 </div>

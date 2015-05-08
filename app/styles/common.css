@@ -716,15 +716,16 @@ multiselect .btn.error{
 
 multiselect .dropdown-menu {
   height: auto;
-  width: 150px;
+  width: 170px;
   border: 1px solid #2f67b1;
   box-sizing: border-box;
   padding: 2px;
 }
 
 multiselect .dropdown-menu > li > a {
-  padding: 3px 10px;
   cursor:pointer;
+  font-size: 13px;
+  color: #2570e0;
 }
 
 /* End of override HTML elements */

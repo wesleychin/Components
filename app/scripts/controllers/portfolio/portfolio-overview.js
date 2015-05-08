@@ -35,6 +35,6 @@ angular.module('componentsApp')
 		$scope.portfolioOverviewInfo = response;
 	});
 
-    $scope.cars = [{id:1, name: 'Previous close / MTM'}, {id:2, name: 'Todays movement'}, {id:3, name: 'Honda'}];
+    $scope.cars = [{id:1, name: 'Previous close / MTM'}, {id:2, name: 'Todays movement'}, {id:3, name: 'Total movement'}, {id:4, name: 'Initial margin'}, {id:5, name: '% of portfolio'}];
     $scope.selectedCar = [];
 });	
