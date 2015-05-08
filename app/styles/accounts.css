@@ -417,26 +417,37 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 	}
 
 	.instrument-code {
-		color: #0000FF;
-		font-size: 18px;
+	  color: #2570e0;
+	  font-size: 19px;
 	}
 
 	.instrument-name {
-		color: #CDCDCD;
-		font-size: 12px;
+	color: #999;
+  	font-size: 10px;
 	}
 
 	.instrument-value-large {
-		color: #A3A3A3;
-		font-size: 25px;
+		color: #999;
+		font-size: 34px;
 	}
 
 	.instrument-data-medium {
-		font-size: 20px;
+		font-size: 12px;
+		color:#666;
 	}
 
 	.instrument-data {
-		font-size: 14px;
+		font-size: 12px;
+		color:#666;
+	}
+	
+	.instrument-data-unit-cost {
+		font-size: 12px;
+		color:#999;
+	}
+	
+	.instrument-percentage {
+		font-size: 18px;
 	}
 
 }
@@ -539,7 +550,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 	}
 
 	.portfolio-value-bold {
-		font-size: 25px;
+		font-size: 27px;
 		color: #666666;
 		font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 		display: inline-block;
