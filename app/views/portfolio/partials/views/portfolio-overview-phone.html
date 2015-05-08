@@ -1,28 +1,56 @@
 <div class="inline-block search-textbox" ng-include src="'common/search-textbox.html'">
 </div>
-<div>
-	<div ng-repeat="row in portfolioOverviewInfo" class="phone-table">
+<div class="hide-for-medium-up">
+	<div class="phone-table">
 		<div class="row" style="border-bottom: 1px solid #E3E3E3;">
 			<div class="inline-block" style="border-right: 1px solid #E3E3E3; width:49%; padding-bottom:15px;">
-				<span class="text-blue-instruments-name">{{row.code}}</span><br/><span class="text-grey-instruments-name">{{row.fullName}}</span>
+				<span class="instrument-code">ACN</span><br/><span class="instrument-name">Accenture PLC</span>
 			</div>
 			<div class="inline-block" style="width:49%;">
-				<span class="right text-grey-instruments-value-large">{{row.instrument.amount}}</span>
+				<span class="right instrument-value-large">72.37</span>
 			</div>
 		</div>
 		<div class="row">
-        <div class="inline-block" style="width:49%; padding-top:17px; border-right:1px solid #dbdbdb;">
-			<div class="inline-block left" style="width:24%;">
-				<span class="text-grey-instruments-qty">QTY:2</span>
-                <span class="text-grey-instruments-qty-value">{{row.priceR2}}</span>
+			<div class="inline-block" style="width:49%; padding-top:17px; border-right:1px solid #dbdbdb;">
+				<div class="inline-block left" style="width:39%;">
+					<span class="instrument-data bold-text">QTY:2</span><br/>
+					<span class="instrument-data text-grey">(-2)</span>&nbsp;
+					<span class="instrument-data text-red">[-5]</span>
+				</div>
+				<div class="inline-block" style="width:59%;">
+					<span class="right instrument-data text-grey" style="padding-right:15px;">Unit cost</span><br/>
+					<span class="right instrument-data bold-text" style="padding-right:15px;">150.50</span>
+				</div>
 			</div>
-			<div class="inline-block" style="width:65%;">
-				<span class="text-block right">Unit cost</span>
-                <span class="text-block right text-grey-instruments-qty-value">{{row.unitR}}</span>
-			</div>
-            </div>
 			<div class="inline-block" style="width:49%;">
-				<span class="right"><span ng-class="{'text-green': row.priceChangeTotal > 0, 'text-red': row.priceChangeTotal < 0}">{{row.priceChangeTotal}}<i  ng-class="{'fi-arrow-up': row.priceChangeTotal > 0, 'fi-arrow-down': row.priceChangeTotal < 0}"></i></span></span>
+				<span class="right instrument-data-medium text-green bold-text">2.4 (2.0%)&nbsp;<i class="fa fa-caret-up"></i></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="phone-table">
+		<div class="row" style="border-bottom: 1px solid #E3E3E3;">
+			<div class="inline-block" style="border-right: 1px solid #E3E3E3; width:49%; padding-bottom:15px;">
+				<span class="instrument-code">ACN</span><br/><span class="instrument-name">Accenture PLC</span>
+			</div>
+			<div class="inline-block" style="width:49%;">
+				<span class="right instrument-value-large">72.37</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="inline-block" style="width:49%; padding-top:17px; border-right:1px solid #dbdbdb;">
+				<div class="inline-block left" style="width:39%;">
+					<span class="instrument-data bold-text">QTY:2</span><br/>
+					<span class="instrument-data text-grey">(-2)</span>&nbsp;
+					<span class="instrument-data text-green">[+5]</span>
+				</div>
+				<div class="inline-block" style="width:59%;">
+					<span class="right instrument-data text-grey" style="padding-right:15px;">Unit cost</span><br/>
+					<span class="right instrument-data bold-text" style="padding-right:15px;">150.50</span>
+				</div>
+			</div>
+			<div class="inline-block" style="width:49%;">
+				<span class="right instrument-data-medium text-red bold-text">-2.4 (2.0%)&nbsp;<i class="fa fa-caret-down"></i></span>
 			</div>
 		</div>
 	</div>
