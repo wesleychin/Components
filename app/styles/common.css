@@ -417,7 +417,7 @@ hr {display: block;
    display: inline-block;
    font-size: 13px;
    background-color: #fff;
-   border-color: #2f67b1;
+   border-color: #999;
    color: #2570e0;
    transition: background-color 300ms ease-out; 
  }
@@ -498,7 +498,7 @@ hr {display: block;
  max-height: none;
  height: auto;
  background: #FFFFFF;
- border: solid 1px #2f67b1;
+ border: solid 1px #999;
  font-size: 13px;
  z-index: 89;
  width:auto;
@@ -529,7 +529,7 @@ hr {display: block;
  max-height: none;
  height: auto;
  background: #FFFFFF;
- border: solid 1px #2f67b1;
+ border: solid 1px #999;
  font-size: 13px;
  z-index: 89;
  width:auto;
@@ -587,9 +587,9 @@ button, .button {
  padding: 8px;
  display: inline-block;
  font-size: 13px;
- background-color: #fff;
- border-color: #2f67b1;
- color: #2570e0;
+ background-color: #FFF;
+ border-color: #999;
+ color: #2570E0;
  transition: background-color 300ms ease-out; 
 }
 
@@ -711,13 +711,13 @@ multiselect .btn {
 }
 
 multiselect .btn.error{
-  border: 1px solid #da4f49 !important;
+  border: 1px solid #DA4F49 !important;
 }
 
 multiselect .dropdown-menu {
   height: auto;
   width: 170px;
-  border: 1px solid #2f67b1;
+  border: 1px solid #999;
   box-sizing: border-box;
   padding: 2px;
 }
@@ -725,7 +725,7 @@ multiselect .dropdown-menu {
 multiselect .dropdown-menu > li > a {
   cursor:pointer;
   font-size: 13px;
-  color: #2570e0;
+  color: #2570E0;
 }
 
 /* End of override HTML elements */
