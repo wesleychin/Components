@@ -442,16 +442,21 @@ hr {display: block;
    text-align: right;
  }
  
+ dropdown.button, button.dropdown {
+  position: relative;
+  outline: none;
+  padding-right: 5.4rem !important;
+}
 
- .button:hover, button:focus, .button:hover, .button:focus {
-   color: #2570e0; 
- }
+.button:hover, button:focus, .button:hover, .button:focus {
+ color: #2570e0; 
+}
 
- .button:hover, button:focus, .button:hover, .button:focus {
-   background-color: #fff; 
- }
- 
- .f-dropdown li a {
+.button:hover, button:focus, .button:hover, .button:focus {
+ background-color: #fff; 
+}
+
+.f-dropdown li a {
   display: block;
   padding: 1rem;
   color: #555555;
@@ -699,26 +704,30 @@ div.acc-trans-body-container {
 multiselect {
   display:block;
 }
+
 multiselect .btn {
   width: 100%;
   background-color: #FFF;
 }
+
 multiselect .btn.error{
   border: 1px solid #da4f49 !important;
 }
+
 multiselect .dropdown-menu {
   max-height: 300px;
   overflow-y: auto;
 }
+
 multiselect .dropdown-menu {
   width: 100%;
   box-sizing: border-box;
   padding: 2px;
 }
+
 multiselect .dropdown-menu > li > a {
   padding: 3px 10px;
   cursor:pointer;
-}
 }
 
 /* End of override HTML elements */
@@ -727,31 +736,39 @@ multiselect .dropdown-menu > li > a {
 	.portfolio-performance-buttons, .downloadDropdownMargin, .downloadDropdown, .downloadOption {
 		width: 100% !important;
 	}
-
-	.search-textbox {
-		width: 100%;
-	}
 	
-	.top-performers-name {
-		padding-top: 6px;
-		font-size:12px;
-		padding-right:15px;
-		font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-		color:#FFF;
-		width:25%;
-	}
+	.account_text {
+    color: #000;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    display: block;
+    line-height: 1;
+    font-size: 15px;
+    padding-top: 8px;
+    font-size: 14px;}
 
-	table {
-		width:100% !important;
-	}
-	
-	div.header div.header-top .sign-out-header {
-    position: absolute;
-    right: 0;
-    top: 8px;
-    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-    font-size: 14px; font-size:1.4rem;
-    color: #2570e0;
+    .search-textbox {
+      width: 100%;
+    }
+
+    .top-performers-name {
+      padding-top: 6px;
+      font-size:12px;
+      padding-right:15px;
+      font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+      color:#FFF;
+      width:25%;
+    }
+
+    table {
+      width:100% !important;
+    }
+
+    div.header div.header-top .sign-out-header {
+      position: absolute;
+      right: 4px;
+      top: 8px;
+      font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+      font-size: 14px; font-size:1.4rem;
+      color: #2570e0;
+    }
   }
-}
-
