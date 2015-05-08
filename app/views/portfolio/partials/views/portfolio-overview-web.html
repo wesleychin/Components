@@ -5,11 +5,22 @@
 		<div class="show-for-large-up column large-8 right" align="right">
 			<div class="inline-block search-textbox" ng-include src="'common/search-textbox.html'">
 			</div>
-			<div class="portfolio-performance-buttons right" ng-include src="'common/download-button.html'">
+
+
+			<multiselect class="input-xlarge" multiple="true"
+        ng-model="selectedCar"
+        options="c.name for c in cars"
+        change="selected()" ></multiselect>
+        <div class="well well-small">
+            {{selectedCar}}
+        </div>
+
+				
+				<div class="portfolio-performance-buttons right" ng-include src="'common/download-button.html'">
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
-<div class="row no-padding-top"><hr/></div>
-<div class="row padding-below-performers">
-	<div ng-include src="'common/performers.html'"></div>
-</div>
+		<div class="row no-padding-top"><hr/></div>
+		<div class="row padding-below-performers">
+			<div ng-include src="'common/performers.html'"></div>
+		</div>

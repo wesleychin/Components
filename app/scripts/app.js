@@ -20,7 +20,8 @@ angular
     'mm.foundation', 
     'kendo.directives', 
     // 'highcharts-ng', 
-    'angularSpinner'
+    'angularSpinner',
+    'ui.multiselect'
   ])
   .config(function ($routeProvider, uiSelectConfig) {
     uiSelectConfig.theme='select2';

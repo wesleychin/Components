@@ -4,7 +4,7 @@ html {font-size:62.5%;}
 body {font-size: 14px; font-size: 1.4rem;}
 
 .tab-bar {
-height: 5rem;	
+  height: 5rem;	
 }
 
 .header-icons {
@@ -422,16 +422,16 @@ hr {display: block;
    transition: background-color 300ms ease-out; 
  }
 
-.dropdown.button::after, button.dropdown::after {
- font-family: 'FontAwesome';
- content: "\f078";
- border: none;
- margin-top: 0;
- top:0px;
- right: 20px;
- text-align: right;
- 
-}
+ .dropdown.button::after, button.dropdown::after {
+   font-family: 'FontAwesome';
+   content: "\f078";
+   border: none;
+   margin-top: 0;
+   top:0px;
+   right: 20px;
+   text-align: right;
+   
+ }
  .dropdown.small::after, button.small::after {
    font-family: 'FontAwesome';
    content: "\f078";
@@ -458,95 +458,95 @@ hr {display: block;
   font-size: 13px;
 }
 
- .f-dropdown-common li a {
-   display: block;
-   padding: 8px;
-   color: #2570e0;
-   text-align: left;
-   width: 100%;
- }
+.f-dropdown-common li a {
+ display: block;
+ padding: 8px;
+ color: #2570e0;
+ text-align: left;
+ width: 100%;
+}
 
- .f-dropdown-common {
-   position: absolute;
-   left: -9999px;
-   list-style: none;
-   margin-left: 0;
-   outline: none;
-   max-height: none;
-   height: auto;
-   background: #FFFFFF;
-   border: solid 1px #2f67b1;
-   font-size: 13px;
-   z-index: 89;
-   margin-top: -2px;
-   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-   border-bottom-left-radius: 3px;
-   border-bottom-right-radius: 3px;
- }
- 
- .f-dropdown-small {
-   position: absolute;
-   left: auto;
-   list-style: none;
-   margin-left: 0;
-   outline: none;
-   max-height: none;
-   height: auto;
-   background: #FFFFFF;
-   border: solid 1px #2f67b1;
-   font-size: 13px;
-   z-index: 89;
-   width:auto;
-   margin-top: -2px;
-   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-   border-bottom-left-radius: 3px;
-   border-bottom-right-radius: 3px;
-   display: block; 
-   top: 33px; 
-   left: auto !important;
-   width:91px;
- }
- 
- .f-dropdown-small li a {
-   display: block;
-   padding: 8px 8px 8px 12px;
-   color: #2570e0;
-   text-align: left;
-   width: 100%;
- }
- 
- .f-dropdown-medium {
-   position: absolute;
-   left: auto;
-   list-style: none;
-   margin-left: 0;
-   outline: none;
-   max-height: none;
-   height: auto;
-   background: #FFFFFF;
-   border: solid 1px #2f67b1;
-   font-size: 13px;
-   z-index: 89;
-   width:auto;
-   margin-top: -2px;
-   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-   border-bottom-left-radius: 3px;
-   border-bottom-right-radius: 3px;
-   display: block; 
-   top: 33px; 
-   left: auto !important;
-   width:133px;
- }
- 
- .f-dropdown-medium li a {
-   display: block;
-   padding: 8px;
-   color: #2570e0;
-   text-align: left;
-   width: 100%;
- }
- 
- hr {
+.f-dropdown-common {
+ position: absolute;
+ left: -9999px;
+ list-style: none;
+ margin-left: 0;
+ outline: none;
+ max-height: none;
+ height: auto;
+ background: #FFFFFF;
+ border: solid 1px #2f67b1;
+ font-size: 13px;
+ z-index: 89;
+ margin-top: -2px;
+ font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+ border-bottom-left-radius: 3px;
+ border-bottom-right-radius: 3px;
+}
+
+.f-dropdown-small {
+ position: absolute;
+ left: auto;
+ list-style: none;
+ margin-left: 0;
+ outline: none;
+ max-height: none;
+ height: auto;
+ background: #FFFFFF;
+ border: solid 1px #2f67b1;
+ font-size: 13px;
+ z-index: 89;
+ width:auto;
+ margin-top: -2px;
+ font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+ border-bottom-left-radius: 3px;
+ border-bottom-right-radius: 3px;
+ display: block; 
+ top: 33px; 
+ left: auto !important;
+ width:91px;
+}
+
+.f-dropdown-small li a {
+ display: block;
+ padding: 8px 8px 8px 12px;
+ color: #2570e0;
+ text-align: left;
+ width: 100%;
+}
+
+.f-dropdown-medium {
+ position: absolute;
+ left: auto;
+ list-style: none;
+ margin-left: 0;
+ outline: none;
+ max-height: none;
+ height: auto;
+ background: #FFFFFF;
+ border: solid 1px #2f67b1;
+ font-size: 13px;
+ z-index: 89;
+ width:auto;
+ margin-top: -2px;
+ font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+ border-bottom-left-radius: 3px;
+ border-bottom-right-radius: 3px;
+ display: block; 
+ top: 33px; 
+ left: auto !important;
+ width:133px;
+}
+
+.f-dropdown-medium li a {
+ display: block;
+ padding: 8px;
+ color: #2570e0;
+ text-align: left;
+ width: 100%;
+}
+
+hr {
   display: block;
   height: 1px;
   border: 0;
@@ -667,11 +667,11 @@ button, .button {
 }
 
 .row {
-    max-width: 80%;
+  max-width: 80%;
 }
 
 div.acc-trans-body-container {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .tab-bar .menu-icon {
@@ -683,16 +683,43 @@ div.acc-trans-body-container {
 	color: #000 !important;
 	position: relative;
 	background-color: #fff;
-	transform: translate3d(0, 0, 0); }
-	
+	transform: translate3d(0, 0, 0); 
+}
+
 .account_text {
-    color: #000;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-	display: block;
-	line-height: 1;
-	font-size: 15px;
-	padding-bottom: 5px;
-    font-size: 14px;}
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  display: block;
+  line-height: 1;
+  font-size: 15px;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+multiselect {
+  display:block;
+}
+multiselect .btn {
+  width: 100%;
+  background-color: #FFF;
+}
+multiselect .btn.error{
+  border: 1px solid #da4f49 !important;
+}
+multiselect .dropdown-menu {
+  max-height: 300px;
+  overflow-y: auto;
+}
+multiselect .dropdown-menu {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2px;
+}
+multiselect .dropdown-menu > li > a {
+  padding: 3px 10px;
+  cursor:pointer;
+}
+}
 
 /* End of override HTML elements */
 
@@ -719,12 +746,12 @@ div.acc-trans-body-container {
 	}
 	
 	div.header div.header-top .sign-out-header {
-  position: absolute;
-  right: 0;
-  top: 8px;
-  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-  font-size: 14px; font-size:1.4rem;
-  color: #2570e0;
-}
+    position: absolute;
+    right: 0;
+    top: 8px;
+    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+    font-size: 14px; font-size:1.4rem;
+    color: #2570e0;
+  }
 }
 

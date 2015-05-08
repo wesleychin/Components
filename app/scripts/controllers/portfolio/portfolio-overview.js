@@ -34,19 +34,11 @@ angular.module('componentsApp')
 	$http.get('/api/portfolio/portfolio-overview.json').success(function(response) {
 		$scope.portfolioOverviewInfo = response;
 	});
-});	
-	// $scope.portfolioOverviewGridAdditionalInformation = function(dataItem) {
-	// 	$http.get('/api/portfolio/portfolio-overview.json').success(function(response) {
-	// 		var single_object = $filter('filter')(response, function (d) {return d.id === dataItem.id;})[0];
-	// 		$scope.portfolioOverviewGridMetaData = single_object;
-	// 	});
-	// }; 
 
-	// $scope.onSelection = function(kendoEvent) {
- //        var grid = kendoEvent.sender;
- //        var selectedData = grid.dataItem(grid.select());
- //        $http.get('/api/portfolio/portfolio-overview.json').success(function(response) {
-	// 		var single_object = $filter('filter')(response, function (d) {return d.id === selectedData.id;})[0];
-	// 		$scope.portfolioOverviewGridMetaData = single_object;
-	// 	});
- //    }	
+	$scope.name = 'World';
+    $scope.cars = [{id:1, name: 'Audi'}, {id:2, name: 'BMW'}, {id:1, name: 'Honda'}];
+    $scope.selectedCar = [];
+
+    $scope.fruits = [{id: 1, name: 'Apple'}, {id: 2, name: 'Orange'},{id: 3, name: 'Banana'}];
+    $scope.selectedFruit = null;
+});	
