@@ -258,3 +258,48 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		font-size: 2rem;
 	}
 }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	.details-overlay {
+		height: auto; 
+		font-size: 3rem !important;
+	}
+
+	.details-overview-feed-details {
+		font-size: 1rem;
+	}
+
+	.acc-empty-boxes {
+		font-size: 1rem; 
+		height: 55px;
+	}
+
+	.seperator {
+		border-left: 0;
+	}
+
+	.text-green {
+		color: #007F00;
+		font-weight: normal !important; 
+		font-size: 12px;
+		font-size: 1.2rem;
+	}
+
+	.text-green-large {
+		color: #007F00;
+		font-weight: normal !important; 
+		font-size: 18px;
+		font-size: 1.8rem;
+	}
+
+	.text-red-large {
+		color: #007F00;
+		font-weight: normal !important; 
+		font-size: 18px;
+		font-size: 1.8rem;
+	}
+
+	.acc-trans-body-container {
+		font-size: 2rem;
+	}
+}

@@ -922,3 +922,20 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     font-size: 1rem;
   }
 }
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+.account_text {
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  display: block;
+  line-height: 1;
+  font-size: 15px;
+  padding-bottom: 5px;
+  padding-top:5px;
+  font-size: 14px;
+}
+}
+
+}
