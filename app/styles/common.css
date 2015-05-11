@@ -1,7 +1,10 @@
-/* Start of override css from main.css */
+html {
+  font-size:62.5%;
+}
 
-html {font-size:62.5%;}
-body {font-size: 14px; font-size: 1.4rem;}
+body {
+  font-size: 14px; font-size: 1.4rem;
+}
 
 .tab-bar {
   height: 5rem;	
@@ -23,7 +26,6 @@ div.header div.header-top .sign-out-header {
   font-size: 14px; font-size:1.4rem;
   color: #2570e0;
 }
-
 
 .dropdown.button::after, button.dropdown::after {
   font-family: 'FontAwesome';
@@ -73,7 +75,8 @@ a {
   border-top-left-radius: 3px;
 }
 
-.selected {background-color: #FFF;
+.selected {
+  background-color: #FFF;
   border-left: 1px solid #999999;
   border-bottom: 1px solid #999999;
   border-top: 1px solid #999999;
@@ -82,14 +85,14 @@ a {
   color: #000;
   position: absolute;
   z-index: 10000 !important;
-  overflow: hidden;}
+  overflow: hidden;
+}
 
+.noLeftPadding {
+ padding-left: 0 !important;
+}
 
-  .noLeftPadding {
-   padding-left: 0 !important;
- }
-
- .search-textbox {
+.search-textbox {
   padding-right: 13px;
 }
 
@@ -244,8 +247,6 @@ no-padding-top {
   padding:2px;
 }
 
-
-
 .header-icons-padding {
   padding-left: 10px;
   padding-right: 10px;
@@ -299,7 +300,6 @@ no-padding-top {
   margin: 10px;
 }
 
-
 .left-small .left-off-canvas-toggle {
   height: 45px;
   width: 45px;
@@ -320,7 +320,6 @@ no-padding-top {
 .header-logo-icon {
   margin: 5px 0;
 }
-
 
 .rounded-dropdown-corners {
   border-radius: 3px;
@@ -357,92 +356,87 @@ li.list-separator {
   background-color: #FFFFFF !important;
 }
 
-/* End of custom OST css */
-
-/* Start of override HTML elements */
-
 hr {display: block;
   height: 1px;
   border: 0;
   border-top: 1px dashed #A8A8A8;
   margin: 1em 0;
-  padding: 0;}
+  padding: 0;
+}
 
+td {
+  padding-top:5px;
+  padding-bottom:5px;
 
-  td {
-    padding-top:5px;
-    padding-bottom:5px;
+}
 
-  }
+td:first-child {
+  padding-right:0;
+}
 
-  td:first-child {
-    padding-right:0;
-  }
+button, .button {
+ border-style: solid;
+ border-width: 1px;
+ cursor: pointer;
+ font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+ font-weight: normal;
+ line-height: normal;
+ position: relative;
+ text-decoration: none;
+ text-align: center;
+ -moz-appearance: none;
+ border-radius: 3px;
+ padding: 8px;
+ display: inline-block;
+ font-size: 13px;
+ background-color: #fff;
+ border-color: #2f67b1;
+ color: #2570e0;
+ transition: background-color 300ms ease-out; 
+}
 
+button, .button.small {
+ border-style: solid;
+ border-width: 1px;
+ cursor: pointer;
+ font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+ font-weight: normal;
+ line-height: normal;
+ position: relative;
+ text-decoration: none;
+ text-align: center;
+ -moz-appearance: none;
+ border-radius: 3px;
+ padding: 8px;
+ display: inline-block;
+ font-size: 13px;
+ background-color: #fff;
+ border-color: #999;
+ color: #2570e0;
+ transition: background-color 300ms ease-out; 
+}
 
-  button, .button {
-   border-style: solid;
-   border-width: 1px;
-   cursor: pointer;
-   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-   font-weight: normal;
-   line-height: normal;
-   position: relative;
-   text-decoration: none;
-   text-align: center;
-   -moz-appearance: none;
-   border-radius: 3px;
-   padding: 8px;
-   display: inline-block;
-   font-size: 13px;
-   background-color: #fff;
-   border-color: #2f67b1;
-   color: #2570e0;
-   transition: background-color 300ms ease-out; 
- }
- 
- button, .button.small {
-   border-style: solid;
-   border-width: 1px;
-   cursor: pointer;
-   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-   font-weight: normal;
-   line-height: normal;
-   position: relative;
-   text-decoration: none;
-   text-align: center;
-   -moz-appearance: none;
-   border-radius: 3px;
-   padding: 8px;
-   display: inline-block;
-   font-size: 13px;
-   background-color: #fff;
-   border-color: #999;
-   color: #2570e0;
-   transition: background-color 300ms ease-out; 
- }
+.dropdown.button::after, button.dropdown::after {
+ font-family: 'FontAwesome';
+ content: "\f078";
+ border: none;
+ margin-top: 0;
+ top:0px;
+ right: 20px;
+ text-align: right;
+}
 
- .dropdown.button::after, button.dropdown::after {
-   font-family: 'FontAwesome';
-   content: "\f078";
-   border: none;
-   margin-top: 0;
-   top:0px;
-   right: 20px;
-   text-align: right;
-   
- }
- .dropdown.small::after, button.small::after {
-   font-family: 'FontAwesome';
-   content: "\f078";
-   border: none;
-   margin-top: 0;
-   top:0;
-   right: 20px;
-   text-align: right;
- }
- 
- dropdown.button, button.dropdown {
+.dropdown.small::after, button.small::after {
+ font-family: 'FontAwesome';
+ content: "\f078";
+ border: none;
+ margin-top: 0;
+ top:0;
+ right: 20px;
+ text-align: right;
+}
+
+dropdown.button, button.dropdown {
   position: relative;
   outline: none;
   padding-right: 5.4rem !important;
@@ -560,7 +554,6 @@ hr {
   padding: 0;
 }
 
-
 td {
   padding-top:5px;
   padding-bottom:5px;
@@ -570,7 +563,6 @@ td {
 td:first-child {
   padding-right:0;
 }
-
 
 button, .button {
  border-style: solid;
@@ -666,6 +658,7 @@ button, .button {
   padding-left:30px !important;
   background-color: #FFFFFF !important;
 }
+
 .input-container {
   position:relative;
   background-color: #FFFFFF !important;
@@ -728,8 +721,6 @@ multiselect .dropdown-menu > li > a {
   color: #2570E0;
 }
 
-/* End of override HTML elements */
-
 @media only screen and (max-width: 40em) {
 	.portfolio-performance-buttons, .downloadDropdownMargin, .downloadDropdown, .downloadOption {
 		width: 100% !important;
@@ -742,31 +733,32 @@ multiselect .dropdown-menu > li > a {
     line-height: 1;
     font-size: 15px;
     padding-top: 8px;
-    font-size: 14px;}
-
-    .search-textbox {
-      width: 100%;
-    }
-
-    .top-performers-name {
-      padding-top: 6px;
-      font-size:12px;
-      padding-right:15px;
-      font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-      color:#FFF;
-      width:25%;
-    }
-
-    table {
-      width:100% !important;
-    }
-
-    div.header div.header-top .sign-out-header {
-      position: absolute;
-      right: 4px;
-      top: 8px;
-      font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-      font-size: 14px; font-size:1.4rem;
-      color: #2570e0;
-    }
+    font-size: 14px;
   }
+
+  .search-textbox {
+    width: 100%;
+  }
+
+  .top-performers-name {
+    padding-top: 6px;
+    font-size:12px;
+    padding-right:15px;
+    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+    color:#FFF;
+    width:25%;
+  }
+
+  table {
+    width:100% !important;
+  }
+
+  div.header div.header-top .sign-out-header {
+    position: absolute;
+    right: 4px;
+    top: 8px;
+    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+    font-size: 14px; font-size:1.4rem;
+    color: #2570e0;
+  }
+}
