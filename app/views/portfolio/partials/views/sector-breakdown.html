@@ -3,24 +3,5 @@
 </div>
 <div class="row show-for-large-up"><hr/></div>
 <div class="show-for-large-up">
-    <kendo-grid  options="sectorBreakdownGrid"  k-selectable="'row'">
-</kendo-grid>
-<div ng-include src="'views/portfolio/partials/views/sector-breakdown-grid-additional-information.html'"></div>
-</div>
-<div class="hide-for-large-up">
-    <table ng-repeat="row in sectorBreakdownInfo">
-        <tr>
-            <td><i ng-class="{'fi-arrow-up': row.symbol == 'increase', 'fi-arrow-down': row.symbol == 'decrease', 'fi-arrow-right': row.symbol == 'neutral', 'text-green': row.symbol == 'increase', 'text-red': row.symbol == 'decrease', 'text-grey': row.symbol == 'neutral'}"></i><span class="text-blue">{{row.sectorName}}</span></td>
-            <td><span>Total cost</span><br/><span>{{row.cost}}</span></td>
-            <td><span>Market value</span><br/><span>{{row.marketValue}}</span></td>
-        </tr>
-        <tr>
-            <td><span>Total movement % change</span></td>
-            <td><span ng-class="{'text-green': row.symbol == 'increase', 'text-red': row.symbol == 'decrease', 'text-grey': row.symbol == 'neutral'}">{{row.difference}}</span></td>
-        </tr>
-        <tr>
-            <td><span>% of Portfolio</span></td>
-            <td><span>{{row.portfolio}}</span></td>
-        </tr>
-    </table>
+    <kendo-grid  options="sectorBreakdownGrid" k-selectable="'row'"></kendo-grid>
 </div>

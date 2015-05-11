@@ -3,13 +3,5 @@
 	{ "sectorId":2, "symbol":"increase", "sectorName":"Diversified Industrials" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
 	{ "sectorId":3, "symbol":"decrease", "sectorName":"Exchange Traded Funds" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
 	{ "sectorId":4, "symbol":"neutral", "sectorName":"Exchange Traded Notes" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
-	{ "sectorId":5, "symbol":"increase", "sectorName":"Food Products" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
-	{ "sectorId":6, "symbol":"decrease", "sectorName":"General Mining" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
-	{ "sectorId":7, "symbol":"neutral", "sectorName":"Health Care Providers" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
-	{ "sectorId":8, "symbol":"increase", "sectorName":"Industrial & Office REITs" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
-	{ "sectorId":9, "symbol":"decrease", "sectorName":"Investment Services" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
-	{ "sectorId":10, "symbol":"neutral", "sectorName":"Iron & Steel" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
-	{ "sectorId":11, "symbol":"increase", "sectorName":"Preference Shares" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
-	{ "sectorId":12, "symbol":"decrease", "sectorName":"Retail REITs" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" },
-	{ "sectorId":13, "symbol":"neutral", "sectorName":"Telecommunications Equipment" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" }
+	{ "sectorId":5, "symbol":"increase", "sectorName":"Food Products" , "cost":"R 1,980.29", "marketValue": "R 3,231.98", "difference": "+63.2%(R 1,251.69)", "portfolio": "0.16%" }
 ]
