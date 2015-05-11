@@ -925,8 +925,9 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 
 
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-.account_text {
+@media screen and (min-device-width:600px) and (max-device-width:1024px) {
+ 
+ .account_text {
   color: #000;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   display: block;
