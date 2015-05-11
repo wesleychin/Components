@@ -123,7 +123,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 	.accounts-details-wrapper {
 		margin-bottom: 0;
 		padding: 0;
-		height:auto !important;
+		height: 296px;
 		background-color: #FFF;
 	}
 
@@ -151,6 +151,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		font-weight: lighter;
 		float: right;
 		margin-right: 14px;
+		padding-top: 4px;
 	}
 
 	div.sub-header-wrapper .sub-header .sub-header-options span {

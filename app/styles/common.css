@@ -544,7 +544,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px dashed #A8A8A8;
+  border-top: 1px solid #A8A8A8;
   margin: 1em 0;
   padding: 0;
 }
@@ -576,7 +576,7 @@ button, .button {
  font-size: 13px;
  background-color: #FFF;
  border-color: #999;
- color: rgb(153, 153, 153);
+ color: #2570E0;
  transition: background-color 300ms ease-out; 
 }
 
@@ -591,7 +591,7 @@ button, .button {
 }
 
 .button:hover, button:focus, .button:hover, .button:focus {
- color: rgb(153, 153, 153);
+ color: #2570E0;
 }
 
 .button:hover, button:focus, .button:hover, .button:focus {
@@ -708,8 +708,7 @@ multiselect .dropdown-menu {
   box-sizing: border-box;
   padding: 2px;
   position: absolute; 
-  background-color: #FFF;
-  left: 313px;
+  background-color: #FFF !important;
 }
 
 multiselect .dropdown-menu > li > a {
