@@ -175,10 +175,6 @@ a {
   color: #0099FF;
 }
 
-.searchDropdown {
-  width: 160px;
-}
-
 .downloadDropdown {
   width: 64px;
   color: #0000FF;
@@ -622,10 +618,6 @@ button, .button {
  border-bottom-right-radius: 3px;
 }
 
-.search-textbox {
-  width: 225px !important;
-}
-
 .k-i-arrow-n {
   background-image: url('../../../images/arrow-up.png');
 }
@@ -911,10 +903,6 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     font-size: 15px;
     padding-top: 8px;
     font-size: 14px;
-  }
-
-  .search-textbox {
-    width: 100%;
   }
 
   .top-performers-name {

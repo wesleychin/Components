@@ -223,43 +223,52 @@ div.years-selection:hover > i {
   padding-left: 50px;
 }
 
+.search-textbox {
+  width: 225px !important;
+}
+
 @media only screen and (max-width: 40em) {
- .portfolio-overview-phone {
-  width: 100%;
-}
+  .portfolio-overview-phone {
+    width: 100%;
+  }
 
-.acc-empty-boxes {
- background: #F8F8F8;
- border-left: 0;
- border-top: 0;
- float: left;
- border-radius: 0;
- color: #2570E0;
- width: 100%;
- font-size: 15px;
- padding-left: 15px;
- margin-left:0;
- padding-top: 13px;
- border-bottom: 1px solid #397DE3;
- margin-bottom: 0;
- font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-}
+  .acc-empty-boxes {
+   background: #F8F8F8;
+   border-left: 0;
+   border-top: 0;
+   float: left;
+   border-radius: 0;
+   color: #2570E0;
+   width: 100%;
+   font-size: 15px;
+   padding-left: 15px;
+   margin-left:0;
+   padding-top: 13px;
+   border-bottom: 1px solid #397DE3;
+   margin-bottom: 0;
+   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+  }
 
-.portfolio-overview-container {
- width: 100%;
- background: white;
- border: 0 !important;
- border-bottom-right-radius: 0;
- border-bottom-left-radius: 0;
- border-top-right-radius: 0;
- float: left;
- margin-bottom: 20px;
- list-style-type: none;
- font-size: 12px !important; 
- font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
- position: relative;
- padding: 5px;
- z-index: 0;
- min-height: 600px;
-}
+  .portfolio-overview-container {
+   width: 100%;
+   background: white;
+   border: 0 !important;
+   border-bottom-right-radius: 0;
+   border-bottom-left-radius: 0;
+   border-top-right-radius: 0;
+   float: left;
+   margin-bottom: 20px;
+   list-style-type: none;
+   font-size: 12px !important; 
+   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+   position: relative;
+   padding: 5px;
+   z-index: 0;
+   min-height: 600px;
+  }
+
+  .search-textbox {
+    width: 100% !important;
+    padding-left: 10px;
+  }
 }
