@@ -70,6 +70,25 @@
 		color: #b5b5b5;
 		font-size: 14px;
 	}
+
+	.mobile-buttons {
+		width:49%; 
+		height:50px;
+	}
+
+	.action-buttons {
+		width:100%; 
+		background: #EFF0F3;
+		margin-bottom: 20px;
+	}
+
+	.action-button-text {
+		color: #2570E0;
+	}
+
+	.action-button-text:hover {
+		color: #2570E0;
+	}
 </style>
 <div class="row no-padding-bottom">
 	<span class="show-for-medium-up headingFormat left inline-block">Portfolio overview</span>
@@ -115,9 +134,6 @@
 	<kendo-grid options="portfolioOverviewGrid" k-selectable="'row'" class="visible-for-medium-up"></kendo-grid>
 </div>
 
-
-
-
 <div class="hide-for-medium-up">
 	<div class="phone-table">
 		<div class="row" style="border-bottom: 1px solid #E3E3E3;">
@@ -145,8 +161,40 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="phone-table">
+		<div class="row" style="border-bottom: 1px solid #E3E3E3;">
+			<div class="inline-block" style="border-right: 1px solid #E3E3E3; width:49%; padding-bottom:15px;">
+				<span class="instrument-code">ACN</span><br/><span class="instrument-name">Accenture PLC</span>
+			</div>
+			<div class="inline-block" style="width:49%;">
+				<span class="right instrument-value-large">72.37</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="inline-block" style="width:49%; padding-top:17px; border-right:1px solid #dbdbdb;">
+				<div class="inline-block left" style="width:39%;">
+					<span class="instrument-data bold-text">QTY:2</span><br/>
+					<span class="instrument-data text-grey">(-2)</span>&nbsp;
+					<span class="instrument-data text-green">[+5]</span>
+				</div>
+				<div class="inline-block" style="width:59%;">
+					<span class="right instrument-data text-grey" style="padding-right:15px;">Unit cost</span><br/>
+					<span class="right instrument-data bold-text" style="padding-right:15px;">150.50</span>
+				</div>
+			</div>
+			<div class="inline-block" style="width:49%;">
+				<span class="right instrument-percentage text-red-large bold-text">-2.4 (2.0%)&nbsp;<i class="fa fa-caret-down"></i></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="hide-for-medium-up">
+	<div class="action-buttons">
+		<div class="inline-block mobile-buttons"><a href="#" class="action-button-text">Create trigger</a></div>
+		<div class="inline-block mobile-buttons"><a href="#" class="action-button-text">Add to watchlist</a></div>
+	</div>
+	<div class="phone-table">		
 		<div class="row" style="border-bottom: 1px solid #E3E3E3;">
 			<div class="inline-block" style="border-right: 1px solid #E3E3E3; width:49%; padding-bottom:15px;">
 				<span class="instrument-code">ACN</span><br/><span class="instrument-name">Accenture PLC</span>
