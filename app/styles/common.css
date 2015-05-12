@@ -69,7 +69,7 @@ a {
   border-left: 1px solid #C9CACB;
   border-bottom: 1px solid #C9CACB;
   border-right: 0 solid #C9CACB;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
@@ -80,7 +80,7 @@ a {
   border-left: 1px solid #999999;
   border-bottom: 1px solid #999999;
   border-top: 1px solid #999999;
-  width: 102%;
+  width: 103%;
   margin-right: 0;
   color: #000;
   position: absolute;
@@ -351,10 +351,11 @@ li.list-separator {
   background-color: #FFFFFF !important;
 }
 
-hr {display: block;
+hr {
+  display: block;
   height: 1px;
   border: 0;
-  border-top: 1px dashed #A8A8A8;
+  border-top: 1px dotted #A8A8A8 !important;
   margin: 1em 0;
   padding: 0;
 }
@@ -920,25 +921,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 }
 
 @media only screen  and (min-width : 1824px) {
-  .underline-text {
-    font-size: 1rem;
-  }
-}
-
-
-/* Desktops and laptops ----------- */
-@media screen and (min-device-width:600px) and (max-device-width:1024px) {
- 
- .account_text {
-  color: #000;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  display: block;
-  line-height: 1;
-  font-size: 15px;
-  padding-bottom: 5px;
-  padding-top:5px;
-  font-size: 14px;
-}
+  
 }
 
 }
