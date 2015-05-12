@@ -228,9 +228,136 @@ div.years-selection:hover > i {
   width: 225px !important;
 }
 
+.text-blue-instruments-name {
+  color: #0000FF;
+  font-size: 18px;
+}
+
+.text-grey-instruments-name {
+  color: #cdcdcd;
+  font-size: 12px;
+}
+
+.text-grey-instruments-value-large {
+  color: #a3a3a3;
+  font-size: 25px;
+}
+
+.text-grey-instruments-qty {
+  color: #6b6b6b;
+  font-size: 14px;
+}
+
+.text-grey-instruments-qty-value {
+  color: #b5b5b5;
+  font-size: 14px;
+}
+
+.seperator {
+  border-left: 0;
+}
+
+.text-green {
+  color: #007F00;
+  font-weight: normal !important; 
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.text-green-large {
+  color: #007F00;
+  font-weight: normal !important; 
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.text-red-large {
+  color: #FF0000;
+  font-weight: normal !important; 
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.instrument-code {
+  color: #2570e0;
+  font-size: 19px;
+}
+
+.instrument-name {
+  color: #999;
+  font-size: 10px;
+}
+
+.instrument-value-large {
+  color: #999;
+  font-size: 34px;
+}
+
+.instrument-data-medium {
+  font-size: 12px;
+  color:#666;
+}
+
+.instrument-data {
+  font-size: 12px;
+  color:#666;
+}
+
+.instrument-data-light-grey {
+  font-size: 12px;
+  color:#999;
+}
+
+.instrument-data-unit-cost {
+  font-size: 12px;
+  color:#999;
+}
+
+.instrument-percentage {
+  font-size: 18px;
+}
+
+.instrument-text-blue {
+  color:#2570e0 !important;
+  font-size:12px;
+}
+
+.instrument-bold-text {
+  color:#333;
+  font-size:12px;
+  font-weight:900;
+  padding-left:1px !important;
+}
+
+.instrument-bold-text-blue {
+  color:#2570e0 !important;
+  font-size:12px;
+  font-weight:900;
+}
+
+
 @media only screen and (max-width: 40em) {
+  .mobilelineseperator-instruments {
+   border-bottom: 1px solid #eeeeee;
+   margin-left:10px !important;
+   margin-right:10px !important;
+   padding-bottom: 8px;
+   padding-top: 0;
+   margin-bottom: 8px; 
+ }
+
+ .padding-for-bold-instruments {
+  margin-left:10px !important;
+   margin-right:10px !important;
+   padding-top: 5px;
+ }
+
   .portfolio-overview-phone {
     width: 100%;
+  }
+
+  .phone-color {
+    background-color: #FFF;
   }
 
   .acc-empty-boxes {
@@ -248,9 +375,9 @@ div.years-selection:hover > i {
    border-bottom: 1px solid #397DE3;
    margin-bottom: 0;
    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-  }
+ }
 
-  .portfolio-overview-container {
+ .portfolio-overview-container {
    width: 100%;
    background: white;
    border: 0 !important;
@@ -266,10 +393,10 @@ div.years-selection:hover > i {
    padding: 5px;
    z-index: 0;
    min-height: 600px;
-  }
+ }
 
-  .search-textbox {
-    width: 100% !important;
-    padding-left: 10px;
-  }
+ .search-textbox {
+  width: 100% !important;
+  padding-left: 10px;
+}
 }
