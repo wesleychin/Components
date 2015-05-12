@@ -1,5 +1,0 @@
-[
-	{ "sectorId":1, "sectorName":"FSRABL" , "cost":"R 1,000.29", "marketValue": "R 1,231.98", "difference": "+44.2%(R 900.69)", "portfolio": "0.8%" },
-	{ "sectorId":2, "sectorName":"CPI" , "cost":"R 500.00", "marketValue": "R 1,000.00", "difference": "+10.2%(R 500.69)", "portfolio": "0.5%" },
-	{ "sectorId":3, "sectorName":"FSI" , "cost":"R 480.00", "marketValue": "R 1,000.00", "difference": "+9.2%(R 200.69)", "portfolio": "0.3%" }
-]

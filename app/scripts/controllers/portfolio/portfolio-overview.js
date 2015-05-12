@@ -31,10 +31,6 @@ angular.module('componentsApp')
 		});
 	});
 
-	$http.get('/api/portfolio/portfolio-overview.json').success(function(response) {
-		$scope.portfolioOverviewInfo = response;
-	});
-
     $scope.cars = [{id:1, name: 'Previous close / MTM'}, {id:2, name: 'Todays movement'}, {id:3, name: 'Total movement'}, {id:4, name: 'Initial margin'}, {id:5, name: '% of portfolio'}];
     $scope.selectedCar = [];
 });	

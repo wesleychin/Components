@@ -19,6 +19,18 @@ angular.module('componentsApp')
 		title:{
 			text:''
 		},
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true,
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                    style: {
+                        textShadow: '0 0 3px black'
+                    }
+                }
+            }
+        },
 		series: [{
 			color: "green",
 			negativeColor: "red", 
@@ -37,7 +49,10 @@ angular.module('componentsApp')
 			pointPadding: 0,
 			groupPadding: 0,
 			showInLegend: false,
-		}],
+		}, 
+		{
+            data: [100, -100, -100, -100, 100, -100, 100, -100, 100, -100, 100, -100]
+        }],
 		xAxis: {
 			categories: ["Jan", "Feb", "Mar", "Apr", "May", "June", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
 			lineColor: 'transparent'
@@ -48,7 +63,14 @@ angular.module('componentsApp')
 			},
 			gridLineWidth: 0,
 			minorGridLineWidth: 0, 
-			lineColor: 'transparent'
+			lineColor: 'transparent', 
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            }
 		}
 	}
 
