@@ -25,7 +25,7 @@ angular.module('componentsApp')
 		{  
 			field:"sectorName",
 			title:"Sector name",
-			template: '<span class="text-blue">#: sectorName#</span>'
+			template: '<span class="text-blue">#: sectorName# &nbsp;<i class="fa fa-exclamation-circle text-red"></i></span>'
 		},
 		{  
 			field:"cost",

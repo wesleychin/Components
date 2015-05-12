@@ -662,6 +662,7 @@ button, .button {
 .input-container {
   position: relative;
   background-color: #FFFFFF !important;
+  top: -3px;
 }
 
 .row {
@@ -800,7 +801,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   border-left: 1px solid red;
 }
 
-.k-grid table tr.k-state-selected:last-child td {
+.k-grid table tr.k-state-selected td:last-child {
   border-right: 1px solid red;
 }
 
