@@ -398,5 +398,6 @@ div.years-selection:hover > i {
  .search-textbox {
   width: 100% !important;
   padding-left: 10px;
+  padding-right: 15px;
 }
 }
