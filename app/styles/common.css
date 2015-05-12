@@ -128,11 +128,11 @@ a {
 }
 
 .text-red {
-  color : #FF0000;
+  color : #FF0000 !important;
 }
 
 .text-green {
-  color: #007F00;
+  color: #007F00 !important;
   font-weight: 900;
   font-size: 14px; font-size: 1.4rem; 
 }
