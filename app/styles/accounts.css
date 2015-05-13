@@ -72,7 +72,6 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 	color: #666666;
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 	display: inline-block;
-	font-weight:900;
 	margin-right: 20px;
 }
 
@@ -120,9 +119,9 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 	}
 
 	.accounts-details-wrapper {
-		margin-bottom: 0;
+		margin-bottom: 0 !important;
 		padding: 0;
-		height: 296px;
+		height: auto !important;
 		background-color: #FFF;
 	}
 
@@ -138,7 +137,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 		display: inline-block;
 		font-weight:normal !important;
-		padding-top: 3px;
+		padding-top: 7px;
 		margin-right: 0;
 	}
 
@@ -176,7 +175,6 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		margin-bottom: 0;
 		border-bottom: 1px solid #CCCCCC;
 		padding-top: 15px;
-		
 		background-color: #FFF;
 	}
 	
@@ -217,6 +215,12 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 	.text-grey-instruments-qty-value {
 		color: #B5B5B5;
 		font-size: 14px;
+	}
+	
+	.text-grey-instruments-paddlingleft {
+		color: #999;
+		font-size: 12px;
+		padding-left:10px;
 	}
 }
 
