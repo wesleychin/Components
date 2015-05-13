@@ -73,6 +73,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 	display: inline-block;
 	margin-right: 20px;
+	font-weight:900;
 }
 
 .streaming-button {
@@ -90,7 +91,12 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 	top: 91px !important;
 }
 
+.totalchange-padding {
+		margin-left:15px;}
+		
+
 @media only screen and (max-width: 40em) {
+	
 	.block-portfolio-value-text {
 		display: block;
 	}
@@ -112,6 +118,14 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		border-bottom: 1px solid #CCCCCC;
 		background: #EFF0F3;
 	}
+	
+		
+	.details-overview-amounts-bold-phone {
+		float: right;
+		padding-right: 15px;
+		font-weight:900 !important;
+	}
+
 
 	.details-overview-amounts-bold-phone {
 		float: right;
@@ -146,7 +160,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		color: #666666;
 		font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 		display: inline-block;
-		font-weight: lighter;
+		font-weight: 100 !important;
 		float: right;
 		margin-right: 14px;
 		padding-top: 4px;
