@@ -863,7 +863,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     border: 1px solid #E9E9E9;
     background-color: #FAFAFA;
     padding: 20px;
-    width: 95%;
+    width: 94%;
     font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
     margin-left: 10px;
   }
@@ -871,17 +871,20 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   .block-text {
     display: inline-block;
     padding: 5px;
-    padding-left: 10px;
-  }
+    padding-left: 14px;
+    font-size: 12px;
+}
 
   .seperator {
     padding-left:0;
     padding-top: 0;
+	border:0px;
   }
 
   .mobilelineseperator {
     border-bottom: 1px solid #EEEEEE;
     margin-bottom: 8px;
+	padding-bottom: 7px;
     background-color: #FFF;
   }
 
