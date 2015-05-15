@@ -1,22 +1,25 @@
+<style>
+	.row-headings-market-news {
+		font-weight:bold;
+		font-size: 14px;
+		color: #666666;
+	}
+
+	.row-data-market-news-date {
+		font-size: 14px;
+		color: #999999;
+	}
+
+	.row-data-market-news-description {
+		font-size: 14px;
+		color: #2570E0;
+	}
+</style>
 <div>
 	<span class="headingFormat">Market news</span>
 </div>
 <div class="row"><hr/></div>
-<table class="noBorder" style="width:100%;">
-	<tbody ng-repeat="item in marketNews">
-		<tr>
-			<td class="row-headings-market-news">{{item.heading}}</td>
-		</tr>
-		<tr ng-repeat="row in item.details">
-			<td class="white-background"><span class="row-data-market-news-date">{{row.date}}</span><br/><span class="row-data-market-news-description">{{row.description}}</span></td>
-		</tr>
-		<tr>
-		<td class="white-background">
-		<div class="details-bluetext left">View more</div>
-		</td>
-		</tr>
-		<tr>
-		<td class="white-background" colspan="2"><hr/></td>
-		</tr>
-	</tbody>
-</table>
+<div><span class="row-headings-market-news">Sens</span></div>
+<div><span class="row-data-market-news-date">13 Feb 15:00</span></div>
+<div><span class="row-data-market-news-description">This is a description</span></div>
+<div class="row"><hr/></div>
