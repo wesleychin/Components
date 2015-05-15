@@ -6,6 +6,142 @@
 	<kendo-grid  options="sectorBreakdownGrid" k-selectable="'row'"></kendo-grid>
 </div>
 
-<kendo-chart options="sectorBreakdownChart" class="visible-for-medium-up" style="height:500px !important;"></kendo-chart>
+<div class="row hide-for-medium-up">
+	<div class="phone-table">
+		<div class="row" style="border-bottom: 1px solid #E3E3E3;">
+			<div class="inline-block" style="width:40%; padding-bottom:15px;"><i class="fa fa-caret-up text-green"></i>&nbsp;<span class="instrument-text-blue">
+				Banks</span>
+			</div>
+			<div class="inline-block right" style="width:25%; padding-bottom:15px;">
+				<span class="right instrument-data bold-text">Total cost</span>
+				<span class="right instrument-data-light-grey">R 1,980.29</span>
+			</div>
+			<div class="inline-block right" style="width:25%;">
+				<span class="right instrument-data bold-text">Market value</span>
+				<span class="right instrument-data-light-grey">R 1,980.29</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="inline-block" style="width:49%; padding-top:17px;">
+				<div class="inline-block left">
+					<span class="instrument-data-light-grey bold-text">Total movement % change</span> <br>
+					<span class="instrument-data-light-grey">% of Portfolio</span>
+				</div>
+			</div>
+			<div class="inline-block" style="width:49%;">
+				<span class="right text-green bold-text">+63.2% (R 1,251.69)</span><br>
+				<span class="right instrument-data-light-grey bold-text">0.16%</span>
+			</div>
+		</div>
+	</div>
+	<div class="phone-table">
+		<div class="row" style="border-bottom: 1px solid #E3E3E3;">
+			<div class="inline-block" style="width:40%; padding-bottom:15px;"><i class="fa fa-caret-down text-red"></i>&nbsp;<span class="instrument-text-blue">
+				Brewers</span>
+			</div>
+			<div class="inline-block right" style="width:25%; padding-bottom:15px;">
+				<span class="right instrument-data bold-text">Total cost</span>
+				<span class="right instrument-data-light-grey">R 1,980.29</span>
+			</div>
+			<div class="inline-block right" style="width:25%;">
+				<span class="right instrument-data bold-text">Market value</span>
+				<span class="right instrument-data-light-grey">R 1,980.29</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="inline-block" style="width:49%; padding-top:17px;">
+				<div class="inline-block left">
+					<span class="instrument-data-light-grey bold-text">Total movement % change</span> <br>
+					<span class="instrument-data-light-grey">% of Portfolio</span>
+				</div>
+			</div>
+			<div class="inline-block" style="width:49%;">
+				<span class="right text-red bold-text">-63.2% (R 1,251.69)</span><br>
+				<span class="right instrument-data-light-grey bold-text">0.16%</span>
+			</div>
+		</div>
+	</div>
+</div>
 
-<highchart id="chart" config="sectorBreakdownChartHighCharts"></highchart>
+
+
+
+
+
+
+
+
+<div class="hide-for-medium-up">
+	<div class="phone-table">
+		<div class="row" style="border-bottom: 1px solid #E3E3E3;">
+			<div class="inline-block" style="width:40%; padding-bottom:15px;"><i class="fa fa-caret-up text-green"></i>&nbsp;<span class="instrument-text-blue">
+				Banks</span>
+			</div>
+			<div class="inline-block right" style="width:25%; padding-bottom:15px;">
+				<span class="right instrument-data bold-text">Total cost</span>
+				<span class="right instrument-data-light-grey">R 1,980.29</span>
+			</div>
+			<div class="inline-block right" style="width:25%;">
+				<span class="right instrument-data bold-text">Market value</span>
+				<span class="right instrument-data-light-grey">R 1,980.29</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="inline-block" style="width:49%; padding-top:17px;">
+				<div class="inline-block left">
+					<span class="instrument-data-light-grey bold-text">Total movement % change</span> <br>
+					<span class="instrument-data-light-grey">% of Portfolio</span>
+				</div>
+			</div>
+			<div class="inline-block" style="width:49%;">
+				<span class="right text-green bold-text">+63.2% (R 1,251.69)</span><br>
+				<span class="right instrument-data-light-grey bold-text">0.16%</span>
+			</div>
+		</div>
+	</div>
+
+	<div style="border-bottom: 1px solid #E9E9E9; height: 105px;">
+		<div class="row" style="padding-left:10px !important;">
+			<div class="columns large-12 phone-color left">
+				<div class="details-overview inline-block">
+					<div class="block-text instrument-bold-text">
+						<i class="fa fa-caret-up text-green"></i>&nbsp;<span class="instrument-text-blue">
+						FSRABL</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="columns large-12 phone-color left">
+			<div class="details-overview inline-block seperator">
+				<span class="block-text instrument-bold-text padding-for-bold-instruments">
+					Total movement
+				</span>
+				<div class="details-overview-amounts-bold-phone">
+					<span class="account-details-amounts-bold-phone">
+						{{cashSummaryComponent.ostModel.totalInitialMarginFormatted}}
+					</span>
+				</div>
+			</div>
+			<div class="details-overview inline-block seperator">
+				<span class="block-text instrument-bold-text padding-for-bold-instruments">
+					% of Portfolio
+				</span>
+				<div class="details-overview-amounts-bold-phone">
+					<span class="account-details-amounts-bold-phone">
+						{{cashSummaryComponent.ostModel.totalInitialMarginFormatted}}
+					</span>
+				</div>
+			</div>
+			<div class="details-overview inline-block seperator">
+				<span class="block-text instrument-bold-text padding-for-bold-instruments">
+					On expiry
+				</span>
+				<div class="details-overview-amounts-bold-phone">
+					<span class="account-details-amounts-bold-phone">
+						{{cashSummaryComponent.ostModel.marginProductPLFormatted}}
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

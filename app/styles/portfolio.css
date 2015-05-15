@@ -45,26 +45,6 @@
   margin-top: 10px;
 }
 
-.row-headings-market-news {
-  font-weight:bold;
-  font-size: 14px;
-  color: #666666;
-}
-
-.row-data-market-news-date {
-  font-size: 14px;
-  color: #999999;
-  margin-bottom: 10px; 
-  border-bottom: 1px solid #E3E4E4;
-}
-
-.row-data-market-news-description {
-  font-size: 14px;
-  color: #2570E0;
-  margin-bottom: 10px; 
-  border-bottom: 1px solid #E3E4E4;
-}
-
 .portfolio-performance-previous-years {
   font-size: 14px;
   color: #666666;
@@ -251,13 +231,6 @@ div.years-selection:hover > i {
 .text-grey-instruments-qty-value {
   color: #b5b5b5;
   font-size: 14px;
-}
-
-
-.text-green {
-  color: #007F00;
-  font-size: 14px;
-  font-size: 1.4rem;
 }
 
 .text-green-large {
