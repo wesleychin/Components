@@ -7,8 +7,17 @@ body {
 }
 
 .tab-bar {
-  height: 5rem;	
+  height: 45px;
+  position:fixed; 
+  top:0px; 
+  margin:auto; 
+  z-index:100000; 
+  width:100%;
 }
+
+.body-wrapper {
+  background: #e9eaed;
+  padding-top: 115px; }
 
 .header-icons {
   right: 45px;
@@ -139,7 +148,7 @@ a {
 }
 
 .text-blue {
-  color : #0000FF !important;
+  color : #2f67b1 !important;
 }
 
 .text-grey {
@@ -702,6 +711,7 @@ multiselect .dropdown-menu {
   padding: 2px;
   position: absolute; 
   background-color: #FFF !important;
+  z-index: 100;
 }
 
 multiselect .dropdown-menu > li > a {
