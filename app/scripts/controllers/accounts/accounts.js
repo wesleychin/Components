@@ -2,10 +2,10 @@
 
 angular.module('componentsApp')
 .controller('AccountsCtrl', function ($scope, $http, $timeout, $filter) {
-	$scope.view = 2;
+	$scope.view = 1;
 	$scope.time = moment().format('h:mm:ss');
 	$scope.date = moment().format('YYYY/MM/DD'); 
-	$scope.idSelectedVote = 2;
+	$scope.idSelectedVote = 1;
 	$scope.downloadOptions = [ 'pdf', 'xls', 'csv'];
 	$scope.streamingButtonActive = true;
 
