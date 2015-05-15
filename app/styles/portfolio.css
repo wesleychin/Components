@@ -182,9 +182,9 @@
 }
 
 .years-selection {
-  border-left: 1px solid #2570E0;
-  border-top: 1px solid #2570E0;
-  border-bottom: 1px solid #2570E0;
+  border-left: 1px solid #2f67b1;
+  border-top: 1px solid #2f67b1;
+  border-bottom: 1px solid #2f67b1;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
@@ -206,14 +206,14 @@ div.years-selection:hover > i {
 .back-arrow {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  height: 39px;
+  height: auto;
 }
 
 .forward-arrow {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  border-right: 1px solid #2570E0;
-  height: 39px;
+  border-right: 1px solid #2f67b1;
+  height: auto;
 }
 
 .padding-below-performers {

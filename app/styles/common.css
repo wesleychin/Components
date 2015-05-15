@@ -148,7 +148,7 @@ a {
 }
 
 .text-blue {
-  color : #0000FF !important;
+  color : #2f67b1 !important;
 }
 
 .text-grey {
@@ -711,6 +711,7 @@ multiselect .dropdown-menu {
   padding: 2px;
   position: absolute; 
   background-color: #FFF !important;
+  z-index: 100;
 }
 
 multiselect .dropdown-menu > li > a {
