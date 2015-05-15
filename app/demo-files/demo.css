@@ -136,7 +136,6 @@ p {
 	padding: .25em .5em;
 	line-height: 1.5;
 	height: 1.5em;
-	font-size:12px;
 }
 #testDrive {
 	display: block;
@@ -147,5 +146,8 @@ p {
 	font-size: 16px;
 }
 .fs1 {
+	font-size: 32px;
+}
+.fs2 {
 	font-size: 24px;
 }
