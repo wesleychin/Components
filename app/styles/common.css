@@ -8,101 +8,112 @@ body {
 
 .tab-bar {
   height: 45px;
-  position:fixed; 
-  top:0px; 
-  margin:auto; 
-  z-index:100000; 
-  width:100%;
+  position: fixed; 
+  top: 0; 
+  margin: auto; 
+  z-index: 100000; 
+  width: 100%;
 }
 
 .body-wrapper {
-  background: #e9eaed;
-  padding-top: 115px; }
+  background: #E9EAED;
+  padding-top: 115px; 
+}
 
-  .header-icons {
-    right: 45px;
-    font-size: 26px; font-size: 2.6rem;
-    position: absolute;
-    color : #0000FF;
-    top: 8px !important;
-  }
+.header-icons {
+  right: 45px;
+  font-size: 26px; font-size: 2.6rem;
+  position: absolute;
+  color : #0000FF;
+  top: 8px !important;
+}
 
-  div.header div.header-top .sign-out-header {
-    position: absolute;
-    right: -25px;
-    top: 8px;
-    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-    font-size: 14px; font-size: 1.4rem;
-    color: #2570e0;
-  }
+div.header div.header-top .sign-out-header {
+  position: absolute;
+  right: -25px;
+  top: 8px;
+  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+  font-size: 14px; font-size: 1.4rem;
+  color: #2570E0;
+}
 
-  .dropdown.button::after, button.dropdown::after {
-    font-family: 'FontAwesome';
-    content: "\f078";
-    border: none;
-    margin-top: 0 !important;
-    top: 10px;
-    text-align: right;
-  }
+.dropdown.button::after, button.dropdown::after {
+  font-family: 'FontAwesome';
+  content: "\f078";
+  border: none;
+  margin-top: 0 !important;
+  top: 10px;
+  text-align: right;
+}
 
-  .dropdown.button.small::after, button.dropdown.small::after {
-    border-width: 0.4375rem;
-    right: 20px !important;
-    margin-top: -0.15625rem;
-  }
+.dropdown.button.small::after, button.dropdown.small::after {
+  border-width: 0.4375rem;
+  right: 20px !important;
+  margin-top: -0.15625rem;
+}
 
-  .dropdown.button.small, button.dropdown.small {
-    padding-right: 5rem;
-  }
+.dropdown.button.small, button.dropdown.small {
+  padding-right: 5rem;
+}
 
-  .empty-box-container {
-    height: auto;
-  }
+.empty-box-container {
+  height: auto;
+}
 
-  a {
-    color: #555;
-    text-decoration: none;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  }
+a {
+  color: #555;
+  text-decoration: none;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
 
-  .acc-empty-boxes {
-    height: 45px;
-    background: #EFF0F3;
-    float: left;
-    color: #2570E0;
-    font-size:12px; font-size:1.2rem;
-    padding-left: 10px;
-    margin-right: 0;
-    padding-top: 10px;
-    border-top: 1px solid #C9CACB;
-    border-left: 1px solid #C9CACB;
-    border-bottom: 1px solid #C9CACB;
-    border-right: 0 solid #C9CACB;
-    margin-bottom: 4px;
-    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-    border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px;
-  }
+.acc-empty-boxes {
+  height: 45px;
+  background: #EFF0F3;
+  float: left;
+  color: #2570E0;
+  font-size:12px; font-size:1.2rem;
+  padding-left: 10px;
+  margin-right: 0;
+  padding-top: 10px;
+  border-top: 1px solid #C9CACB;
+  border-left: 1px solid #C9CACB;
+  border-bottom: 1px solid #C9CACB;
+  border-right: 0 solid #C9CACB;
+  margin-bottom: 4px;
+  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
 
-  .selected {
+/*.selected {
+  background-color: #FFF;
+  border-left: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  border-top: 1px solid #999999;
+  width: 102%;
+  margin-right: 0;
+  color: #333;
+  position: absolute;
+  z-index: 10000 !important;
+  overflow: hidden;
+  font-weight: bold;
+  }*/
+
+.selected {
     background-color: #FFF;
-    border-left: 1px solid #999999;
-    border-bottom: 1px solid #999999;
-    border-top: 1px solid #999999;
-    width: 102%;
-    margin-right: 0;
-    color: #333;
-    position: absolute;
-    z-index: 10000 !important;
-    overflow: hidden;
-    font-weight: bold;
-  }
+  border-left:1px solid #999999; border-bottom:1px solid #999999; border-top:1px solid #999999;
+  width:101%;
+  color:#000;
+  position:relative;
+  z-index: 1000 !important;
+  overflow:hidden;
+}
 
-  .noLeftPadding {
-   padding-left: 0 !important;
- }
+.noLeftPadding {
+ padding-left: 0 !important;
+}
 
- .search-textbox {
+.search-textbox {
   padding-right: 7px;
 }
 
@@ -111,7 +122,7 @@ body {
   width: 50px;
   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
   display: inline-block;
-  padding:2px;
+  padding: 2px;
   text-align: center;
 }
 
@@ -167,7 +178,7 @@ body {
 
 .disclaimer-text {
   color: #666666;
-  font-size: 11;
+  font-size: 11px;
 }
 
 .k-grid {
@@ -482,7 +493,6 @@ dropdown.button, button.dropdown {
 
 .f-dropdown-small {
  position: absolute;
- left: auto;
  list-style: none;
  margin-left: 0;
  outline: none;
@@ -492,7 +502,6 @@ dropdown.button, button.dropdown {
  border: solid 1px #999;
  font-size: 13px;
  z-index: 89;
- width: auto;
  margin-top: -2px;
  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
  border-bottom-left-radius: 3px;
@@ -513,7 +522,6 @@ dropdown.button, button.dropdown {
 
 .f-dropdown-medium {
  position: absolute;
- left: auto;
  list-style: none;
  margin-left: 0;
  outline: none;
@@ -523,7 +531,6 @@ dropdown.button, button.dropdown {
  border: solid 1px #999;
  font-size: 13px;
  z-index: 89;
- width: auto;
  margin-top: -2px;
  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
  border-bottom-left-radius: 3px;
@@ -877,7 +884,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   .seperator {
     padding-left:0;
     padding-top: 0;
-    border:0px;
+    border: 0;
   }
 
   .mobilelineseperator {
@@ -896,7 +903,6 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     display: block;
     line-height: 1;
-    font-size: 15px;
     padding-top: 8px;
     font-size: 14px;
   }
@@ -929,11 +935,10 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     max-width: 98%;
   }
 
-
   div.sub-header-wrapper .sub-header .sub-header-options {
     font-size: 16px;
     font-family: "HelveticaNeue-Bold", "robotobold", Arial, sans-serif;
-    color: #2570e0;
+    color: #2570E0;
     width: auto !important;
   }
 
@@ -950,36 +955,40 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
    top: 8px;
    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
    font-size: 14px; font-size: 1.4rem;
-   color: #2570e0;
+   color: #2570E0;
  }
 
  .details-overview-bluetext {
-  font-size: 13px;
-  font-size: 1.3rem;
-  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-  display: inline-block;
-  margin-right: 10px;
-  position: absolute;
-  top: 45px;
-  right: 190px;
-}
+    font-size: 13px;
+    font-size: 1.3rem;
+    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    top: 45px;
+    right: 190px;
+  }
 
-.top-widgets {
-  height: 100%;
-  width: 18% !important;
-  display: inline-block;
-  padding: 2px;
-  padding-bottom: 8px;
-  color: #FFFFFF;
-  text-align: center;
-}
+  .top-widgets {
+    height: 100%;
+    width: 18% !important;
+    display: inline-block;
+    padding: 2px;
+    padding-bottom: 8px;
+    color: #FFFFFF;
+    text-align: center;
+  }
 
-.margintop {margin-top:20px;}
+  .margintop {
+    margin-top:20px;
+  }
 
-.cashsummarywrap {margin-top: 15px;
-  padding-left: 0;
-  border: none;}
-  
+  .cashsummarywrap {
+    margin-top: 15px;
+    padding-left: 0;
+    border: none;
+  }
+
   .header-icons {
     right: 45px;
     font-size: 26px; font-size: 2.6rem;
@@ -988,5 +997,4 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     color : #0000FF;
     top: 8px !important;
   }
-
 }

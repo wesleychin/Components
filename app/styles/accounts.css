@@ -73,7 +73,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 	font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 	display: inline-block;
 	margin-right: 20px;
-	font-weight:900;
+	font-weight: 900;
 }
 
 .streaming-button {
@@ -92,11 +92,10 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 }
 
 .totalchange-padding {
-		margin-left:15px;}
-		
+	margin-left: 15px;
+}
 
 @media only screen and (max-width: 40em) {
-	
 	.block-portfolio-value-text {
 		display: block;
 	}
@@ -119,13 +118,11 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		background: #EFF0F3;
 	}
 	
-		
 	.details-overview-amounts-bold-phone {
 		float: right;
 		padding-right: 15px;
-		font-weight:900 !important;
+		font-weight: 900 !important;
 	}
-
 
 	.details-overview-amounts-bold-phone {
 		float: right;
@@ -150,7 +147,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		color: #666666; 
 		font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 		display: inline-block;
-		font-weight:normal !important;
+		font-weight: normal !important;
 		padding-top: 7px;
 		margin-right: 0;
 	}
@@ -192,9 +189,9 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		background-color: #FFF;
 	}
 	
-		.body-wrapper {
+	.body-wrapper {
 		padding-top: 98px;
-		margin-top:0;
+		margin-top: 0;
 	}
 
 	.text-blue-instruments-name {
@@ -234,11 +231,9 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 	.text-grey-instruments-paddlingleft {
 		color: #999;
 		font-size: 12px;
-		padding-left:10px;
+		padding-left: 10px;
 	}
 }
-
-
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	.details-overlay {
