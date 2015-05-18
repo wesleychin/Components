@@ -8,7 +8,7 @@
 					<input class="custom-text" placeholder="Search portfolio instruments" type="text" name="searchInstruments">
 				</div>
 			</div>
-			<div class="inline-block visible-for-medium-up" style="padding-right: 10px;">
+			<div class="inline-block visible-for-medium-up portfolio-overview-manage-columns-padding">
 				<multiselect class="input-xlarge" multiple="true"
 				ng-model="selectedCar"
 				options="c.name for c in cars"
@@ -16,7 +16,7 @@
 			</div>
 			<div class="portfolio-performance-buttons right visible-for-medium-up">
 				<div class="inline-block">
-					<button dropdown-toggle="#downloads" class="button dropdown" style="width:133px;">Downloads</button>
+					<button dropdown-toggle="#downloads" class="button dropdown portfolio-overview-download-button">Downloads</button>
 					<ul id="downloads" class="f-dropdown-medium">
 						<li class="list-separator"><a href="#">PDF</a></li>
 						<li class="list-separator"><a href="#">XLS</a></li>
@@ -57,53 +57,53 @@
 
 <div class="hide-for-medium-up">
 	<div class="phone-table">
-		<div class="row" style="border-bottom: 1px solid #E3E3E3;">
-			<div class="inline-block" style="border-right: 1px solid #E3E3E3; width:49%; padding-bottom:15px;">
+		<div class="row portfolio-overview-mobile-border">
+			<div class="inline-block portfolio-overview-mobile-instrument-name">
 				<span class="instrument-code">ACN</span><br/><span class="instrument-name">Accenture PLC</span>
 			</div>
-			<div class="inline-block" style="width:49%;">
+			<div class="inline-block portfolio-overview-mobile-instrument-value">
 				<span class="right instrument-value-large">72.37</span>
 			</div>
 		</div>
 		<div class="row">
-			<div class="inline-block" style="width:49%; padding-top:17px; border-right:1px solid #dbdbdb;">
-				<div class="inline-block left" style="width:39%;">
+			<div class="inline-block portfolio-overview-mobile-additional-information">
+				<div class="inline-block left portfolio-overview-mobile-quantity">
 					<span class="instrument-data bold-text">QTY:2</span><br/>
 					<span class="instrument-data text-grey">(-2)</span>&nbsp;
 					<span class="instrument-data text-red">[-5]</span>
 				</div>
-				<div class="inline-block" style="width:59%;">
-					<span class="right instrument-data text-grey" style="padding-right:15px;">Unit cost</span><br/>
-					<span class="right instrument-data bold-text" style="padding-right:15px;">150.50</span>
+				<div class="inline-block portfolio-overview-mobile-unit-cost">
+					<span class="right instrument-data text-grey portfolio-overview-mobile-instrument-padding">Unit cost</span><br/>
+					<span class="right instrument-data bold-text portfolio-overview-mobile-instrument-padding">150.50</span>
 				</div>
 			</div>
-			<div class="inline-block" style="width:49%;">
+			<div class="inline-block portfolio-overview-mobile-instrument-value">
 				<span class="right instrument-percentage text-green-large bold-text">2.4 (2.0%)&nbsp;<i class="fa fa-caret-up"></i></span>
 			</div>
 		</div>
 	</div>
 	<div class="phone-table">
-		<div class="row" style="border-bottom: 1px solid #E3E3E3;">
-			<div class="inline-block" style="border-right: 1px solid #E3E3E3; width:49%; padding-bottom:15px;">
+		<div class="row portfolio-overview-mobile-border">
+			<div class="inline-block portfolio-overview-mobile-instrument-name">
 				<span class="instrument-code">ACN</span><br/><span class="instrument-name">Accenture PLC</span>
 			</div>
-			<div class="inline-block" style="width:49%;">
+			<div class="inline-block portfolio-overview-mobile-instrument-value">
 				<span class="right instrument-value-large">72.37</span>
 			</div>
 		</div>
 		<div class="row">
-			<div class="inline-block" style="width:49%; padding-top:17px; border-right:1px solid #dbdbdb;">
-				<div class="inline-block left" style="width:39%;">
+			<div class="inline-block portfolio-overview-mobile-additional-information">
+				<div class="inline-block left portfolio-overview-mobile-quantity">
 					<span class="instrument-data bold-text">QTY:2</span><br/>
 					<span class="instrument-data text-grey">(-2)</span>&nbsp;
 					<span class="instrument-data text-green">[+5]</span>
 				</div>
-				<div class="inline-block" style="width:59%;">
-					<span class="right instrument-data text-grey" style="padding-right:15px;">Unit cost</span><br/>
-					<span class="right instrument-data bold-text" style="padding-right:15px;">150.50</span>
+				<div class="inline-block portfolio-overview-mobile-unit-cost">
+					<span class="right instrument-data text-grey portfolio-overview-mobile-instrument-padding">Unit cost</span><br/>
+					<span class="right instrument-data bold-text portfolio-overview-mobile-instrument-padding">150.50</span>
 				</div>
 			</div>
-			<div class="inline-block" style="width:49%;">
+			<div class="inline-block portfolio-overview-mobile-instrument-value">
 				<span class="right instrument-percentage text-red-large bold-text">-2.4 (2.0%)&nbsp;<i class="fa fa-caret-down"></i></span>
 			</div>
 		</div>
@@ -120,27 +120,27 @@
 		</div>
 	</div>
 	<div class="phone-table">		
-		<div class="row" style="border-bottom: 1px solid #E3E3E3;">
-			<div class="inline-block" style="border-right: 1px solid #E3E3E3; width:49%; padding-bottom:15px;">
+		<div class="row portfolio-overview-mobile-border">
+			<div class="inline-block portfolio-overview-mobile-instrument-name">
 				<span class="instrument-code">ACN</span><br/><span class="instrument-name">Accenture PLC</span>
 			</div>
-			<div class="inline-block" style="width:49%;">
+			<div class="inline-block portfolio-overview-mobile-instrument-value">
 				<span class="right instrument-value-large">72.37</span>
 			</div>
 		</div>
 		<div class="row">
-			<div class="inline-block" style="width:49%; padding-top:17px; border-right:1px solid #dbdbdb;">
-				<div class="inline-block left" style="width:39%;">
+			<div class="inline-block portfolio-overview-mobile-additional-information">
+				<div class="inline-block left portfolio-overview-mobile-quantity">
 					<span class="instrument-data bold-text">QTY:2</span><br/>
 					<span class="instrument-data text-grey">(-2)</span>&nbsp;
 					<span class="instrument-data text-green">[+5]</span>
 				</div>
-				<div class="inline-block" style="width:59%;">
-					<span class="right instrument-data text-grey" style="padding-right:15px;">Unit cost</span><br/>
-					<span class="right instrument-data bold-text" style="padding-right:15px;">150.50</span>
+				<div class="inline-block portfolio-overview-mobile-unit-cost">
+					<span class="right instrument-data text-grey portfolio-overview-mobile-instrument-padding">Unit cost</span><br/>
+					<span class="right instrument-data bold-text portfolio-overview-mobile-instrument-padding">150.50</span>
 				</div>
 			</div>
-			<div class="inline-block" style="width:49%;">
+			<div class="inline-block portfolio-overview-mobile-instrument-value">
 				<span class="right instrument-percentage text-red-large bold-text">-2.4 (2.0%)&nbsp;<i class="fa fa-caret-down"></i></span>
 			</div>
 		</div>

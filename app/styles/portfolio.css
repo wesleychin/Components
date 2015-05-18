@@ -404,6 +404,46 @@ div.years-selection:hover > i {
   color: #2570E0;
 }
 
+.portfolio-overview-manage-columns-padding {
+  padding-right: 10px;
+}
+
+.portfolio-overview-download-button {
+  width:133px;
+}
+
+.portfolio-overview-mobile-border {
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.portfolio-overview-mobile-instrument-name {
+  border-right: 1px solid #E3E3E3; 
+  width:49%; 
+  padding-bottom:15px;
+}
+
+.portfolio-overview-mobile-instrument-value {
+  width:49%;
+}
+
+.portfolio-overview-mobile-additional-information {
+  width:49%; 
+  padding-top:17px; 
+  border-right:1px solid #dbdbdb;
+}
+
+.portfolio-overview-mobile-quantity {
+  width:39%;
+}
+
+.portfolio-overview-mobile-unit-cost {
+  width:59%;
+}
+
+.portfolio-overview-mobile-instrument-padding {
+  padding-right:15px;
+}
+
 .sector-name {
   width: 40%; 
   padding-bottom: 15px;
