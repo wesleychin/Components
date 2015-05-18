@@ -32,7 +32,7 @@
               {{cashSummaryComponent.ostModel.quoteBankBalance}}</a>
             </div>
             <div class="inline-block">
-              <button dropdown-toggle="#live" class="button dropdown small" style="width:91px;">
+              <button dropdown-toggle="#live" class="button dropdown small cash-summary-button-size">
                 {{cashSummaryComponent.ostModel.selectedPriceType.priceTypeName}}
               </button>
               <br>
@@ -44,7 +44,7 @@
             </div>
             &nbsp;
             <div class="inline-block">
-              <button dropdown-toggle="#bid" class="button dropdown small" style="width:91px;">
+              <button dropdown-toggle="#bid" class="button dropdown small cash-summary-button-size">
                 {{cashSummaryComponent.ostModel.selectedBidRulingType.bidRulingTypeName}}
               </button>
               <br>
@@ -90,6 +90,7 @@
               <span class="block-text">
                 Today's derivatives P&amp;L
               </span>
+
               <div class="details-overview-amounts-bold-phone">
                 <span class="account-details-amounts-bold-phone">
                   {{cashSummaryComponent.ostModel.marginProductPLFormatted}}
@@ -99,7 +100,7 @@
             <div class="details-overview inline-block seperator mobilelineseperator">
               <span class="block-text">
                 Total cash
-              </span>
+                </span>
               <div class="details-overview-amounts-bold-phone">
                 <span class="account-details-amounts-bold-phone">
                   {{cashSummaryComponent.ostModel.totalCashValueFormatted}}
@@ -108,7 +109,6 @@
             </div>
             <div class="details-overview inline-block seperator">
               <span class="block-text">Available trading funds</span>
-
               <div class="details-overview-amounts-bold-phone">
                 <span class="account-details-amounts-bold-phone">
                   {{cashSummaryComponent.ostModel.availableTradingFundsFormatted}}

@@ -1,30 +1,31 @@
 <div class="sub-header-wrapper">
-  <div class="sub-header-grid">
-    <div class="sub-header row clearfix">
-      <div class="show-for-medium-up left">
-        <ul class="account-breadcrumb">
-          <li class="inline-block" ng-repeat="crumb in breadcrumbComponent.ostModel.crumbs" ng-class="{ 'unavailable': crumb.unavailable, 'current': $last }"><a class="sub-header-title base-link-color pointer" href="{{crumb.link}}">{{crumb.text}}</a>&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i>&nbsp;&nbsp;&nbsp;</li>
-          <li class="inline-block">
-            <div class ="account-details-dropdown">
-              <p class="show-for-medium-up accounts-dropdown">
-                <a class="accounts-dropdown" dropdown-toggle="#accounts-dropdown">{{selectedAccount}}&nbsp;&nbsp;<i class="fa fa-chevron-down"></i></a>
-              </p>
-              <ul id="accounts-dropdown" class="f-dropdown options-position rounded-dropdown-corners account-dropdown-position">
-                <li class="list-separator" ng-model="breadcrumbComponent.ostModel.selectedAccount"
-                ng-repeat="x in breadcrumbComponent.ostModel.accounts"
-                ng-click="setSelectedAccount(x.AccountId)">
-                <a>{{x.AccountId}}</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
+    <div class="sub-header-grid">
+        <div class="sub-header row clearfix">
+            <div class="show-for-large-up left">
+                <ul class="account-breadcrumb">
+                    <li class="inline-block" ng-repeat="crumb in breadcrumbComponent.ostModel.crumbs"
+                        ng-class="{ 'unavailable': crumb.unavailable, 'current': $last }"><a
+                            class="sub-header-title base-link-color pointer" href="{{crumb.link}}">{{crumb.text}}</a>&nbsp;&nbsp;&nbsp;<i
+                            class="fa fa-chevron-right"></i>&nbsp;&nbsp;&nbsp;</li>
+                    <li class="inline-block"
+                        ng-if="breadcrumbComponent.ostModel.accounts && breadcrumbComponent.ostModel.accounts.length">
+                        <a class="accounts-dropdown sub-header-title" dropdown-toggle="#account-dropdown">Account -
+                            {{breadcrumbComponent.ostModel.selectedAccount.AccountId}}&nbsp;&nbsp;<i
+                                    class="fa fa-chevron-down"></i></a>
+                        <ul id="account-dropdown"
+                            class="f-dropdown options-position rounded-dropdown-corners account-dropdown-position">
+                            <li class="list-separator" ng-repeat="account in breadcrumbComponent.filterAccountList()">
+                                <a ng-click="breadcrumbComponent.onAccountChanged({selectedAccountId: account.AccountId})">{{account.AccountId}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="right sub-header-options columns small-3 medium-3 large-4">
+                <span class="right small-3 medium-3"><i class=" sub-header-options fi-magnifying-glass"></i></span>
+                <span class="right small-3 medium-3">Transfer</span>
+                <span class="right small-3 medium-3">Trade</span>
+            </div>
+        </div>
     </div>
-    <div class="right sub-header-options columns small-3 medium-5 large-4">
-      <span class="right small-3 medium-1"><i class=" sub-header-options fi-magnifying-glass"></i></span>
-      <span class="right small-3 medium-1">Transfer</span>
-      <span class="right small-3 medium-1">Trade</span>
-    </div>
-  </div>
-</div>
 </div>
