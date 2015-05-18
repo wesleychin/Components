@@ -604,6 +604,10 @@ div.acc-trans-body-container {
   font-size: 14px;
 }
 
+.no-right-margin {
+  margin-right: 0;
+}
+
 multiselect {
   background-color: #FFF;
 }
