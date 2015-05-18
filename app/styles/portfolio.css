@@ -428,7 +428,6 @@ div.years-selection:hover > i {
 }
 
 .sector-additional-information {
-  border-bottom: 1px solid #E9E9E9; 
   height: 105px;
 }
 
@@ -474,7 +473,12 @@ div.years-selection:hover > i {
    margin-bottom: 8px; 
  }
 
- .padding-for-bold-instruments {
+ .sector-mobile-hr {
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.padding-for-bold-instruments {
   margin-left:10px !important;
   margin-right:10px !important;
   padding-top: 5px;
