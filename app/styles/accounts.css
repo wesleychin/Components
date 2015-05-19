@@ -88,8 +88,12 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 	margin-left: 15px;
 }
 
-.cash-summary-button-size {
-	width: 91px;
+.bid-button {
+	width:91px;
+}
+
+.live-button {
+	width:91px;
 }
 
 @media only screen and (max-width: 40em) {
