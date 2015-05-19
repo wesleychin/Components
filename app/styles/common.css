@@ -883,6 +883,10 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   border-bottom: none !important;
 }
 
+.highcharts-legend {
+  display: none;
+}
+
 .error-message {
   color: red;
   text-align:center;

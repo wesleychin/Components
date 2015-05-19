@@ -2,51 +2,33 @@
 
 angular.module('componentsApp')
 .controller('SectorBreakdownCtrl', function ($scope, $http, $timeout, $filter) {
-	$scope.sectorBreakdownGrid = {
-		dataSource:{  
-			type:"json",
-			transport:{  
-				read:{  
-					url:"api/portfolio/sector-breakdown.json"
-				}
+	$scope.chartConfig = {
+		options: {
+			chart: {
+				type: 'bar'
 			},
-			serverPaging: true,
-			serverSorting: true
+			plotOptions: {
+				series: {
+					stacking: 'normal'
+				}
+			}
 		},
-		sortable: true,
-		pageable: false,
-		scrollable: false,
-		columns:[  
-		{  
-			field:"symbol",
-			title:" ",
-			template: '<span class="right" ng-class="{\'k-icon k-i-arrow-n\': dataItem.symbol == \'increase\', \'k-icon k-i-arrow-s\': dataItem.symbol == \'decrease\', \'k-icon k-i-arrow-e\': dataItem.symbol == \'neutral\'}"></span>'
+		title: {
+			text: ''
 		},
-		{  
-			field:"sectorName",
-			title:"Sector name",
-			template: '<span class="text-blue">#: sectorName# &nbsp;<i class="fa fa-exclamation-circle text-red"></i></span>'
+		xAxis: {
+			categories: ['Banks', 'Diversified Industrials', 'Exchange Traded Funds', 'Food Products', 'General Mining', 'Health Care Providers', 'Industrials & Office REITs', 'Investment Services', 'Iron & Steel']
 		},
-		{  
-			field:"cost",
-			title:"Cost",
-			template: '<span class="right">#: cost#</span>',
+		yAxis: {
+			min: 0,
+			max: 100
 		},
-		{  
-			field:"marketValue",
-			title:"Market value",
-			template: '<span class="right">#: marketValue#</span>'
-		},
-		{  
-			field:"difference",
-			title:"% Difference (Difference)",
-			template: '<span class="right">#: difference#</span>'
-		},
-		{  
-			field:"portfolio",
-			title:"% of portfolio",
-			template: '<span class="right">#: portfolio#</span>'
-		}
-		]
+		series: [{
+			name: 'Stuff',
+			data: [87, 80, 90, 92, 75, 65, 40, 30, 50, 25]
+		}, {
+			name: 'Other Stuff',
+			data: [13, 20, 10, 8, 25, 35, 60, 70, 50, 75]
+		}]
 	}
 });		
