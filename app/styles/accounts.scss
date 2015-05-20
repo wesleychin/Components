@@ -1,7 +1,9 @@
+$grey1: #E9EAED;
+
 .account-breadcrumb {
 	display: inline-block;
 	padding: 0;
-	background-color: #E9EAED;
+	background-color: $grey1;
 	height: 26px;
 	font-size: 16px; font-size: 1.6rem;
 }

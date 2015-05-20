@@ -14,23 +14,17 @@ angular.module('componentsApp')
 			},
 			tooltip: {
 				enabled: false
+			},
+			plotOptions: {
+				series: {
+					pointWidth: 40,
+					stacking: 'normal'
+				}
 			}
 		},
 		title:{
 			text:''
 		},
-        plotOptions: {
-            column: {
-                stacking: 'normal',
-                dataLabels: {
-                    enabled: true,
-                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
-                    style: {
-                        textShadow: '0 0 3px black'
-                    }
-                }
-            }
-        },
 		series: [{
 			color: "green",
 			negativeColor: "red", 
