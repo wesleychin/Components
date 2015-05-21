@@ -10,24 +10,24 @@
 
   .tab-bar {
     height: 45px;
-    position: fixed; 
-    top: 0; 
-    margin: auto; 
-    z-index: 100000; 
+    position: fixed;
+    top: 0;
+    margin: auto;
+    z-index: 100000;
     width: 100%;
   }
 
   .body-wrapper {
-    background: $grey-5;
+    background: $silver-grey;
     /*padding-top: 57px; */
-    padding-top: 115px; 
+    padding-top: 115px;
   }
 
   .header-icons {
     right: 45px;
     font-size: 26px; font-size: 2.6rem;
     position: absolute;
-    color : $bright-blue;
+    color : $links-blue;
     top: 8px !important;
   }
 
@@ -37,7 +37,7 @@
     top: 8px;
     font-family: $font-family;
     font-size: $font-size-px; font-size: $font-size-rem;
-    color: $bright-blue;
+    color: $links-blue;
   }
 
   .dropdown.button::after, button.dropdown::after {
@@ -71,17 +71,17 @@
 
   .acc-empty-boxes {
     height: 45px;
-    background: $grey;
+    background: $pale-grey;
     float: left;
-    color: $bright-blue;
+    color: $links-blue;
     font-size:12px; font-size:1.2rem;
     padding-left: 10px;
     margin-right: 0;
     padding-top: 10px;
-    border-top: 1px solid $dark-grey;
-    border-left: 1px solid $dark-grey;
-    border-bottom: 1px solid $dark-grey;
-    border-right: 0 solid $dark-grey;
+    border-top: 1px solid $light-grey;
+    border-left: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
+    border-right: 0 solid $light-grey;
     margin-bottom: 4px;
     font-family: $font-family;
     border-bottom-left-radius: 3px;
@@ -90,8 +90,8 @@
 
   .selected {
     background-color: $white;
-    border-left: 1px solid $very-dark-grey; 
-    border-bottom: 1px solid $very-dark-grey; 
+    border-left: 1px solid $very-dark-grey;
+    border-bottom: 1px solid $very-dark-grey;
     border-top: 1px solid $very-dark-grey;
     width: 101%;
     color: $black;
@@ -109,13 +109,13 @@
 }
 
 .enabled {
-  background-color: $bright-blue;
+  background-color: $links-blue;
   color: $white;
 }
 
 .disabled {
-  background-color: $light-grey;
-  color: $bright-blue;
+  background-color: $silver-grey;
+  color: $links-blue;
 }
 
 .seperator {
@@ -132,7 +132,7 @@
 }
 
 .text-blue {
-  color : $bright-blue !important;
+  color : $links-blue !important;
 }
 
 .text-grey {
@@ -195,25 +195,25 @@ no-padding-top {
 
 .session-timed-out-buttons {
   font-size: 12px;
-  color: $bright-blue;
+  color: $links-blue;
   font-family: $font-family;
   display: inline-block;
-  border: 1px solid $bright-blue;
+  border: 1px solid $links-blue;
   padding: 3px 10px 3px 10px;
 }
 
 .session-timed-out-option-box {
-  border: 1px solid $bright-blue;
+  border: 1px solid $links-blue;
 }
 
 .underline-text {
   text-decoration: underline;
-  color:$bright-blue;
+  color:$links-blue;
 }
 
 .underline-text:hover {
   text-decoration: underline;
-  color: $bright-blue;
+  color: $links-blue;
 }
 
 .fa-chevron-right, .fa-chevron-down, fa-chevron-up {
@@ -227,7 +227,7 @@ no-padding-top {
 
 .left-small {
   border-right: none;
-} 
+}
 
 .tab-bar .header-wrapper .header .fluid-grid {
   height: 45px;
@@ -250,7 +250,7 @@ no-padding-top {
 }
 
 li.list-separator:hover {
-  border-left: 2px solid $bright-blue;
+  border-left: 2px solid $links-blue;
 }
 
 li.list-separator {
@@ -258,7 +258,7 @@ li.list-separator {
 }
 
 .f-dropdown li a:hover {
-  color: $bright-blue;
+  color: $links-blue;
   background-color: $white;
 }
 
@@ -302,8 +302,8 @@ button, .button {
  font-size: 13px;
  background-color: $white;
  border-color: $dark-blue;
- color: $bright-blue;
- transition: background-color 300ms ease-out; 
+ color: $links-blue;
+ transition: background-color 300ms ease-out;
 }
 
 button, .button.small {
@@ -323,8 +323,8 @@ button, .button.small {
  font-size: 13px;
  background-color: $white;
  border-color: $very-dark-grey;
- color: $bright-blue;
- transition: background-color 300ms ease-out; 
+ color: $links-blue;
+ transition: background-color 300ms ease-out;
 }
 
 .dropdown.button::after, button.dropdown::after {
@@ -354,11 +354,11 @@ dropdown.button, button.dropdown {
 }
 
 .button:hover, button:focus, .button:hover, .button:focus {
- color: $bright-blue; 
+ color: $links-blue;
 }
 
 .button:hover, button:focus, .button:hover, .button:focus {
- background-color: $white; 
+ background-color: $white;
 }
 
 .f-dropdown li a {
@@ -371,7 +371,7 @@ dropdown.button, button.dropdown {
 .f-dropdown-common li a {
  display: block;
  padding: 8px;
- color: $bright-blue;
+ color: $links-blue;
  text-align: left;
  width: 100%;
 }
@@ -409,8 +409,8 @@ dropdown.button, button.dropdown {
  font-family: $font-family;
  border-bottom-left-radius: 3px;
  border-bottom-right-radius: 3px;
- display: block; 
- top: 33px; 
+ display: block;
+ top: 33px;
  left: auto !important;
  width: 91px;
 }
@@ -418,7 +418,7 @@ dropdown.button, button.dropdown {
 .f-dropdown-small li a {
  display: block;
  padding: 8px 8px 8px 12px;
- color: $bright-blue;
+ color: $links-blue;
  text-align: left;
  width: 100%;
 }
@@ -438,8 +438,8 @@ dropdown.button, button.dropdown {
  font-family: $font-family;
  border-bottom-left-radius: 3px;
  border-bottom-right-radius: 3px;
- display: block; 
- top: 33px; 
+ display: block;
+ top: 33px;
  left: auto !important;
  width: 133px;
 }
@@ -447,7 +447,7 @@ dropdown.button, button.dropdown {
 .f-dropdown-medium li a {
  display: block;
  padding: 8px;
- color: $bright-blue;
+ color: $links-blue;
  text-align: left;
  width: 100%;
 }
@@ -479,8 +479,8 @@ button, .button {
  font-size: 13px;
  background-color: $white;
  border-color: $very-dark-grey;
- color: $bright-blue;
- transition: background-color 300ms ease-out; 
+ color: $links-blue;
+ transition: background-color 300ms ease-out;
 }
 
 .dropdown.button::after, button.dropdown::after {
@@ -494,17 +494,17 @@ button, .button {
 }
 
 .button:hover, button:focus, .button:hover, .button:focus {
- color: $bright-blue;
+ color: $links-blue;
 }
 
 .button:hover, button:focus, .button:hover, .button:focus {
- background-color: $white; 
+ background-color: $white;
 }
 
 .f-dropdown-common li a {
  display: block;
  padding: 8px;
- color: $bright-blue;
+ color: $links-blue;
  text-align: left;
 }
 
@@ -520,11 +520,11 @@ button, .button {
 }
 
 .anchor-links {
-  color : $bright-blue !important;
+  color : $links-blue !important;
 }
 
 .anchor-links:hover {
-  color : $bright-blue !important;
+  color : $links-blue !important;
 }
 
 .icon-ph {
@@ -574,7 +574,7 @@ div.acc-trans-body-container {
   color: $black !important;
   position: relative;
   background-color: $black;
-  transform: translate3d(0, 0, 0); 
+  transform: translate3d(0, 0, 0);
 }
 
 .account_text {
@@ -610,7 +610,7 @@ multiselect .dropdown-menu {
   border: 1px solid $very-dark-grey;
   box-sizing: border-box;
   padding: 2px;
-  position: absolute; 
+  position: absolute;
   background-color: $white !important;
   z-index: 100;
 }
@@ -618,7 +618,7 @@ multiselect .dropdown-menu {
 multiselect .dropdown-menu > li > a {
   cursor: pointer;
   font-size: 13px;
-  color: $bright-blue;
+  color: $links-blue;
 }
 
 .f-dropdown {
@@ -668,7 +668,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.75);
   display: block;
-  font-size: 13px; font-size: 1.3rem; 
+  font-size: 13px; font-size: 1.3rem;
   margin: 0 0 1rem 0;
   padding: 0.5rem;
   height: 33px;
@@ -676,7 +676,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  transition: all 0.15s linear; 
+  transition: all 0.15s linear;
 }
 
 .loader {
@@ -757,8 +757,8 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   text-align:center;
 }
 
-.wobble-fix { 
-  -webkit-filter: blur(0); 
+.wobble-fix {
+  -webkit-filter: blur(0);
 }
 
 .alert-text-large-bold {
@@ -787,7 +787,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: $grey;
+  background-color: $pale-grey;
   z-index: 9999;
 }
 
@@ -812,7 +812,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 }
 
 .k-grid th.k-header, .k-grid-header  .k-header>.k-link {
-  background: $grey;
+  background: $pale-grey;
   color: $black;
   overflow: visible;
   white-space: normal;
@@ -841,7 +841,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 }
 
 .k-grid table tr.k-state-selected td {
-  background: $grey;
+  background: $pale-grey;
   color: $black;
 }
 
@@ -850,19 +850,19 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 }
 
 .k-grid table tr.k-state-selected td:nth-child(2) {
-  border-left: solid 4px $bright-blue;
+  border-left: solid 4px $links-blue;
 }
 
 .k-grid td {
  border: none;
-}  
+}
 
 .k-hierarchy-cell, .k-hierarchy-col {
   display: none;
 }
 
 .k-footer-template {
-  background: $grey;
+  background: $pale-grey;
 }
 
 .k-grid-footer {
@@ -920,7 +920,7 @@ tr.k-master-row td.error:nth-child(2) {
 
 .tab-heading-bottom-border {
   padding-bottom: 4px;
-  border-bottom: 4px solid $bright-blue;
+  border-bottom: 4px solid $links-blue;
 }
 
 .tab-triangle-down {
@@ -928,7 +928,7 @@ tr.k-master-row td.error:nth-child(2) {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid $bright-blue;
+  border-top: 5px solid $links-blue;
   margin-left: 33px;
   margin-top: 7px;
 }
@@ -939,10 +939,10 @@ tr.k-master-row td.error:nth-child(2) {
 
 .tab-bar {
   height: 45px;
-  position:fixed; 
-  top:0px; 
-  margin:auto; 
-  z-index:100000; 
+  position:fixed;
+  top:0px;
+  margin:auto;
+  z-index:100000;
   width:100%;
 }
 
@@ -960,7 +960,7 @@ tr.k-master-row td.error:nth-child(2) {
   margin-bottom: 0;
 }
 
-.tabs-content > .content.active { 
+.tabs-content > .content.active {
   padding-bottom: 5px;
   padding-top: 9px;
 }
@@ -985,7 +985,7 @@ tr.k-master-row td.error:nth-child(2) {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: $grey;
+  background-color: $pale-grey;
   z-index: 9999;
 }
 
@@ -1017,7 +1017,7 @@ tr.k-master-row td.error:nth-child(2) {
 
 .login-blue-text {
   font-size:11px;
-  color:$bright-blue;
+  color:$links-blue;
   text-decoration:none;
   font-family: $font-family;
 }
@@ -1034,7 +1034,7 @@ tr.k-master-row td.error:nth-child(2) {
 
 .login-input {
   padding:8px;
-  border:1px solid $grey-1;
+  border:1px solid $pale-grey;
   border-radius:3px;
   border-style: solid;
   width:300px;
@@ -1048,7 +1048,7 @@ tr.k-master-row td.error:nth-child(2) {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-  border:1px solid $grey-1;
+  border:1px solid $pale-grey;
   max-width: 400px;
   -webkit-box-shadow: 0 2px 36px 0px $another-another-another-another-another-another-another-grey;
   -webkit-border-radius: 5px 5px 5px 5px;
@@ -1058,7 +1058,7 @@ tr.k-master-row td.error:nth-child(2) {
 
 @media only screen and (max-width: 40em) {
   hr {
-    border-top: 1px solid $grey-2;
+    border-top: 1px solid $pale-grey;
   }
 
   .bigger-width-on-phone {
@@ -1101,7 +1101,7 @@ tr.k-master-row td.error:nth-child(2) {
   }
 
   .footer-wrapper .footer {
-    border-top: 1px solid $grey-3;
+    border-top: 1px solid $pale-grey;
     padding: 25px 25px;
     font-family: $font-family;
     text-align: center;
@@ -1129,7 +1129,7 @@ tr.k-master-row td.error:nth-child(2) {
 
   .phone-table {
     border-radius: 3px;
-    border: 1px solid $grey-2;
+    border: 1px solid $pale-grey;
     background-color: $another-another-another-another-another-grey;
     padding: 20px;
     width: 94%;
@@ -1152,7 +1152,7 @@ tr.k-master-row td.error:nth-child(2) {
   }
 
   .mobilelineseperator {
-    border-bottom: 1px solid $grey-4;
+    border-bottom: 1px solid $pale-grey;
     margin-bottom: 8px;
     padding-bottom: 7px;
     background-color: $white;
@@ -1190,11 +1190,11 @@ tr.k-master-row td.error:nth-child(2) {
     top: 8px;
     font-family: $font-family;
     font-size: $font-size-px; font-size: $font-size-rem;
-    color: $bright-blue;
+    color: $links-blue;
   }
 }
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .row {
     max-width: 98%;
   }
@@ -1202,7 +1202,7 @@ tr.k-master-row td.error:nth-child(2) {
   div.sub-header-wrapper .sub-header .sub-header-options {
     font-size: 16px;
     font-family: $font-family;
-    color: $bright-blue;
+    color: $links-blue;
     width: auto !important;
   }
 
@@ -1219,7 +1219,7 @@ tr.k-master-row td.error:nth-child(2) {
    top: 8px;
    font-family: $font-family;
    font-size: $font-size-px; font-size: $font-size-rem;
-   color: $bright-blue;
+   color: $links-blue;
  }
 
  .details-overview-bluetext {
@@ -1248,7 +1248,7 @@ tr.k-master-row td.error:nth-child(2) {
   font-size: 26px; font-size: 2.6rem;
   position: absolute;
   padding-right: 15px;
-  color : $bright-blue;
+  color : $links-blue;
   top: 8px !important;
 }
 }
