@@ -69,16 +69,28 @@ angular.module('componentsApp')
 	});
 
 	$scope.setSelectedAccount = function(accountId) {
-    	$scope.selectedAccount = accountId;
-  	};
+		$scope.selectedAccount = accountId;
+	};
 
-  	$scope.filterPriceTypes = [
-{"priceTypeId" : 1, "priceTypeName" : "Live"},
-{"priceTypeId" : 2, "priceTypeName" : "Delayed"}
-];
+	$scope.filterPriceTypes = [
+	{"priceTypeId" : 1, "priceTypeName" : "Live"},
+	{"priceTypeId" : 2, "priceTypeName" : "Delayed"}
+	];
 
-$scope.filterBidRulingTypes = [
-{"bidRulingTypeId" : 1, "bidRulingTypeName" : "Bid"},
-{"bidRulingTypeId" : 2, "bidRulingTypeName" : "Ruling"}
-];
+	$scope.filterBidRulingTypes = [
+	{"bidRulingTypeId" : 1, "bidRulingTypeName" : "Bid"},
+	{"bidRulingTypeId" : 2, "bidRulingTypeName" : "Ruling"}
+	];
+
+	$scope.filterAccountList = [
+	{"AccountId" : 2222},
+	{"AccountId" : 3333},
+	{"AccountId" : 4444},
+	{"AccountId" : 5555},
+	{"AccountId" : 6666},
+	{"AccountId" : 7777},
+	{"AccountId" : 8888},
+	{"AccountId" : 9999},
+	{"AccountId" : 1010}
+	];
 });
