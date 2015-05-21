@@ -10,11 +10,11 @@
                     <li class="inline-block"
                         ng-if="breadcrumbComponent.ostModel.accounts && breadcrumbComponent.ostModel.accounts.length">
                         <a class="accounts-dropdown sub-header-title" dropdown-toggle="#account-dropdown">Account -
-                            {{breadcrumbComponent.ostModel.selectedAccount.AccountId}}&nbsp;&nbsp;<i
+                            1111&nbsp;&nbsp;<i
                                     class="fa fa-chevron-down"></i></a>
                         <ul id="account-dropdown"
                             class="f-dropdown options-position rounded-dropdown-corners account-dropdown-position">
-                            <li class="list-separator" ng-repeat="account in breadcrumbComponent.filterAccountList()">
+                            <li class="list-separator" ng-repeat="account in filterAccountList">
                                 <a ng-click="breadcrumbComponent.onAccountChanged({selectedAccountId: account.AccountId})">{{account.AccountId}}</a>
                             </li>
                         </ul>
