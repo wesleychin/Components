@@ -71,4 +71,14 @@ angular.module('componentsApp')
 	$scope.setSelectedAccount = function(accountId) {
     	$scope.selectedAccount = accountId;
   	};
+
+  	$scope.filterPriceTypes = [
+{"priceTypeId" : 1, "priceTypeName" : "Live"},
+{"priceTypeId" : 2, "priceTypeName" : "Delayed"}
+];
+
+$scope.filterBidRulingTypes = [
+{"bidRulingTypeId" : 1, "bidRulingTypeName" : "Bid"},
+{"bidRulingTypeId" : 2, "bidRulingTypeName" : "Ruling"}
+];
 });
