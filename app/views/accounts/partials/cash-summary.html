@@ -33,11 +33,11 @@
             </div>
             <div class="inline-block">
               <button dropdown-toggle="#live" class="button dropdown small live-button">
-                {{cashSummaryComponent.ostModel.selectedPriceType.priceTypeName}}
+                Live
               </button>
               <br>
               <ul id="live" class="f-dropdown-small">
-                <li ng-repeat="priceType in cashSummaryComponent.filterPriceTypes()">
+                <li ng-repeat="priceType in filterPriceTypes">
                   <a ng-click="cashSummaryComponent.onPriceTypeChanged({selectedPriceTypeId: priceType.priceTypeId})">{{priceType.priceTypeName}}</a>
                 </li>
               </ul>
@@ -45,11 +45,11 @@
             &nbsp;
             <div class="inline-block">
               <button dropdown-toggle="#bid" class="button dropdown small bid-button">
-                {{cashSummaryComponent.ostModel.selectedBidRulingType.bidRulingTypeName}}
+                Bid
               </button>
               <br>
               <ul id="bid" class="f-dropdown-small">
-                <li ng-repeat="bidRulingType in cashSummaryComponent.filterBidRulingTypes()">
+                <li ng-repeat="bidRulingType in filterBidRulingTypes">
                   <a ng-click="cashSummaryComponent.onBidRulingTypeChanged({selectedBidRulingTypeId: bidRulingType.bidRulingTypeId})">{{bidRulingType.bidRulingTypeName}}</a>
                 </li>
               </ul>
