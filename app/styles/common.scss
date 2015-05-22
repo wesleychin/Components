@@ -19,15 +19,15 @@
   }
 
   .footer-wrapper {
-    background: $silver-grey;  
+    background: $grey-page-background;
   }
 
   div.sub-header-wrapper {
-    background: $silver-grey;
+    background:$grey-page-background;
   }
 
   .body-wrapper {
-    background: $silver-grey;
+    background: $grey-page-background;
     /*padding-top: 57px; */
     padding-top: 115px;
   }
@@ -80,7 +80,7 @@
 
   .acc-empty-boxes {
     height: 45px;
-    background: $silver-grey;
+    background: $grey-page-background;
     float: left;
     color: $links-blue;
     font-size:12px; font-size:1.2rem;
@@ -875,7 +875,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 }
 
 .k-footer-template {
-  background: $pale-grey;
+  background: $grey-page-background;
 }
 
 .k-grid-footer {
