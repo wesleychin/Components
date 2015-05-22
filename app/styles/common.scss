@@ -104,7 +104,8 @@
     border-left: 1px solid $light-grey;
     border-bottom: 1px solid $light-grey;
     border-top: 1px solid $light-grey;
-    width: 102%;
+    border-right: none;
+    width: 101%;
     color: $dark-grey;
     position: relative;
     z-index: 1000 !important;
