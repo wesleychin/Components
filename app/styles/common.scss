@@ -80,17 +80,19 @@
 
   .acc-empty-boxes {
     height: 45px;
-    background: $grey-page-background;
+    background: $account-summary-display;
     float: left;
+    width:110%;
+    overflow: hidden;
     color: $links-blue;
     font-size:12px; font-size:1.2rem;
     padding-left: 10px;
     margin-right: 0;
     padding-top: 10px;
-    border-top: 1px solid $light-grey;
-    border-left: 1px solid $light-grey;
-    border-bottom: 1px solid $light-grey;
-    border-right: 0 solid $light-grey;
+    border-top: 1px solid lighten ($light-grey, 10%);
+    border-left: 1px solid lighten ($light-grey, 10%);
+    border-bottom: 1px solid lighten ($light-grey, 10%);
+    border-right: 0 solid lighten ($light-grey, 10%);
     margin-bottom: 4px;
     font-family: $font-family;
     border-bottom-left-radius: 3px;
@@ -102,7 +104,7 @@
     border-left: 1px solid $light-grey;
     border-bottom: 1px solid $light-grey;
     border-top: 1px solid $light-grey;
-    width: 101%;
+    width: 102%;
     color: $dark-grey;
     position: relative;
     z-index: 1000 !important;
