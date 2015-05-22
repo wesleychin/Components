@@ -1,4 +1,5 @@
 @import 'constants';
+@import 'colors';
 
   html {
     font-size: $html-percentage;
@@ -79,7 +80,7 @@
 
   .acc-empty-boxes {
     height: 45px;
-    background: $pale-grey;
+    background: $silver-grey;
     float: left;
     color: $links-blue;
     font-size:12px; font-size:1.2rem;
@@ -102,7 +103,7 @@
     border-bottom: 1px solid $light-grey;
     border-top: 1px solid $light-grey;
     width: 101%;
-    color: $black;
+    color: $dark-grey;
     position: relative;
     z-index: 1000 !important;
     overflow: hidden;
@@ -583,14 +584,14 @@ div.acc-trans-body-container {
   height: 4.9rem;
   display: block;
   padding: 0;
-  color: $black !important;
+  color: $dark-grey !important;
   position: relative;
-  background-color: $black;
+  background-color: $dark-grey;
   transform: translate3d(0, 0, 0);
 }
 
 .account_text {
-  color: $black;
+  color: $dark-grey;
   font-family: $font-family;
   display: block;
   line-height: 1;
@@ -648,7 +649,7 @@ multiselect .dropdown-menu > li > a {
   z-index: 89;
   margin-top: 2px;
   max-width: 200px;
-  max-height: 95px;
+  max-height: 161px;
   overflow: auto;
 }
 
@@ -711,26 +712,26 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    box-shadow: 0 -0.83em 0 -0.4em $black, 0 -0.83em 0 -0.42em $black, 0 -0.83em 0 -0.44em $black, 0 -0.83em 0 -0.46em $black, 0 -0.83em 0 -0.477em $black;
+    box-shadow: 0 -0.83em 0 -0.4em $dark-grey, 0 -0.83em 0 -0.42em $dark-grey, 0 -0.83em 0 -0.44em $dark-grey, 0 -0.83em 0 -0.46em $dark-grey, 0 -0.83em 0 -0.477em $dark-grey;
   }
   5%,
   95% {
-    box-shadow: 0 -0.83em 0 -0.4em $black, 0 -0.83em 0 -0.42em $black, 0 -0.83em 0 -0.44em $black, 0 -0.83em 0 -0.46em $black, 0 -0.83em 0 -0.477em $black;
+    box-shadow: 0 -0.83em 0 -0.4em $dark-grey, 0 -0.83em 0 -0.42em $dark-grey, 0 -0.83em 0 -0.44em $dark-grey, 0 -0.83em 0 -0.46em $dark-grey, 0 -0.83em 0 -0.477em $dark-grey;
   }
   10%,
   59% {
-    box-shadow: 0 -0.83em 0 -0.4em $black, -0.087em -0.825em 0 -0.42em $black, -0.173em -0.812em 0 -0.44em $black, -0.256em -0.789em 0 -0.46em $black, -0.297em -0.775em 0 -0.477em $black;
+    box-shadow: 0 -0.83em 0 -0.4em $dark-grey, -0.087em -0.825em 0 -0.42em $dark-grey, -0.173em -0.812em 0 -0.44em $dark-grey, -0.256em -0.789em 0 -0.46em $dark-grey, -0.297em -0.775em 0 -0.477em $dark-grey;
   }
   20% {
-    box-shadow: 0 -0.83em 0 -0.4em $black, -0.338em -0.758em 0 -0.42em $black, -0.555em -0.617em 0 -0.44em $black, -0.671em -0.488em 0 -0.46em $black, -0.749em -0.34em 0 -0.477em $black;
+    box-shadow: 0 -0.83em 0 -0.4em $dark-grey, -0.338em -0.758em 0 -0.42em $dark-grey, -0.555em -0.617em 0 -0.44em $dark-grey, -0.671em -0.488em 0 -0.46em $dark-grey, -0.749em -0.34em 0 -0.477em $dark-grey;
   }
   38% {
-    box-shadow: 0 -0.83em 0 -0.4em $black, -0.377em -0.74em 0 -0.42em $black, -0.645em -0.522em 0 -0.44em $black, -0.775em -0.297em 0 -0.46em $black, -0.82em -0.09em 0 -0.477em $black;
+    box-shadow: 0 -0.83em 0 -0.4em $dark-grey, -0.377em -0.74em 0 -0.42em $dark-grey, -0.645em -0.522em 0 -0.44em $dark-grey, -0.775em -0.297em 0 -0.46em $dark-grey, -0.82em -0.09em 0 -0.477em $dark-grey;
   }
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    box-shadow: 0 -0.83em 0 -0.4em $black, 0 -0.83em 0 -0.42em $black, 0 -0.83em 0 -0.44em $black, 0 -0.83em 0 -0.46em $black, 0 -0.83em 0 -0.477em $black;
+    box-shadow: 0 -0.83em 0 -0.4em $dark-grey, 0 -0.83em 0 -0.42em $dark-grey, 0 -0.83em 0 -0.44em $dark-grey, 0 -0.83em 0 -0.46em $dark-grey, 0 -0.83em 0 -0.477em $dark-grey;
   }
 }
 
@@ -738,31 +739,31 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    box-shadow: 0 -0.83em 0 -0.4em $black, 0 -0.83em 0 -0.42em $black, 0 -0.83em 0 -0.44em $black, 0 -0.83em 0 -0.46em $black, 0 -0.83em 0 -0.477em $black;
+    box-shadow: 0 -0.83em 0 -0.4em $dark-grey, 0 -0.83em 0 -0.42em $dark-grey, 0 -0.83em 0 -0.44em $dark-grey, 0 -0.83em 0 -0.46em $dark-grey, 0 -0.83em 0 -0.477em $dark-grey;
   }
   5%,
   95% {
-    box-shadow: 0 -0.83em 0 -0.4em $black, 0 -0.83em 0 -0.42em $black, 0 -0.83em 0 -0.44em $black, 0 -0.83em 0 -0.46em $black, 0 -0.83em 0 -0.477em $black;
+    box-shadow: 0 -0.83em 0 -0.4em $dark-grey, 0 -0.83em 0 -0.42em $dark-grey, 0 -0.83em 0 -0.44em $dark-grey, 0 -0.83em 0 -0.46em $dark-grey, 0 -0.83em 0 -0.477em $dark-grey;
   }
   10%,
   59% {
-    box-shadow: 0 -0.83em 0 -0.4em $black, -0.087em -0.825em 0 -0.42em $black, -0.173em -0.812em 0 -0.44em $black, -0.256em -0.789em 0 -0.46em $black, -0.297em -0.775em 0 -0.477em $black;
+    box-shadow: 0 -0.83em 0 -0.4em $dark-grey, -0.087em -0.825em 0 -0.42em $dark-grey, -0.173em -0.812em 0 -0.44em $dark-grey, -0.256em -0.789em 0 -0.46em $dark-grey, -0.297em -0.775em 0 -0.477em $dark-grey;
   }
   20% {
-    box-shadow: 0 -0.83em 0 -0.4em $black, -0.338em -0.758em 0 -0.42em $black, -0.555em -0.617em 0 -0.44em $black, -0.671em -0.488em 0 -0.46em $black, -0.749em -0.34em 0 -0.477em $black;
+    box-shadow: 0 -0.83em 0 -0.4em $dark-grey, -0.338em -0.758em 0 -0.42em $dark-grey, -0.555em -0.617em 0 -0.44em $dark-grey, -0.671em -0.488em 0 -0.46em $dark-grey, -0.749em -0.34em 0 -0.477em $dark-grey;
   }
   38% {
-    box-shadow: 0 -0.83em 0 -0.4em $black, -0.377em -0.74em 0 -0.42em $black, -0.645em -0.522em 0 -0.44em $black, -0.775em -0.297em 0 -0.46em $black, -0.82em -0.09em 0 -0.477em $black;
+    box-shadow: 0 -0.83em 0 -0.4em $dark-grey, -0.377em -0.74em 0 -0.42em $dark-grey, -0.645em -0.522em 0 -0.44em $dark-grey, -0.775em -0.297em 0 -0.46em $dark-grey, -0.82em -0.09em 0 -0.477em $dark-grey;
   }
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    box-shadow: 0 -0.83em 0 -0.4em $black, 0 -0.83em 0 -0.42em $black, 0 -0.83em 0 -0.44em $black, 0 -0.83em 0 -0.46em $black, 0 -0.83em 0 -0.477em $black;
+    box-shadow: 0 -0.83em 0 -0.4em $dark-grey, 0 -0.83em 0 -0.42em $dark-grey, 0 -0.83em 0 -0.44em $dark-grey, 0 -0.83em 0 -0.46em $dark-grey, 0 -0.83em 0 -0.477em $dark-grey;
   }
 }
 
 .fa-pulse {
-  color: $black;
+  color: $dark-grey;
   font-size: 68px;
   padding:10px;
   margin-bottom:20px;
@@ -825,7 +826,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 
 .k-grid th.k-header, .k-grid-header  .k-header>.k-link {
   background: $pale-grey;
-  color: $black;
+  color: $dark-grey;
   overflow: visible;
   white-space: normal;
   border-color: $silver-grey;
@@ -837,7 +838,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 
 .k-grid-content>table>tbody>tr {
  background: $background-white;
- color: $black;
+ color: $dark-grey;
 }
 
 .k-grid table tr.k-master-row:not(.k-state-selected) td:nth-child(2){
@@ -854,7 +855,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 
 .k-grid table tr.k-state-selected td {
   background: $pale-grey;
-  color: $black;
+  color: $dark-grey;
 }
 
 .k-grid table tr.k-state-selected td:last-child {
@@ -1175,7 +1176,7 @@ tr.k-master-row td.error:nth-child(2) {
   }
 
   .account_text {
-    color: $black;
+    color: $dark-grey;
     font-family: $font-family;
     display: block;
     line-height: 1;

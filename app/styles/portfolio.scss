@@ -1,14 +1,10 @@
-$grey1: #999999;
-$grey2: #2570E0;
-$grey3: #333;
-$grey4: #666666;
-$white: #FFFFFF;
-$font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+@import 'constants';
+@import 'colors';
 
   .portfolio-overview-container {
     width: 100%;
-    background: $white;
-    border: 1px solid $grey1;
+    background: $background-white;
+    border: 1px solid $light-grey;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -35,7 +31,7 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
 
   .details-bluetext {
     font-size: 14px;
-    color: $grey2;
+    color: $standard-bank-blue;
     font-family: $font-family;
     display: inline-block;
     margin-top: 10px;
@@ -48,21 +44,21 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
 
   .headingFormat {
     font-size: 20px;
-    color: $grey3;
+    color: $dark-grey;
     margin-top: 10px;
   }
 
   .portfolio-performance-previous-years {
     font-size: 14px;
-    color: $grey4;
+    color: $medium-grey;
   }
 
   .switch label {
-    background-color: #0099FF;
+    background-color: $light-grey;
   }
 
   .switch input:checked + label {
-    background-color: #0099FF;
+    background-color: $light-grey;
   }
 
   .switch.tiny label {
@@ -77,7 +73,7 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
 
   .portfolio-performance-text {
     font-size: 16px;
-    color: $grey4;
+    color: $medium-grey;
     font-family: $font-family;
     display: inline-block;
     margin-right: 30px;
@@ -100,21 +96,21 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
   .tabs dd > a {
     font-family: 'Arial';
     font-size: 11px;
-    color: $grey4;
+    color: $medium-grey;
     display: inline-block;
     text-align: left;
     line-height: normal;
     font-style: normal;
     padding: 0 10px 0 0;
-    background: $white !important;
+    background: $background-white !important;
   }
 
   .tabs dd.active a {
-    color: $grey2;
+    color: $links-blue;
   }
 
   .tabs dd:not(:last-child) {
-    border-right: 1px solid #000000;
+    border-right: 1px solid $dark-grey;
   }
 
   .tabs dd:last-child {
@@ -122,9 +118,9 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
   }
 
   .years-selection {
-    border-left: 1px solid #2f67b1;
-    border-top: 1px solid #2f67b1;
-    border-bottom: 1px solid #2f67b1;
+    border-left: 1px solid $light-grey;
+    border-top: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
@@ -132,15 +128,15 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
   }
 
   div.years-selection:hover {
-    background: $grey2;
+    background: $standard-bank-blue;
   }
 
   div.years-selection:hover > a {
-    color: $white !important;
+    color: $background-white !important;
   }
 
   div.years-selection:hover > i {
-    color: $white !important;
+    color: $background-white !important;
   }
 
   .back-arrow {
@@ -152,7 +148,7 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
   .forward-arrow {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    border-right: 1px solid #2F67B1;
+    border-right: 1px solid $light-grey;
     height: auto;
   }
 
@@ -169,77 +165,77 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
   }
 
   .text-blue-instruments-name {
-    color: #0000FF;
+    color: $standard-bank-blue;
     font-size: 18px;
   }
 
   .text-grey-instruments-name {
-    color: #CDCDCD;
+    color: $silver-grey;
     font-size: 12px;
   }
 
   .text-grey-instruments-value-large {
-    color: #A3A3A3;
+    color: $medium-grey;
     font-size: 25px;
   }
 
   .text-grey-instruments-qty {
-    color: #6B6B6B;
+    color: $medium-grey;
     font-size: 14px;
   }
 
   .text-grey-instruments-qty-value {
-    color: #B5B5B5;
+    color: $light-grey;
     font-size: 14px;
   }
 
   .text-green-large {
-    color: #007F00;
+    color: $credit-text-green;
     font-weight: normal !important; 
     font-size: 18px;
     font-size: 1.8rem;
   }
 
   .text-red-large {
-    color: #FF0000;
+    color: $debit-text-red;
     font-weight: normal !important; 
     font-size: 18px;
     font-size: 1.8rem;
   }
 
   .instrument-code {
-    color: $grey2;
+    color: $standard-bank-blue;
     font-size: 19px;
   }
 
   .instrument-name {
-    color: #999;
+    color: $light-grey;
     font-size: 10px;
   }
 
   .instrument-value-large {
-    color: #999;
+    color: $light-grey;
     font-size: 34px;
   }
 
   .instrument-data-medium {
     font-size: 12px;
-    color: #666;
+    color: $dark-grey;
   }
 
   .instrument-data {
     font-size: 12px;
-    color: #666;
+    color: $dark-grey;
   }
 
   .instrument-data-light-grey {
     font-size: 12px;
-    color: #999;
+    color: $light-grey;
   }
 
   .instrument-data-unit-cost {
     font-size: 12px;
-    color: #999;
+    color: $light-grey;
   }
 
   .instrument-percentage {
@@ -247,19 +243,19 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
   }
 
   .instrument-text-blue {
-    color: $grey2 !important;
+    color: $standard-bank-blue !important;
     font-size: 12px;
   }
 
   .instrument-bold-text {
-    color: $grey3;
+    color: $dark-grey;
     font-size: 12px;
     font-weight: 900;
     padding-left: 1px !important;
   }
 
   .instrument-bold-text-blue {
-    color: $grey2 !important;
+    color: $standard-bank-blue !important;
     font-size: 12px;
     font-weight: 900;
   }
@@ -269,7 +265,7 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
   }
 
   .mobile-border {
-    border-bottom: 1px solid #E3E3E3;
+    border-bottom: 1px solid $silver-grey;
   }
 
   .width {
@@ -286,18 +282,18 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
     display: inline-block;
     padding:2px;
     padding-bottom: 8px;
-    color: $white;
+    color: $background-white;
     text-align: center;
   }
 
   .gainers {
-    background-color: #007F00 !important;
-    border-bottom:1px solid $white;
+    background-color: $credit-text-green !important;
+    border-bottom:1px solid $background-white;
   }
 
   .losers {
-    background-color: #FF0000 !important;
-    border-bottom:1px solid $white;
+    background-color: $debit-text-red !important;
+    border-bottom:1px solid $background-white;
   }
 
   .top-performers-heading-spacing {
@@ -307,7 +303,7 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
 
   .top-performers-headings {
     font-size: 18px;
-    color: $grey4;
+    color: $medium-grey;
     line-height: 48px;
     padding-bottom:10px;
   }
@@ -316,7 +312,7 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
     padding-top: 6px;
     font-size: 12px;
     font-family: $font-family;
-    color: $white;
+    color: $background-white;
   }
 
   .heading-padding {
@@ -324,27 +320,27 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
   }
 
   .text-blue-instruments-name {
-    color: #0000FF;
+    color: $standard-bank-blue;
     font-size: 18px;
   }
 
   .text-grey-instruments-name {
-    color: #cdcdcd;
+    color: $silver-grey;
     font-size: 12px;
   }
 
   .text-grey-instruments-value-large {
-    color: #a3a3a3;
+    color: $medium-grey;
     font-size: 25px;
   }
 
   .text-grey-instruments-qty {
-    color: #6b6b6b;
+    color: $medium-grey;
     font-size: 14px;
   }
 
   .text-grey-instruments-qty-value {
-    color: #b5b5b5;
+    color: $light-grey;
     font-size: 14px;
   }
 
@@ -355,16 +351,16 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
 
   .action-buttons {
     width:100%; 
-    background: #EFF0F3;
+    background: $pale-grey;
     margin-bottom: 20px;
   }
 
   .action-button-text {
-    color: $grey2;
+    color: $standard-bank-blue;
   }
 
   .action-button-text:hover {
-    color: $grey2;
+    color: $standard-bank-blue;
   }
 
   .portfolio-overview-manage-columns-padding {
@@ -376,11 +372,11 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
   }
 
   .portfolio-overview-mobile-border {
-    border-bottom: 1px solid #E3E3E3;
+    border-bottom: 1px solid $silver-grey;
   }
 
   .portfolio-overview-mobile-instrument-name {
-    border-right: 1px solid #E3E3E3; 
+    border-right: 1px solid $silver-grey; 
     width:49%; 
     padding-bottom:15px;
   }
@@ -392,7 +388,7 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
   .portfolio-overview-mobile-additional-information {
     width:49%; 
     padding-top:17px; 
-    border-right:1px solid #dbdbdb;
+    border-right:1px solid $silver-grey;
   }
 
   .portfolio-overview-mobile-quantity {
@@ -441,7 +437,7 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
   .market-news-heading {
     font-weight: 900;
     font-size: 14px;
-    color: $grey4;
+    color: $medium-grey;
   }
 
   .market-news-heading-padding {
@@ -450,7 +446,7 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
 
   .market-news-date {
     font-size: 14px;
-    color: $grey1;
+    color: $light-grey;
   }
 
   .market-news-date-padding {
@@ -459,7 +455,7 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
 
   .market-news-description {
     font-size: 14px;
-    color: $grey2;
+    color: $standard-bank-blue;
   }
 
   .market-news-description-padding {
@@ -468,11 +464,11 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
   .ranked-holding {
     float: left;
     padding: 15px 10px;
-    color: $white;
+    color: $background-white;
     min-height: 50px;
     margin: 0 2px 1em;
     height: 100px;
-    background-color: #EEEEEE;
+    background-color: $pale-grey;
   }
 
   .portfolio-overview-container .ranked-holding {
@@ -491,7 +487,7 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
   }
 
   .ranked-holding-zero-value {
-    color: $grey4;
+    color: $medium-grey;
   }
 
   .ranked-holding-instrument {
@@ -526,7 +522,7 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
 
   @media only screen and (max-width: 40em) {
     .mobilelineseperator-instruments {
-     border-bottom: 1px solid #EEEEEE;
+     border-bottom: 1px solid $pale-grey;
      margin-left:10px !important;
      margin-right:15px !important;
      padding-bottom: 8px;
@@ -550,29 +546,29 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
   }
 
   .phone-color {
-    background-color: $white;
+    background-color: $background-white;
   }
 
   .acc-empty-boxes {
-   background: #F8F8F8;
+   background: $pale-grey;
    border-left: 0;
    border-top: 0;
    float: left;
    border-radius: 0;
-   color: $grey2;
+   color: $standard-bank-blue;
    width: 100%;
    font-size: 14px;
    padding-left: 15px;
    margin-left: 0;
    padding-top: 13px;
-   border-bottom: 1px solid #397DE3;
+   border-bottom: 1px solid $standard-bank-blue;
    margin-bottom: 0;
    font-family: $font-family;
  }
 
  .portfolio-overview-container {
    width: 100%;
-   background: $white;
+   background: $background-white;
    border: 0 !important;
    border-bottom-right-radius: 0;
    border-bottom-left-radius: 0;
@@ -601,7 +597,7 @@ $font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, 
 
 .action-buttons {
   width:94% !important; 
-  background: #EFF0F3;
+  background: $pale-grey;
   margin-bottom: 20px;
   margin-left: 10px;
 }
