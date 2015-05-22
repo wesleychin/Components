@@ -4,7 +4,7 @@
 .account-breadcrumb {
 	display: inline-block;
 	padding: 0;
-	background-color: $silver-grey;
+	background-color: $grey-page-background;
 	height: 26px;
 	font-size: 16px; font-size: 1.6rem;
 }
@@ -16,26 +16,26 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 }
 
 .details-overlay {
-	border: 1px solid $medium-grey;
+	border: 1px solid lighten ($light-grey, 10%);
 	border-radius: 3px;
 	padding: 18px 20px;
 	margin-top: 8px;
-	background: $silver-grey !important;
+	background: $account-summary-display !important;
 	position: relative;
 	height: auto;
-	font-size: 12px; font-size: 1.2rem; 
+	font-size: 12px; font-size: 1.2rem;
 }
 
 .details-overview {
-	font-size: 13px; font-size: 1.3rem !important; 
-	color: $dark-grey;
+	font-size: 13px; font-size: 1.4rem !important;
+	color: $medium-grey;
 	font-family: $font-family;
 	margin-right: 10px;
 }
 
 .account-details-amounts-bold-phone {
-	font-size: 14px; font-size: 1.4rem; 
-	color: $dark-grey;
+	font-size: 13px; font-size: 1.3rem;
+	color: $medium-grey;
 	font-family: $font-family;
 	display: inline-block;
 	font-weight: 900;
@@ -43,7 +43,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 }
 
 .details-overview-feed-details {
-	font-size: 13px; font-size: 1.3rem; 
+	font-size: 13px; font-size: 1.3rem;
 	color: $medium-grey;
 	font-family: $font-family;
 	display: block;
@@ -52,7 +52,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 }
 
 .details-overview-bluetext {
-	font-size: 13px; font-size: 1.3rem; 
+	font-size: 13px; font-size: 1.3rem;
 	font-family: $font-family;
 	display: inline-block;
 	margin-right: 10px;
@@ -64,8 +64,8 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 }
 
 .portfolio-value-bold {
-	font-size: 14px; font-size: 1.4rem; 
-	color: $dark-grey;
+	font-size: 14px; font-size: 1.4rem;
+	color: $medium-grey;
 	font-family: $font-family;
 	display: inline-block;
 	margin-right: 20px;
@@ -80,7 +80,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 	background-color: $standard-bank-blue;
 	padding: 7px;
 	color: $background-white;
-	font-size: 13px; font-size: 1.3rem; 
+	font-size: 13px; font-size: 1.3rem;
 }
 
 .account-dropdown-position {
@@ -121,7 +121,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		border-bottom: 1px solid $light-grey;
 		background: $silver-grey;
 	}
-	
+
 	.details-overview-amounts-bold-phone {
 		float: right;
 		padding-right: 15px;
@@ -147,8 +147,8 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 	}
 
 	.account-details-amounts-bold-phone {
-		font-size: 12px; 
-		color: $dark-grey; 
+		font-size: 12px;
+		color: $dark-grey;
 		font-family: $font-family;
 		display: inline-block;
 		font-weight: normal !important;
@@ -158,7 +158,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 
 	.portfolio-value-bold {
 		font-size: 27px;
-		color: $dark-grey;
+		color: $medium-grey;
 		font-family: $font-family;
 		display: inline-block;
 		font-weight: 100 !important;
@@ -174,7 +174,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		text-align: center;
 		width: 10%;
 	}
-	
+
 	.details-overview-feed-details {
 		font-size: 12px;
 		color: $medium-grey;
@@ -192,7 +192,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		padding-top: 15px;
 		background-color: $background-white;
 	}
-	
+
 	.body-wrapper {
 		/*padding-top: 49px;*/
 		padding-top: 98px;
@@ -227,12 +227,12 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		color: $medium-grey;
 		font-size: 14px;
 	}
-	
+
 	.text-grey-instruments-qty-value {
 		color: $silver-grey;
 		font-size: 14px;
 	}
-	
+
 	.text-grey-instruments-paddlingleft {
 		color: $medium-grey;
 		font-size: 12px;
@@ -242,7 +242,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	.details-overlay {
-		height: auto; 
+		height: auto;
 		font-size: 3rem !important;
 	}
 
@@ -251,7 +251,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 	}
 
 	.acc-empty-boxes {
-		font-size: 1rem; 
+		font-size: 1rem;
 		height: 55px;
 	}
 
@@ -261,21 +261,21 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 
 	.text-green {
 		color: $green;
-		font-weight: normal !important; 
+		font-weight: normal !important;
 		font-size: 12px;
 		font-size: 1.2rem;
 	}
 
 	.text-green-large {
 		color: $green;
-		font-weight: normal !important; 
+		font-weight: normal !important;
 		font-size: 18px;
 		font-size: 1.8rem;
 	}
 
 	.text-red-large {
 		color: $green;
-		font-weight: normal !important; 
+		font-weight: normal !important;
 		font-size: 18px;
 		font-size: 1.8rem;
 	}
