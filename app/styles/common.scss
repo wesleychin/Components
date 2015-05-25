@@ -38,6 +38,7 @@
     position: absolute;
     color : $links-blue;
     top: 8px !important;
+    padding-right: 5px;
   }
 
   div.header div.header-top .sign-out-header {
@@ -117,7 +118,7 @@
  }
 
  .search-textbox {
-  padding-right: 7px;
+  padding-right: 9px;
 }
 
 .enabled {
@@ -282,14 +283,15 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid $medium-grey;
+  border-top: 1px solid $light-grey;
   margin: 1em 0;
   padding: 0;
 }
 
 .hide-hr {
-  border-top: 1px dotted $medium-grey;
-  padding-bottom: 12px;
+  border-top: 1px dashed $light-grey;
+  padding-bottom: 5px;
+  margin-top: 15px;
 }
 
 td {
@@ -599,8 +601,8 @@ div.acc-trans-body-container {
   font-family: $font-family;
   display: block;
   line-height: 1;
-  font-size: 15px;
   padding-bottom: 5px;
+  font-size: $font-size-rem;
   font-size: $font-size-px;
 }
 
@@ -634,6 +636,7 @@ multiselect .dropdown-menu {
 
 multiselect .dropdown-menu > li > a {
   cursor: pointer;
+  font-size: 1.3rem;
   font-size: 13px;
   color: $links-blue;
 }
@@ -1166,13 +1169,6 @@ tr.k-master-row td.error:nth-child(2) {
     padding-left:0;
     padding-top: 0;
     border: 0;
-  }
-
-  .mobilelineseperator {
-    border-bottom: 1px solid $pale-grey;
-    margin-bottom: 8px;
-    padding-bottom: 7px;
-    background-color: $background-white;
   }
 
   .portfolio-performance-buttons, .downloadDropdownMargin, .downloadDropdown, .downloadOption {

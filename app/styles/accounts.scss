@@ -15,6 +15,11 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 	font-family: $font-family;
 }
 
+.mobilelineseperator {
+	margin-left: 13px;
+}
+
+
 .base-link-color {
 	color: $links-blue !important;
 }
@@ -133,6 +138,14 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		font-size: 12px;
 		padding-top: 4px;
 	}
+
+	.mobilelineseperator {
+		border-bottom: 1px solid $pale-grey;
+		margin-bottom: 8px;
+		padding-bottom: 7px;
+		background-color: $background-white;
+	}
+
 
 	.accounts-details-wrapper {
 		margin-bottom: 0 !important;

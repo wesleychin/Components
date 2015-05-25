@@ -118,13 +118,15 @@
   }
 
   .years-selection {
-    border-left: 1px solid $light-grey;
-    border-top: 1px solid $light-grey;
-    border-bottom: 1px solid $light-grey;
+    border-left: 1px solid $standard-bank-blue;
+    border-top: 1px solid $standard-bank-blue;
+    border-bottom: 1px solid $standard-bank-blue;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    font-size: 1.4rem;
+    font-size: 14px;
   }
 
   div.years-selection:hover {
@@ -148,7 +150,7 @@
   .forward-arrow {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    border-right: 1px solid $light-grey;
+    border-right: 1px solid $standard-bank-blue;
     height: auto;
   }
 
@@ -166,6 +168,7 @@
 
   .text-blue-instruments-name {
     color: $standard-bank-blue;
+    font-size: 1.8rem;
     font-size: 18px;
   }
 
@@ -365,7 +368,7 @@
   }
 
   .portfolio-overview-manage-columns-padding {
-    padding-right: 10px;
+    padding-right: 12px;
   }
 
   .portfolio-overview-download-button {
