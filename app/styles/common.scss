@@ -1147,7 +1147,7 @@ tr.k-master-row td.error:nth-child(2) {
     border-radius: 3px;
     border: 1px solid $pale-grey;
     background-color: $pale-grey;
-    padding: 20px;
+    padding: 15px;
     width: 94%;
     font-family: $font-family;
     margin-left: 10px;
@@ -1268,3 +1268,6 @@ tr.k-master-row td.error:nth-child(2) {
   top: 8px !important;
 }
 }
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */

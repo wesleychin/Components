@@ -130,11 +130,8 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		float: right;
 		padding-right: 15px;
 		font-weight: 900 !important;
-	}
-
-	.details-overview-amounts-bold-phone {
-		float: right;
-		padding-right: 15px;
+		font-size: 12px;
+		padding-top: 4px;
 	}
 
 	.accounts-details-wrapper {
@@ -156,7 +153,6 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		font-family: $font-family;
 		display: inline-block;
 		font-weight: normal !important;
-		padding-top: 7px;
 		margin-right: 0;
 	}
 
@@ -165,7 +161,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 		color: $medium-grey;
 		font-family: $font-family;
 		display: inline-block;
-		font-weight: 100 !important;
+		font-weight: 400 !important;
 		float: right;
 		margin-right: 14px;
 		padding-top: 4px;
