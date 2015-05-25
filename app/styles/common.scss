@@ -289,6 +289,7 @@ hr {
 
 .hide-hr {
   border-top: 1px dotted $medium-grey;
+  padding-bottom: 12px;
 }
 
 td {
@@ -1211,6 +1212,7 @@ tr.k-master-row td.error:nth-child(2) {
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
   .row {
     max-width: 98%;
   }
@@ -1268,6 +1270,3 @@ tr.k-master-row td.error:nth-child(2) {
   top: 8px !important;
 }
 }
-
-// XLarge screens
-@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
