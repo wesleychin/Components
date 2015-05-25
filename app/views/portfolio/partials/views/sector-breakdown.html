@@ -14,7 +14,7 @@
 	<highchart id="sector-breakdown" config="chartConfig"></highchart>
 </div>
 <div class="row hide-for-medium-up">
-	<div class="phone-table">
+	<div class="phone-table" ng-click="showDetailsSectorBreakdownBanks = ! showDetailsSectorBreakdownBanks">
 		<div class="row mobile-border">
 			<div class="inline-block sector-name"><i class="fa fa-caret-up text-green"></i>&nbsp;<span class="instrument-text-blue">
 				Banks</span>
@@ -69,7 +69,7 @@
 		</div>
 	</div>
 </div>
-<div class="hide-for-medium-up">
+<div class="hide-for-medium-up" ng-show="showDetailsSectorBreakdownBanks"> 
 	<div class="phone-table">
 		<div class="row mobile-border">
 			<div class="inline-block sector-name"><i class="fa fa-caret-up text-green"></i>&nbsp;<span class="instrument-text-blue">

@@ -81,7 +81,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="phone-table">
+	<div class="phone-table" ng-click="showDetailsPortfolioOverview = ! showDetailsPortfolioOverview">
 		<div class="row portfolio-overview-mobile-border">
 			<div class="inline-block portfolio-overview-mobile-instrument-name">
 				<span class="instrument-code">ACN</span><br/><span class="instrument-name">Accenture PLC</span>
@@ -109,7 +109,7 @@
 	</div>
 </div>
 
-<div class="hide-for-medium-up">
+<div class="hide-for-medium-up" ng-show="showDetailsPortfolioOverview">
 	<div class="action-buttons">
 		<div class="inline-block mobile-buttons" align="center"><span class="icon icon-trigger-add"></span>
 			<a href="#" class="action-button-text">Create trigger</a>
