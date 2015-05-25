@@ -535,11 +535,27 @@
     background: #pale-grey;
   }
 
+  .sector-allocation-headings-positioning {
+    display: inline-block;
+  }
+  .portfolio-performance-heading-margin {
+    margin-top: 22px;
+  }
+
+  .portfolio-performance-header-section {
+    padding-bottom: 20px;
+  }
+
+  .portfolio-performance-table {
+    width: 100%; 
+    margin-left: 10px;
+  }
+
   @media only screen and (max-width: 40em) {
     .mobilelineseperator-instruments {
      border-bottom: 1px solid $pale-grey;
-     margin-left:10px !important;
-     margin-right:15px !important;
+     margin-left: 10px !important;
+     margin-right: 15px !important;
      padding-bottom: 8px;
      padding-top: 0;
      margin-bottom: 8px; 
@@ -548,6 +564,18 @@
    .sector-mobile-hr {
     padding-left: 10px;
     padding-right: 15px;
+  }
+
+  .sector-allocation-heading-padding {
+    padding-right: 10px;
+  }
+
+  .sector-allocation-headings-positioning {
+    display: block;
+  }
+
+  .sector-allocation-dropdown-positioning {
+    float: right !important;
   }
 
   .padding-for-bold-instruments {
@@ -605,13 +633,13 @@
 }
 
 .mobile-buttons {
- width:49%; 
- padding:10px;
- height:auto !important;
+ width: 49%; 
+ padding: 10px;
+ height: auto !important;
 }
 
 .action-buttons {
-  width:94% !important; 
+  width: 94% !important; 
   background: $pale-grey;
   margin-bottom: 20px;
   margin-left: 10px;

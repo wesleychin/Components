@@ -10,9 +10,27 @@
 	</div>
 </div>
 <div class="row show-for-medium-up"><hr/></div>
-<div class="show-for-medium-up">
+<div class="row">
+	<div class="inline-block right sector-allocation-heading-padding">
+		<span class="top-performers-headings">Sector Allocation</span>
+	</div>
+</div>
+<div>
 	<highchart id="sector-breakdown" config="chartConfig"></highchart>
 </div>
+<div class="row"><hr/></div>
+<div class="row">
+	<div class="sector-allocation-headings-positioning right sector-allocation-heading-padding">
+		<span class="top-performers-headings sector-allocation-headings-positioning">Instrument Allocation - Banks</span>&nbsp;&nbsp;&nbsp;&nbsp;
+		<div class="sector-allocation-headings-positioning sector-allocation-dropdown-positioning">
+		<button class="button dropdown portfolio-overview-download-button">Banks</button>
+		</div>
+	</div>
+</div>
+<div>
+	<highchart id="sector-breakdown-detailed" config="chartConfigDetailed"></highchart>
+</div>
+
 <div class="row hide-for-medium-up">
 	<div class="phone-table" ng-click="showDetailsSectorBreakdownBanks = ! showDetailsSectorBreakdownBanks">
 		<div class="row mobile-border">
@@ -70,6 +88,14 @@
 	</div>
 </div>
 <div class="hide-for-medium-up" ng-show="showDetailsSectorBreakdownBanks"> 
+	<div class="action-buttons">
+		<div class="inline-block mobile-buttons" align="right"><span class="icon icon-list-view"></span>
+			<a href="#" class="action-button-text">List</a>
+		</div>
+		<div class="inline-block mobile-buttons" align="left"><span class="icon icon-graph"></span>
+			<a href="#" class="action-button-text">Graph</a>
+		</div>
+	</div>
 	<div class="phone-table">
 		<div class="row mobile-border">
 			<div class="inline-block sector-name"><i class="fa fa-caret-up text-green"></i>&nbsp;<span class="instrument-text-blue">

@@ -1,6 +1,10 @@
 {  
    "ostModel":{  
       "portfolioValueFormatted":"R 59 562.70",
+      "dailyChangeValue":"0.8",
+      "dailyChangePercentage":"0.01%",
+      "totalChangeValue":"1.4",
+      "totalChangePercentage":"0.01%",
       "dailyChangeValueFormatted":"0.8",
       "dailyChangePercentageFormatted":"0.01%",
       "totalChangeValueFormatted":"1.4",

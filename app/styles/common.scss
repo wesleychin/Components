@@ -796,6 +796,10 @@ a {
   font-size: 11px;
 }
 
+.text-dark-grey {
+  color: $dark-grey;
+}
+
 .no-padding-bottom {
   padding-bottom: 0;
   margin-bottom: 0;
@@ -1307,6 +1311,14 @@ table {
   width: 824px;
 }
 
+table tr:nth-of-type(even) {
+  background: $background-white;
+}
+
+table.portfolio-performance-table tr td {
+  font-size: 1.4rem !important;
+}
+
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textare {
   -webkit-appearance: none;
   border-radius: 3px;
@@ -1703,6 +1715,10 @@ tr.k-master-row td.error:nth-child(2) {
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
   font-family: $font-family;
+}
+
+.highcharts-axis {
+  display: none;
 }
 
 @media only screen and (max-width: 40em) {
