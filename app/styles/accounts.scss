@@ -1,10 +1,11 @@
 @import 'constants';
 @import 'colors';
+@import 'custom-colors';
 
 .account-breadcrumb {
 	display: inline-block;
 	padding: 0;
-	background-color: $grey-page-background;
+	background-color: $main-background-grey;
 	height: 26px;
 	font-size: 16px; font-size: 1.6rem;
 }
@@ -24,7 +25,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 	border-radius: 3px;
 	padding: 18px 20px;
 	margin-top: 8px;
-	background: $account-summary-display !important;
+	background: $account-cash-summary-background-grey !important;
 	position: relative;
 	height: auto;
 	font-size: 12px; font-size: 1.2rem;

@@ -1,5 +1,6 @@
 @import 'constants';
 @import 'colors';
+@import 'custom-colors';
 
   html {
     font-size: $html-percentage;
@@ -19,15 +20,15 @@
   }
 
   .footer-wrapper {
-    background: $grey-page-background;
+    background: $main-background-grey;
   }
 
   div.sub-header-wrapper {
-    background:$grey-page-background;
+    background:$main-background-grey;
   }
 
   .body-wrapper {
-    background: $grey-page-background;
+    background: $main-background-grey;
     /*padding-top: 57px; */
     padding-top: 115px;
   }
@@ -80,7 +81,7 @@
 
   .acc-empty-boxes {
     height: 45px;
-    background: $account-summary-display;
+    background: $account-cash-summary-background-grey;
     float: left;
     width:110%;
     overflow: hidden;
@@ -878,7 +879,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 }
 
 .k-footer-template {
-  background: $grey-page-background;
+  background: $main-background-grey;
 }
 
 .k-grid-footer {
