@@ -26,37 +26,28 @@ angular.module('componentsApp')
 			text:''
 		},
 		series: [{
-			color: "green",
-			negativeColor: "red", 
-			data: [20,
-			-50,
-			-40,
-			-30,
-			40,
-			-80,
-			10,
-			-5,
-			60,	
-			-60,
-			70,
-			-20],
+			color: "#7fbf7f",
+			negativeColor: "#ffb2b2", 
+			data: [20, -50, -40, -30, 40, -80, 10, -5, 60, -60, 70, -20],
 			pointPadding: 0,
 			groupPadding: 0,
 			showInLegend: false,
 		}, 
 		{
-            data: [100, -100, -100, -100, 100, -100, 100, -100, 100, -100, 100, -100]
+			color: "green",
+			negativeColor: "red", 
+            data: [80, -50, -60, -70, 60, -20, 90, -95, 40, -40, 30, -80]
         }],
 		xAxis: {
 			categories: ["Jan", "Feb", "Mar", "Apr", "May", "June", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
 			lineColor: 'transparent'
 		}, 
 		yAxis: {
+			min: -100,
+			max: 100, 
 			title:{
 				text:''
-			},
-			gridLineWidth: 0,
-			minorGridLineWidth: 0, 
+			}, 
 			lineColor: 'transparent', 
             stackLabels: {
                 enabled: true,
@@ -67,56 +58,4 @@ angular.module('componentsApp')
             }
 		}
 	}
-
-	// $scope.portfolioPerformanceChart = {
-	// 	seriesDefaults: {
-	// 		type: "column"
-	// 	},
-	// 	series: [{
-	// 		color: function(data) {
-	// 			if (data.value > 0) {
-	// 				return "green";
-	// 			} else {
-	// 				return "red";
-	// 			}
-	// 		}, 
-	// 		gap: 0,
-	// 		spacing: 0,
-	// 		data: [20,
-	// 		-50,
-	// 		-40,
-	// 		-30,
-	// 		40,
-	// 		-80,
-	// 		10,
-	// 		-5,
-	// 		60,
-	// 		-60,
-	// 		70,
-	// 		-20]
-	// 	}],
-	// 	valueAxis: {
-	// 		labels: {
-	// 			format: "{0}%"
-	// 		},
-	// 		line: {
-	// 			visible: false
-	// 		},
-	// 		axisCrossingValue: 0, 
-	// 		majorGridLines: false
-	// 	},
-	// 	categoryAxis: {
-	// 		categories: ["Jan", "Feb", "Mar", "Apr", "May", "June", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-	// 		line: {
-	// 			visible: false
-	// 		},
-	// 		labels: {
-	// 			padding: {top: 200}
-	// 		}, 
-	// 		majorGridLines: false
-	// 	},
-	// 	chartArea: { background: "#FFF", margin: 0, padding: 0, height: (screen.height * 0.48), width: (screen.width * 0.50) },
-	// 	plotArea: { background: "#FFF", margin: 0, padding: 0, height: (screen.height * 0.48), width: (screen.width * 0.50) }
-	// }
-
 });		
