@@ -238,12 +238,14 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 
 	.text-grey-instruments-qty {
 		color: $medium-grey;
-		font-size: 14px;
+		font-size: $font-size-14px;
+    font-size: $font-size-14rem;
 	}
 
 	.text-grey-instruments-qty-value {
 		color: $silver-grey;
-		font-size: 14px;
+		font-size: $font-size-14px;
+    font-size: $font-size-14rem;
 	}
 
 	.text-grey-instruments-paddlingleft {

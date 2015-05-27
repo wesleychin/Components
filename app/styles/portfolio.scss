@@ -32,7 +32,8 @@
   }
 
   .details-bluetext {
-    font-size: 14px;
+    font-size: $font-size-14px;
+    font-size: $font-size-14rem;
     color: $standard-bank-blue;
     font-family: $font-family;
     display: inline-block;
@@ -51,7 +52,8 @@
   }
 
   .portfolio-performance-previous-years {
-    font-size: 14px;
+    font-size: $font-size-14px;
+    font-size: $font-size-14rem;
     color: $medium-grey;
   }
 
@@ -127,8 +129,8 @@
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 1.4rem;
-    font-size: 14px;
+    font-size: $font-size-14px;
+    font-size: $font-size-14rem;
   }
 
   div.years-selection:hover {
@@ -186,12 +188,14 @@
 
   .text-grey-instruments-qty {
     color: $medium-grey;
-    font-size: 14px;
+    font-size: $font-size-14px;
+    font-size: $font-size-14rem;
   }
 
   .text-grey-instruments-qty-value {
     color: $light-grey;
-    font-size: 14px;
+    font-size: $font-size-14px;
+    font-size: $font-size-14rem;
   }
 
   .text-green-large {
@@ -342,12 +346,14 @@
 
   .text-grey-instruments-qty {
     color: $medium-grey;
-    font-size: 14px;
+    font-size: $font-size-14px;
+    font-size: $font-size-14rem;
   }
 
   .text-grey-instruments-qty-value {
     color: $light-grey;
-    font-size: 14px;
+    font-size: $font-size-14px;
+    font-size: $font-size-14rem;
   }
 
   .mobile-buttons {
@@ -443,7 +449,8 @@
 
   .market-news-heading {
     font-weight: 900;
-    font-size: 14px;
+    font-size: $font-size-14px;
+    font-size: $font-size-14rem;
     color: $medium-grey;
   }
 
@@ -452,7 +459,8 @@
   }
 
   .market-news-date {
-    font-size: 14px;
+    font-size: $font-size-14px;
+    font-size: $font-size-14rem;
     color: $light-grey;
   }
 
@@ -461,7 +469,8 @@
   }
 
   .market-news-description {
-    font-size: 14px;
+    font-size: $font-size-14px;
+    font-size: $font-size-14rem;
     color: $standard-bank-blue;
   }
 
@@ -564,7 +573,8 @@
    border-radius: 0;
    color: $standard-bank-blue;
    width: 100%;
-   font-size: 14px;
+   font-size: $font-size-14px;
+   font-size: $font-size-14rem;
    padding-left: 15px;
    margin-left: 0;
    padding-top: 13px;
