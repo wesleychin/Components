@@ -15,7 +15,7 @@
                         <ul id="account-dropdown"
                             class="f-dropdown options-position rounded-dropdown-corners account-dropdown-position">
                             <li class="list-separator" ng-repeat="account in filterAccountList">
-                                <a ng-click="breadcrumbComponent.onAccountChanged({selectedAccountId: account.AccountId})">{{account.AccountId}}</a>
+                                <a ng-click="breadcrumbComponent.onAccountChanged({selectedAccountId: account.AccountId})">{{account.AccountId}}<br/>{{account.AccountName}}</a>
                             </li>
                         </ul>
                     </li>

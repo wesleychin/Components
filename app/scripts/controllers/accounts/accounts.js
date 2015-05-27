@@ -81,14 +81,14 @@ angular.module('componentsApp')
 	];
 
 	$scope.filterAccountList = [
-	{"AccountId" : 2222},
-	{"AccountId" : 3333},
-	{"AccountId" : 4444},
-	{"AccountId" : 5555},
-	{"AccountId" : 6666},
-	{"AccountId" : 7777},
-	{"AccountId" : 8888},
-	{"AccountId" : 9999},
-	{"AccountId" : 1010}
+	{"AccountId" : 2222, "AccountName" : "Personal 2"},
+	{"AccountId" : 3333, "AccountName" : "Personal 3"},
+	{"AccountId" : 4444, "AccountName" : "Personal 4"},
+	{"AccountId" : 5555, "AccountName" : "Personal 5"},
+	{"AccountId" : 6666, "AccountName" : "Personal 6"},
+	{"AccountId" : 7777, "AccountName" : "Personal 7"},
+	{"AccountId" : 8888, "AccountName" : "Personal 8"},
+	{"AccountId" : 9999, "AccountName" : "Personal 9"},
+	{"AccountId" : 1010, "AccountName" : "Personal 10"}
 	];
 });
