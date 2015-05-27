@@ -25,7 +25,7 @@ div.sub-header-wrapper .sub-header .sub-header-title {
 }
 
 .details-overlay {
-	border: 1px solid lighten ($light-grey, 10%);
+	border: 1px solid $border-grey;
 	border-radius: 3px;
 	padding: 18px 20px;
 	margin-top: 8px;
