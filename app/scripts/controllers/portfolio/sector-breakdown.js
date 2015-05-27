@@ -93,4 +93,80 @@ angular.module('componentsApp')
         }]
     }
 
+    $scope.chartConfigDetailed = {
+        options: {
+            chart: {
+                type: 'bar',
+                height: 280
+            },
+            plotOptions: {
+                series: {
+                    pointWidth: 40,
+                    stacking: 'normal'
+                }, 
+                bar: {
+                    dataLabels: {
+                        enabled: true, 
+                        align: 'right',
+                        color: 'white'
+                    }
+                }
+            }, 
+            tooltip: {
+                enabled: false
+            }
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['FSRABL', 'CPI', 'FSR'], 
+            gridLineWidth: 0,
+            minorGridLineWidth: 0, 
+            labels: {
+                enabled: false
+            },
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            max: 100, 
+            labels: {
+                enabled: false
+            },
+            title: {
+                text: null
+            }, 
+            stackLabels: {
+                formatter: function() {
+                    return this.axis.chart.xAxis[0].categories[this.x];
+                },
+                enabled: true,           
+                verticalAlign: 'top', 
+                color: "#333333",  
+                align: 'left',
+                y: -5, 
+                x: 2
+            },
+            gridLineWidth: 0,
+            minorGridLineWidth: 0
+        },
+        series: [{
+            name: 'Total',
+            data: [
+            {y: 70, color: '#F5DFCA'},
+            {y: 50, color: '#F5DFCA'},
+            {y: 80, color: '#F5DFCA'}
+            ]
+        }, {
+            name: 'Percentage',
+            data: [
+            {y: 30, color: '#c2ac97'},
+            {y: 50, color: '#c2ac97'},
+            {y: 20, color: '#c2ac97'}
+            ]
+        }]
+    }
 });
