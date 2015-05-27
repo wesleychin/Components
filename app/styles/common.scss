@@ -1076,6 +1076,10 @@ tr.k-master-row td.error:nth-child(2) {
   font-family: $font-family;
 }
 
+tspan {
+  text-shadow: none;
+}
+
 @media only screen and (max-width: 40em) {
   hr {
     border-top: 1px solid $pale-grey;
