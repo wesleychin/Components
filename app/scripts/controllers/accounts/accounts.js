@@ -4,8 +4,8 @@ angular.module('componentsApp')
 .controller('AccountsCtrl', function ($scope, $http, $timeout, $filter) {
 	$scope.view = 1;
 	$scope.time = moment().format('h:mm:ss');
-	$scope.date = moment().format('YYYY/MM/DD'); 
-	$scope.idSelectedVote = 1;
+	$scope.date = moment().format('YYYY/MM/DD');
+	$scope.idSelectedVote = 2;
 	$scope.downloadOptions = [ 'pdf', 'xls', 'csv'];
 	$scope.streamingButtonActive = true;
 
@@ -45,7 +45,7 @@ angular.module('componentsApp')
 		}
 
 		var sortedPerformers = response.sort(function(a,b) { return parseFloat(a.amount) - parseFloat(b.amount) } );
-		
+
 		$scope.top5performers = sortedPerformers.reverse().slice(0,5);
 	});
 
@@ -73,12 +73,10 @@ angular.module('componentsApp')
 	};
 
 	$scope.filterPriceTypes = [
-	{"priceTypeId" : 1, "priceTypeName" : "Live"},
 	{"priceTypeId" : 2, "priceTypeName" : "Delayed"}
 	];
 
 	$scope.filterBidRulingTypes = [
-	{"bidRulingTypeId" : 1, "bidRulingTypeName" : "Bid"},
 	{"bidRulingTypeId" : 2, "bidRulingTypeName" : "Ruling"}
 	];
 

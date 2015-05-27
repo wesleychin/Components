@@ -1,6 +1,5 @@
 @import 'constants';
 @import 'colors';
-@import 'custom-colors';
 
   .portfolio-overview-container {
     width: 100%;
@@ -9,10 +8,11 @@
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
     border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
     float: left;
     margin-bottom: 20px;
     list-style-type: none;
-    font-size: 12px !important; 
+    font-size: 12px !important;
     font-family: $font-family;
     position: relative;
     padding: 20px;
@@ -70,7 +70,7 @@
   .switch.tiny label:after {
     height: 8px;
     width: 8px;
-  }  
+  }
 
   .portfolio-performance-text {
     font-size: 16px;
@@ -119,13 +119,15 @@
   }
 
   .years-selection {
-    border-left: 1px solid $light-grey;
-    border-top: 1px solid $light-grey;
-    border-bottom: 1px solid $light-grey;
+    border-left: 1px solid $standard-bank-blue;
+    border-top: 1px solid $standard-bank-blue;
+    border-bottom: 1px solid $standard-bank-blue;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    font-size: 1.4rem;
+    font-size: 14px;
   }
 
   div.years-selection:hover {
@@ -149,7 +151,7 @@
   .forward-arrow {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    border-right: 1px solid $light-grey;
+    border-right: 1px solid $standard-bank-blue;
     height: auto;
   }
 
@@ -167,6 +169,7 @@
 
   .text-blue-instruments-name {
     color: $standard-bank-blue;
+    font-size: 1.8rem;
     font-size: 18px;
   }
 
@@ -192,14 +195,14 @@
 
   .text-green-large {
     color: $credit-text-green;
-    font-weight: normal !important; 
+    font-weight: normal !important;
     font-size: 18px;
     font-size: 1.8rem;
   }
 
   .text-red-large {
     color: $debit-text-red;
-    font-weight: normal !important; 
+    font-weight: normal !important;
     font-size: 18px;
     font-size: 1.8rem;
   }
@@ -227,6 +230,7 @@
   .instrument-data {
     font-size: 12px;
     color: $dark-grey;
+
   }
 
   .instrument-data-light-grey {
@@ -346,12 +350,12 @@
   }
 
   .mobile-buttons {
-    width:49%; 
+    width:49%;
     height:50px;
   }
 
   .action-buttons {
-    width:100%; 
+    width:100%;
     background: $pale-grey;
     margin-bottom: 20px;
   }
@@ -365,7 +369,7 @@
   }
 
   .portfolio-overview-manage-columns-padding {
-    padding-right: 10px;
+    padding-right: 12px;
   }
 
   .portfolio-overview-download-button {
@@ -377,8 +381,8 @@
   }
 
   .portfolio-overview-mobile-instrument-name {
-    border-right: 1px solid $silver-grey; 
-    width:49%; 
+    border-right: 1px solid $silver-grey;
+    width:49%;
     padding-bottom:15px;
   }
 
@@ -387,8 +391,8 @@
   }
 
   .portfolio-overview-mobile-additional-information {
-    width:49%; 
-    padding-top:17px; 
+    width:49%;
+    padding-top:17px;
     border-right:1px solid $silver-grey;
   }
 
@@ -405,12 +409,12 @@
   }
 
   .sector-name {
-    width: 40%; 
+    width: 40%;
     padding-bottom: 15px;
   }
 
   .sector-data {
-    width: 25%; 
+    width: 25%;
     padding-bottom: 15px;
   }
 
@@ -419,12 +423,13 @@
   }
 
   .sector-total-movement {
-    width: 49%; 
     padding-top: 17px;
+    float: left;
   }
 
   .sector-data-two-column-width {
-    width: 49%;
+    float: right;
+    padding-top: 17px;
   }
 
   .sector-additional-information {
@@ -521,61 +526,19 @@
     height: 100%;
   }
 
-  .market-statistics-div {
-    background: $pale-grey;
-    border-left: solid 4px $links-blue;
-    border-bottom: solid 1px $silver-grey;
-  }
-
-  .grid-additional-information-headings {
-    background: $pale-grey;
-  }
-
-  .grid-additional-information-data {
-    background: $pale-grey;
-  }
-
-  .sector-allocation-headings-positioning {
-    display: inline-block;
-  }
-  .portfolio-performance-heading-margin {
-    margin-top: 22px;
-  }
-
-  .portfolio-performance-header-section {
-    padding-bottom: 20px;
-  }
-
-  .portfolio-performance-table {
-    width: 100%; 
-    margin-left: 10px;
-  }
-
   @media only screen and (max-width: 40em) {
     .mobilelineseperator-instruments {
      border-bottom: 1px solid $pale-grey;
-     margin-left: 10px !important;
-     margin-right: 15px !important;
+     margin-left:10px !important;
+     margin-right:15px !important;
      padding-bottom: 8px;
      padding-top: 0;
-     margin-bottom: 8px; 
+     margin-bottom: 8px;
    }
 
    .sector-mobile-hr {
     padding-left: 10px;
     padding-right: 15px;
-  }
-
-  .sector-allocation-heading-padding {
-    padding-right: 10px;
-  }
-
-  .sector-allocation-headings-positioning {
-    display: block;
-  }
-
-  .sector-allocation-dropdown-positioning {
-    float: right !important;
   }
 
   .padding-for-bold-instruments {
@@ -619,7 +582,7 @@
    float: left;
    margin-bottom: 20px;
    list-style-type: none;
-   font-size: 12px !important; 
+   font-size: 12px !important;
    font-family: $font-family;
    position: relative;
    padding: 5px;
@@ -633,13 +596,13 @@
 }
 
 .mobile-buttons {
- width: 49%; 
- padding: 10px;
- height: auto !important;
+ width:49%;
+ padding:10px;
+ height:auto !important;
 }
 
 .action-buttons {
-  width: 94% !important; 
+  width:94% !important;
   background: $pale-grey;
   margin-bottom: 20px;
   margin-left: 10px;
