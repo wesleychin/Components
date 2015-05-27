@@ -46,7 +46,8 @@
   }
 
   .headingFormat {
-    font-size: 20px;
+    font-size: $font-size-20px;
+    font-size: $font-size-20rem;
     color: $dark-grey;
     margin-top: 10px;
   }
@@ -76,7 +77,8 @@
   }
 
   .portfolio-performance-text {
-    font-size: 16px;
+    font-size: $font-size-16px;
+    font-size: $font-size-16rem;
     color: $medium-grey;
     font-family: $font-family;
     display: inline-block;
@@ -99,7 +101,8 @@
 
   .tabs dd > a {
     font-family: 'Arial';
-    font-size: 11px;
+    font-size: $font-size-11px;
+    font-size: $font-size-11rem;
     color: $medium-grey;
     display: inline-block;
     text-align: left;
@@ -172,18 +175,20 @@
 
   .text-blue-instruments-name {
     color: $standard-bank-blue;
-    font-size: 1.8rem;
-    font-size: 18px;
+    font-size: $font-size-18px;
+    font-size: $font-size-18rem;
   }
 
   .text-grey-instruments-name {
     color: $silver-grey;
-    font-size: 12px;
+    font-size: $font-size-12px;
+    font-size: $font-size-12rem;
   }
 
   .text-grey-instruments-value-large {
     color: $medium-grey;
-    font-size: 25px;
+    font-size: $font-size-25px;
+    font-size: $font-size-25rem;
   }
 
   .text-grey-instruments-qty {
@@ -201,72 +206,83 @@
   .text-green-large {
     color: $credit-text-green;
     font-weight: normal !important;
-    font-size: 18px;
-    font-size: 1.8rem;
+    font-size: $font-size-18px;
+    font-size: $font-size-18rem;
   }
 
   .text-red-large {
     color: $debit-text-red;
     font-weight: normal !important;
-    font-size: 18px;
-    font-size: 1.8rem;
+    font-size: $font-size-18px;
+    font-size: $font-size-18rem;
   }
 
   .instrument-code {
     color: $standard-bank-blue;
-    font-size: 19px;
+    font-size: $font-size-19px;
+    font-size: $font-size-19rem;
   }
 
   .instrument-name {
     color: $light-grey;
-    font-size: 10px;
+    font-size: $font-size-10px;
+    font-size: $font-size-10rem;
   }
 
   .instrument-value-large {
     color: $light-grey;
-    font-size: 34px;
+    font-size: $font-size-34px;
+    font-size: $font-size-34rem;
   }
 
   .instrument-data-medium {
-    font-size: 12px;
+    font-size: $font-size-12px;
+    font-size: $font-size-12rem;
     color: $dark-grey;
   }
 
   .instrument-data {
-    font-size: 12px;
+    font-size: $font-size-12px;
+    font-size: $font-size-12rem;
     color: $dark-grey;
 
   }
 
   .instrument-data-light-grey {
-    font-size: 12px;
+    font-size: $font-size-12px;
+    font-size: $font-size-12rem;
     color: $light-grey;
   }
 
   .instrument-data-unit-cost {
-    font-size: 12px;
+    font-size: $font-size-12px;
+    font-size: $font-size-12rem;
     color: $light-grey;
   }
 
   .instrument-percentage {
-    font-size: 18px;
+    font-size: $font-size-18px;
+    font-size: $font-size-18rem;
   }
 
   .instrument-text-blue {
     color: $standard-bank-blue !important;
-    font-size: 12px;
+    font-size: $font-size-12px;
+    font-size: $font-size-12rem;
   }
 
   .instrument-bold-text {
     color: $dark-grey;
-    font-size: 12px;
+    font-size: $font-size-12px;
+    font-size: $font-size-12rem;
     font-weight: 900;
     padding-left: 1px !important;
   }
 
   .instrument-bold-text-blue {
     color: $standard-bank-blue !important;
-    font-size: 12px;
+    font-size: $font-size-12px;
+    font-size: $font-size-12rem;
     font-weight: 900;
   }
 
@@ -312,7 +328,8 @@
   }
 
   .top-performers-headings {
-    font-size: 18px;
+    font-size: $font-size-18px;
+    font-size: $font-size-18rem;
     color: $medium-grey;
     line-height: 48px;
     padding-bottom:10px;
@@ -320,7 +337,8 @@
 
   .top-performers-name {
     padding-top: 6px;
-    font-size: 12px;
+    font-size: $font-size-12px;
+    font-size: $font-size-12rem;
     font-family: $font-family;
     color: $background-white;
   }
@@ -331,17 +349,20 @@
 
   .text-blue-instruments-name {
     color: $standard-bank-blue;
-    font-size: 18px;
+    font-size: $font-size-18px;
+    font-size: $font-size-18rem;
   }
 
   .text-grey-instruments-name {
     color: $silver-grey;
-    font-size: 12px;
+    font-size: $font-size-12px;
+    font-size: $font-size-12rem;
   }
 
   .text-grey-instruments-value-large {
     color: $medium-grey;
-    font-size: 25px;
+    font-size: $font-size-25px;
+    font-size: $font-size-25rem;
   }
 
   .text-grey-instruments-qty {
@@ -515,7 +536,8 @@
   }
 
   .ranked-holding-indicator .fa {
-    font-size: 23px;
+    font-size: $font-size-23px;
+    font-size: $font-size-23rem;
   }
 
   .ranked-holding-percentage {
@@ -593,7 +615,8 @@
    float: left;
    margin-bottom: 20px;
    list-style-type: none;
-   font-size: 12px !important;
+   font-size: $font-size-12px;
+   font-size: $font-size-12rem;
    font-family: $font-family;
    position: relative;
    padding: 5px;
