@@ -34,7 +34,7 @@
   .details-bluetext {
     font-size: $font-size-14px;
     font-size: $font-size-14rem;
-    color: $standard-bank-blue;
+    color: $links-blue;
     font-family: $font-family;
     display: inline-block;
     margin-top: 10px;
@@ -135,7 +135,7 @@
   }
 
   div.years-selection:hover {
-    background: $standard-bank-blue;
+    background: $links-blue;
   }
 
   div.years-selection:hover > a {
@@ -172,7 +172,7 @@
   }
 
   .text-blue-instruments-name {
-    color: $standard-bank-blue;
+    color: $links-blue;
     font-size: $font-size-18px;
     font-size: $font-size-18rem;
   }
@@ -216,7 +216,7 @@
   }
 
   .instrument-code {
-    color: $standard-bank-blue;
+    color: $links-blue;
     font-size: $font-size-19px;
     font-size: $font-size-19rem;
   }
@@ -264,7 +264,7 @@
   }
 
   .instrument-text-blue {
-    color: $standard-bank-blue !important;
+    color: $links-blue !important;
     font-size: $font-size-12px;
     font-size: $font-size-12rem;
   }
@@ -278,7 +278,7 @@
   }
 
   .instrument-bold-text-blue {
-    color: $standard-bank-blue !important;
+    color: $links-blue !important;
     font-size: $font-size-12px;
     font-size: $font-size-12rem;
     font-weight: 900;
@@ -346,7 +346,7 @@
   }
 
   .text-blue-instruments-name {
-    color: $standard-bank-blue;
+    color: $links-blue;
     font-size: $font-size-18px;
     font-size: $font-size-18rem;
   }
@@ -387,11 +387,11 @@
   }
 
   .action-button-text {
-    color: $standard-bank-blue;
+    color: $links-blue;
   }
 
   .action-button-text:hover {
-    color: $standard-bank-blue;
+    color: $links-blue;
   }
 
   .portfolio-overview-manage-columns-padding {
@@ -490,7 +490,7 @@
   .market-news-description {
     font-size: $font-size-14px;
     font-size: $font-size-14rem;
-    color: $standard-bank-blue;
+    color: $links-blue;
   }
 
   .market-news-description-padding {
@@ -591,14 +591,14 @@
    border-top: 0;
    float: left;
    border-radius: 0;
-   color: $standard-bank-blue;
+   color: $links-blue;
    width: 100%;
    font-size: $font-size-14px;
    font-size: $font-size-14rem;
    padding-left: 15px;
    margin-left: 0;
    padding-top: 13px;
-   border-bottom: 1px solid $standard-bank-blue;
+   border-bottom: 1px solid $links-blue;
    margin-bottom: 0;
    font-family: $font-family;
  }
