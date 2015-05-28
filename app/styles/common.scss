@@ -296,6 +296,10 @@ hr {
   padding: 0;
 }
 
+.headerrow {
+  height: 42px;
+}
+
 .hide-hr {
   border-top: 1px dashed $light-grey;
   padding-bottom: 5px;
@@ -556,6 +560,8 @@ button, .button {
 
 .anchor-links {
   color : $links-blue !important;
+  font-size: $font-size-14px;
+  font-size: $font-size-14rem;
 }
 
 .anchor-links:hover {
