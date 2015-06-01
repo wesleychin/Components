@@ -5492,7 +5492,7 @@ div.dropdown-Container .dropdown-active-border {
   border-bottom: 1px solid #26428b;
 }
 
-/* 
+/*
  * Don't modify things marked with ! - unless you know what you're doing
  */
 /* ! vertical layout */
@@ -5762,10 +5762,10 @@ div.dropdown-Container .dropdown-active-border {
 }
 
 /* item labels focus using keyboard */
-/* .multiSelect .multiSelectFocus { 
-    background-image: linear-gradient( #c1c1c1, #999 ) !important;    
-    color: #fff !important;    
-    cursor: pointer;        
+/* .multiSelect .multiSelectFocus {
+    background-image: linear-gradient( #c1c1c1, #999 ) !important;
+    color: #fff !important;
+    cursor: pointer;
     border: 1px solid #ccc !important;
 } */
 /* change mouse pointer into the pointing finger */
@@ -8128,8 +8128,8 @@ div.sub-header-wrapper .sub-header .sub-header-options .sub-header-options-margi
     margin:0 auto;
   } */
 /* .sub-header-grid{
-  padding-left: 40px; 
-  padding-right: 20px;    
+  padding-left: 40px;
+  padding-right: 20px;
 } */
 /* line 5379, ../../app/styles/main.scss */
 .header-logo-popup-active img {
@@ -10607,12 +10607,6 @@ div.dashboard-widget-content .dashboard-widget-content-small .dashboard-widget-a
   width: 100%;
 }
 
-/* line 7029, ../../app/styles/main.scss */
-.dashboard-widget-table table tr {
-  max-height: 30px;
-  height: 29px;
-  border-top: 1px solid #d7d7d7;
-}
 
 /* line 7033, ../../app/styles/main.scss */
 .dashboard-widget-table table tr td:last-child {
@@ -16271,14 +16265,6 @@ ul.show-all-account-table li:last-child {
   color : #D3D3D3;
 }
 
-.sticky_footer {
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    background-color: white;
-    text-align: center;
-}
 
 .portfolio-overview-container {
   height: 509px;

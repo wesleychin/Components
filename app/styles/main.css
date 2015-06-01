@@ -4078,11 +4078,7 @@ div.dropdown-Container .dropdown-active-border {
         width: 100%
     }
 
-    .dashboard-widget-table table tr {
-        max-height: 30px;
-        height: 29px;
-        border-top: 1px solid #d7d7d7
-    }
+
 
     .dashboard-widget-table table tr td: last-child {
         text-align: right;
@@ -7217,4 +7213,3 @@ div.dropdown-Container .dropdown-active-border {
     .AppContainer, .AppContainer>div {
         height: 100%
     }
-

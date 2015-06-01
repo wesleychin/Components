@@ -1,6 +1,6 @@
 <div id="sticky_footer" class="text-center sticky_footer">
-	<table>
-		<tr>
+<p><table>
+		<tr style="text-center">
 			<td ng-repeat="stickybar in stickybarData">
 				{{stickybar.name}}  <i ng-class="{'text-green':stickybar.increaseData.isIncrease == true, 'text-red':stickybar.increaseData.isIncrease == false}">{{stickybar.increaseData.percent}}</i>
 				 <i ng-class="{'fi-arrow-up':stickybar.increaseData.isIncrease == true, 'fi-arrow-down':stickybar.increaseData.isIncrease == false, 'text-green':stickybar.increaseData.isIncrease == true, 'text-red':stickybar.increaseData.isIncrease == false}"></i>
@@ -8,4 +8,5 @@
 			</td>
 		</tr>
 	</table>
+</p>
 </div>

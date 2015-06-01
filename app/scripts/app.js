@@ -17,14 +17,14 @@ angular
     'ngSanitize',
     'ngTouch',
     'mm.foundation',
-    'highcharts-ng', 
+    'highcharts-ng',
     'gridster'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/accounts/accounts-overview.html',
-        controller: 'AccountsCtrl'
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
       })
       .otherwise({
         templateUrl: 'views/main.html',
