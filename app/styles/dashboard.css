@@ -65,3 +65,29 @@ div.dashboard-widget-heading {
 .text-normal {
   font-size: 12px;
 }
+
+.blockleft {
+
+  float: left !important;
+  padding-left: 0px;
+  width: 100%;
+  display: inline;
+  text-align: left;
+  margin-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #999;
+}
+
+.blockright {
+
+  float: right !important;
+  padding-left: 0px;
+  width: 100%;
+  display: inline;
+  text-align: left;
+  margin-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #999;
+}
