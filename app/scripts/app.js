@@ -30,5 +30,9 @@
   .when('/', {
     templateUrl: 'views/accounts/accounts-overview.html',
     controller: 'AccountsCtrl'
+  })
+  .when('/dashboard', {
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl'
   });
 });
