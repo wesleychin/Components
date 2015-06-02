@@ -224,23 +224,11 @@
       "notification" : "default",
       "heading" : "Market overview",
       "hasAccountTable" : true,
-      "tableData" : { "cash" : { "amount" : 18000001,
-              "currency" : "R"
-            },
-          "daily" : { "amount" : 8189,
-              "currency" : "R"
-            },
-          "securities" : { "amount" : 18000001,
-              "currency" : "R"
-            },
-          "totalChange" : { "amount" : 2.4,
-              "isIncrease" : true,
-              "percent" : "0.02"
-            }
-        },
-      "availableBalance" : { "amount" : 56789,
-          "currency" : "R"
-        },
+      "tableData" :   [
+        [ { "data": ["JSE", 6412.78, 25], "increaseData" : [ {"isIncrease": false, "data" : "0.2%"} ] } ],
+        [ { "data": ["Gold", 14689.90, 20], "increaseData" : [ {"isIncrease": true, "data" : "0.3%"} ] } ],
+        [ { "data": ["R/USD", 12.5231, 20], "increaseData" : [ {"isIncrease": true, "data" : "0.3%"} ] } ]
+        ],
       "isHero" : false
     }
 }

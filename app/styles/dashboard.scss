@@ -149,6 +149,7 @@ li.list-separator-dashboard {
 }
 
 .boldtext {font-weight: 900;}
+.notboldtext {font-weight: 100;}
 
 .dashboard-download-button {
   width: 197px;
@@ -158,6 +159,7 @@ li.list-separator-dashboard {
 .list{  min-height: 30px;
   overflow-y: scroll;
   height: 117px;}
+
 
   .f-dropdown-small li a {
     display: block;
@@ -206,4 +208,16 @@ li.list-separator-dashboard {
 
   .movement-margin {
     margin-top: 15px;
+  }
+
+  .yearendlineright {
+    border-right: 1px solid #1561A6;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .yearendlineleft {
+    border-left: 1px solid #1561A6;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
