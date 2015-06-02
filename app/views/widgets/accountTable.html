@@ -12,25 +12,31 @@
                 <span class="widget-balance widget-balance-value">{{tile.availableBalance.amount}}</span>
             </div>
         </div>
-        <div class="dashboard-widget-table">
-            <table>
-                <tr ng-if="tile.tableData.daily.amount || tile.tableData.totalChange.amount">
-                    <td ng-if="tile.tableData.daily.amount">{{tile.tableData.daily.currency}}{{tile.tableData.daily.amount}}</td>
-                    <td ng-if="tile.tableData.totalChange.amount" ng-class="{'text-green':tile.tableData.totalChange.isIncrease == true, 'text-red':tile.tableData.totalChange.isIncrease == false}">{{tile.tableData.totalChange.amount}} ({{tile.tableData.totalChange.percent}}) <i ng-class="{'fi-arrow-up':tile.tableData.totalChange.isIncrease == true, 'fi-arrow-down':tile.tableData.totalChange.isIncrease == false}"></i></td>
-                </tr>
-                <tr ng-if="tile.tableData.daily || tile.tableData.totalChange">
-                    <td ng-if="tile.tableData.daily">Daily</td>
-                    <td ng-if="tile.tableData.totalChange">Total Change</td>
-                </tr>
-                <tr ng-if="tile.tableData.securities.amount || tile.tableData.cash.amount">
-                    <td ng-if="tile.tableData.securities.amount">{{tile.tableData.securities.currency}}{{tile.tableData.securities.amount}}</td>
-                    <td ng-if="tile.tableData.cash.amount">{{tile.tableData.cash.currency}}{{tile.tableData.cash.amount}}</td>
-                </tr>
-                <tr ng-if="tile.tableData.securities || tile.tableData.cash">
-                    <td ng-if="tile.tableData.securities">Securities</td>
-                    <td ng-if="tile.tableData.cash">Cash</td>
-                </tr>
-            </table>
+
+          <div class="blockleft">
+          <div class="amounts-medium-grey">
+            R 8 189.00
+            <div class="text-normal">Daily</div>
+          </div>
+        </div>
+
+        <div class="blockright">
+        <div class="amounts-medium-grey right">
+          R 8 189.00
+          <div class="text-normal">Daily</div>
+        </div>
+      </div>
+
+
+        <div class="amounts-medium-grey left">
+          R 8 189.00
+          <div class="text-normal">Available trading funds</div>
+        </div>
+
+        <div class="amounts-medium-grey right">
+          R 18 001.00
+          <div class="text-normal">Cash</div>
         </div>
     </div>
+
 </div>

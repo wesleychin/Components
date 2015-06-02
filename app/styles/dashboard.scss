@@ -1,0 +1,90 @@
+.sticky_footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  padding: 13px;
+  font-size: 12px;
+  background-color: white;
+  text-align: center !important;
+  font-family: "HelveticaNeue-Bold", "robotobold", Arial, sans-serif;
+}
+
+div.dashboard-widget-heading {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  color: #0c6dce;
+  padding: 20px 0 11px 18px;
+  font-family: "HelveticaNeue-Light", "robotolight", Arial, sans-serif;
+  position: relative;
+  z-index: 11;
+  text-transform: capitalize;
+}
+
+.dashboard-widget-available-balance {
+  line-height: 20px;
+  float: left;
+  font-size: 12px;
+}
+
+.dashboard-widget-available-balance .widget-balance-value {
+  color: #0e6fcf;
+  font-size: 30px;
+}
+
+.dashboard-widget-table {
+  padding: 0 ! important;
+  margin-top: 12px;
+  min-height: 150px;
+}
+
+.dashboard-widget-table table tr {
+  max-height: 30px;
+  height: 29px;
+}
+
+
+.dashboard-widget-table table tr td:first-child {
+  padding-left:0 !important;
+  width: auto;
+}
+
+.dashboard-widget-table table tr {
+  max-height: 0px;
+  height: 0px;
+  border-top: 0px !important;}
+
+.amounts-medium-grey{
+  padding-left:0;
+  font-size: 20px;
+}
+
+.text-normal {
+  font-size: 12px;
+}
+
+.blockleft {
+
+  display: block;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #666666;
+    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+    margin-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.blockright {
+
+  display: block;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #666666;
+    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+    margin-left: 0;
+    padding-right: 0;
+    margin-right: 0;}
