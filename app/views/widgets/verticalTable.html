@@ -5,22 +5,61 @@
 <div class="dashboard-widget-gradient"></div>
 <div class="dashboard-widget-content">
     <div class="dashboard-widget-table">
-        <table>
-            <tr ng-if="tile.tableHeadings">
-                <td ng-repeat="heading in tile.tableHeadings"><b>{{heading}}</b></td>
-            </tr>
-            <tr ng-repeat="data in tile.tableData">
-                <td ng-if="tile.hasIcon" ng-repeat="type in data[0].typeData">
-                    <i ng-class="{'fi-calendar':type.name == 'event', 'fi-torso':type.name == 'howto', 'fi-layout':type.name == 'courses', 'fi-torsos-all':type.name == 'forum'}"></i>
-                </td>
-                <td ng-repeat="actualData in data[0].data">{{actualData}}</td>
-                <td ng-if="data[0].increaseData" ng-repeat="increaseArrow in data[0].increaseData">
-                    <i ng-class="{'fi-arrow-up':increaseArrow.isIncrease == true, 'fi-arrow-down':increaseArrow.isIncrease == false, 'text-green':increaseArrow.isIncrease == true, 'text-red':increaseArrow.isIncrease == false}"></i>
-                </td>
-                <td ng-if="data[0].increaseData" ng-repeat="increaseData in data[0].increaseData">
-                    <i ng-class="{'text-green':increaseData.isIncrease == true, 'text-red':increaseData.isIncrease == false}">{{increaseData.data}}</i>
-                </td>
-            </tr>
-        </table>
+      <div class="phone-table">
+          <div class="row">
+              <div class="inline-block row-padding-bottom">
+                <span class="dashboard-widget-blue-text">All Share Index</span><br>
+                <span class="left dashboard-description-text">45966</span>
+              </div>
+            <div class="inline-block right">
+              <span class="right  dashboard-description-text text-red movement-margin">+2.4 (0.02%)</span><br>
+            </div>
+          </div>
+          <div class="row">
+              <div class="inline-block row-padding-bottom">
+                <span class="dashboard-widget-blue-text">Top 40 Index</span><br>
+                <span class="left dashboard-description-text ">45000</span>
+              </div>
+            <div class="inline-block right">
+              <span class="right  dashboard-description-text text-green movement-margin">+20 (0.3%)</span><br>
+            </div>
+          </div>
+          <div class="row">
+              <div class="inline-block row-padding-bottom">
+                <span class="dashboard-widget-blue-text">Dow Jones</span><br>
+                <span class="left dashboard-description-text">17000</span>
+              </div>
+            <div class="inline-block right">
+              <span class="right  dashboard-description-text text-green movement-margin">+20 (0.3%)</span><br>
+            </div>
+          </div>
+          <div class="row">
+              <div class="inline-block row-padding-bottom">
+                <span class="dashboard-widget-blue-text">R/$</span><br>
+                <span class="left dashboard-description-text">12.57</span>
+              </div>
+            <div class="inline-block right">
+              <span class="right  dashboard-description-text text-red movement-margin">+38 (0.5%)</span><br>
+            </div>
+          </div>
+          <div class="row">
+              <div class="inline-block row-padding-bottom">
+                <span class="dashboard-widget-blue-text">Euro/$</span><br>
+                <span class="left dashboard-description-text">1.28</span>
+              </div>
+            <div class="inline-block right">
+              <span class="right  dashboard-description-text text-green movement-margin">+20 (0.3%)</span><br>
+            </div>
+          </div>
+          <div class="row">
+              <div class="inline-block row-padding-bottom">
+                <span class="dashboard-widget-blue-text">Gold Price</span><br>
+                <span class="left dashboard-description-text">1228.00</span>
+              </div>
+            <div class="inline-block right">
+              <span class="right  dashboard-description-text text-green movement-margin">+38 (0.5%)</span><br>
+            </div>
+          </div>
+        </div>
     </div>
 </div>

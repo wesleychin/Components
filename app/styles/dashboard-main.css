@@ -10495,10 +10495,6 @@ div.dashboard-widget-content {
   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
 }
 
-/* line 6972, ../../app/styles/main.scss */
-div.dashboard-widget-content .dashboard-widget-content-top {
-  padding: 0 15px 0 18px;
-}
 
 /* line 6974, ../../app/styles/main.scss */
 div.dashboard-widget-content .widget-sub-heading-right {

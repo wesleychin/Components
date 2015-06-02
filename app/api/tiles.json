@@ -1,4 +1,4 @@
-{ "0" : { 
+{ "0" : {
     "notification" : "default",
 	  "subheading" : "PORTFOLIO VALUE",
 	  "accountNumber" : "3456789",
@@ -22,7 +22,7 @@
       "hasAccountTable" : true,
       "isHero" : true
     },
-  "1" : { 
+  "1" : {
       "notification" : "default",
       "accountNumber" : "4567890",
       "subheading" : "PORTFOLIO VALUE",
@@ -41,7 +41,7 @@
       "isHero" : false
     },
      "2" : { "chartData" : { "legend" : { "enabled" : false },
-          "series" : [ { 
+          "series" : [ {
             "showInLegend" : false,
             "data" : [ 1000,
                     2000,
@@ -83,7 +83,7 @@
       "heading" : "Price Graph",
       "isHero" : true
     },
-  "3" : { 
+  "3" : {
       "heading" : "Cash summary",
       "hasDropdown" : true,
       "dropdownData" : [
@@ -95,18 +95,18 @@
         "buttons" : [ "Deposit", "Withdraw" ],
       "isHero" : false
     },
-  "4" : { 
+  "4" : {
       "notification" : "default",
       "heading" : "Market overview",
       "hasVerticalTable" : true,
       "tableData" :   [
-        [ { "data": ["JSE", 6412.78, 25], "increaseData" : [ {"isIncrease": false, "data" : "0.2%"} ] } ],        
-        [ { "data": ["Gold", 14689.90, 20], "increaseData" : [ {"isIncrease": true, "data" : "0.3%"} ] } ], 
+        [ { "data": ["JSE", 6412.78, 25], "increaseData" : [ {"isIncrease": false, "data" : "0.2%"} ] } ],
+        [ { "data": ["Gold", 14689.90, 20], "increaseData" : [ {"isIncrease": true, "data" : "0.3%"} ] } ],
         [ { "data": ["R/USD", 12.5231, 20], "increaseData" : [ {"isIncrease": true, "data" : "0.3%"} ] } ]
         ],
       "isHero" : false
     },
-  "5" : { 
+  "5" : {
       "notification" : "default",
       "heading" : "ALSI market breadth",
       "hasVerticalTable" : true,
@@ -123,7 +123,7 @@
         ],
       "isHero" : false
     },
-  "6" : { 
+  "6" : {
       "heading" : "Gainers & losers",
       "hasVerticalTable" : true,
       "hasDropdown" : true,
@@ -140,7 +140,7 @@
         ],
       "isHero" : false
     },
-  "7" : { 
+  "7" : {
       "heading" : "Orders",
       "hasVerticalTable" : true,
       "hasDropdown" : true,
@@ -160,7 +160,7 @@
         ],
       "isHero" : true
     },
-  "8" : { 
+  "8" : {
       "heading" : "Knowledge centre",
       "hasVerticalTable" : true,
       "hasIcon" : true,
@@ -175,7 +175,7 @@
         ],
       "isHero" : true
     },
-  "9" : { 
+  "9" : {
       "heading" : "Market news",
       "hasTableWithHeading" : true,
       "hasButton" : true,
@@ -187,7 +187,7 @@
         ]  ,
       "isHero" : true
     },
-  "10" : { 
+  "10" : {
       "heading" : "Research",
       "hasTableWithHeading" : true,
       "tableData" : [
@@ -196,5 +196,51 @@
         [ { "heading": "Economic Report", "data": ["05 Jan 2015 - G10 Daily: Tripple Whammy for the Euro", "January could be a tester for the euro"] } ]
         ],
       "isHero" : true
+    },
+  "11" : {
+    "notification" : "default",
+    "heading" : "Market overview",
+    "hasAccountTable" : true,
+    "tableData" : { "cash" : { "amount" : 18000001,
+            "currency" : "R"
+          },
+        "daily" : { "amount" : 8189,
+            "currency" : "R"
+          },
+        "securities" : { "amount" : 18000001,
+            "currency" : "R"
+          },
+        "totalChange" : { "amount" : 2.4,
+            "isIncrease" : true,
+            "percent" : "0.02"
+          }
+      },
+    "availableBalance" : { "amount" : 56789,
+        "currency" : "R"
+      },
+    "isHero" : false
+    },
+  "12" : {
+      "notification" : "default",
+      "heading" : "Market overview",
+      "hasAccountTable" : true,
+      "tableData" : { "cash" : { "amount" : 18000001,
+              "currency" : "R"
+            },
+          "daily" : { "amount" : 8189,
+              "currency" : "R"
+            },
+          "securities" : { "amount" : 18000001,
+              "currency" : "R"
+            },
+          "totalChange" : { "amount" : 2.4,
+              "isIncrease" : true,
+              "percent" : "0.02"
+            }
+        },
+      "availableBalance" : { "amount" : 56789,
+          "currency" : "R"
+        },
+      "isHero" : false
     }
 }

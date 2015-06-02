@@ -9,26 +9,4 @@
         <button type="button" class="button" ng-click="resetData()">Reset Data</button>
         <!--highchart id="chart" style="width: 427px; height: 243px;" config="tile.chartData"></highchart-->
     </div>
-    <div ng-if="tile.hasDropdown">
-        <table>
-            <tr>
-                <td ng-if="tile.hasDropdownBind == true">
-                    <div>
-                        <label>{{dropdownValue}}</label>
-                    </div>
-                </td>
-                <td ng-if="tile.hasDropdownBind == true">
-                    <div>
-                    </div>
-                </td>
-                <td>
-                    <div ng-if="tile.hasDropdown == true">
-                        <select id="dropdown" ng-repeat="dropDownData in tile.dropdownData" ng-click="getDropdownValue()">
-                            <option ng-repeat="dropdown in dropDownData" value="{{dropdown.id}}">{{dropdown.value}}</option>
-                        </select>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </div>
 </div>

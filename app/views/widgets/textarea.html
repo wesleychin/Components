@@ -4,7 +4,31 @@
 </div>
 <div class="dashboard-widget-gradient"></div>
 <div class="dashboard-widget-content">
-	<div ng-if="tile.hasTextArea == true">
-		<textarea rows="4" cols="4">{{tile.textAreaText}}</textarea>
-	</div>
+	<div class="inline-block">
+						<button dropdown-toggle="#downloads" class="button dropdown dashboard-download-button ng-isolate-scope">Account 2345678</button>
+						<ul id="downloads" class="f-dropdown-dashboard-summary" style="display: none;">
+							<li class="list-separator"><a href="#">Account 2345678</a></li>
+							<li class="list-separator"><a href="#">Account 1213233</a></li>
+							<li class="list-separator"><a href="#">Account 6635524</a></li>
+							<li class="list-separator"><a href="#">Account 2772551</a></li>
+						</ul>
+					</div>
+<div class="list">
+					<ul>
+							<li class="list-separator-dashboard dashboard-description-text">JSET cash balance<br>
+							<strong class="bold-text">R 2 000 008.90</strong>
+							</li>
+							<li class="list-separator-dashboard dashboard-description-text">Derivitives initial margin<br>
+							<strong class="bold-text">R 1 00 998.90</strong>
+							</li>
+							<li class="list-separator-dashboard dashboard-description-text">Today’s derivatives P&L<br>
+							<strong class="bold-text">R 299 008.90</strong>
+							</li>
+							<li class="list-separator-dashboard dashboard-description-text">Total cash<br>
+							<strong class="bold-text">R 289 908.90</strong>
+							</li>
+							<li class="list-separator-dashboard dashboard-description-text">Available trading funds<br>
+							<strong class="bold-text">R 200 000.00</strong>
+							</li>
+</div>
 </div>
