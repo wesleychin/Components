@@ -68,26 +68,23 @@ div.dashboard-widget-heading {
 
 .blockleft {
 
-  float: left !important;
-  padding-left: 0px;
-  width: 100%;
-  display: inline;
-  text-align: left;
-  margin-left: 0px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #999;
+  display: block;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #666666;
+    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+    margin-left: 0;
+    padding-right: 0;
+    margin-right: 0;
 }
 
 .blockright {
 
-  float: right !important;
-  padding-left: 0px;
-  width: 100%;
-  display: inline;
-  text-align: left;
-  margin-left: 0px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #999;
-}
+  display: block;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #666666;
+    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+    margin-left: 0;
+    padding-right: 0;
+    margin-right: 0;
