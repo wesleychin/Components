@@ -27,13 +27,16 @@
   uiSelectConfig.theme='select2';
   uiSelectConfig.resetSearchInput = true;
   $routeProvider
-  .when('/portfolio', {
+  .when('/portfolio/overview', {
     templateUrl: 'views/accounts/accounts-overview.html',
     controller: 'AccountsCtrl'
   })
   .when('/dashboard', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+    templateUrl: 'views/main.html',
+    controller: 'AccountsCtrl'
   })
-  .otherwise;
+  .otherwise({
+    templateUrl: 'views/main.html',
+    controller: 'AccountsCtrl'
+  });
 });
