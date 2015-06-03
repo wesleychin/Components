@@ -228,3 +228,33 @@ li.list-separator-dashboard {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
   }
+
+  .widget-center {
+    display: inline-block;
+    margin:0 auto;
+    width:33%;
+}
+
+.widget-left {
+  float: left;
+  width:33%;
+}
+
+.widget-right {
+  float: right;
+  width:33%;
+}
+
+.border-bottom-padding {
+  border-bottom: 1px solid #E3E3E3;
+  padding-bottom: 6px;
+  padding-top:6px;
+}
+
+.dashboard-widget-table-scroll {
+  padding: 0 !important;
+  margin-top: 0;
+  min-height: 150px;
+  overflow-y: scroll;
+  height: 130px;
+}
