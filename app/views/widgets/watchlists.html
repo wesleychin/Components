@@ -1,23 +1,26 @@
 <div class='dashboard-widget-heading'>
-    <span ng-if="tile.heading">{{tile.heading}}</span>
-    <span ng-if="tile.hasAccountTable">Account {{tile.accountNumber}}</span>
+  <span ng-if="tile.heading">{{tile.heading}}</span>
 </div>
 <div class="dashboard-widget-gradient"></div>
 <div class="dashboard-widget-content">
-    <div class="dashboard-widget-table">
-      <div>
-      					<ul>
-      							<li class="list-separator-dashboard bold-text dashboard-description-text">Daily Standard<br>
-      							<span class="dashboard-widget-blue-text notboldtext">27 Jan 2015 - TESA Master Agreement_V2</span>
-      							</li>
-                    <li class="list-separator-dashboard bold-text dashboard-description-text">Economic report<br>
-      							<span class="dashboard-widget-blue-text notboldtext">06 Jan 2015 - It's not plain sailing</span><br>
-                    <span class="dashboard-widget-blue-text notboldtext">FX & Fixed Income: Annual Outlook</span>
-      							</li>
-                    <li class="list-separator-dashboard bold-text dashboard-description-text">Economic calender<br>
-                    <span class="dashboard-widget-blue-text notboldtext">05 Jan 2015 - G10 Daily: Tripple Whammy for the Euro</span><br>
-                    <span class="dashboard-widget-blue-text notboldtext">January could be a tester for the euro</span>
-                    </li>
+  <div class="row padding-below-performers visible-for-medium-up">
+    <div class="row">
+      <div class="top-widgets gainers" ng-show="performer.gain == true" ng-repeat-start="performer in performers">
+        <div class="top-performers-name"><span>{{performer.name}}</span></div><br/>
+        <i class="fa fa-caret-up"></i><br/>
+        <span>{{performer.percentage}}</span><br/>
+        <span>{{performer.amount}}</span>
       </div>
+      <div class="inline-block" ng-repeat-end></div>
     </div>
+    <div class="row">
+      <div class="top-widgets losers" ng-show="performer.gain == false" ng-repeat-start="performer in performers">
+        <div class="top-performers-name"><span>{{performer.name}}</span></div><br/>
+        <i class="fa fa-caret-down"></i><br/>
+        <span>{{performer.percentage}}</span><br/>
+        <span>{{performer.amount}}</span>
+      </div>
+      <div class="inline-block" ng-repeat-end></div>
+    </div>
+  </div>
 </div>
