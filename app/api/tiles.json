@@ -94,19 +94,7 @@
     },
   "5" : {
       "heading" : "Gainers & losers",
-      "hasVerticalTable" : true,
-      "hasDropdown" : true,
-      "dropdownData" : [
-        [{"id" : 1, "value" : "Top 40 Index"}, {"id" : 2, "value" : "All Share Index"}, {"id" : 3, "value" : "Alt-X"}],
-        [{"id" : 1, "value" : "Top Gainers"}, {"id" : 2, "value" : "Top Losers"}]
-        ],
-      "tableData" : [
-        [ { "data": ["ANGGOLD", "11041c"], "increaseData" : [ {"isIncrease": true, "data" : "2.6%"} ] } ],
-        [ { "data": ["MR PRICE", "23884c"], "increaseData" : [ {"isIncrease": true, "data" : "1.2%"} ] } ],
-        [ { "data": ["AMPLATS", "38800c"], "increaseData" : [ {"isIncrease": true, "data" : "1.0%"} ] } ],
-        [ { "data": ["RICHMONT", "9649c"], "increaseData" : [ {"isIncrease": true, "data" : "0.8%"} ] } ],
-        [ { "data": ["INVPLC", "10302c"], "increaseData" : [ {"isIncrease": true, "data" : "0.7%"} ] } ]
-        ],
+      "hasGainers" : true,
       "isHero" : false
     },
   "6" : {
@@ -131,17 +119,7 @@
     },
   "7" : {
       "heading" : "Knowledge centre",
-      "hasVerticalTable" : true,
-      "hasIcon" : true,
-      "tableData" : [
-        [ { "data": ["Event : Upcoming webinars", "28 Feb 2015"], "typeData" : [ {"name" : "event" } ] } ],
-        [ { "data": ["Event : Upcoming webinars", "7 Mar 2015"], "typeData" : [ {"name" : "event" } ] } ],
-        [ { "data": ["Event : Upcoming webinars", "14 Mar 2015"], "typeData" : [ {"name" : "event" } ] } ],
-        [ { "data": ["How To:  Learn to trade CFDs"], "typeData" : [ {"name" : "howto" } ] } ],
-        [ { "data": ["How To:  Learn to trade CFDs"], "typeData" : [ {"name" : "howto" } ] } ],
-        [ { "data": ["Courses: SSF trading", "9649c"], "typeData" : [ {"name" : "courses" } ] } ],
-        [ { "data": ["Forum: Interest rate hike", "10 Mar 2015"], "typeData" : [ {"name" : "forum" } ] } ]
-        ],
+      "isKnowledgeCentre" : true,
       "isHero" : true
     },
   "8" : {
