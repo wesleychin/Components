@@ -232,17 +232,18 @@ li.list-separator-dashboard {
   .widget-center {
     display: inline-block;
     margin:0 auto;
-    width:33%;
+    width:25%;
+    vertical-align: top;
 }
 
 .widget-left {
   float: left;
-  width:33%;
+  width:40%;
 }
 
 .widget-right {
   float: right;
-  width:33%;
+  width:25%;
 }
 
 .border-bottom-padding {
@@ -257,4 +258,9 @@ li.list-separator-dashboard {
   min-height: 150px;
   overflow-y: scroll;
   height: 130px;
+}
+
+.dashboard-gutter {
+  padding-right: 10px;
+  padding-left: 10px;
 }
