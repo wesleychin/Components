@@ -124,14 +124,7 @@
     },
   "8" : {
       "heading" : "Market news",
-      "hasTableWithHeading" : true,
-      "hasButton" : true,
-        "buttons" : [ "All News", "Related to my porfolio" ],
-          "tableData" : [
-            [ { "heading": "Sens", "data": ["13 Feb 15:00  AGL - Anglo American - New financial instrument listing", "13 Feb 16:00 ASA - Interest rate reset"] } ],
-            [ { "heading": "Economic news", "data": ["13 Feb 12:00 xxx", "13 Feb 16:00 xx"] } ],
-            [ { "heading": "Economic calendar", "data": ["17 Feb 15:00 Consumer Confidence (Jan)", "18 Feb 13:30 Import Price Index (YoY) (Dec)", "19 Feb 14:00 Westpac Leading Index (MoM) (Dec)"] } ]
-        ]  ,
+      "hasMarketNews" : true,
       "isHero" : true
     },
   "9" : {
