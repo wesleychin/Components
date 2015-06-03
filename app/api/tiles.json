@@ -230,5 +230,23 @@
         [ { "data": ["R/USD", 12.5231, 20], "increaseData" : [ {"isIncrease": true, "data" : "0.3%"} ] } ]
         ],
       "isHero" : false
+    },
+  "13" : {
+    "notification" : "default",
+    "heading" : "Watchlist",
+    "hasWatchlist" : true,
+    "isHero" : false
+    },
+  "14" : {
+    "notification" : "default",
+    "heading" : "Triggers",
+    "hasTriggers" : true,
+    "isHero" : false
+    },
+  "15" : {
+    "notification" : "default",
+    "heading" : "Orders",
+    "hasOrders" : true,
+    "isHero" : false
     }
 }

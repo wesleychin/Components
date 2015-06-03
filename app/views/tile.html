@@ -12,5 +12,8 @@
         <div ng-include src="'views/widgets/textarea.html'" ng-if="tile.hasTextArea"></div>
         <div ng-include src="'views/widgets/button.html'" ng-if="tile.hasButton == true"></div>
         <div ng-include src="'views/widgets/tableWithHeading.html'" ng-if="tile.hasTableWithHeading"></div>
+        <div ng-include src="'views/widgets/triggers.html'" ng-if="tile.hasTriggers"></div>
+        <div ng-include src="'views/widgets/orders.html'" ng-if="tile.hasOrders"></div>
+        <div ng-include src="'views/widgets/watchlists.html'" ng-if="tile.hasWatchlist"></div>
     </div>
 </div>
