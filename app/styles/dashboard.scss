@@ -33,6 +33,7 @@ div.dashboard-widget-heading {
 .dashboard-widget-available-balance .widget-balance-value {
   color: #0e6fcf;
   font-size: 30px;
+  margin-left: -2px;
 }
 
 .dashboard-widget-table {
@@ -109,6 +110,12 @@ div.dashboard-widget-heading {
   color: #666;
   font-size: 20px;
 }
+
+.dashboard-widget-available-balance-grey-small {
+  color: #666;
+  font-size: 15px;
+}
+
 
 .dashboard-description-text {
   color: #666;

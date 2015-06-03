@@ -5,14 +5,12 @@
 <div class="dashboard-widget-gradient"></div>
 <div class="dashboard-widget-content">
     <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true ,'dashboard-widget-content-small':tile.isHero == false}" class="clearfix">
-        <div class="dashboard-widget-available-balance">
-            <div>
-                <span ng-if="tile.subheading">{{tile.subheading}}</span><br/>
-                <span class="widget-balance widget-balance-value">{{tile.availableBalance.currency}}</span>
-                <span class="widget-balance widget-balance-value">{{tile.availableBalance.amount}}</span>
-            </div>
-        </div>
-
+      <div class="dashboard-widget-available-balance">
+          <div>
+              <span>PORTFOLIO VALUE</span><br>
+              <span class="widget-balance widget-balance-value ng-binding">R 56 789.90</span>
+          </div>
+      </div>
         <div class="phone-table">
         		<div class="row">
         		</div>
