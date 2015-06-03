@@ -1,1 +1,97 @@
-gainers and losers
+<div class='dashboard-widget-heading'>
+    <span ng-if="tile.heading">{{tile.heading}}</span>
+    <span ng-if="tile.hasAccountTable">Account {{tile.accountNumber}}</span>
+</div>
+<div class="dashboard-widget-gradient"></div>
+<div class="dashboard-widget-content">
+    <div ng-class="{ 'dashboard-widget-content-top':tile.isHero == true ,'dashboard-widget-content-small':tile.isHero == false}" class="clearfix">
+
+    </div>
+    <div class="inline-block">
+              <button dropdown-toggle="#downloads" class="button dropdown dashboard-download-button ng-isolate-scope">Top 40 Index</button>
+              <ul id="downloads" class="f-dropdown-dashboard-summary" style="display: none;">
+                <li class="list-separator"><a href="#">Account 2345678</a></li>
+                <li class="list-separator"><a href="#">Account 1213233</a></li>
+                <li class="list-separator"><a href="#">Account 6635524</a></li>
+                <li class="list-separator"><a href="#">Account 2772551</a></li>
+                <li class="list-separator"><a href="#">Account 7727276</a></li>
+              </ul>
+            </div>
+
+            <div class="inline-block">
+                      <button dropdown-toggle="#downloads" class="button dropdown dashboard-download-button ng-isolate-scope">Top gainers</button>
+                      <ul id="downloads" class="f-dropdown-dashboard-summary" style="display: none;">
+                        <li class="list-separator"><a href="#">Account 2345678</a></li>
+                        <li class="list-separator"><a href="#">Account 1213233</a></li>
+                        <li class="list-separator"><a href="#">Account 6635524</a></li>
+                        <li class="list-separator"><a href="#">Account 2772551</a></li>
+                        <li class="list-separator"><a href="#">Account 7727276</a></li>
+                      </ul>
+                    </div>
+
+
+      <div class="row border-bottom-padding">
+              <div class="dashboard-description-text widget-left">
+              <span class="dashboard-widget-blue-text">ANGGOLD</span>
+              </div>
+              <div class="dashboard-description-text widget-center">
+                <span>11041c</span>
+              </div>
+              <div class="widget-right">
+                <span class="dashboard-description-text right text-green">52.6%</span><br>
+              </div>
+
+      </div>
+
+      <div class="row border-bottom-padding">
+              <div class="dashboard-description-text widget-left">
+              <span class="dashboard-widget-blue-text">MR PRICE</span>
+              </div>
+              <div class="dashboard-description-text widget-center">
+                <span>23884c</span>
+              </div>
+              <div class="widget-right">
+                <span class="dashboard-description-text right text-green">51.2%</span><br>
+              </div>
+
+      </div>
+
+      <div class="row border-bottom-padding">
+              <div class="dashboard-description-text widget-left">
+              <span class="dashboard-widget-blue-text">AMPLATS</span>
+              </div>
+              <div class="dashboard-description-text widget-center">
+                <span>38800c</span>
+              </div>
+              <div class="widget-right">
+                <span class="dashboard-description-text right text-green">51.0%</span><br>
+              </div>
+
+      </div>
+
+      <div class="row border-bottom-padding">
+              <div class="dashboard-description-text widget-left">
+              <span class="dashboard-widget-blue-text">RICHMONT</span>
+              </div>
+              <div class="dashboard-description-text widget-center">
+                <span>9649c</span>
+              </div>
+              <div class="widget-right">
+                <span class="dashboard-description-text right text-green">51.0%</span><br>
+              </div>
+
+      </div>
+      <div class="row border-bottom-padding">
+              <div class="dashboard-description-text widget-left">
+              <span class="dashboard-widget-blue-text">INVPLC</span>
+              </div>
+              <div class="dashboard-description-text widget-center">
+                <span>10302c</span>
+              </div>
+              <div class="widget-right">
+                <span class="dashboard-description-text right text-green">7.0%</span><br>
+              </div>
+
+      </div>
+
+    </div>
