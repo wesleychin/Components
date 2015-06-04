@@ -2,7 +2,6 @@
 @import 'colors';
 
   .portfolio-overview-container {
-    height: 100%;
     width: 100%;
     background: $background-white;
     border: 1px solid $border-grey;
@@ -401,6 +400,7 @@
 
   .portfolio-overview-download-button {
     width:133px;
+    padding-right: 5.4rem !important;
   }
 
   .portfolio-overview-mobile-border {
@@ -557,6 +557,106 @@
     height: 100%;
   }
 
+  .market-statistics-div {
+    background: $pale-grey;
+    border-left: solid 4px $links-blue;
+    border-bottom: solid 1px $silver-grey;
+  }
+
+  .grid-additional-information-headings {
+    background: $pale-grey;
+  }
+
+  .grid-additional-information-data {
+    background: $pale-grey;
+  }
+  
+    .sector-allocation-headings-positioning {
+    display: inline-block;
+  }
+
+  .center-align-table-text {
+    text-align: center !important;
+  }
+
+  .right-align-table-text {
+    text-align: right !important;
+  }
+
+  .search-icon-color {
+    color: $search-grey !important; 
+  }
+
+  .acc-trans-body-container {
+    min-width: 90%;
+  }
+
+  .portfolio-overview-container {
+    min-width: 100%;
+  }
+
+  .column-selector {
+      color: $links-blue;
+  }
+
+  .sub-column-selector {
+      float: left;
+  }
+
+  .column-selector li, .column-selector span {
+      cursor: pointer;
+  }
+
+  .column-selector-columns {
+      max-height: 214px !important;
+      overflow-y: scroll;
+      overflow-x: hidden;
+  }
+
+  .column-selector-sub-columns {
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+
+  .column-selector, .column-selector button, .column-selector ul, .column-selector ul li {
+      width: 217px;
+  }
+
+  .column-selector-field {
+      height: 25px;
+  }
+
+  .column-selector-span {
+      padding: 10px 0 10px 10px;
+      float: left;
+      width: 100%;
+      text-align: left;
+      vertical-align: top;
+  }
+
+  .sub-column-selector-field {
+      height: 25px;
+  }
+
+  .sub-column-selector-span {
+      padding-left: 13px;
+      float: left;
+      vertical-align: top;
+  }
+
+  .column-selector-field:last-child {
+      padding-left: 20px;
+  }
+
+  .manage-columns-hr {
+      margin-left: 5px;
+      margin-right: 24px;
+  }
+
+  .manage-columns-button {
+      padding-right: 10.2rem !important;
+  }
+
   @media only screen and (max-width: 40em) {
     .mobilelineseperator-instruments {
      border-bottom: 1px solid $pale-grey;
@@ -571,6 +671,10 @@
     padding-left: 10px;
     padding-right: 15px;
   }
+  
+  .sector-allocation-headings-positioning {
+    display: block;
+  }  
 
   .padding-for-bold-instruments {
     margin-left:10px !important;

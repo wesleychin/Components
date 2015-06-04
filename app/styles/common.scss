@@ -28,9 +28,19 @@
 
   .body-wrapper {
     background: $grey-page-background;
-    /*padding-top: 57px; */
-    padding-top: 115px;
+    padding-top: 57px; 
   }
+
+  .alert-tick-green {
+    color: #5FA33B;
+    font-size: 68px;
+    padding-bottom: 15px;
+  }
+
+  .body-background-color {
+    background: $grey-page-background;
+  }
+
 
   .header-icons {
     right: 45px;
@@ -93,6 +103,7 @@
     padding-left: 10px;
     margin-right: 0;
     padding-top: 10px;
+    padding-right: 10px;
     border-top: 1px solid lighten ($light-grey, 10%);
     border-left: 1px solid lighten ($light-grey, 10%);
     border-bottom: 1px solid lighten ($light-grey, 10%);
@@ -383,7 +394,7 @@ button, .button.small {
 dropdown.button, button.dropdown {
   position: relative;
   outline: none;
-  padding-right: 5.4rem !important;
+  padding-right: 5.4rem;
 }
 
 .button:hover, button:focus, .button:hover, .button:focus {
@@ -581,8 +592,8 @@ button, .button {
   text-align: center;
   text-shadow: 0 1px 0 $background-white;
   position: absolute;
-  left: 3px;
-  top: 2px;
+  left: 2px;
+  top: -2px;
   bottom: 3px;
   z-index: 3;
 }
@@ -595,7 +606,6 @@ button, .button {
 .input-container {
   position: relative;
   background-color: $background-white !important;
-  top: -3px;
 }
 
 .row {
@@ -670,7 +680,6 @@ multiselect .dropdown-menu > li > a {
   margin-left: 0;
   outline: none;
   width: 100%;
-  max-height: none;
   height: auto;
   background: $background-white;
   border: solid 1px $silver-grey;
@@ -678,7 +687,7 @@ multiselect .dropdown-menu > li > a {
   z-index: 89;
   margin-top: 2px;
   max-width: 200px;
-  max-height: 161px;
+  max-height: 172px;
   overflow: auto;
 }
 
@@ -966,7 +975,7 @@ tr.k-master-row td.error:nth-child(2) {
 }
 
 .tabs dd.active a, .tabs .tab-title.active a {
-  background: rgb(239, 240, 243) !important;
+  background: $pale-grey !important;
 }
 
 .tab-heading-bottom-border {
@@ -1114,6 +1123,16 @@ tspan {
   text-shadow: none;
 }
 
+table thead tr th, table thead tr td {
+  font-size: $font-size-11rem;
+  font-size: $font-size-11px;
+}
+
+table tr th, table tr td {
+  font-size: $font-size-11rem;
+  font-size: $font-size-11px;
+}
+
 @media only screen and (max-width: 40em) {
   hr {
     border-top: 1px solid $pale-grey;
@@ -1248,6 +1267,32 @@ tspan {
     font-size: $font-size-14rem;
     color: $links-blue;
   }
+}
+
+input[type="checkbox"]{
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background:url(../../images/checkbox.png) left top no-repeat;
+  border-radius: 1px;
+  box-sizing: border-box;
+  position: relative;
+  box-sizing: content-box ;
+  width: 15px;
+  height: 15px;
+  border-width: 0;
+  transition: all .3s linear;
+  margin: 0;
+  margin-bottom: -3px;
+}
+
+input[type="checkbox"]:checked{
+  background:url(../../images/checkbox-select.png) left top no-repeat;
+}
+
+input[type="checkbox"]:focus{
+  outline: 0 none;
+  box-shadow: none;
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
