@@ -147,6 +147,7 @@ div.dashboard-widget-content {
 
 li.list-separator-dashboard {
   border-left: 0;
+  line-height: 14px;
 }
 
 .list-separator-dashboard:not(:last-child) {
@@ -274,4 +275,24 @@ li.list-separator-dashboard {
     padding-bottom: 8px;
     color: white;
     text-align: center;
+}
+
+.percentage50 {
+  width: 50%;
+  text-align: center;
+}
+
+.percentage33 {
+  width: 33%;
+  text-align: center;
+}
+
+.percentage12 {
+  width: 12.5%;
+  text-align: center;
+}
+
+.yearsselected {
+  background: #1561A6;
+  color: #FFF !important;
 }
