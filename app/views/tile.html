@@ -1,4 +1,20 @@
-<div class='dashboard-widget' ng-class="{ 'dashboard-widget-active':tile.notification == 'none','dashboard-widget-dormant-hover':tile.notification != 'none'}">
+<style>
+  div.dashboard-widget {
+    width: auto;
+  }
+
+  .large-tile {
+    width: 49% !important;
+    margin-right: 8px;
+  }
+
+  .small-tile {
+    width: 24% !important;
+    margin-right: 8px;
+  }
+</style>
+<div class='dashboard-widget' ng-class="{ 'dashboard-widget-active':tile.notification == 'none','dashboard-widget-dormant-hover':tile.notification != 'none',
+'columns large-6 large-tile':tile.isHero == true, 'columns large-3 small-tile':tile.isHero == false}">
 
     <div ng-switch on="tile.notification" class='widget-round-corner'>
         <img ng-switch-when="warning" src='images/widget-corner-grey.png'>
