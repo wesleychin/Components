@@ -681,14 +681,17 @@ multiselect .dropdown-menu > li > a {
   outline: none;
   width: 100%;
   height: auto;
-  background: $background-white;
-  border: solid 1px $silver-grey;
+  background: #FFFFFF;
+  border: solid 1px #E3E3E3;
   font-size: 0.875rem;
   z-index: 89;
   margin-top: 2px;
   max-width: 200px;
   max-height: 172px;
   overflow: auto;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 2px 3px 8px 1px #e9eaed;
 }
 
 .fi-calendar {
