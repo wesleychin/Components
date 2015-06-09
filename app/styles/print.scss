@@ -1,7 +1,10 @@
+@import 'constants';
+@import 'colors';
+
 @media print {
 
   .tab-bar {
-    height: 45px;
+    height: 200px;
     position: fixed;
     top: 0;
     margin: auto;
@@ -10,10 +13,26 @@
   }
 
   div.header {
-  width: 100%;
-  padding-top: 4px;
-  vertical-align: middle;
-  position: fixed;
+    align: 0 auto;
+    text-align: center;
+    width: 1100px;
+    background-color: #fff;
+    clear: both;
+    display: block;
+    border: 0;
+
+}
+
+.details-overview-feed-details {
+  display: none;
+}
+
+.row {
+  max-width: 50%;
+}
+
+.details-overview-feed-details {
+  display: none ! important;
 }
 
   .streaming-button {
@@ -41,14 +60,20 @@ display: none;
   font-size: 1.3rem;
   color: #666666;
   font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-  margin-right: 10px;
-  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  text-align: left ! important;
 }
 
-
-.details-overview-feed-details {
-  display: none;
+.seperator {
+  border-left: 0 ! important;
+  padding-left: 0px ! important;
 }
+
+.mobilelineseperator {
+  margin-left: 0 ! important;
+}
+
   .details-overlay {
     border: 1px solid #BBBBBB;
     border-radius: 3px;
