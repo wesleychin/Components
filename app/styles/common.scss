@@ -1,5 +1,6 @@
 @import 'constants';
 @import 'colors';
+@import 'print';
 
   html {
     font-size: $html-percentage;
@@ -343,9 +344,9 @@ button, .button {
  display: inline-block;
  font-size: $font-size-13px;
  font-size: $font-size-13rem;
- background-color: $links-blue;
- border-color: $standard-bank-blue;
- color: $background-white;
+ background-color: $background-white;
+ border-color: $light-grey;
+ color: $links-blue;
  transition: background-color 300ms ease-out;
 }
 
@@ -510,25 +511,6 @@ td:first-child {
   padding-right: 0;
 }
 
-button, .button {
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  font-family: $font-family;
-  font-weight: normal;
-  line-height: normal;
-  position: relative;
-  text-decoration: none;
-  text-align: center;
-  -moz-appearance: none;
-  border-radius: 3px;
-  padding: 8px;
-  display: inline-block;
-  font-size: 13px;
-  font-size: 1.3rem;
-  color: $background-white;
-  transition: background-color 300ms ease-out;
-}
 .dropdown.button::after, button.dropdown::after {
  font-family: 'FontAwesome';
  content: "\f078";
@@ -688,7 +670,7 @@ multiselect .dropdown-menu > li > a {
   overflow: auto;
   -moz-box-shadow: 3px 3px 5px 6px #ccc;
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  box-shadow: 2px 3px 8px 1px #e9eaed;
+  box-shadow: 2px 3px 8px 1px #ADADAD;
 }
 
 .fi-calendar {
@@ -852,18 +834,16 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 
 .timeout-alert-content {
   padding: 20px;
-  background-color: $pale-grey;
   z-index: 10000;
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
   max-width: 500px;
-  -webkit-box-shadow: 0 23px 23px 7px $light-grey;
-  box-shadow: 0 23px 23px 7px $light-grey;
-  -webkit-border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: 0 2px 36px 0px #999999;
   border-radius: 5px 5px 5px 5px;
-  border:1px solid $silver-grey;
+  border: 1px solid  $border-grey;
+  font-family: $font-family;
 }
 
 .connection-lost-text-margin-bottom {
