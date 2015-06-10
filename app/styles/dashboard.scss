@@ -14,6 +14,12 @@
   font-family: $font-family;
 }
 
+.phone-table-dashboard {
+  border-radius: 3px;
+  width: 100%;
+  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+}
+
 div.dashboard-widget-heading {
   width: 80%;
   white-space: nowrap;
@@ -291,6 +297,11 @@ li.list-separator-dashboard {
     text-align: center;
 }
 
+.body-wrapper-dashboard {
+  padding-top: 34px;
+  margin-top: 0;
+}
+
 .percentage50 {
   width: 50%;
   text-align: center;
@@ -310,3 +321,36 @@ li.list-separator-dashboard {
   background: $standard-bank-blue;
   color:$background-white !important;
 }
+
+@media only screen and (max-width: 40em) {
+
+  .dashboard-grid {
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding-top: 80px;
+    background-color: #eaeaea;
+  }
+
+  .phone-table-dashboard {
+    border-radius: 3px;
+    width: 100%;
+    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+  }
+
+  .column-dashboard, .columns-dashboard {
+   background-color: #eaeaea;
+  }
+
+  .top-widgets-dashboard {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  padding: 2px;
+  color: #FFFFFF;
+  text-align: center;
+  height: 27px;
+  font-size: 10px;
+  margin-bottom: -16px;
+}
+
+  }
