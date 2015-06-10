@@ -1,40 +1,24 @@
-<style>
-  div.dashboard-widget {
-    width: auto;
-  }
-
-  .large-tile {
-    width: 49% !important;
-    margin-right: 8px;
-  }
-
-  .small-tile {
-    width: 24% !important;
-    margin-right: 8px;
-  }
-</style>
-<div class='dashboard-widget' ng-class="{ 'dashboard-widget-active':tile.notification == 'none','dashboard-widget-dormant-hover':tile.notification != 'none',
-'columns large-6 large-tile':tile.isHero == true, 'columns large-3 small-tile':tile.isHero == false}">
-
+<div class='dashboard-widget' ng-class="{ 'dashboard-widget-active':tile.notification == 'none','dashboard-widget-dormant-hover':tile.notification != 'none'}">
     <div ng-switch on="tile.notification" class='widget-round-corner'>
         <img ng-switch-when="warning" src='images/widget-corner-grey.png'>
         <img ng-switch-when="critical" src='images/widget-corner-red.png'>
         <img ng-switch-when="default" src='images/widget-corner.png'>
     </div>
+
     <div class="dashboard-widget-content-wrapper" ng-class="{'small-widget-content-wrapper' : tile.isHero == false}">
-        <div ng-include src="'views/widgets/accountTable.html'" ng-if="tile.hasAccountTable"></div>
-        <div ng-include src="'views/widgets/verticalTable.html'" ng-if="tile.hasVerticalTable"></div>
-        <div ng-include src="'views/widgets/chart.html'" ng-if="tile.hasChart"></div>
-        <div ng-include src="'views/widgets/textarea.html'" ng-if="tile.hasTextArea"></div>
-        <div ng-include src="'views/widgets/button.html'" ng-if="tile.hasButton == true"></div>
-        <div ng-include src="'views/widgets/tableWithHeading.html'" ng-if="tile.hasTableWithHeading"></div>
-        <div ng-include src="'views/widgets/triggers.html'" ng-if="tile.hasTriggers"></div>
-        <div ng-include src="'views/widgets/orders.html'" ng-if="tile.hasOrders"></div>
         <div ng-include src="'views/widgets/watchlists.html'" ng-if="tile.hasWatchlist"></div>
         <div ng-include src="'views/widgets/accountSmall.html'" ng-if="tile.isAccountSmall"></div>
         <div ng-include src="'views/widgets/alsi.html'" ng-if="tile.isALSI"></div>
         <div ng-include src="'views/widgets/gainersandlosers.html'" ng-if="tile.hasGainers"></div>
         <div ng-include src="'views/widgets/knowledgecentre.html'" ng-if="tile.isKnowledgeCentre"></div>
         <div ng-include src="'views/widgets/marketnews.html'" ng-if="tile.hasMarketNews"></div>
+          <div ng-include src="'views/widgets/accountTable.html'" ng-if="tile.hasAccountTable"></div>
+          <div ng-include src="'views/widgets/verticalTable.html'" ng-if="tile.hasVerticalTable"></div>
+          <div ng-include src="'views/widgets/chart.html'" ng-if="tile.hasChart"></div>
+          <div ng-include src="'views/widgets/textarea.html'" ng-if="tile.hasTextArea"></div>
+          <div ng-include src="'views/widgets/button.html'" ng-if="tile.hasButton == true"></div>
+          <div ng-include src="'views/widgets/tableWithHeading.html'" ng-if="tile.hasTableWithHeading"></div>
+          <div ng-include src="'views/widgets/triggers.html'" ng-if="tile.hasTriggers"></div>
+          <div ng-include src="'views/widgets/orders.html'" ng-if="tile.hasOrders"></div>
     </div>
 </div>

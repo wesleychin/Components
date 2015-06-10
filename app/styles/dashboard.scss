@@ -1,13 +1,17 @@
+@import 'constants';
+@import 'colors';
+
 .sticky_footer {
   position: fixed;
   bottom: 0px;
   left: 0;
   width: 100%;
   padding: 13px;
-  font-size: 12px;
+  font-size: $font-size-12px;
+  font-size: $font-size-18rem;
   background-color: white;
   text-align: center !important;
-  font-family: "HelveticaNeue-Bold", "robotobold", Arial, sans-serif;
+  font-family: $font-family;
 }
 
 div.dashboard-widget-heading {
@@ -15,10 +19,11 @@ div.dashboard-widget-heading {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 18px;
-  color: #0c6dce;
+  font-size: $font-size-18px;
+  font-size: $font-size-18rem;
+  color: $links-blue;
   padding: 20px 0 11px 18px;
-  font-family: "HelveticaNeue-Light", "robotolight", Arial, sans-serif;
+  font-family: $font-family;
   position: relative;
   z-index: 11;
   text-transform: capitalize;
@@ -27,12 +32,14 @@ div.dashboard-widget-heading {
 .dashboard-widget-available-balance {
   line-height: 20px;
   float: left;
-  font-size: 12px;
+  font-size: $font-size-12px;
+  font-size: $font-size-12rem;
 }
 
 .dashboard-widget-available-balance .widget-balance-value {
-  color: #0e6fcf;
-  font-size: 30px;
+  color: $links-blue;
+  font-size: $font-size-30px;
+  font-size: $font-size-30rem;
   margin-left: -2px;
 }
 
@@ -60,41 +67,43 @@ div.dashboard-widget-heading {
 
 .amounts-medium-grey{
   padding-left:0;
-  font-size: 20px;
+  font-size: $font-size-20px;
+  font-size: $font-size-24rem;
 }
 
 .text-normal {
-  font-size: 12px;
+  font-size: $font-size-12px;
+  font-size: $font-size-12rem;
 }
 
 .blockleft {
 
   display: block;
-    font-size: 12px;
-    font-size: 1.2rem;
-    color: #666666;
-    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-    margin-left: 0;
-    padding-right: 0;
-    margin-right: 0;
+  font-size: $font-size-12px;
+  font-size: $font-size-12rem;
+  color: $medium-grey;
+  font-family: $font-family;
+  margin-left: 0;
+  padding-right: 0;
+  margin-right: 0;
 }
 
 .blockright {
 
   display: block;
-    font-size: 12px;
-    font-size: 1.2rem;
-    color: #666666;
-    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-    margin-left: 0;
-    padding-right: 0;
-    margin-right: 0;
+  font-size: $font-size-12px;
+  font-size: $font-size-12rem;
+  color: $medium-grey;
+  font-family:$font-family;
+  margin-left: 0;
+  padding-right: 0;
+  margin-right: 0;
 }
 
 .dashboard-block-border-left {
   width: 49%;
   padding-top: 17px;
-  border-right: 1px solid #E3E3E3;
+  border-right: 1px solid $silver-grey;
 }
 
 .dashboard-block-noborder-left {
@@ -107,19 +116,23 @@ div.dashboard-widget-heading {
 }
 
 .dashboard-widget-available-balance-grey {
-  color: #666;
-  font-size: 20px;
+  color: $medium-grey;
+  font-size: $font-size-20px;
+  font-size: $font-size-20rem;
 }
 
 .dashboard-widget-available-balance-grey-small {
-  color: #666;
-  font-size: 15px;
+  color: $medium-grey;
+  font-size: $font-size-15px;
+  font-size: $font-size-15rem;
 }
 
 
 .dashboard-description-text {
-  color: #666;
-  font-size: 13px;
+  color:  $medium-grey;
+  font-size: $font-size-13px;
+  font-size: $font-size-13rem;
+  font-family: $font-family;
 }
 
 .padding-bottom {
@@ -132,7 +145,7 @@ div.dashboard-widget-heading {
 
 div.dashboard-widget-content {
   padding: 15px 17px 12px 17px;
-  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+  font-family:$font-family;
 }
 
 
@@ -151,7 +164,7 @@ li.list-separator-dashboard {
 }
 
 .list-separator-dashboard:not(:last-child) {
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid $silver-grey;
   margin-bottom: 6px;
   padding-bottom: 6px;
 }
@@ -172,7 +185,7 @@ li.list-separator-dashboard {
   .f-dropdown-small li a {
     display: block;
     padding: 8px 8px 8px 12px;
-    color: #2570E0;
+    color: $links-blue;
     text-align: left;
     width: 100%;
   }
@@ -186,13 +199,13 @@ li.list-separator-dashboard {
     outline: none;
     max-height: none;
     height: auto;
-    background: #FFFFFF;
-    border: solid 1px #999999;
-    font-size: 13px;
-    font-size: 1.3rem;
+    background: $background-white;
+    border: solid 1px $light-grey;
+    font-size: $font-size-13px;
+    font-size: $font-size-13rem;
     z-index: 89;
     margin-top: -4px;
-    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+    font-family:$font-family;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     display: block;
@@ -204,14 +217,15 @@ li.list-separator-dashboard {
   .f-dropdown-dashboard-summary li a {
     display: block;
     padding: 8px;
-    color: #2570E0;
+    color: $links-blue;
     text-align: left;
     width: 100%;
   }
 
   .dashboard-widget-blue-text {
-    font-size: 13px;
-    color: #0c6dce;
+    font-size: $font-size-13px;
+    font-size: $font-size-13rem;
+    color: $links-blue;
   }
 
   .movement-margin {
@@ -219,13 +233,13 @@ li.list-separator-dashboard {
   }
 
   .yearendlineright {
-    border-right: 1px solid #1561A6;
+    border-right: 1px solid $standard-bank-blue;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
   }
 
   .yearendlineleft {
-    border-left: 1px solid #1561A6;
+    border-left: 1px solid $standard-bank-blue;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
   }
@@ -248,7 +262,7 @@ li.list-separator-dashboard {
 }
 
 .border-bottom-padding {
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid $silver-grey;
   padding-bottom: 6px;
   padding-top:6px;
 }
@@ -273,7 +287,7 @@ li.list-separator-dashboard {
     padding:2px;
     margin-bottom: 2px;
     padding-bottom: 8px;
-    color: white;
+    color: $background-white;
     text-align: center;
 }
 
@@ -293,6 +307,6 @@ li.list-separator-dashboard {
 }
 
 .yearsselected {
-  background: #1561A6;
-  color: #FFF !important;
+  background: $standard-bank-blue;
+  color:$background-white !important;
 }

@@ -1,5 +1,6 @@
 @import 'constants';
 @import 'colors';
+@import 'print';
 
   html {
     font-size: $html-percentage;
@@ -344,7 +345,7 @@ button, .button {
  font-size: $font-size-13px;
  font-size: $font-size-13rem;
  background-color: $background-white;
- border-color: $standard-bank-blue;
+ border-color: $light-grey;
  color: $links-blue;
  transition: background-color 300ms ease-out;
 }
@@ -510,28 +511,6 @@ td:first-child {
   padding-right: 0;
 }
 
-button, .button {
- border-style: solid;
- border-width: 1px;
- cursor: pointer;
- font-family: $font-family;
- font-weight: normal;
- line-height: normal;
- position: relative;
- text-decoration: none;
- text-align: center;
- -moz-appearance: none;
- border-radius: 3px;
- padding: 8px;
- display: inline-block;
- font-size: $font-size-13px;
- font-size: $font-size-13rem;
- background-color: $background-white;
- border-color: $light-grey;
- color: $links-blue;
- transition: background-color 300ms ease-out;
-}
-
 .dropdown.button::after, button.dropdown::after {
  font-family: 'FontAwesome';
  content: "\f078";
@@ -681,14 +660,17 @@ multiselect .dropdown-menu > li > a {
   outline: none;
   width: 100%;
   height: auto;
-  background: $background-white;
-  border: solid 1px $silver-grey;
+  background: #FFFFFF;
+  border: solid 1px #E3E3E3;
   font-size: 0.875rem;
   z-index: 89;
   margin-top: 2px;
   max-width: 200px;
   max-height: 172px;
   overflow: auto;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 2px 3px 8px 1px #ADADAD;
 }
 
 .fi-calendar {
@@ -852,18 +834,16 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 
 .timeout-alert-content {
   padding: 20px;
-  background-color: $pale-grey;
   z-index: 10000;
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
   max-width: 500px;
-  -webkit-box-shadow: 0 23px 23px 7px $light-grey;
-  box-shadow: 0 23px 23px 7px $light-grey;
-  -webkit-border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: 0 2px 36px 0px #999999;
   border-radius: 5px 5px 5px 5px;
-  border:1px solid $silver-grey;
+  border: 1px solid  $border-grey;
+  font-family: $font-family;
 }
 
 .connection-lost-text-margin-bottom {
@@ -1045,22 +1025,21 @@ tr.k-master-row td.error:nth-child(2) {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: $pale-grey;
+  background-color: $login;
   z-index: 9999;
 }
 
 .login-content {
-  padding: 20px;
-  background-color: white;
+  padding: 30px;
+  background-color: $login;
   z-index: 10000;
-  margin-top: 10%;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-  max-width: 500px;
-  -webkit-box-shadow: 0 23px 23px 7px $light-grey;
-  box-shadow: 0 23px 23px 7px $light-grey;
-  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 1px solid  $border-grey;
+  max-width: 400px;
+  -webkit-box-shadow: 0 2px 36px 0px #999999;
   border-radius: 5px 5px 5px 5px;
   font-family: $font-family;
 }
@@ -1097,27 +1076,12 @@ tr.k-master-row td.error:nth-child(2) {
 
 .login-input {
   padding:8px;
-  border:1px solid $pale-grey;
+  border:1px solid $border-grey;
   border-radius:3px;
   border-style: solid;
   width:300px;
 }
 
-.login-content {
-  padding: 30px;
-  background-color: $pale-grey;
-  z-index: 10000;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  border:1px solid $pale-grey;
-  max-width: 400px;
-  -webkit-box-shadow: 0 2px 36px 0px $light-grey;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-  font-family: $font-family;
-}
 
 tspan {
   text-shadow: none;

@@ -1,0 +1,264 @@
+@import 'constants';
+@import 'colors';
+
+@media print {
+
+  .tab-bar {
+    height: 200px;
+    position: fixed;
+    top: 0;
+    margin: auto;
+    z-index: 100000;
+    width: 100%;
+  }
+
+
+  div.header {
+    align: 0 auto;
+    text-align: center;
+    width: 1100px;
+    background-color: #fff;
+    clear: both;
+    display: block;
+    border: 0;
+
+}
+
+.details-overview-feed-details {
+  display: none;
+}
+
+
+.details-overview-feed-details {
+  display: none ! important;
+}
+
+  .streaming-button {
+  display: none !important;
+}
+
+.header-icons-padding {
+display: none;
+}
+
+div.header div.header-top .sign-out-header {
+display: none;
+}
+
+  .underline-text {
+  display: none;
+}
+
+.dropdown.button.small, button.dropdown.small {
+  display: none;
+}
+
+.details-overview {
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #666666;
+  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+  display: block;
+  margin-bottom: 10px;
+  text-align: left ! important;
+}
+
+.seperator {
+  border-left: 0 ! important;
+  padding-left: 0px ! important;
+}
+
+.mobilelineseperator {
+  margin-left: 0 ! important;
+}
+
+  .details-overlay {
+    border: 1px solid #BBBBBB;
+    border-radius: 3px;
+    padding: 18px 20px;
+    margin-top: 8px;
+    position: relative;
+    height: auto;
+    font-size: 12px;
+  }
+
+div.sub-header-wrapper {
+  display: none;
+}
+
+  .footer-wrapper {
+  }
+
+  div.sub-header-wrapper {
+  }
+
+
+  .body-wrapper {
+    padding-top: 114px;
+  }
+
+  .alert-tick-green {
+    color: #5FA33B;
+    font-size: 68px;
+    padding-bottom: 15px;
+  }
+
+  .body-background-color {
+  }
+
+
+  .header-icons {
+    right: 45px;
+    font-size: $font-size-26px;
+    font-size: $font-size-26rem;
+    position: absolute;
+    color : $links-blue;
+    top: 8px !important;
+    padding-right: 5px;
+  }
+
+  div.header div.header-top .sign-out-header {
+    position: absolute;
+    right: -25px;
+    top: 8px;
+    font-family: $font-family;
+    font-size: $font-size-14px;
+    font-size: $font-size-14rem;
+    color: $links-blue;
+  }
+
+  .dropdown.button::after, button.dropdown::after {
+    font-family: 'FontAwesome';
+    content: "\f078";
+    border: none;
+    margin-top: 0 !important;
+    top: 10px;
+    text-align: right;
+  }
+
+  .dropdown.button.small::after, button.dropdown.small::after {
+    border-width: 0.4375rem;
+    right: 20px !important;
+    margin-top: -0.15625rem;
+  }
+
+  .dropdown.button.small, button.dropdown.small {
+    padding-right: 5rem;
+  }
+
+  .empty-box-container {
+    height: auto;
+  }
+
+  a {
+    color: $dark-grey;
+    text-decoration: none;
+    font-family: $font-family;
+  }
+
+  .acc-empty-boxes {
+    display: none;
+  }
+
+  .selected {
+    display: none;
+  }
+
+  .noLeftPadding {
+   padding-left: 0 !important;
+  }
+
+  .search-textbox {
+  padding-right: 9px;
+  }
+
+  .enabled {
+  background-color: $links-blue;
+  color: $background-white;
+  }
+
+  .disabled {
+  background-color: $silver-grey;
+  color: $links-blue;
+  }
+
+  .seperator {
+  border-left: 1px solid $silver-grey;
+  padding-left: 10px;
+  }
+
+  .text-red {
+  color : $debit-text-red !important;
+  }
+
+  .text-green {
+  color: $credit-text-green !important;
+  }
+
+  .text-blue {
+  color : $links-blue !important;
+  }
+
+  .text-grey {
+  color : $light-grey;
+  }
+
+  .bold-text {
+  font-weight: 900;
+  }
+
+  .disclaimer-text {
+  color: $medium-grey;
+  font-size: $font-size-11px;
+  font-size: $font-size-11rem;
+  }
+
+  .no-padding-bottom {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  }
+
+  no-padding-top {
+  padding-top: 0;
+  margin-top: 0;
+  }
+
+  .top-performers-headings {
+  font-size: $font-size-18px;
+  font-size: $font-size-18rem;
+  color: $medium-grey;
+  line-height: 48px;
+  padding-bottom: 10px;
+  }
+
+  .top-performers-name {
+  padding-top: 6px;
+  font-size: $font-size-12px;
+  font-size: $font-size-12rem;
+  font-family: $font-family;
+  color: $background-white;
+  }
+
+  .header-icons-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+
+  .block-text {
+  display: block;
+  }
+
+  .loading-pages {
+  color: $dark-grey;
+  font-family: $arial-font-family;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $font-size-24px;
+  font-size: $font-size-24rem;
+  text-align: center;
+  line-height: 42px;
+  width: 100%;
+  height: 100%;
+  }
+
+}
