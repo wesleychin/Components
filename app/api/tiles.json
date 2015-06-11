@@ -1,167 +1,257 @@
-{ "0" : {
-    "notification" : "default",
-	  "subheading" : "PORTFOLIO VALUE",
-	  "accountNumber" : "3456789",
-      "tableData" : { "cash" : { "amount" : 18000001,
-              "currency" : "R"
-            },
-          "daily" : { "amount" : 8189,
-              "currency" : "R"
-            },
-          "securities" : { "amount" : 18000001,
-              "currency" : "R"
-            },
-          "totalChange" : { "amount" : 2.4,
-              "isIncrease" : true,
-              "percent" : "0.02"
+{
+  "0":{
+    "notification":"default",
+    "subheading":"PORTFOLIO VALUE",
+    "accountNumber":"3456789",
+    "tableData":{
+      "cash":{
+        "amount":18000001,
+        "currency":"R"
+      },
+      "daily":{
+        "amount":8189,
+        "currency":"R"
+      },
+      "securities":{
+        "amount":18000001,
+        "currency":"R"
+      },
+      "totalChange":{
+        "amount":2.4,
+        "isIncrease":true,
+        "percent":"0.02"
+      }
+    },
+    "availableBalance":{
+      "amount":56789,
+      "currency":"R"
+    },
+    "hasAccountTable":true,
+    "isHero":true
+  },
+  "1":{
+    "chartData":{
+      "legend":{
+        "enabled":false
+      },
+      "series":[
+        {
+          "showInLegend":false,
+          "data":[
+            1000,
+            2000,
+            4000,
+            6000,
+            3000,
+            9000,
+            1000,
+            4500,
+            12000,
+            6000,
+            8000,
+            31000
+          ]
+        }
+      ],
+      "title":{
+        "text":""
+      },
+      "xAxis":{
+        "categories":[
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec"
+        ],
+        "title":{
+          "text":""
+        }
+      },
+      "yAxis":{
+        "plotLines":[
+          {
+            "color":"#808080",
+            "value":0,
+            "width":1
+          }
+        ],
+        "title":{
+          "enabled":false
+        }
+      }
+    },
+    "hasChart":true,
+    "heading":"Price Graph",
+    "isHero":true
+  },
+  "2":{
+    "notification":"default",
+    "heading":"Account 3456789",
+    "isAccountSmall":true,
+    "isHero":false
+  },
+  "3":{
+    "notification":"default",
+    "heading":"Account 3456789",
+    "isAccountSmall":true,
+    "isHero":false
+  },
+  "4":{
+    "heading":"Cash summary",
+    "hasDropdown":true,
+    "dropdownData":[
+      [
+        {
+          "id":1,
+          "value":"2345678"
+        },
+        {
+          "id":2,
+          "value":"3456789"
+        },
+        {
+          "id":3,
+          "value":"4567890"
+        }
+      ]
+    ],
+    "hasTextArea":true,
+    "textAreaText":"This is some text",
+    "hasButton":true,
+    "buttons":[
+      "Deposit",
+      "Withdraw"
+    ],
+    "isHero":false
+  },
+  "5":{
+    "heading":"Market overview",
+    "hasVerticalTable":true,
+    "tableData":[
+      [
+        {
+          "data":[
+            "JSE",
+            6412.78,
+            25
+          ],
+          "increaseData":[
+            {
+              "isIncrease":false,
+              "data":"0.2%"
             }
-        },
-      "availableBalance" : { "amount" : 56789,
-          "currency" : "R"
-        },
-      "hasAccountTable" : true,
-      "isHero" : true
-    },
-     "1" : { "chartData" : { "legend" : { "enabled" : false },
-          "series" : [ {
-            "showInLegend" : false,
-            "data" : [ 1000,
-                    2000,
-                    4000,
-                    6000,
-                    3000,
-                    9000,
-                    1000,
-                    4500,
-                    12000,
-                    6000,
-                    8000,
-                    31000
-                  ] } ],
-          "title" : { "text" : "" },
-          "xAxis" : { "categories" : [ "Jan",
-                  "Feb",
-                  "Mar",
-                  "Apr",
-                  "May",
-                  "Jun",
-                  "Jul",
-                  "Aug",
-                  "Sep",
-                  "Oct",
-                  "Nov",
-                  "Dec"
-                ],
-              "title" : { "text" : "" }
-            },
-          "yAxis" : { "plotLines" : [ { "color" : "#808080",
-                    "value" : 0,
-                    "width" : 1
-                  } ],
-              "title" : { "enabled" : false }
+          ]
+        }
+      ],
+      [
+        {
+          "data":[
+            "Gold",
+            14689.90,
+            20
+          ],
+          "increaseData":[
+            {
+              "isIncrease":true,
+              "data":"0.3%"
             }
-        },
-      "hasChart" : true,
-      "heading" : "Price Graph",
-      "isHero" : true
-    },
-  "2" : {
-      "heading" : "Cash summary",
-      "hasDropdown" : true,
-      "dropdownData" : [
-        [{"id" : 1, "value" : "2345678"}, {"id" : 2, "value" : "3456789"}, {"id" : 3, "value" : "4567890"}]
-        ],
-        "hasTextArea" : true,
-        "textAreaText" : "This is some text",
-        "hasButton" : true,
-        "buttons" : [ "Deposit", "Withdraw" ],
-      "isHero" : false
-    },
-  "3" : {
-      "heading" : "Market overview",
-      "hasVerticalTable" : true,
-      "tableData" :   [
-        [ { "data": ["JSE", 6412.78, 25], "increaseData" : [ {"isIncrease": false, "data" : "0.2%"} ] } ],
-        [ { "data": ["Gold", 14689.90, 20], "increaseData" : [ {"isIncrease": true, "data" : "0.3%"} ] } ],
-        [ { "data": ["R/USD", 12.5231, 20], "increaseData" : [ {"isIncrease": true, "data" : "0.3%"} ] } ]
-        ],
-      "isHero" : false
-    },
-  "4" : {
-      "heading" : "ALSI market breadth",
-      "isALSI" : true,
-      "isHero" : true
-    },
-  "5" : {
-      "heading" : "Gainers & losers",
-      "hasGainers" : true,
-      "isHero" : false
-    },
-  "6" : {
-      "heading" : "Orders",
-      "hasVerticalTable" : true,
-      "hasDropdown" : true,
-      "hasDropdownBind" : true,
-      "dropdownData" : [
-        [{"id" : 1, "value" : "Completed"}, {"id" : 2, "value" : "Pending"}, {"id" : 3, "value" : "Failed"}]
-        ],
-      "tableData" : [
-        [ { "data": ["Sell 5000 PREFTX @ 327c", "22 Feb 2015 18:00", "Total cost 13.84"] } ],
-        [ { "data": ["Sell 4000 AGL @ 456c", "22 Feb 2015 18:00", "Total cost 12.20"] } ],
-        [ { "data": ["Buy 5000 SBK @ 227c", "21 Feb 2015 15:00", "Total cost 14.84"] } ],
-        [ { "data": ["Sell 1000 CBS  @ 356c", "21 Feb 2015 16:00", "Total cost 9.84"] } ],
-        [ { "data": ["Sell 2000 HHO @ 234c", "22 Feb 2015 12:00", "Total cost 10.74"] } ],
-        [ { "data": ["Sell 4000 IGH @ 123c", "22 Feb 2015 13:00", "Total cost 13.00"] } ],
-        [ { "data": ["Sell 1000 HHO @ 233c", "22 Feb 2015 12:00", "Total cost 10.74"] } ],
-        [ { "data": ["Sell 3000 IGH @ 122c", "22 Feb 2015 13:00", "Total cost 13.00"] } ]
-        ],
-      "isHero" : true
-    },
-  "7" : {
-      "heading" : "Knowledge centre",
-      "isKnowledgeCentre" : true,
-      "isHero" : true
-    },
-  "8" : {
-      "heading" : "Market news",
-      "hasMarketNews" : true,
-      "isHero" : true
-    },
-  "9" : {
-      "heading" : "Research",
-      "hasTableWithHeading" : true,
-      "tableData" : [
-        [ { "heading": "Daily Standard", "data": ["27 Jan 2015 - TESA Master Agreement_V2", "Economic Report", "06 Jan 2015 - It's not plain sailing"] } ],
-        [ { "heading": "Economic Report", "data": ["06 Jan 2015 - It's not plain sailing", "FX & Fixed Income: Annual Outlook"] } ],
-        [ { "heading": "Economic Report", "data": ["05 Jan 2015 - G10 Daily: Tripple Whammy for the Euro", "January could be a tester for the euro"] } ]
-        ],
-      "isHero" : true
-    },
-  "10" : {
-    "heading" : "Watchlist",
-    "hasWatchlist" : true,
-    "isHero" : true
-    },
-  "11" : {
-    "heading" : "Triggers",
-    "hasTriggers" : true,
-    "isHero" : true
-    },
-  "12" : {
-    "heading" : "Orders",
-    "hasOrders" : true,
-    "isHero" : true
-    },
-    "13" : {
-    "notification" : "default",
-    "heading" : "Account 3456789",
-    "isAccountSmall" : true,
-    "isHero" : false
-    },
-    "14" : {
-    "notification" : "default",
-    "heading" : "Account 3456789",
-    "isAccountSmall" : true,
-    "isHero" : false
-    }
+          ]
+        }
+      ],
+      [
+        {
+          "data":[
+            "R/USD",
+            12.5231,
+            20
+          ],
+          "increaseData":[
+            {
+              "isIncrease":true,
+              "data":"0.3%"
+            }
+          ]
+        }
+      ]
+    ],
+    "isHero":false
+  },
+  "6":{
+    "heading":"Gainers & losers",
+    "hasGainers":true,
+    "isHero":false
+  },
+  "7":{
+    "heading":"Watchlist",
+    "hasWatchlist":true,
+    "isHero":true
+  },
+  "8":{
+    "heading":"Market news",
+    "hasMarketNews":true,
+    "isHero":true
+  },
+  "9":{
+    "heading":"Orders",
+    "hasOrders":true,
+    "isHero":true
+  },
+  "10":{
+    "heading":"Research",
+    "hasTableWithHeading":true,
+    "tableData":[
+      [
+        {
+          "heading":"Daily Standard",
+          "data":[
+            "27 Jan 2015 - TESA Master Agreement_V2",
+            "Economic Report",
+            "06 Jan 2015 - It's not plain sailing"
+          ]
+        }
+      ],
+      [
+        {
+          "heading":"Economic Report",
+          "data":[
+            "06 Jan 2015 - It's not plain sailing",
+            "FX & Fixed Income: Annual Outlook"
+          ]
+        }
+      ],
+      [
+        {
+          "heading":"Economic Report",
+          "data":[
+            "05 Jan 2015 - G10 Daily: Tripple Whammy for the Euro",
+            "January could be a tester for the euro"
+          ]
+        }
+      ]
+    ],
+    "isHero":true
+  },
+  "11":{
+    "heading":"Knowledge centre",
+    "isKnowledgeCentre":true,
+    "isHero":true
+  },
+  "12":{
+    "heading":"Triggers",
+    "hasTriggers":true,
+    "isHero":true
+  },
+  "13":{
+    "heading":"ALSI market breadth",
+    "isALSI":true,
+    "isHero":true
+  }
 }
