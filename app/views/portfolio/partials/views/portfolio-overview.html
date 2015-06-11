@@ -1,34 +1,32 @@
 <div class="row">
 	<div class="headerrow">
-	<span class="show-for-medium-up headingFormat left inline-block">Portfolio overview</span>
-	<div class="portfolio-performance-buttons inline-block" style="display: inherit;">
-		<div class="column large-8 right margintop" align="right">
-			<div class="inline-block search-textbox">
-				<div class="input-container">
-					<div class="icon-ph"><i class="icon-search"></i></div>
-					<input class="custom-text" placeholder="Search portfolio instruments" type="text" name="searchInstruments">
+		<span class="show-for-medium-up headingFormat left inline-block">Portfolio overview</span>
+		<div class="portfolio-performance-buttons inline-block" style="display: inherit;">
+			<div class="column large-8 right margintop" align="right">
+				<div class="inline-block search-textbox">
+					<div class="input-container">
+						<div class="icon-ph"><i class="icon-search"></i></div>
+						<input class="custom-text" placeholder="Search portfolio instruments" type="text" name="searchInstruments">
+					</div>
 				</div>
-			</div>
-			<div class="inline-block visible-for-medium-up portfolio-overview-manage-columns-padding">
-				<multiselect class="input-xlarge" multiple="true"
-				ng-model="selectedCar"
-				options="c.name for c in cars"
-				change="selected()"></multiselect>
-			</div>
-			<div class="portfolio-performance-buttons right visible-for-medium-up">
-				<div class="inline-block">
-					<button dropdown-toggle="#downloads" class="button dropdown portfolio-overview-download-button">Downloads</button>
-					<ul id="downloads" class="f-dropdown-medium">
-						<li class="list-separator"><a href="#">PDF</a></li>
-						<li class="list-separator"><a href="#">XLS</a></li>
-						<li class="list-separator"><a href="#">CSV</a></li>
-						<li class="list-separator"><a href="#">OFX</a></li>
-					</ul>
+				<div class="inline-block visible-for-medium-up portfolio-overview-manage-columns-padding">
+					<multiselect class="input-xlarge" multiple="true"
+					ng-model="selectedCar"
+					options="c.name for c in cars"
+					change="selected()"></multiselect>
+				</div>
+				<div class="portfolio-performance-buttons right visible-for-medium-up">
+					<div class="inline-block">
+						<button dropdown-toggle="#downloads" class="button dropdown portfolio-overview-download-button">Options</button>
+						<ul id="downloads" class="f-dropdown-medium">
+							<li class="list-separator"><a href="#">Print</a></li>
+							<li class="list-separator"><a href="#">Download to CSV</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 	<div class="row no-padding-top visible-for-medium-up"><hr/></div>
 	<div class="row padding-below-performers visible-for-medium-up">
 		<div class="row">
@@ -53,7 +51,41 @@
 			</div>
 		</div>
 	</div>
-	<kendo-grid options="portfolioOverviewGrid" k-selectable="'row'" class="visible-for-medium-up"></kendo-grid>
+	<kendo-grid k-options="portfolioOverviewGrid" k-data-source="holdings" class="visible-for-medium-up">
+	<div k-detail-template>
+		<div class="market-statistics-div">
+			<div class="row">
+				<tabset horizontal="true" type="navType">
+					<tab>
+						<tab-heading class="tab-heading-bottom-border">
+						<span class="market-statistics-padding market-statistics-heading">Market statistics</span>
+						<span class="market-statistics-heading" ng-if="PortfolioHolding.isUnderlyingInstrument"> : (Underlying)</span>
+						<div class="tab-triangle-down"  ng-class="{'underlying-triangle-down-position' : PortfolioHolding.isUnderlyingInstrument}"></div>
+					</tab-heading>
+					<table cellspacing="0" cellpadding="0">
+						<tr>
+							<td class="grid-additional-information-headings">12 month low</td>
+							<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.Low12MonthValueFormatted}}</td>
+							<td class="grid-additional-information-headings">12 month high</td>
+							<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.High12MonthValueFormatted}}</td>
+							<td class="grid-additional-information-headings">Market cap</td> 
+							<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.MarketCapitalisationFormatted}}</td>
+						</tr>
+						<tr>
+							<td class="grid-additional-information-headings">Date of low</td>
+							<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.Low12MonthDateFormatted}}</td>
+							<td class="grid-additional-information-headings">Date of high</td>
+							<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.High12MonthDateFormatted}}</td>
+							<td class="grid-additional-information-headings">Shares in issue</td>
+							<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.SharesInIssue}}</td>
+						</tr>
+					</table>
+				</tab>
+			</tabset>
+		</div>
+	</div>
+</div>	
+</kendo-grid>
 </div>
 
 <div class="hide-for-medium-up">
