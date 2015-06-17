@@ -1,6 +1,5 @@
 @import 'constants';
 @import 'colors';
-@import 'print';
 
   html {
     font-size: $html-percentage;
@@ -10,6 +9,9 @@
     font-size: $font-size-14px; font-size: $font-size-14rem;
   }
 
+  .header-wrapper .fluid-grid {
+    width: 100%;
+  }
   .tab-bar {
     height: 45px;
     position: fixed;
@@ -93,22 +95,23 @@
   }
 
   .acc-empty-boxes {
-  height: 45px;
-  background: $account-summary-display;
-  float: left;
-  overflow: hidden;
-  border: 0;
-  color: $links-blue;
-  font-size: 12px;
-  font-size: 1.2rem;
-  padding-left: 10px;
-  margin-right: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  margin-bottom: 0px;
-  font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
-}
+    height: 45px;
+    background: $account-summary-display;
+    float: left;
+    overflow: hidden;
+    border: 0;
+    color: #2570E0;
+    font-size: 12px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    margin-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-bottom: 1px;
+    font-family: $font-family;
+    vertical-align: middle;
+  }
 
 .selected {
   background-color: #7b8dbe;

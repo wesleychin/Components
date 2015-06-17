@@ -2,13 +2,45 @@
 @import 'colors';
 
 @media print {
+
+  html {
+    -webkit-print-color-adjust:exact;}
+
+  *{transition:none!important}
+
   .hide-for-print {
     display: none;
   }
 
+  div.header div.header-top {
+    width: 100%;
+    border: 0 !important;
+    padding-top: 4px;
+  }
+
+  .top-widgets {
+  height: 100%;
+  width: 18.5%;
+  display: inline-block;
+  padding: 2px;
+  padding-bottom: 8px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+  .header-wrapper .fluid-grid {
+    width: 100%;
+    border: 0 !important;
+  }
+
   .body-background-color {
     background-color: $background-white;
+    -webkit-print-color-adjust: exact;
   }
+
+  .row {
+  max-width: 98%;
+}
 
   .body-wrapper {
     background-color: $background-white;
@@ -24,7 +56,7 @@
 
   .portfolio-value {
     float: left;
-    width: 10%;
+    width: 50%;
   }
 
   .bigger-width-on-phone {
@@ -47,7 +79,7 @@
     background-color: #fff;
     clear: both;
     display: block;
-    border: 0;
+    border: none !important;
   }
 
   .details-overview-feed-details {
@@ -82,7 +114,7 @@
     font-size: 13px;
     font-size: 1.3rem;
     color: #666666;
-    font-family: "HelveticaNeue-Regular", "HelveticaNeue", "robotoregular", Arial, sans-serif;
+    font-family: $font-family;
     display: block;
     margin-bottom: 10px;
     text-align: left ! important;
@@ -119,7 +151,7 @@
   }
 
   .body-wrapper {
-    padding-top: 31px;
+    padding-top: 103px;
   }
 
   .alert-tick-green {
@@ -127,6 +159,14 @@
     font-size: 68px;
     padding-bottom: 15px;
   }
+
+  .account_text {
+  line-height: 1;
+  padding-bottom: 0;
+  padding-top: 15px;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
 
   .body-background-color {
   }
@@ -140,6 +180,11 @@
     top: 8px !important;
     padding-right: 5px;
   }
+
+  .header-logo-icon {
+  margin: 17px 0;
+  border-bottom: 0px;
+}
 
   div.header div.header-top .sign-out-header {
     position: absolute;
