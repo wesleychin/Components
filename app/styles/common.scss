@@ -146,6 +146,19 @@
   padding-left: 10px;
 }
 
+.columnsmulti {
+  -moz-column-count: 3;
+  -moz-column-gap: 10px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 10px;
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+
 .text-red {
   color : $debit-text-red !important;
 }
@@ -466,6 +479,36 @@ dropdown.button, button.dropdown {
  width: 100%;
 }
 
+.f-dropdown-banks {
+  position: absolute;
+  list-style: none;
+  margin-left: 0;
+  outline: none;
+  max-height: none;
+  height: auto;
+  background: $background-white;
+  border: solid 1px $light-grey;
+  font-size: 13px;
+  font-size: 1.3rem;
+  z-index: 89;
+  margin-top: -2px;
+  font-family: $font-family;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: block;
+  top: 32px;
+  left: auto !important;
+  width: 641px;
+  right: 20px !important;
+}
+
+.f-dropdown-banks li a {
+  display: inline-block;
+  padding: 8px 8px 8px 12px;
+  text-align: left;
+  color: $links-blue;
+}
+
 .f-dropdown-medium {
  position: absolute;
  list-style: none;
@@ -484,7 +527,6 @@ dropdown.button, button.dropdown {
  border-bottom-right-radius: 3px;
  display: block;
  top: 33px;
- left: auto !important;
  width: 133px;
 }
 
