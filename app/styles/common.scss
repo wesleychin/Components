@@ -1,6 +1,5 @@
 @import 'constants';
 @import 'colors';
-@import 'print';
 
   html {
     font-size: $html-percentage;
@@ -10,6 +9,9 @@
     font-size: $font-size-14px; font-size: $font-size-14rem;
   }
 
+  .header-wrapper .fluid-grid {
+    width: 100%;
+  }
   .tab-bar {
     height: 45px;
     position: fixed;
@@ -96,37 +98,30 @@
     height: 45px;
     background: $account-summary-display;
     float: left;
-    width:110%;
     overflow: hidden;
-    color: $links-blue;
-    font-size:$font-size-12px;
-    font-size:$font-size-12rem;
+    border: 0;
+    color: #2570E0;
+    font-size: 12px;
+    font-size: 1.2rem;
     padding-left: 10px;
     margin-right: 0;
     padding-top: 10px;
+    padding-bottom: 10px;
     padding-right: 10px;
-    border-top: 1px solid lighten ($light-grey, 10%);
-    border-left: 1px solid lighten ($light-grey, 10%);
-    border-bottom: 1px solid lighten ($light-grey, 10%);
-    border-right: 0 solid lighten ($light-grey, 10%);
-    margin-bottom: 4px;
+    margin-bottom: 1px;
     font-family: $font-family;
-    border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px;
+    vertical-align: middle;
   }
 
-  .selected {
-    background-color: $background-white;
-    border-left: 1px solid $border-grey;
-    border-bottom: 1px solid $border-grey;
-    border-top: 1px solid $border-grey;
-    border-right: none;
-    width: 101%;
-    color: $dark-grey;
-    position: relative;
-    z-index: 1000 !important;
-    overflow: hidden;
-  }
+.selected {
+  background-color: #7b8dbe;
+  border-right: none;
+  width: 101%;
+  color: #fff;
+  position: relative;
+  z-index: 1000 !important;
+  overflow: hidden;
+}
 
   .noLeftPadding {
    padding-left: 0 !important;
@@ -149,6 +144,19 @@
 .seperator {
   border-left: 1px solid $silver-grey;
   padding-left: 10px;
+}
+
+.columnsmulti {
+  -moz-column-count: 3;
+  -moz-column-gap: 10px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 10px;
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
 }
 
 .text-red {
@@ -471,6 +479,36 @@ dropdown.button, button.dropdown {
  width: 100%;
 }
 
+.f-dropdown-banks {
+  position: absolute;
+  list-style: none;
+  margin-left: 0;
+  outline: none;
+  max-height: none;
+  height: auto;
+  background: $background-white;
+  border: solid 1px $light-grey;
+  font-size: 13px;
+  font-size: 1.3rem;
+  z-index: 89;
+  margin-top: -2px;
+  font-family: $font-family;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: block;
+  top: 32px;
+  left: auto !important;
+  width: 641px;
+  right: 20px !important;
+}
+
+.f-dropdown-banks li a {
+  display: inline-block;
+  padding: 8px 8px 8px 12px;
+  text-align: left;
+  color: $links-blue;
+}
+
 .f-dropdown-medium {
  position: absolute;
  list-style: none;
@@ -489,7 +527,6 @@ dropdown.button, button.dropdown {
  border-bottom-right-radius: 3px;
  display: block;
  top: 33px;
- left: auto !important;
  width: 133px;
 }
 
