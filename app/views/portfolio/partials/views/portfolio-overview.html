@@ -1,5 +1,5 @@
-<div class="row">
-	<div class="headerrow">
+<div class="row no-padding-bottom portfolio-overview-container left">
+	<!-- <div class="headerrow">
 		<span class="show-for-medium-up headingFormat left inline-block">Portfolio overview</span>
 		<div class="inline-block" style="display: inherit;">
 			<div class="column large-8 right margintop hide-for-print" align="right">
@@ -26,64 +26,109 @@
 				</div>
 			</div>
 		</div>
+	</div> -->
+	<span class="headingFormat column medium-3 large-3 hide-for-small">Portfolio overview</span>
+	<div class="portfolio-performance-buttons inline-block" style="display: inherit;">
+		<div class="column medium-9 large-9 right margintop" align="right">
+			<div class="inline-block search-textbox visible-for-medium-up">
+				<div class="input-container">
+					<div class="icon-ph"><i class="icon-search search-icon-color"></i></div>
+					<input class="custom-text" placeholder="Search portfolio instruments" type="text" name="searchInstruments">
+				</div>
+			</div>
+			<div class="inline-block visible-for-medium-up portfolio-overview-manage-columns-padding">
+				<div class="inline-block column-selector">
+					<button dropdown-toggle="#columns" class="button dropdown manage-columns-button">Manage columns
+					</button>
+					<ul id="columns" class="f-dropdown-medium column-selector-columns">
+						<li class="column-selector-field" ng-repeat="column in columnSelectorComponent.getColumns()"
+						ng-click="columnSelectorComponent.toggleColumnSelected(column, $event)">
+						<span class="column-selector-span">
+							<input type="checkbox" ng-model="column.isSelected" ng-click="columnSelectorComponent.setColumnHiddenState(column, $event);" />&nbsp;{{column.title}}
+						</span>
+						<!-- Render any sub columns if available -->
+						<ul class="sub-column-selector" ng-if="columnSelectorComponent.getCanHideSubColumns(column)">
+							<li class="sub-column-selector-field" ng-repeat="subColumn in column.columns"
+							ng-click="columnSelectorComponent.toggleColumnSelected(subColumn, $event)">
+							<span class="sub-column-selector-span">
+								<input type="checkbox" ng-model="subColumn.isSelected" ng-click="columnSelectorComponent.setColumnHiddenState(subColumn, $event);" />&nbsp;{{subColumn.title}}
+							</span>
+						</li>
+					</ul><div ng-hide="$last"><br/><hr class="manage-columns-hr"/><br/></div>
+				</li>
+			</ul>
+		</div>
 	</div>
-	<div class="row no-padding-top visible-for-medium-up"><hr/></div>
-	<div class="row padding-below-performers visible-for-medium-up">
+	<div class="portfolio-performance-buttons right visible-for-medium-up">
+		<div class="inline-block">
+			<button dropdown-toggle="#downloads" class="button dropdown portfolio-overview-download-button">
+			Options
+			</button>
+			<ul id="downloads" class="f-dropdown-medium">
+				<li class="list-separator"><a href="#">CSV</a></li>
+				<li class="list-separator"><a href="#">Print</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+<div class="row no-padding-top visible-for-medium-up"><hr/></div>
+<div class="row padding-below-performers visible-for-medium-up">
+	<div class="row">
+		<div class="portfolio-performance-buttons width"><span class="top-performers-headings">Portfolio movers (R)</span></div>
+		<div class="portfolio-performance-buttons width">
+			<div class="top-widgets gainers" ng-show="performer.gain == true" ng-repeat-start="performer in performers">
+				<div class="top-performers-name"><span>{{performer.name}}</span></div><br/>
+				<i class="fa fa-caret-up"></i><br/>
+				<span>{{performer.percentage}}</span><br/>
+				<span>{{performer.amount}}</span>
+			</div>
+			<div class="inline-block" ng-repeat-end></div>
+		</div>
+		<div class="portfolio-performance-buttons width right">
+			<div class="top-widgets losers" ng-show="performer.gain == false" ng-repeat-start="performer in performers">
+				<div class="top-performers-name"><span>{{performer.name}}</span></div><br/>
+				<i class="fa fa-caret-down"></i><br/>
+				<span>{{performer.percentage}}</span><br/>
+				<span>{{performer.amount}}</span>
+			</div>
+			<div class="inline-block" ng-repeat-end></div>
+		</div>
+	</div>
+</div>
+<kendo-grid k-options="portfolioOverviewGrid" k-data-source="holdings" class="visible-for-medium-up">
+<div k-detail-template>
+	<div class="market-statistics-div">
 		<div class="row">
-			<div class="portfolio-performance-buttons width"><span class="top-performers-headings">Portfolio movers (R)</span></div>
-			<div class="portfolio-performance-buttons width">
-				<div class="top-widgets gainers" ng-show="performer.gain == true" ng-repeat-start="performer in performers">
-					<div class="top-performers-name"><span>{{performer.name}}</span></div><br/>
-					<i class="fa fa-caret-up"></i><br/>
-					<span>{{performer.percentage}}</span><br/>
-					<span>{{performer.amount}}</span>
-				</div>
-				<div class="inline-block" ng-repeat-end></div>
-			</div>
-			<div class="portfolio-performance-buttons width right">
-				<div class="top-widgets losers" ng-show="performer.gain == false" ng-repeat-start="performer in performers">
-					<div class="top-performers-name"><span>{{performer.name}}</span></div><br/>
-					<i class="fa fa-caret-down"></i><br/>
-					<span>{{performer.percentage}}</span><br/>
-					<span>{{performer.amount}}</span>
-				</div>
-				<div class="inline-block" ng-repeat-end></div>
-			</div>
-		</div>
+			<tabset horizontal="true" type="navType">
+				<tab>
+					<tab-heading class="tab-heading-bottom-border">
+					<span class="market-statistics-padding market-statistics-heading">Market statistics</span>
+					<span class="market-statistics-heading" ng-if="PortfolioHolding.isUnderlyingInstrument"> : (Underlying)</span>
+					<div class="tab-triangle-down"  ng-class="{'underlying-triangle-down-position' : PortfolioHolding.isUnderlyingInstrument}"></div>
+				</tab-heading>
+				<table cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="grid-additional-information-headings">12 month low</td>
+						<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.Low12MonthValueFormatted}}</td>
+						<td class="grid-additional-information-headings">12 month high</td>
+						<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.High12MonthValueFormatted}}</td>
+						<td class="grid-additional-information-headings">Market cap</td>
+						<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.MarketCapitalisationFormatted}}</td>
+					</tr>
+					<tr>
+						<td class="grid-additional-information-headings">Date of low</td>
+						<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.Low12MonthDateFormatted}}</td>
+						<td class="grid-additional-information-headings">Date of high</td>
+						<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.High12MonthDateFormatted}}</td>
+						<td class="grid-additional-information-headings">Shares in issue</td>
+						<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.SharesInIssue}}</td>
+					</tr>
+				</table>
+			</tab>
+		</tabset>
 	</div>
-	<kendo-grid k-options="portfolioOverviewGrid" k-data-source="holdings" class="visible-for-medium-up">
-	<div k-detail-template>
-		<div class="market-statistics-div">
-			<div class="row">
-				<tabset horizontal="true" type="navType">
-					<tab>
-						<tab-heading class="tab-heading-bottom-border">
-						<span class="market-statistics-padding market-statistics-heading">Market statistics</span>
-						<span class="market-statistics-heading" ng-if="PortfolioHolding.isUnderlyingInstrument"> : (Underlying)</span>
-						<div class="tab-triangle-down"  ng-class="{'underlying-triangle-down-position' : PortfolioHolding.isUnderlyingInstrument}"></div>
-					</tab-heading>
-					<table cellspacing="0" cellpadding="0">
-						<tr>
-							<td class="grid-additional-information-headings">12 month low</td>
-							<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.Low12MonthValueFormatted}}</td>
-							<td class="grid-additional-information-headings">12 month high</td>
-							<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.High12MonthValueFormatted}}</td>
-							<td class="grid-additional-information-headings">Market cap</td>
-							<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.MarketCapitalisationFormatted}}</td>
-						</tr>
-						<tr>
-							<td class="grid-additional-information-headings">Date of low</td>
-							<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.Low12MonthDateFormatted}}</td>
-							<td class="grid-additional-information-headings">Date of high</td>
-							<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.High12MonthDateFormatted}}</td>
-							<td class="grid-additional-information-headings">Shares in issue</td>
-							<td class="grid-additional-information-data">{{PortfolioHolding.statisticsInformation.SharesInIssue}}</td>
-						</tr>
-					</table>
-				</tab>
-			</tabset>
-		</div>
-	</div>
+</div>
 </div>
 </kendo-grid>
 </div>
