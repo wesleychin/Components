@@ -13,6 +13,10 @@
 				"link": "#/dashboard"
 			}, 
 			{
+				"text": "Trade",
+				"link": "#/trade"
+			}, 
+			{
 				"text": "Portfolio",
 				"link": "#/portfolio/overview"
 			}

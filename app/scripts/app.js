@@ -35,6 +35,10 @@
     templateUrl: 'views/main.html',
     controller: 'AccountsCtrl'
   })
+  .when('/trade', {
+    templateUrl: 'views/trade/partials/trade-view.html',
+    controller: 'TradeCtrl'
+  })
   .otherwise({
     templateUrl: 'views/main.html',
     controller: 'AccountsCtrl'
