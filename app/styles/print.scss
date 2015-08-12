@@ -2,10 +2,6 @@
 @import 'colors';
 
 @media print {
-  .hide-for-print {
-    display: none;
-  }
-
   .body-background-color {
     background-color: $background-white;
   }
@@ -210,8 +206,8 @@
   }
 
   .header-logo-icon {
-    margin: 17px 0;
-    border-bottom: 0px;
+    position:absolute;
+    margin-left:10%;
   }
 
   div.header div.header-top .sign-out-header {

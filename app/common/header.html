@@ -1,4 +1,5 @@
 <nav>
+<div id="c-button--slide-left" class="c-button">&#9776; Menu</div>
   <div class="header-wrapper">
     <div class="header">
       <div class="fluid-grid">
@@ -24,3 +25,21 @@
       </div>
     </div>
   </nav>
+  <script>
+  /**
+   * Slide left instantiation and action.
+   */
+   var slideLeft = new Menu({
+    wrapper: '#o-wrapper',
+    type: 'slide-left',
+    menuOpenerClass: '.c-button',
+    maskId: '#c-mask'
+  });
+
+   var slideLeftBtn = document.querySelector('#c-button--slide-left');
+
+   slideLeftBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    slideLeft.open();
+  });
+ </script>
